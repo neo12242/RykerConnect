@@ -1,0 +1,1649 @@
+[
+  {
+    "ref": "BT1",
+    "value": "BAT-HLD-001",
+    "mpn": "BAT-HLD-001",
+    "code": "C7501066",
+    "fp": "RykerConnect:BT1_BATHLD001",
+    "nets": {
+      "2": "GND",
+      "1": "VBAT"
+    },
+    "pos": [
+      105,
+      85,
+      0
+    ],
+    "page": 4,
+    "manufacturer": "TE Connectivity / Linx",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C7501066",
+    "resolved_pins": {
+      "1": [
+        "+",
+        "passive"
+      ],
+      "2": [
+        "-",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "J1",
+    "value": "436500200",
+    "mpn": "436500200",
+    "code": "C192562",
+    "fp": "RykerConnect:J1_43650-02_00,01,02_",
+    "nets": {
+      "1": "+12V",
+      "2": "GND"
+    },
+    "pos": [
+      120,
+      100,
+      0
+    ],
+    "page": 1,
+    "manufacturer": "Molex",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C192562",
+    "resolved_pins": {
+      "1": [
+        "Pin_1",
+        "passive"
+      ],
+      "2": [
+        "Pin_2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "J3",
+    "value": "SM08B-SRSS-TB(LF)(SN)",
+    "mpn": "SM08B-SRSS-TB(LF)(SN)",
+    "code": "C160407",
+    "fp": "RykerConnect:J3_JST_SH_SM08B-SRSS-TB_1x08-1MP_P1.00mm_Horizontal",
+    "nets": {
+      "2": "+3.3V",
+      "7": "CS1",
+      "8": "CS2",
+      "6": "DSP_DC",
+      "5": "DSP_RES",
+      "1": "GND",
+      "3": "SPI_SCK",
+      "4": "SPI_MOSI",
+      "MP": "GND"
+    },
+    "pos": [
+      104,
+      113,
+      0
+    ],
+    "page": 1,
+    "manufacturer": "JST",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C160407",
+    "resolved_pins": {
+      "1": [
+        "Pin_1",
+        "passive"
+      ],
+      "2": [
+        "Pin_2",
+        "passive"
+      ],
+      "3": [
+        "Pin_3",
+        "passive"
+      ],
+      "4": [
+        "Pin_4",
+        "passive"
+      ],
+      "5": [
+        "Pin_5",
+        "passive"
+      ],
+      "6": [
+        "Pin_6",
+        "passive"
+      ],
+      "7": [
+        "Pin_7",
+        "passive"
+      ],
+      "8": [
+        "Pin_8",
+        "passive"
+      ],
+      "MP": [
+        "MP",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "J4",
+    "value": "SM02B-SRSS-TB(LF)(SN)",
+    "mpn": "SM02B-SRSS-TB(LF)(SN)",
+    "code": "C160402",
+    "fp": "RykerConnect:J4_JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal",
+    "nets": {
+      "1": "+3.3V",
+      "2": "GPIO7",
+      "MP": "GND"
+    },
+    "pos": [
+      130,
+      113,
+      0
+    ],
+    "page": 4,
+    "manufacturer": "JST",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C160402",
+    "resolved_pins": {
+      "1": [
+        "Pin_1",
+        "passive"
+      ],
+      "2": [
+        "Pin_2",
+        "passive"
+      ],
+      "MP": [
+        "MP",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "J5",
+    "value": "SM04B-SRSS-TB(LF)(SN)",
+    "mpn": "SM04B-SRSS-TB(LF)(SN)",
+    "code": "C160404",
+    "fp": "RykerConnect:J5_JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",
+    "nets": {
+      "2": "+3.3V",
+      "1": "GND",
+      "MP": "GND",
+      "4": "SCL",
+      "3": "SDA"
+    },
+    "pos": [
+      138,
+      113,
+      0
+    ],
+    "page": 1,
+    "manufacturer": "JST",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C160404",
+    "resolved_pins": {
+      "1": [
+        "Pin_1",
+        "passive"
+      ],
+      "2": [
+        "Pin_2",
+        "passive"
+      ],
+      "3": [
+        "Pin_3",
+        "passive"
+      ],
+      "4": [
+        "Pin_4",
+        "passive"
+      ],
+      "MP": [
+        "Mounting_anchors",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "U2",
+    "value": "MCP9808T-E/MS",
+    "mpn": "MCP9808T-E/MS",
+    "code": "C129490",
+    "fp": "RykerConnect:U2_MSOP-8_3x3mm_P0.65mm",
+    "nets": {
+      "8": "+3.3V",
+      "4": "GND",
+      "5": "GND",
+      "6": "GND",
+      "7": "GND",
+      "2": "SCL",
+      "1": "SDA",
+      "3": null
+    },
+    "pos": [
+      163,
+      92,
+      0
+    ],
+    "page": 4,
+    "manufacturer": "Microchip",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C129490",
+    "resolved_pins": {
+      "1": [
+        "SDA",
+        "bidirectional"
+      ],
+      "2": [
+        "SCL",
+        "input"
+      ],
+      "3": [
+        "Alert",
+        "output"
+      ],
+      "4": [
+        "GND",
+        "power_in"
+      ],
+      "5": [
+        "A2",
+        "input"
+      ],
+      "6": [
+        "A1",
+        "input"
+      ],
+      "7": [
+        "A0",
+        "input"
+      ],
+      "8": [
+        "V_{DD}",
+        "power_in"
+      ]
+    }
+  },
+  {
+    "ref": "U6",
+    "value": "TPS26600PWPR",
+    "mpn": "TPS26600PWPR",
+    "code": "C544399",
+    "fp": "RykerConnect:U6_Protection_HTSSOP16_PWP0016A",
+    "nets": {
+      "1": "+12V",
+      "2": "+12V",
+      "3": "PROT_UV",
+      "4": null,
+      "5": "PROT_OV",
+      "6": null,
+      "7": null,
+      "8": "PROT_RTN",
+      "9": "GND",
+      "10": null,
+      "11": "PROT_ILIM",
+      "12": "PROT_DVDT",
+      "13": null,
+      "14": null,
+      "15": "+12V_PROTECTED",
+      "16": "+12V_PROTECTED",
+      "17": "PROT_RTN"
+    },
+    "pos": [
+      137,
+      85,
+      0
+    ],
+    "page": 2,
+    "manufacturer": "Texas Instruments",
+    "pins": {
+      "1": [
+        "IN",
+        "power_in",
+        "+12V"
+      ],
+      "2": [
+        "IN",
+        "passive",
+        "+12V"
+      ],
+      "3": [
+        "UVLO",
+        "input",
+        "PROT_UV"
+      ],
+      "4": [
+        "NC",
+        "no_connect",
+        null
+      ],
+      "5": [
+        "OVP",
+        "input",
+        "PROT_OV"
+      ],
+      "6": [
+        "MODE",
+        "input",
+        null
+      ],
+      "7": [
+        "SHDN",
+        "input",
+        null
+      ],
+      "8": [
+        "RTN",
+        "power_out",
+        "PROT_RTN"
+      ],
+      "9": [
+        "GND",
+        "power_in",
+        "GND"
+      ],
+      "10": [
+        "IMON",
+        "output",
+        null
+      ],
+      "11": [
+        "ILIM",
+        "passive",
+        "PROT_ILIM"
+      ],
+      "12": [
+        "dVdT",
+        "passive",
+        "PROT_DVDT"
+      ],
+      "13": [
+        "NC",
+        "no_connect",
+        null
+      ],
+      "14": [
+        "FLT",
+        "open_collector",
+        null
+      ],
+      "15": [
+        "OUT",
+        "power_out",
+        "+12V_PROTECTED"
+      ],
+      "16": [
+        "OUT",
+        "passive",
+        "+12V_PROTECTED"
+      ],
+      "17": [
+        "EP_RTN",
+        "passive",
+        "PROT_RTN"
+      ]
+    },
+    "source": "https://jlcpcb.com/partdetail/C544399",
+    "resolved_pins": {
+      "1": [
+        "IN",
+        "power_in"
+      ],
+      "2": [
+        "IN",
+        "passive"
+      ],
+      "3": [
+        "UVLO",
+        "input"
+      ],
+      "4": [
+        "NC",
+        "no_connect"
+      ],
+      "5": [
+        "OVP",
+        "input"
+      ],
+      "6": [
+        "MODE",
+        "input"
+      ],
+      "7": [
+        "SHDN",
+        "input"
+      ],
+      "8": [
+        "RTN",
+        "power_out"
+      ],
+      "9": [
+        "GND",
+        "power_in"
+      ],
+      "10": [
+        "IMON",
+        "output"
+      ],
+      "11": [
+        "ILIM",
+        "passive"
+      ],
+      "12": [
+        "dVdT",
+        "passive"
+      ],
+      "13": [
+        "NC",
+        "no_connect"
+      ],
+      "14": [
+        "FLT",
+        "open_collector"
+      ],
+      "15": [
+        "OUT",
+        "power_out"
+      ],
+      "16": [
+        "OUT",
+        "passive"
+      ],
+      "17": [
+        "EP_RTN",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "D2",
+    "value": "SMBJ33A",
+    "mpn": "SMBJ33A",
+    "code": "C224019",
+    "fp": "Diode_SMD:D_SMB",
+    "nets": {
+      "1": "+12V",
+      "2": "TVS_MID"
+    },
+    "pos": [
+      106,
+      100,
+      0
+    ],
+    "page": 2,
+    "manufacturer": "Littelfuse",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C224019",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "D3",
+    "value": "B140-13-F",
+    "mpn": "B140-13-F",
+    "code": "C15759",
+    "fp": "Diode_SMD:D_SMA",
+    "nets": {
+      "1": "+12V_PROTECTED",
+      "2": "GND"
+    },
+    "pos": [
+      149,
+      81,
+      90
+    ],
+    "page": 2,
+    "manufacturer": "Diodes Incorporated",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C15759",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "C14",
+    "value": "1uF 100V",
+    "mpn": "CL31B105KCHNNNE",
+    "code": "C13832",
+    "fp": "Capacitor_SMD:C_1206_3216Metric",
+    "nets": {
+      "1": "+12V",
+      "2": "GND"
+    },
+    "pos": [
+      125,
+      79,
+      90
+    ],
+    "page": 2,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C13832",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "C15",
+    "value": "1uF 50V",
+    "mpn": "CL21B105KBFNNNE",
+    "code": "C28323",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "+12V_PROTECTED",
+      "2": "GND"
+    },
+    "pos": [
+      149,
+      87,
+      90
+    ],
+    "page": 2,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C28323",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "C16",
+    "value": "10nF 50V",
+    "mpn": "CL10B103KB8NNNC",
+    "code": "C1589",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "PROT_DVDT",
+      "2": "PROT_RTN"
+    },
+    "pos": [
+      143,
+      86,
+      0
+    ],
+    "page": 2,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C1589",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "R7",
+    "value": "120k 1%",
+    "mpn": "RC0603FR-07120KL",
+    "code": "C114607",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+12V",
+      "2": "PROT_UV"
+    },
+    "pos": [
+      130,
+      81,
+      90
+    ],
+    "page": 2,
+    "manufacturer": "Yageo",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C114607",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "R8",
+    "value": "20k 1%",
+    "mpn": "RC0603FR-0720KL",
+    "code": "C105575",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "PROT_UV",
+      "2": "PROT_OV"
+    },
+    "pos": [
+      130,
+      84,
+      90
+    ],
+    "page": 2,
+    "manufacturer": "Yageo",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C105575",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "R9",
+    "value": "10k",
+    "mpn": "0603WAF1002T5E",
+    "code": "C25804",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "PROT_OV",
+      "2": "PROT_RTN"
+    },
+    "pos": [
+      131,
+      87,
+      90
+    ],
+    "page": 2,
+    "manufacturer": "UNI-ROYAL",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C25804",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "R10",
+    "value": "12k 1%",
+    "mpn": "RC0603FR-0712KL",
+    "code": "C114659",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "PROT_ILIM",
+      "2": "PROT_RTN"
+    },
+    "pos": [
+      143,
+      89,
+      0
+    ],
+    "page": 2,
+    "manufacturer": "Yageo",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C114659",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "D4",
+    "value": "SMBJ18A",
+    "mpn": "SMBJ18A",
+    "code": "C151256",
+    "fp": "Diode_SMD:D_SMB",
+    "nets": {
+      "1": "GND",
+      "2": "TVS_MID"
+    },
+    "pos": [
+      106,
+      106,
+      180
+    ],
+    "page": 2,
+    "manufacturer": "Littelfuse",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C151256",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "C17",
+    "value": "1uF 100V",
+    "mpn": "CL31B105KCHNNNE",
+    "code": "C13832",
+    "fp": "Capacitor_SMD:C_1206_3216Metric",
+    "nets": {
+      "1": "+12V",
+      "2": "GND"
+    },
+    "pos": [
+      125,
+      84,
+      90
+    ],
+    "page": 2,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C13832",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "C3",
+    "value": "100nF 50V",
+    "mpn": "CL10B104KB8NNNC",
+    "code": "C1591",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "pos": [
+      166,
+      84,
+      90
+    ],
+    "page": 4,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C1591",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "C4",
+    "value": "100nF 50V",
+    "mpn": "CL10B104KB8NNNC",
+    "code": "C1591",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "pos": [
+      163,
+      95.2,
+      0
+    ],
+    "page": 4,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C1591",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "C6",
+    "value": "100nF 50V",
+    "mpn": "CL10B104KB8NNNC",
+    "code": "C1591",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "pos": [
+      156,
+      81,
+      0
+    ],
+    "page": 4,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C1591",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "C10",
+    "value": "100nF 50V",
+    "mpn": "CL10B104KB8NNNC",
+    "code": "C1591",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+12V_PROTECTED",
+      "2": "GND"
+    },
+    "pos": [
+      145,
+      103,
+      0
+    ],
+    "page": 3,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C1591",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "C11",
+    "value": "100nF 50V",
+    "mpn": "CL10B104KB8NNNC",
+    "code": "C1591",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "BUCK_BST",
+      "2": "BUCK_SW"
+    },
+    "pos": [
+      152,
+      106,
+      270
+    ],
+    "page": 3,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C1591",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "C5",
+    "value": "10uF 25V",
+    "mpn": "CL10A106MA8NRNC",
+    "code": "C96446",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "pos": [
+      156,
+      78,
+      0
+    ],
+    "page": 4,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C96446",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "C9",
+    "value": "10uF 50V",
+    "mpn": "CL31A106KBHNNNE",
+    "code": "C13585",
+    "fp": "Capacitor_SMD:C_1206_3216Metric",
+    "nets": {
+      "1": "+12V_PROTECTED",
+      "2": "GND"
+    },
+    "pos": [
+      143,
+      107,
+      90
+    ],
+    "page": 3,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C13585",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "C12",
+    "value": "22uF 25V",
+    "mpn": "CL21A226MAQNNNE",
+    "code": "C45783",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "+5V_BUCK",
+      "2": "GND"
+    },
+    "pos": [
+      163,
+      107,
+      90
+    ],
+    "page": 3,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C45783",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "C13",
+    "value": "22uF 25V",
+    "mpn": "CL21A226MAQNNNE",
+    "code": "C45783",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "+5V_BUCK",
+      "2": "GND"
+    },
+    "pos": [
+      166,
+      107,
+      90
+    ],
+    "page": 3,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C45783",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "R3",
+    "value": "4.7k 1%",
+    "mpn": "0603WAF4701T5E",
+    "code": "C23162",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3.3V",
+      "2": "SCL"
+    },
+    "pos": [
+      158,
+      93,
+      0
+    ],
+    "page": 1,
+    "manufacturer": "UNI-ROYAL",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C23162",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "R4",
+    "value": "4.7k 1%",
+    "mpn": "0603WAF4701T5E",
+    "code": "C23162",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3.3V",
+      "2": "SDA"
+    },
+    "pos": [
+      156,
+      91,
+      0
+    ],
+    "page": 1,
+    "manufacturer": "UNI-ROYAL",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C23162",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "R6",
+    "value": "10k 1%",
+    "mpn": "0603WAF1002T5E",
+    "code": "C25804",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "GPIO7",
+      "2": "GND"
+    },
+    "pos": [
+      168,
+      93,
+      90
+    ],
+    "page": 4,
+    "manufacturer": "UNI-ROYAL",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C25804",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "U3",
+    "value": "DS3231SN#T&R",
+    "mpn": "DS3231SN#T&R",
+    "code": "C9866",
+    "fp": "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm",
+    "nets": {
+      "1": null,
+      "2": "+3.3V",
+      "3": null,
+      "4": null,
+      "5": "GND",
+      "6": "GND",
+      "7": "GND",
+      "8": "GND",
+      "9": "GND",
+      "10": "GND",
+      "11": "GND",
+      "12": "GND",
+      "13": "GND",
+      "14": "VBAT",
+      "15": "SDA",
+      "16": "SCL"
+    },
+    "pos": [
+      174,
+      85.5,
+      0
+    ],
+    "page": 4,
+    "manufacturer": "Analog Devices",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C9866",
+    "resolved_pins": {
+      "1": [
+        "32KHZ",
+        "open_collector"
+      ],
+      "2": [
+        "VCC",
+        "power_in"
+      ],
+      "3": [
+        "INT_SQW",
+        "open_collector"
+      ],
+      "4": [
+        "RST",
+        "open_collector"
+      ],
+      "5": [
+        "NC_GND",
+        "passive"
+      ],
+      "6": [
+        "NC_GND",
+        "passive"
+      ],
+      "7": [
+        "NC_GND",
+        "passive"
+      ],
+      "8": [
+        "NC_GND",
+        "passive"
+      ],
+      "9": [
+        "NC_GND",
+        "passive"
+      ],
+      "10": [
+        "NC_GND",
+        "passive"
+      ],
+      "11": [
+        "NC_GND",
+        "passive"
+      ],
+      "12": [
+        "NC_GND",
+        "passive"
+      ],
+      "13": [
+        "GND",
+        "power_in"
+      ],
+      "14": [
+        "VBAT",
+        "power_in"
+      ],
+      "15": [
+        "SDA",
+        "bidirectional"
+      ],
+      "16": [
+        "SCL",
+        "input"
+      ]
+    }
+  },
+  {
+    "ref": "U5",
+    "value": "AP63205WU-7",
+    "mpn": "AP63205WU-7",
+    "code": "C2071056",
+    "fp": "Package_TO_SOT_SMD:TSOT-23-6",
+    "nets": {
+      "1": "+5V_BUCK",
+      "2": "+12V_PROTECTED",
+      "3": "+12V_PROTECTED",
+      "4": "GND",
+      "5": "BUCK_SW",
+      "6": "BUCK_BST"
+    },
+    "pos": [
+      148,
+      107,
+      0
+    ],
+    "page": 3,
+    "manufacturer": "Diodes Incorporated",
+    "pins": {
+      "1": [
+        "FB",
+        "input",
+        null
+      ],
+      "2": [
+        "EN",
+        "input",
+        null
+      ],
+      "3": [
+        "VIN",
+        "power_in",
+        null
+      ],
+      "4": [
+        "GND",
+        "power_in",
+        null
+      ],
+      "5": [
+        "SW",
+        "output",
+        null
+      ],
+      "6": [
+        "BST",
+        "passive",
+        null
+      ]
+    },
+    "source": "https://jlcpcb.com/partdetail/C2071056",
+    "resolved_pins": {
+      "1": [
+        "FB",
+        "input"
+      ],
+      "2": [
+        "EN",
+        "input"
+      ],
+      "3": [
+        "VIN",
+        "power_in"
+      ],
+      "4": [
+        "GND",
+        "power_in"
+      ],
+      "5": [
+        "SW",
+        "output"
+      ],
+      "6": [
+        "BST",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "L1",
+    "value": "4.7uH",
+    "mpn": "744316470",
+    "code": "C2651181",
+    "fp": "RykerConnect:L1_INDPM5653X430N",
+    "nets": {
+      "1": "BUCK_SW",
+      "2": "+5V_BUCK"
+    },
+    "pos": [
+      157,
+      107,
+      0
+    ],
+    "page": 3,
+    "manufacturer": "Wurth Elektronik",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C2651181",
+    "resolved_pins": {
+      "1": [
+        "1",
+        "passive"
+      ],
+      "2": [
+        "2",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "J6",
+    "value": "ESP32 socket P1",
+    "mpn": "FH2.54-09-22PZD",
+    "code": "C7500786",
+    "fp": "Connector_PinSocket_2.54mm:PinSocket_1x22_P2.54mm_Vertical",
+    "nets": {
+      "1": "+3.3V",
+      "2": "+3.3V",
+      "3": null,
+      "4": null,
+      "5": null,
+      "6": null,
+      "7": "GPIO7",
+      "8": "DSP_RES",
+      "9": null,
+      "10": null,
+      "11": "SCL",
+      "12": "SDA",
+      "13": null,
+      "14": null,
+      "15": null,
+      "16": "CS2",
+      "17": "SPI_MOSI",
+      "18": "SPI_SCK",
+      "19": "DSP_DC",
+      "20": "CS1",
+      "21": "+5V_MODULE",
+      "22": "GND"
+    },
+    "pos": [
+      184.39,
+      75.27,
+      -90
+    ],
+    "page": 1,
+    "manufacturer": "XUNPU",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C7500786",
+    "resolved_pins": {
+      "1": [
+        "+3.3V",
+        "passive"
+      ],
+      "2": [
+        "+3.3V",
+        "passive"
+      ],
+      "3": [
+        "NC_3",
+        "passive"
+      ],
+      "4": [
+        "NC_4",
+        "passive"
+      ],
+      "5": [
+        "NC_5",
+        "passive"
+      ],
+      "6": [
+        "NC_6",
+        "passive"
+      ],
+      "7": [
+        "GPIO7",
+        "passive"
+      ],
+      "8": [
+        "DSP_RES",
+        "passive"
+      ],
+      "9": [
+        "NC_9",
+        "passive"
+      ],
+      "10": [
+        "NC_10",
+        "passive"
+      ],
+      "11": [
+        "SCL",
+        "passive"
+      ],
+      "12": [
+        "SDA",
+        "passive"
+      ],
+      "13": [
+        "NC_13",
+        "passive"
+      ],
+      "14": [
+        "NC_14",
+        "passive"
+      ],
+      "15": [
+        "NC_15",
+        "passive"
+      ],
+      "16": [
+        "CS2",
+        "passive"
+      ],
+      "17": [
+        "SPI_MOSI",
+        "passive"
+      ],
+      "18": [
+        "SPI_SCK",
+        "passive"
+      ],
+      "19": [
+        "DSP_DC",
+        "passive"
+      ],
+      "20": [
+        "CS1",
+        "passive"
+      ],
+      "21": [
+        "+5V_MODULE",
+        "passive"
+      ],
+      "22": [
+        "GND",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "J7",
+    "value": "ESP32 socket P2",
+    "mpn": "FH2.54-09-22PZD",
+    "code": "C7500786",
+    "fp": "Connector_PinSocket_2.54mm:PinSocket_1x22_P2.54mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": null,
+      "3": null,
+      "4": null,
+      "5": null,
+      "6": null,
+      "7": null,
+      "8": null,
+      "9": null,
+      "10": null,
+      "11": null,
+      "12": null,
+      "13": null,
+      "14": null,
+      "15": null,
+      "16": null,
+      "17": null,
+      "18": null,
+      "19": null,
+      "20": null,
+      "21": "GND",
+      "22": "GND"
+    },
+    "pos": [
+      184.39,
+      98.13,
+      -90
+    ],
+    "page": 1,
+    "manufacturer": "XUNPU",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C7500786",
+    "resolved_pins": {
+      "1": [
+        "GND",
+        "passive"
+      ],
+      "2": [
+        "NC_2",
+        "passive"
+      ],
+      "3": [
+        "NC_3",
+        "passive"
+      ],
+      "4": [
+        "NC_4",
+        "passive"
+      ],
+      "5": [
+        "NC_5",
+        "passive"
+      ],
+      "6": [
+        "NC_6",
+        "passive"
+      ],
+      "7": [
+        "NC_7",
+        "passive"
+      ],
+      "8": [
+        "NC_8",
+        "passive"
+      ],
+      "9": [
+        "NC_9",
+        "passive"
+      ],
+      "10": [
+        "NC_10",
+        "passive"
+      ],
+      "11": [
+        "NC_11",
+        "passive"
+      ],
+      "12": [
+        "NC_12",
+        "passive"
+      ],
+      "13": [
+        "NC_13",
+        "passive"
+      ],
+      "14": [
+        "NC_14",
+        "passive"
+      ],
+      "15": [
+        "NC_15",
+        "passive"
+      ],
+      "16": [
+        "NC_16",
+        "passive"
+      ],
+      "17": [
+        "NC_17",
+        "passive"
+      ],
+      "18": [
+        "NC_18",
+        "passive"
+      ],
+      "19": [
+        "NC_19",
+        "passive"
+      ],
+      "20": [
+        "NC_20",
+        "passive"
+      ],
+      "21": [
+        "GND",
+        "passive"
+      ],
+      "22": [
+        "GND",
+        "passive"
+      ]
+    }
+  },
+  {
+    "ref": "J8",
+    "value": "REMOVE LINK FOR USB",
+    "mpn": "5AML4-11560-102-W0",
+    "code": "C29780898",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "nets": {
+      "1": "+5V_BUCK",
+      "2": "+5V_MODULE"
+    },
+    "pos": [
+      173,
+      109,
+      90
+    ],
+    "page": 3,
+    "manufacturer": "SAMZO",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C29780898",
+    "resolved_pins": {
+      "1": [
+        "+5V_BUCK",
+        "passive"
+      ],
+      "2": [
+        "+5V_MODULE",
+        "passive"
+      ]
+    }
+  }
+]

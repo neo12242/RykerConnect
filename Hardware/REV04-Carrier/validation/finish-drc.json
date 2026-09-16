@@ -1,0 +1,238 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-13T01:46:25",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "key": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "key": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "key": "silk_edge_clearance"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        },
+        {
+            "description": "Footprint doesn't match copy in library",
+            "key": "lib_footprint_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "RykerConnect.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 71.5
+                    },
+                    "uuid": "9bae48ca-1ba6-4456-af32-682c26665b79"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 71.5
+                    },
+                    "uuid": "9bae48ca-1ba6-4456-af32-682c26665b79"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 8 [DSP_RES] of J6",
+                    "pos": {
+                        "x": 166.61,
+                        "y": 75.27
+                    },
+                    "uuid": "ad804289-2a35-42e4-a320-4c43b638b2d3"
+                },
+                {
+                    "description": "Track [DSP_RES] on F.Cu, length 1.5000 mm",
+                    "pos": {
+                        "x": 104.5,
+                        "y": 111.0
+                    },
+                    "uuid": "4d6ed1ff-067c-48f6-af2c-926bf9847a81"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Items shorting two nets (nets DSP_DC and DSP_RES)",
+            "items": [
+                {
+                    "description": "Track [DSP_DC] on F.Cu, length 1.6493 mm",
+                    "pos": {
+                        "x": 105.5,
+                        "y": 111.3793
+                    },
+                    "uuid": "47193b91-ba67-4a53-967a-937fef621f43"
+                },
+                {
+                    "description": "Via [DSP_RES] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.5,
+                        "y": 112.5
+                    },
+                    "uuid": "9f20154f-475e-4483-9823-248990a97354"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets DSP_DC and DSP_RES)",
+            "items": [
+                {
+                    "description": "Track [DSP_DC] on F.Cu, length 0.4453 mm",
+                    "pos": {
+                        "x": 104.3338,
+                        "y": 112.5455
+                    },
+                    "uuid": "04b8d8ef-e91e-4ae4-bda0-28561c3bd201"
+                },
+                {
+                    "description": "Track [DSP_RES] on F.Cu, length 1.5000 mm",
+                    "pos": {
+                        "x": 104.5,
+                        "y": 111.0
+                    },
+                    "uuid": "4d6ed1ff-067c-48f6-af2c-926bf9847a81"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0382 mm)",
+            "items": [
+                {
+                    "description": "Via [DSP_DC] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 103.8885,
+                        "y": 112.5455
+                    },
+                    "uuid": "35d772a0-19c5-4c12-8c4c-0d0dedf48dac"
+                },
+                {
+                    "description": "Via [DSP_RES] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.5,
+                        "y": 112.5
+                    },
+                    "uuid": "9f20154f-475e-4483-9823-248990a97354"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets DSP_DC and DSP_RES)",
+            "items": [
+                {
+                    "description": "Track [DSP_DC] on F.Cu, length 0.4453 mm",
+                    "pos": {
+                        "x": 104.3338,
+                        "y": 112.5455
+                    },
+                    "uuid": "04b8d8ef-e91e-4ae4-bda0-28561c3bd201"
+                },
+                {
+                    "description": "Via [DSP_RES] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.5,
+                        "y": 112.5
+                    },
+                    "uuid": "9f20154f-475e-4483-9823-248990a97354"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0382 mm)",
+            "items": [
+                {
+                    "description": "Via [DSP_DC] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 103.8885,
+                        "y": 112.5455
+                    },
+                    "uuid": "35d772a0-19c5-4c12-8c4c-0d0dedf48dac"
+                },
+                {
+                    "description": "Via [DSP_RES] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.5,
+                        "y": 112.5
+                    },
+                    "uuid": "9f20154f-475e-4483-9823-248990a97354"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [DSP_RES] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.5,
+                        "y": 112.5
+                    },
+                    "uuid": "9f20154f-475e-4483-9823-248990a97354"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

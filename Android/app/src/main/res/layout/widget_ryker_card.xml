@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/v2_root" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/widget_light" android:padding="8dp" android:orientation="vertical">
+<TextView android:id="@+id/v2_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="17sp" android:maxLines="2" android:ellipsize="end" android:textStyle="bold"/><TextView android:id="@+id/v2_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:maxLines="2" android:ellipsize="end" android:layout_marginTop="3dp"/>
+<ImageView android:id="@+id/v2_photo" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:scaleType="fitCenter" android:padding="24dp" android:background="@drawable/widget_light" android:clipToOutline="true" android:layout_marginTop="8dp" android:contentDescription="Your Ryker" android:visibility="gone"/>
+<TextView android:id="@+id/v2_odometer" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="22sp" android:maxLines="2" android:ellipsize="end" android:textStyle="bold" android:layout_marginTop="6dp"/>
+<TextView android:id="@+id/v2_recorded" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="10sp" android:maxLines="2" android:ellipsize="end" />
+<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="vertical" android:gravity="center_vertical">
+<TextView android:id="@+id/v2_service" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:textStyle="bold"/>
+<TextView android:id="@+id/v2_service_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:maxLines="2" android:ellipsize="end" />
+<TextView android:id="@+id/v2_more" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" android:layout_marginTop="6dp"/>
+</LinearLayout>
+<LinearLayout android:id="@+id/v2_footer" android:layout_width="match_parent" android:layout_height="48dp">
+<LinearLayout android:id="@+id/tile1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="3dp" android:orientation="horizontal" android:gravity="center" android:padding="3dp" android:background="@drawable/widget_button_light">
+<ImageView android:id="@+id/icon1" android:layout_width="18dp" android:layout_height="18dp" android:importantForAccessibility="no"/>
+<TextView android:id="@+id/label1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:maxLines="1" android:textSize="12sp" android:ellipsize="end"/>
+<TextView android:id="@+id/hint1" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone"/>
+</LinearLayout><LinearLayout android:id="@+id/tile2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="3dp" android:orientation="horizontal" android:gravity="center" android:padding="3dp" android:background="@drawable/widget_button_light">
+<ImageView android:id="@+id/icon2" android:layout_width="18dp" android:layout_height="18dp" android:importantForAccessibility="no"/>
+<TextView android:id="@+id/label2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:maxLines="1" android:textSize="12sp" android:ellipsize="end"/>
+<TextView android:id="@+id/hint2" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone"/>
+</LinearLayout>
+</LinearLayout></LinearLayout>

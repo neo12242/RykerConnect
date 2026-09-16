@@ -1,0 +1,112 @@
+{
+  "C25808": {
+    "componentLibraryType": "\"base\"",
+    "preferredComponentFlag": "\"$undefined\"",
+    "stockCount": "0",
+    "canPresaleNumber": "600731",
+    "overseasStockCount": "677309",
+    "initialPrice": "0.0021",
+    "lossNumber": "10",
+    "leastPatchNumber": "20",
+    "source": "https://jlcpcb.com/partdetail/C25808"
+  },
+  "C4184": {
+    "componentLibraryType": "\"base\"",
+    "preferredComponentFlag": "\"$undefined\"",
+    "stockCount": "4660045",
+    "canPresaleNumber": "6687709",
+    "overseasStockCount": "7330414",
+    "initialPrice": "0.0027",
+    "lossNumber": "10",
+    "leastPatchNumber": "20",
+    "source": "https://jlcpcb.com/partdetail/C4184"
+  },
+  "C22790": {
+    "componentLibraryType": "\"base\"",
+    "preferredComponentFlag": "\"$undefined\"",
+    "stockCount": "0",
+    "canPresaleNumber": "1361505",
+    "overseasStockCount": "1494793",
+    "initialPrice": "0.0033",
+    "lossNumber": "10",
+    "leastPatchNumber": "20",
+    "source": "https://jlcpcb.com/partdetail/C22790"
+  },
+  "C14663": {
+    "componentLibraryType": "\"base\"",
+    "preferredComponentFlag": "\"$undefined\"",
+    "stockCount": "29",
+    "canPresaleNumber": "41977299",
+    "overseasStockCount": "53649516",
+    "initialPrice": "0.0124",
+    "lossNumber": "10",
+    "leastPatchNumber": "20",
+    "source": "https://jlcpcb.com/partdetail/C14663"
+  },
+  "C57112": {
+    "componentLibraryType": "\"base\"",
+    "preferredComponentFlag": "\"$undefined\"",
+    "stockCount": "0",
+    "canPresaleNumber": "6703459",
+    "overseasStockCount": "8547299",
+    "initialPrice": "0.0108",
+    "lossNumber": "10",
+    "leastPatchNumber": "20",
+    "source": "https://jlcpcb.com/partdetail/C57112"
+  },
+  "C32346": {
+    "componentLibraryType": "\"base\"",
+    "preferredComponentFlag": "\"$undefined\"",
+    "stockCount": "0",
+    "canPresaleNumber": "652513",
+    "overseasStockCount": "681142",
+    "initialPrice": "0.1719",
+    "lossNumber": "0",
+    "leastPatchNumber": "5",
+    "source": "https://jlcpcb.com/partdetail/C32346"
+  },
+  "C8678": {
+    "componentLibraryType": "\"base\"",
+    "preferredComponentFlag": "\"$undefined\"",
+    "stockCount": "0",
+    "canPresaleNumber": "4865738",
+    "overseasStockCount": "5021388",
+    "initialPrice": "0.0349",
+    "lossNumber": "8",
+    "leastPatchNumber": "5",
+    "source": "https://jlcpcb.com/partdetail/C8678"
+  },
+  "C19077573": {
+    "componentLibraryType": "\"expand\"",
+    "preferredComponentFlag": "\"$undefined\"",
+    "stockCount": "0",
+    "canPresaleNumber": "35905",
+    "overseasStockCount": "36168",
+    "initialPrice": "0.0516",
+    "lossNumber": "2",
+    "leastPatchNumber": "5",
+    "source": "https://jlcpcb.com/partdetail/C19077573"
+  },
+  "C19077586": {
+    "componentLibraryType": "\"expand\"",
+    "preferredComponentFlag": "\"$undefined\"",
+    "stockCount": "0",
+    "canPresaleNumber": "80473",
+    "overseasStockCount": "83200",
+    "initialPrice": "0.0538",
+    "lossNumber": "2",
+    "leastPatchNumber": "5",
+    "source": "https://jlcpcb.com/partdetail/C19077586"
+  },
+  "C20607187": {
+    "componentLibraryType": "\"expand\"",
+    "preferredComponentFlag": "\"$undefined\"",
+    "stockCount": "0",
+    "canPresaleNumber": "3",
+    "overseasStockCount": "4",
+    "initialPrice": "0.7666",
+    "lossNumber": "0",
+    "leastPatchNumber": "2",
+    "source": "https://jlcpcb.com/partdetail/C20607187"
+  }
+}

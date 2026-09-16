@@ -1,0 +1,21 @@
+{
+  "src\\ble_functions.cpp": "b73635c175f1ca2b6aa489ce165886cd4e6b5444c4ae8bc6fd581761003bb894",
+  "src\\ble_server.cpp": "1c3199bb7940f16ccb0609562e93da38cfca6ebb2bac0401f6f4ed6cbcadbd8d",
+  "src\\environment_sensor.cpp": "8fbb079be141757b293da6d001a10f4a5443475844dd682114bfcb851a6a6418",
+  "src\\functions.cpp": "1f501cd874840e7123f7c0cc0c696053a2f6a86c7e2354a02b4d798ed7b6c5b8",
+  "src\\func_gui.cpp": "5aaf020317301c84647e4ff272faf9ec12ca69955973a7344b8ff1e3ae42082c",
+  "src\\func_u8g2.cpp": "39c273c24e3d7111f169cf59d12d5bfdf244e8e6d95fc7d0026f1ab4ec5290ae",
+  "src\\global_vars.cpp": "4434d374ac100916becda759ede138fd394e8409a2d8d100f79087a9cf20d00b",
+  "src\\main.cpp": "1e5b14c21ed833b8df251fe283ed9b3a5e6de184b136db43f543ba3b2de878aa",
+  "src\\screens.cpp": "d6dc30e4c76158e6eb47f4e17015bbdfa3e867f452b8add12bafa7afdcfe8486",
+  "include\\ble_functions.h": "4eb0087ac2efb3e024884bce5e6dd390a735183437873228cb4aa9d6939467d3",
+  "include\\ble_server.h": "b98c90df26fa416e81295a9186857b3bc9b5a962a89435951fd88708362197f6",
+  "include\\environment_sensor.h": "7dac0948981bbfd19a0883c8499ddf10d90be221b5c7ad6ec089d492b1076bf0",
+  "include\\functions.h": "4114138f532023bcbd3fb57d54523c793a2b460774220cbdb48f9020284bf727",
+  "include\\func_gui.h": "282a8e3c92c53e16bb35d8062e5033d53158a35b972c4c6e03381cb704d1ba76",
+  "include\\func_u8g2.h": "4daeea145998a797f4af90c3dec0e42b76a8aa06ddd44f9647ecb6ce181c4c1e",
+  "include\\global_vars.h": "39da6a0d60831e9cc7aee00c5d2347146fb42b9e7c9072699c39a5ca40a1bc55",
+  "include\\images.h": "718aefcd7e9c04e7feedce5360fc2b52f6ce9098f0f9d036a367cdddc6cad80c",
+  "include\\main.h": "388876be601187de96d6a85bce03e74460e6f1fb58342f274726902a1140e488",
+  "include\\screens.h": "773e88b6e634cabafa0cfc6c494cb17455084de270feff40eb73ec9ec211228c"
+}

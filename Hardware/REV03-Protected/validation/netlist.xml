@@ -1,0 +1,3115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>.\Hardware\REV03-Protected\RykerConnect.kicad_sch</source>
+    <date>2026-09-13T00:47:19</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>RykerConnect - protected accessory input</title>
+        <company/>
+        <rev>REV03</rev>
+        <date>2026-09-13</date>
+        <source>RykerConnect.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Power/" tstamps="/7ccc27f4-8fef-4bc1-a353-bb84be16a765/">
+      <title_block>
+        <title>RykerConnect - protected accessory input</title>
+        <company/>
+        <rev>REV03</rev>
+        <date>2026-09-13</date>
+        <source>power.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Accessory input protection/" tstamps="/556f6e13-eacd-4d85-92c1-c1de2c1c3013/">
+      <title_block>
+        <title>RykerConnect - protected accessory input</title>
+        <company/>
+        <rev>REV03</rev>
+        <date>2026-09-13</date>
+        <source>protection.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BT1">
+      <value>Holders Linx CR2032</value>
+      <footprint>RykerConnect:BT1_BATHLD001</footprint>
+      <description>Single-cell battery</description>
+      <fields>
+        <field name="PROD_ID">BAT-HLD-001</field>
+        <field name="MPN">BAT-HLD-001</field>
+        <field name="Manufacturer">TE Connectivity / Linx</field>
+        <field name="LCSC">C7501066</field>
+        <field name="Footprint">RykerConnect:BT1_BATHLD001</field>
+        <field name="Datasheet"/>
+        <field name="Description">Single-cell battery</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Device_Battery_Cell" description="Single-cell battery"/>
+      <property name="PROD_ID" value="BAT-HLD-001"/>
+      <property name="MPN" value="BAT-HLD-001"/>
+      <property name="Manufacturer" value="TE Connectivity / Linx"/>
+      <property name="LCSC" value="C7501066"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="battery cell"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>909bafdc-6b9a-4871-8d8f-b3de30d31a29</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>RykerConnect:C1_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="PROD_ID">CAP-00000</field>
+        <field name="Voltage">50v</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">RykerConnect:C1_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet">https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="SparkFun-Capacitor_C" description="Unpolarized capacitor"/>
+      <property name="PROD_ID" value="CAP-00000"/>
+      <property name="Voltage" value="50v"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="SparkFun cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4759e885-0b5d-4aaa-b234-21bc2181e7ca</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>RykerConnect:C2_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="PROD_ID">CAP-00000</field>
+        <field name="Voltage">50v</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">RykerConnect:C2_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet">https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="SparkFun-Capacitor_C" description="Unpolarized capacitor"/>
+      <property name="PROD_ID" value="CAP-00000"/>
+      <property name="Voltage" value="50v"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="SparkFun cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>625fd5d4-c07e-4017-9019-12a67c828827</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>1uF</value>
+      <footprint>RykerConnect:C3_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="PROD_ID">CL10B105KO8NNNC</field>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">10%</field>
+        <field name="MPN">CL10B105KO8NNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="LCSC">C59782</field>
+        <field name="Footprint">RykerConnect:C3_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet">https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="SparkFun-Capacitor_C" description="Unpolarized capacitor"/>
+      <property name="PROD_ID" value="CL10B105KO8NNNC"/>
+      <property name="Voltage" value="16V"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="MPN" value="CL10B105KO8NNNC"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="LCSC" value="C59782"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="SparkFun cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>248c4a4f-8ccb-4394-9877-da17db794d8e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>1uF</value>
+      <footprint>RykerConnect:C4_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="PROD_ID">CL10B105KO8NNNC</field>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">10%</field>
+        <field name="MPN">CL10B105KO8NNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="LCSC">C59782</field>
+        <field name="Footprint">RykerConnect:C4_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet">https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="SparkFun-Capacitor_C" description="Unpolarized capacitor"/>
+      <property name="PROD_ID" value="CL10B105KO8NNNC"/>
+      <property name="Voltage" value="16V"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="MPN" value="CL10B105KO8NNNC"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="LCSC" value="C59782"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="SparkFun cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8000faa5-3ea0-401c-aa05-5aa0eb7a1486</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>10uF</value>
+      <footprint>RykerConnect:C5_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="PROD_ID">C1608X5R1E106M080AC</field>
+        <field name="Voltage">25V</field>
+        <field name="Tolerance">20%</field>
+        <field name="MPN">C1608X5R1E106M080AC</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="LCSC">C2168289</field>
+        <field name="Footprint">RykerConnect:C5_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet">https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="SparkFun-Capacitor_C" description="Unpolarized capacitor"/>
+      <property name="PROD_ID" value="C1608X5R1E106M080AC"/>
+      <property name="Voltage" value="25V"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="MPN" value="C1608X5R1E106M080AC"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="LCSC" value="C2168289"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="SparkFun cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3eff49e5-7543-4f87-948c-a15157ae7819</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>100nF</value>
+      <footprint>RykerConnect:C6_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="PROD_ID">C0603C104K5RAC7082</field>
+        <field name="Voltage">50v</field>
+        <field name="Tolerance">10%</field>
+        <field name="MPN">C0603C104K5RAC7082</field>
+        <field name="Manufacturer">KEMET</field>
+        <field name="LCSC">C1882722</field>
+        <field name="Footprint">RykerConnect:C6_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet">https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="SparkFun-Capacitor_C" description="Unpolarized capacitor"/>
+      <property name="PROD_ID" value="C0603C104K5RAC7082"/>
+      <property name="Voltage" value="50v"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="MPN" value="C0603C104K5RAC7082"/>
+      <property name="Manufacturer" value="KEMET"/>
+      <property name="LCSC" value="C1882722"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="SparkFun cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>16da6a3b-0b15-4c96-b5f3-40f193cf72a4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>1uF</value>
+      <footprint>RykerConnect:C7_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="PROD_ID">CL10B105KO8NNNC</field>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">10%</field>
+        <field name="MPN">CL10B105KO8NNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="LCSC">C59782</field>
+        <field name="Footprint">RykerConnect:C7_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet">https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="SparkFun-Capacitor_C" description="Unpolarized capacitor"/>
+      <property name="PROD_ID" value="CL10B105KO8NNNC"/>
+      <property name="Voltage" value="16V"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="MPN" value="CL10B105KO8NNNC"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="LCSC" value="C59782"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="SparkFun cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8c33f560-46f4-4404-9565-26d3da98be27</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>100nF</value>
+      <footprint>RykerConnect:C8_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="PROD_ID">C0603C104K3RACTU</field>
+        <field name="Voltage">25V</field>
+        <field name="Tolerance">10%</field>
+        <field name="MPN">C0603C104K3RACTU</field>
+        <field name="Manufacturer">KEMET</field>
+        <field name="LCSC">C2167527</field>
+        <field name="Footprint">RykerConnect:C8_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet">https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="SparkFun-Capacitor_C" description="Unpolarized capacitor"/>
+      <property name="PROD_ID" value="C0603C104K3RACTU"/>
+      <property name="Voltage" value="25V"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="MPN" value="C0603C104K3RACTU"/>
+      <property name="Manufacturer" value="KEMET"/>
+      <property name="LCSC" value="C2167527"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="SparkFun cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>771b4cc7-e00a-435f-9627-7e3ed2007a13</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole_Pad</value>
+      <footprint>RykerConnect:H1_MountingHole_2.2mm_M2_ISO14580_Pad_TopBottom</footprint>
+      <description>Mounting Hole with connection</description>
+      <fields>
+        <field name="Footprint">RykerConnect:H1_MountingHole_2.2mm_M2_ISO14580_Pad_TopBottom</field>
+        <field name="Datasheet"/>
+        <field name="Description">Mounting Hole with connection</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Mechanical_MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*Pad*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>585e07e9-1e24-4108-9e3b-f4dca7a963f5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole_Pad</value>
+      <footprint>RykerConnect:H2_MountingHole_2.2mm_M2_ISO14580_Pad_TopBottom</footprint>
+      <description>Mounting Hole with connection</description>
+      <fields>
+        <field name="Footprint">RykerConnect:H2_MountingHole_2.2mm_M2_ISO14580_Pad_TopBottom</field>
+        <field name="Datasheet"/>
+        <field name="Description">Mounting Hole with connection</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Mechanical_MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*Pad*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7161c32b-0829-49a8-8d9d-8e3bc9896de5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>436500200</value>
+      <footprint>RykerConnect:J1_43650-02_00,01,02_</footprint>
+      <description>Generic connector, single row, 01x02, script generated</description>
+      <fields>
+        <field name="MPN">436500200</field>
+        <field name="Manufacturer">Molex</field>
+        <field name="LCSC">C192562</field>
+        <field name="PROD_ID">436500200</field>
+        <field name="Footprint">RykerConnect:J1_43650-02_00,01,02_</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_Conn_01x02_Socket" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="MPN" value="436500200"/>
+      <property name="Manufacturer" value="Molex"/>
+      <property name="LCSC" value="C192562"/>
+      <property name="PROD_ID" value="436500200"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>373b92c0-69d6-4d19-9147-5a8c6590dba6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>USB4105-GF-A</value>
+      <footprint>RykerConnect:J2_USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</footprint>
+      <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
+      <description>USB 2.0-only 16P Type-C Receptacle connector</description>
+      <fields>
+        <field name="MPN">USB4105-GF-A</field>
+        <field name="Manufacturer">GCT</field>
+        <field name="LCSC">C3020560</field>
+        <field name="PROD_ID">USB4105-GF-A</field>
+        <field name="Footprint">RykerConnect:J2_USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</field>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+        <field name="Description">USB 2.0-only 16P Type-C Receptacle connector</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_USB_C_Receptacle_USB2.0_16P" description="USB 2.0-only 16P Type-C Receptacle connector"/>
+      <property name="MPN" value="USB4105-GF-A"/>
+      <property name="Manufacturer" value="GCT"/>
+      <property name="LCSC" value="C3020560"/>
+      <property name="PROD_ID" value="USB4105-GF-A"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="usb universal serial bus type-C USB2.0"/>
+      <property name="ki_fp_filters" value="USB*C*Receptacle*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d687f42a-90cc-4d1d-bb1d-71d021959580</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="S1"/>
+            <pin num="A1"/>
+            <pin num="A12"/>
+            <pin num="B1"/>
+            <pin num="B12"/>
+            <pin num="A4"/>
+            <pin num="A9"/>
+            <pin num="B4"/>
+            <pin num="B9"/>
+            <pin num="A5"/>
+            <pin num="B5"/>
+            <pin num="A7"/>
+            <pin num="B7"/>
+            <pin num="A6"/>
+            <pin num="B6"/>
+            <pin num="A8"/>
+            <pin num="B8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>Display Connector</value>
+      <footprint>RykerConnect:J3_JST_SH_SM08B-SRSS-TB_1x08-1MP_P1.00mm_Horizontal</footprint>
+      <description>Generic connector, single row, 01x08, script generated</description>
+      <fields>
+        <field name="MPN">SM08B-SRSS-TB(LF)(SN)</field>
+        <field name="Manufacturer">JST</field>
+        <field name="LCSC">C160407</field>
+        <field name="PROD_ID">SM08B-SRSS-TB(LF)(SN)</field>
+        <field name="Footprint">RykerConnect:J3_JST_SH_SM08B-SRSS-TB_1x08-1MP_P1.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x08, script generated</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_Conn_01x08_Socket" description="Generic connector, single row, 01x08, script generated"/>
+      <property name="MPN" value="SM08B-SRSS-TB(LF)(SN)"/>
+      <property name="Manufacturer" value="JST"/>
+      <property name="LCSC" value="C160407"/>
+      <property name="PROD_ID" value="SM08B-SRSS-TB(LF)(SN)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6ed1d411-3524-4b8b-a63d-37e57179d0e2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>Ambient Light Connector</value>
+      <footprint>RykerConnect:J4_JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal</footprint>
+      <description>Generic connector, single row, 01x02, script generated</description>
+      <fields>
+        <field name="MPN">SM02B-SRSS-TB(LF)(SN)</field>
+        <field name="Manufacturer">JST</field>
+        <field name="LCSC">C160402</field>
+        <field name="PROD_ID">SM02B-SRSS-TB(LF)(SN)</field>
+        <field name="Footprint">RykerConnect:J4_JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_Conn_01x02_Socket" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="MPN" value="SM02B-SRSS-TB(LF)(SN)"/>
+      <property name="Manufacturer" value="JST"/>
+      <property name="LCSC" value="C160402"/>
+      <property name="PROD_ID" value="SM02B-SRSS-TB(LF)(SN)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0133651e-38e8-4967-af34-dc5509c82743</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J5">
+      <value>SM04B-SRSS-TB(LF)(SN)</value>
+      <footprint>RykerConnect:J5_JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal</footprint>
+      <fields>
+        <field name="MPN">SM04B-SRSS-TB(LF)(SN)</field>
+        <field name="Manufacturer">JST</field>
+        <field name="LCSC">C160404</field>
+        <field name="PROD_ID">SM04B-SRSS-TB(LF)(SN)</field>
+        <field name="Footprint">RykerConnect:J5_JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="JST_SH_04_Grounded_Anchors" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="SM04B-SRSS-TB(LF)(SN)"/>
+      <property name="Manufacturer" value="JST"/>
+      <property name="LCSC" value="C160404"/>
+      <property name="PROD_ID" value="SM04B-SRSS-TB(LF)(SN)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b7a356b0-6575-4fca-9a0d-5b80de5f6094</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="MP"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="JP1">
+      <value>SolderJumper_2_Open</value>
+      <footprint>RykerConnect:JP1_R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Solder Jumper, 2-pole, open</description>
+      <fields>
+        <field name="Footprint">RykerConnect:JP1_R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Solder Jumper, 2-pole, open</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Jumper_SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="solder jumper SPST"/>
+      <property name="ki_fp_filters" value="SolderJumper*Open*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7ac6cc22-5d72-4fe2-9468-79d57bb72a3c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>TEPT4400</value>
+      <footprint>LED_THT:LED_D3.0mm_Clear</footprint>
+      <datasheet>https://www.vishay.com/docs/81341/tept4400.pdf</datasheet>
+      <description>Ambient Light Sensor, NPN Epitaxial Planar Phototransistor, T-1</description>
+      <fields>
+        <field name="Footprint">LED_THT:LED_D3.0mm_Clear</field>
+        <field name="Datasheet">https://www.vishay.com/docs/81341/tept4400.pdf</field>
+        <field name="Description">Ambient Light Sensor, NPN Epitaxial Planar Phototransistor, T-1</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Sensor_Optical_TEPT4400" description="Ambient Light Sensor, NPN Epitaxial Planar Phototransistor, T-1"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="npn phototransistor ambient light sensor"/>
+      <property name="ki_fp_filters" value="LED*3.0mm*Clear*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b368f595-f271-4700-98fe-3883421c7e84</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>5.1K</value>
+      <footprint>RykerConnect:R1_R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="PROD_ID">RS73F2ARTTD5101D</field>
+        <field name="MPN">RS73F2ARTTD5101D</field>
+        <field name="Manufacturer">KOA Speer</field>
+        <field name="LCSC">C5890991</field>
+        <field name="Footprint">RykerConnect:R1_R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Device_R" description="Resistor"/>
+      <property name="PROD_ID" value="RS73F2ARTTD5101D"/>
+      <property name="MPN" value="RS73F2ARTTD5101D"/>
+      <property name="Manufacturer" value="KOA Speer"/>
+      <property name="LCSC" value="C5890991"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fa3b6a05-fe99-421f-a37a-62a0bc42a519</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>5.1K</value>
+      <footprint>RykerConnect:R2_R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="PROD_ID">RS73F2ARTTD5101D</field>
+        <field name="MPN">RS73F2ARTTD5101D</field>
+        <field name="Manufacturer">KOA Speer</field>
+        <field name="LCSC">C5890991</field>
+        <field name="Footprint">RykerConnect:R2_R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Device_R" description="Resistor"/>
+      <property name="PROD_ID" value="RS73F2ARTTD5101D"/>
+      <property name="MPN" value="RS73F2ARTTD5101D"/>
+      <property name="Manufacturer" value="KOA Speer"/>
+      <property name="LCSC" value="C5890991"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a6818233-5d16-47be-89ef-f305db3f744e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>5.1K</value>
+      <footprint>RykerConnect:R3_R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="PROD_ID">RS73F2ARTTD5101D</field>
+        <field name="MPN">RS73F2ARTTD5101D</field>
+        <field name="Manufacturer">KOA Speer</field>
+        <field name="LCSC">C5890991</field>
+        <field name="Footprint">RykerConnect:R3_R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Device_R" description="Resistor"/>
+      <property name="PROD_ID" value="RS73F2ARTTD5101D"/>
+      <property name="MPN" value="RS73F2ARTTD5101D"/>
+      <property name="Manufacturer" value="KOA Speer"/>
+      <property name="LCSC" value="C5890991"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5ea72272-2104-4a98-af71-66275ce80704</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>5.1K</value>
+      <footprint>RykerConnect:R4_R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="PROD_ID">RS73F2ARTTD5101D</field>
+        <field name="MPN">RS73F2ARTTD5101D</field>
+        <field name="Manufacturer">KOA Speer</field>
+        <field name="LCSC">C5890991</field>
+        <field name="Footprint">RykerConnect:R4_R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Device_R" description="Resistor"/>
+      <property name="PROD_ID" value="RS73F2ARTTD5101D"/>
+      <property name="MPN" value="RS73F2ARTTD5101D"/>
+      <property name="Manufacturer" value="KOA Speer"/>
+      <property name="LCSC" value="C5890991"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7bfd4f9b-78b6-4183-9a0b-e89544a00149</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>10K</value>
+      <footprint>RykerConnect:R5_R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="PROD_ID">CRGP0805F10K</field>
+        <field name="MPN">CRGP0805F10K</field>
+        <field name="Manufacturer">TE Connectivity</field>
+        <field name="LCSC">C2074940</field>
+        <field name="Footprint">RykerConnect:R5_R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Device_R" description="Resistor"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="PROD_ID" value="CRGP0805F10K"/>
+      <property name="MPN" value="CRGP0805F10K"/>
+      <property name="Manufacturer" value="TE Connectivity"/>
+      <property name="LCSC" value="C2074940"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d7b5828a-0cf6-4cea-bcc5-1762371b45be</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>10K</value>
+      <footprint>RykerConnect:R6_R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="PROD_ID">CRGP0805F10K</field>
+        <field name="MPN">CRGP0805F10K</field>
+        <field name="Manufacturer">TE Connectivity</field>
+        <field name="LCSC">C2074940</field>
+        <field name="Footprint">RykerConnect:R6_R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Device_R" description="Resistor"/>
+      <property name="PROD_ID" value="CRGP0805F10K"/>
+      <property name="MPN" value="CRGP0805F10K"/>
+      <property name="Manufacturer" value="TE Connectivity"/>
+      <property name="LCSC" value="C2074940"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cfa90413-17cc-4ab3-b9c1-f3f4bd47dc52</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="S1">
+      <value>BOOT</value>
+      <footprint>RykerConnect:S1_435451019820</footprint>
+      <datasheet>https://www.we-online.com/components/products/datasheet/435451019820.pdf</datasheet>
+      <description>Tactile Switch SPST-NO Top Actuated Surface Mount</description>
+      <fields>
+        <field name="Height">1.97</field>
+        <field name="Mouser Part Number">710-435451019820</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/435451019820?qs=ufv2HEpFn%252BSBtTHyYvulMg%3D%3D</field>
+        <field name="Manufacturer_Name">Wurth Elektronik</field>
+        <field name="Manufacturer_Part_Number">435451019820</field>
+        <field name="MPN">435451019820</field>
+        <field name="Manufacturer">Wurth Elektronik</field>
+        <field name="LCSC">C7464054</field>
+        <field name="PROD_ID">435451019820</field>
+        <field name="Footprint">RykerConnect:S1_435451019820</field>
+        <field name="Datasheet">https://www.we-online.com/components/products/datasheet/435451019820.pdf</field>
+        <field name="Description">Tactile Switch SPST-NO Top Actuated Surface Mount</field>
+      </fields>
+      <libsource lib="RykerConnect" part="SamacSys_Parts_435451019820" description="Tactile Switch SPST-NO Top Actuated Surface Mount"/>
+      <property name="Height" value="1.97"/>
+      <property name="Mouser Part Number" value="710-435451019820"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/435451019820?qs=ufv2HEpFn%252BSBtTHyYvulMg%3D%3D"/>
+      <property name="Manufacturer_Name" value="Wurth Elektronik"/>
+      <property name="Manufacturer_Part_Number" value="435451019820"/>
+      <property name="MPN" value="435451019820"/>
+      <property name="Manufacturer" value="Wurth Elektronik"/>
+      <property name="LCSC" value="C7464054"/>
+      <property name="PROD_ID" value="435451019820"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>59662b49-c817-4fa8-8848-dfab2e335422</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="S2">
+      <value>RST</value>
+      <footprint>RykerConnect:S2_435451019820</footprint>
+      <datasheet>https://www.we-online.com/components/products/datasheet/435451019820.pdf</datasheet>
+      <description>Tactile Switch SPST-NO Top Actuated Surface Mount</description>
+      <fields>
+        <field name="Height">1.97</field>
+        <field name="Mouser Part Number">710-435451019820</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/435451019820?qs=ufv2HEpFn%252BSBtTHyYvulMg%3D%3D</field>
+        <field name="Manufacturer_Name">Wurth Elektronik</field>
+        <field name="Manufacturer_Part_Number">435451019820</field>
+        <field name="MPN">435451019820</field>
+        <field name="Manufacturer">Wurth Elektronik</field>
+        <field name="LCSC">C7464054</field>
+        <field name="PROD_ID">435451019820</field>
+        <field name="Footprint">RykerConnect:S2_435451019820</field>
+        <field name="Datasheet">https://www.we-online.com/components/products/datasheet/435451019820.pdf</field>
+        <field name="Description">Tactile Switch SPST-NO Top Actuated Surface Mount</field>
+      </fields>
+      <libsource lib="RykerConnect" part="SamacSys_Parts_435451019820" description="Tactile Switch SPST-NO Top Actuated Surface Mount"/>
+      <property name="Height" value="1.97"/>
+      <property name="Mouser Part Number" value="710-435451019820"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/435451019820?qs=ufv2HEpFn%252BSBtTHyYvulMg%3D%3D"/>
+      <property name="Manufacturer_Name" value="Wurth Elektronik"/>
+      <property name="Manufacturer_Part_Number" value="435451019820"/>
+      <property name="MPN" value="435451019820"/>
+      <property name="Manufacturer" value="Wurth Elektronik"/>
+      <property name="LCSC" value="C7464054"/>
+      <property name="PROD_ID" value="435451019820"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e9121329-897b-4970-8de0-442dd153a153</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP5">
+      <value>USB-VBUS_Probe</value>
+      <footprint>RykerConnect:TP5_TestPoint_Pad_D1.0mm</footprint>
+      <description>test point (alternative probe-style design)</description>
+      <fields>
+        <field name="Footprint">RykerConnect:TP5_TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point (alternative probe-style design)</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>690e3ec8-a455-4309-bb66-09a3ac707818</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP6">
+      <value>USB-D+_Probe</value>
+      <footprint>RykerConnect:TP6_TestPoint_Pad_D1.0mm</footprint>
+      <description>test point (alternative probe-style design)</description>
+      <fields>
+        <field name="Footprint">RykerConnect:TP6_TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point (alternative probe-style design)</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eaa288ad-86b0-4f2d-9cc3-5d3a34d1507a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP7">
+      <value>USB-D-_Probe</value>
+      <footprint>RykerConnect:TP7_TestPoint_Pad_D1.0mm</footprint>
+      <description>test point (alternative probe-style design)</description>
+      <fields>
+        <field name="Footprint">RykerConnect:TP7_TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point (alternative probe-style design)</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>156aac27-c4a6-4c70-930c-6c1e80ef0114</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP8">
+      <value>USB-GND_Probe</value>
+      <footprint>RykerConnect:TP8_TestPoint_Pad_D1.0mm</footprint>
+      <description>test point (alternative probe-style design)</description>
+      <fields>
+        <field name="Footprint">RykerConnect:TP8_TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point (alternative probe-style design)</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>55e60e65-d8d3-47a9-98d8-a8ccbd33205c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP9">
+      <value>3V3-Probe</value>
+      <footprint>RykerConnect:TP9_TestPoint_Pad_D2.0mm</footprint>
+      <description>test point (alternative probe-style design)</description>
+      <fields>
+        <field name="Footprint">RykerConnect:TP9_TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point (alternative probe-style design)</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f9a7095-84f5-411c-b078-a7faea43fe9f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP10">
+      <value>GND-Probe</value>
+      <footprint>RykerConnect:TP10_TestPoint_Pad_D2.0mm</footprint>
+      <description>test point (alternative probe-style design)</description>
+      <fields>
+        <field name="Footprint">RykerConnect:TP10_TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point (alternative probe-style design)</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c2e2b0a0-b3dd-4e58-b27b-5b49334f089f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP11">
+      <value>IO5_Probe</value>
+      <footprint>RykerConnect:TP11_TestPoint_Pad_D2.0mm</footprint>
+      <description>test point (alternative probe-style design)</description>
+      <fields>
+        <field name="Footprint">RykerConnect:TP11_TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point (alternative probe-style design)</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e197aa40-bfd7-4da4-baf5-9e261f17adf5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP12">
+      <value>IO6_Probe</value>
+      <footprint>RykerConnect:TP12_TestPoint_Pad_D2.0mm</footprint>
+      <description>test point (alternative probe-style design)</description>
+      <fields>
+        <field name="Footprint">RykerConnect:TP12_TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point (alternative probe-style design)</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b7a5b674-fb72-44be-ab43-585e47a6590c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP13">
+      <value>3V3-Probe</value>
+      <footprint>RykerConnect:TP13_TestPoint_Pad_D1.5mm</footprint>
+      <description>test point (alternative probe-style design)</description>
+      <fields>
+        <field name="Footprint">RykerConnect:TP13_TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point (alternative probe-style design)</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d21c2b8-df99-4b93-b1cf-6d583f0fe790</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP14">
+      <value>GND-Probe</value>
+      <footprint>RykerConnect:TP14_TestPoint_Pad_D1.5mm</footprint>
+      <description>test point (alternative probe-style design)</description>
+      <fields>
+        <field name="Footprint">RykerConnect:TP14_TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point (alternative probe-style design)</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>96941a01-c1e7-4e44-96b2-e77ab0d63aa8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP15">
+      <value>UART_TX_Probe</value>
+      <footprint>RykerConnect:TP15_TestPoint_Pad_D1.5mm</footprint>
+      <description>test point (alternative probe-style design)</description>
+      <fields>
+        <field name="Footprint">RykerConnect:TP15_TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point (alternative probe-style design)</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>62514dc9-0921-420c-969c-d25171ac8ab7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP16">
+      <value>UART_RX_Probe</value>
+      <footprint>RykerConnect:TP16_TestPoint_Pad_D1.5mm</footprint>
+      <description>test point (alternative probe-style design)</description>
+      <fields>
+        <field name="Footprint">RykerConnect:TP16_TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point (alternative probe-style design)</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>441fbd4b-2f5d-4a63-b607-2922b7ba945d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP17">
+      <value>UART_EN_Probe</value>
+      <footprint>RykerConnect:TP17_TestPoint_Pad_D1.5mm</footprint>
+      <description>test point (alternative probe-style design)</description>
+      <fields>
+        <field name="Footprint">RykerConnect:TP17_TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point (alternative probe-style design)</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8fe736c1-8d23-4f98-8459-9ebadf496f58</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP18">
+      <value>UART_IO0_Probe</value>
+      <footprint>RykerConnect:TP18_TestPoint_Pad_D1.5mm</footprint>
+      <description>test point (alternative probe-style design)</description>
+      <fields>
+        <field name="Footprint">RykerConnect:TP18_TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point (alternative probe-style design)</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Connector_TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>637d3b90-f901-4084-956b-e8e503c3727f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>USBLC6-2SC6</value>
+      <footprint>RykerConnect:U1_SOT-23-6</footprint>
+      <datasheet>https://www.st.com/resource/en/datasheet/usblc6-2.pdf</datasheet>
+      <description>Very low capacitance ESD protection diode, 2 data-line, SOT-23-6</description>
+      <fields>
+        <field name="MPN">USBLC6-2SC6</field>
+        <field name="Manufacturer">STMicroelectronics</field>
+        <field name="LCSC">C7519</field>
+        <field name="PROD_ID">USBLC6-2SC6</field>
+        <field name="Footprint">RykerConnect:U1_SOT-23-6</field>
+        <field name="Datasheet">https://www.st.com/resource/en/datasheet/usblc6-2.pdf</field>
+        <field name="Description">Very low capacitance ESD protection diode, 2 data-line, SOT-23-6</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Power_Protection_USBLC6-2SC6" description="Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"/>
+      <property name="MPN" value="USBLC6-2SC6"/>
+      <property name="Manufacturer" value="STMicroelectronics"/>
+      <property name="LCSC" value="C7519"/>
+      <property name="PROD_ID" value="USBLC6-2SC6"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="usb ethernet video"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ed74a7b6-e1cd-449f-94ef-5a2b033a95ba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="2"/>
+            <pin num="6"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>MCP9808_MSOP</value>
+      <footprint>RykerConnect:U2_MSOP-8_3x3mm_P0.65mm</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/22203b.pdf</datasheet>
+      <description>+/-0.25C (+/-0.5C) Typical (Maximum), Digital Temperature Sensor, MSOP-8</description>
+      <fields>
+        <field name="MPN">MCP9808T-E/MS</field>
+        <field name="Manufacturer">Microchip</field>
+        <field name="LCSC">C129490</field>
+        <field name="PROD_ID">MCP9808T-E/MS</field>
+        <field name="Footprint">RykerConnect:U2_MSOP-8_3x3mm_P0.65mm</field>
+        <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/22203b.pdf</field>
+        <field name="Description">+/-0.25C (+/-0.5C) Typical (Maximum), Digital Temperature Sensor, MSOP-8</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Sensor_Temperature_MCP9808_MSOP" description="+/-0.25C (+/-0.5C) Typical (Maximum), Digital Temperature Sensor, MSOP-8"/>
+      <property name="MPN" value="MCP9808T-E/MS"/>
+      <property name="Manufacturer" value="Microchip"/>
+      <property name="LCSC" value="C129490"/>
+      <property name="PROD_ID" value="MCP9808T-E/MS"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="temperature sensor I2C"/>
+      <property name="ki_fp_filters" value="MSOP*3x3mm*P0.65mm*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dd794f61-c77b-499c-92e4-422d4b4c5426</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>Analog Devices RTC DS3231MZ_V+T</value>
+      <footprint>RykerConnect:U3_SOIC127P600X175-8N</footprint>
+      <datasheet>https://pdfserv.maximintegrated.com/package_dwgs/21-0041.PDF</datasheet>
+      <description>Real Time Clock Entremely Accurate RTC/TCMO MEMS 8L</description>
+      <fields>
+        <field name="Height">1.75</field>
+        <field name="Mouser Part Number">700-DS3231MZ/V+T</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices-Maxim-Integrated/DS3231MZ-V%2bT?qs=Qom7kyPojXazsolgqpY%252BsQ%3D%3D</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">DS3231MZ/V+T</field>
+        <field name="MPN">DS3231MZ/V+T</field>
+        <field name="Manufacturer">Analog Devices / Maxim</field>
+        <field name="LCSC">C3304429</field>
+        <field name="PROD_ID">DS3231MZ/V+T</field>
+        <field name="Footprint">RykerConnect:U3_SOIC127P600X175-8N</field>
+        <field name="Datasheet">https://pdfserv.maximintegrated.com/package_dwgs/21-0041.PDF</field>
+        <field name="Description">Real Time Clock Entremely Accurate RTC/TCMO MEMS 8L</field>
+      </fields>
+      <libsource lib="RykerConnect" part="SamacSys_Parts_Analog Devices RTC DS3231MZ_V+T" description="Real Time Clock Entremely Accurate RTC/TCMO MEMS 8L"/>
+      <property name="Height" value="1.75"/>
+      <property name="Mouser Part Number" value="700-DS3231MZ/V+T"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Analog-Devices-Maxim-Integrated/DS3231MZ-V%2bT?qs=Qom7kyPojXazsolgqpY%252BsQ%3D%3D"/>
+      <property name="Manufacturer_Name" value="Analog Devices"/>
+      <property name="Manufacturer_Part_Number" value="DS3231MZ/V+T"/>
+      <property name="MPN" value="DS3231MZ/V+T"/>
+      <property name="Manufacturer" value="Analog Devices / Maxim"/>
+      <property name="LCSC" value="C3304429"/>
+      <property name="PROD_ID" value="DS3231MZ/V+T"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fc735bb0-7b44-45c6-80bd-8616516044f6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>ESP32-S3-WROOM-1-N8</value>
+      <footprint>RykerConnect:U4_ESP32-S3-WROOM-1</footprint>
+      <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf</datasheet>
+      <description>RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD</description>
+      <fields>
+        <field name="MPN">ESP32-S3-WROOM-1-N8</field>
+        <field name="Manufacturer">Espressif Systems</field>
+        <field name="LCSC">C2913198</field>
+        <field name="PROD_ID">ESP32-S3-WROOM-1-N8</field>
+        <field name="Footprint">RykerConnect:U4_ESP32-S3-WROOM-1</field>
+        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf</field>
+        <field name="Description">RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD</field>
+      </fields>
+      <libsource lib="RykerConnect" part="ESP32_S3_WROOM_1_Unbonded_EPAD" description="RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD"/>
+      <property name="MPN" value="ESP32-S3-WROOM-1-N8"/>
+      <property name="Manufacturer" value="Espressif Systems"/>
+      <property name="LCSC" value="C2913198"/>
+      <property name="PROD_ID" value="ESP32-S3-WROOM-1-N8"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <property name="ki_keywords" value="RF Radio BT ESP ESP32-S3 Espressif onboard PCB antenna"/>
+      <property name="ki_fp_filters" value="ESP32?S3?WROOM?1*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00fcd163-04fc-4280-a207-c788b5b4b5c4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="27"/>
+            <pin num="39"/>
+            <pin num="38"/>
+            <pin num="15"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="12"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="2"/>
+            <pin num="40"/>
+            <pin num="1"/>
+            <pin num="37"/>
+            <pin num="36"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="23"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+            <pin num="34"/>
+            <pin num="35"/>
+            <pin num="26"/>
+            <pin num="16"/>
+            <pin num="24"/>
+            <pin num="25"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>10uF</value>
+      <footprint>RykerConnect:C9_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="PROD_ID">C1608X5R1E106M080AC</field>
+        <field name="Voltage">25V</field>
+        <field name="Tolerance">20%</field>
+        <field name="MPN">C1608X5R1E106M080AC</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="LCSC">C2168289</field>
+        <field name="Footprint">RykerConnect:C9_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet">https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="SparkFun-Capacitor_C" description="Unpolarized capacitor"/>
+      <property name="PROD_ID" value="C1608X5R1E106M080AC"/>
+      <property name="Voltage" value="25V"/>
+      <property name="Tolerance" value="20%"/>
+      <property name="MPN" value="C1608X5R1E106M080AC"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="LCSC" value="C2168289"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="SparkFun cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Power/" tstamps="/7ccc27f4-8fef-4bc1-a353-bb84be16a765/"/>
+      <tstamps>c937a9ca-7cb0-43d5-8acf-74f022e55c28</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>100nF</value>
+      <footprint>RykerConnect:C10_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="PROD_ID">C0603C104K5RAC7082</field>
+        <field name="Voltage">50v</field>
+        <field name="Tolerance">10%</field>
+        <field name="MPN">C0603C104K5RAC7082</field>
+        <field name="Manufacturer">KEMET</field>
+        <field name="LCSC">C1882722</field>
+        <field name="Footprint">RykerConnect:C10_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet">https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="SparkFun-Capacitor_C" description="Unpolarized capacitor"/>
+      <property name="PROD_ID" value="C0603C104K5RAC7082"/>
+      <property name="Voltage" value="50v"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="MPN" value="C0603C104K5RAC7082"/>
+      <property name="Manufacturer" value="KEMET"/>
+      <property name="LCSC" value="C1882722"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="SparkFun cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Power/" tstamps="/7ccc27f4-8fef-4bc1-a353-bb84be16a765/"/>
+      <tstamps>b90e2eda-a341-4d53-943f-b2878a8859c7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>100nF</value>
+      <footprint>RykerConnect:C11_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="PROD_ID">C0603C104K3RACTU</field>
+        <field name="Voltage">25V</field>
+        <field name="Tolerance">10%</field>
+        <field name="MPN">C0603C104K3RACTU</field>
+        <field name="Manufacturer">KEMET</field>
+        <field name="LCSC">C2167527</field>
+        <field name="Footprint">RykerConnect:C11_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet">https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="SparkFun-Capacitor_C" description="Unpolarized capacitor"/>
+      <property name="PROD_ID" value="C0603C104K3RACTU"/>
+      <property name="Voltage" value="25V"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="MPN" value="C0603C104K3RACTU"/>
+      <property name="Manufacturer" value="KEMET"/>
+      <property name="LCSC" value="C2167527"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="SparkFun cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Power/" tstamps="/7ccc27f4-8fef-4bc1-a353-bb84be16a765/"/>
+      <tstamps>c8d2ba77-e93a-498a-ab62-b4b6a92290b5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>10uF</value>
+      <footprint>RykerConnect:C12_C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="PROD_ID">C0805C106K8PACTU</field>
+        <field name="Voltage">10V</field>
+        <field name="Tolerance">10%</field>
+        <field name="MPN">C0805C106K8PACTU</field>
+        <field name="Manufacturer">KEMET</field>
+        <field name="LCSC">C2167673</field>
+        <field name="Footprint">RykerConnect:C12_C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
+        <field name="Datasheet">https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="SparkFun-Capacitor_C" description="Unpolarized capacitor"/>
+      <property name="PROD_ID" value="C0805C106K8PACTU"/>
+      <property name="Voltage" value="10V"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="MPN" value="C0805C106K8PACTU"/>
+      <property name="Manufacturer" value="KEMET"/>
+      <property name="LCSC" value="C2167673"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="SparkFun cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Power/" tstamps="/7ccc27f4-8fef-4bc1-a353-bb84be16a765/"/>
+      <tstamps>bd091742-8b1e-4118-8677-f71f404868f8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>10uF</value>
+      <footprint>RykerConnect:C13_C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="PROD_ID">C0805C106K8PACTU</field>
+        <field name="Voltage">10V</field>
+        <field name="Tolerance">10%</field>
+        <field name="MPN">C0805C106K8PACTU</field>
+        <field name="Manufacturer">KEMET</field>
+        <field name="LCSC">C2167673</field>
+        <field name="Footprint">RykerConnect:C13_C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
+        <field name="Datasheet">https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="SparkFun-Capacitor_C" description="Unpolarized capacitor"/>
+      <property name="PROD_ID" value="C0805C106K8PACTU"/>
+      <property name="Voltage" value="10V"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="MPN" value="C0805C106K8PACTU"/>
+      <property name="Manufacturer" value="KEMET"/>
+      <property name="LCSC" value="C2167673"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="SparkFun cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Power/" tstamps="/7ccc27f4-8fef-4bc1-a353-bb84be16a765/"/>
+      <tstamps>640f0be3-dede-471f-9ac5-3ce35143185f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>CVJ10F30,LF</value>
+      <footprint>RykerConnect:D1_SOTFL65P210X75-5N</footprint>
+      <datasheet>https://toshiba.semicon-storage.com/info/docget.jsp?did=13914&amp;prodName=CVJ10F30</datasheet>
+      <description>Dual independent Schottky: 1 A1, 2 NC, 3 A2, 4 K2, 5 K1; UFV</description>
+      <fields>
+        <field name="MPN">CVJ10F30,LF</field>
+        <field name="Manufacturer">Toshiba</field>
+        <field name="LCSC">C5609371</field>
+        <field name="PROD_ID">CVJ10F30,LF</field>
+        <field name="Footprint">RykerConnect:D1_SOTFL65P210X75-5N</field>
+        <field name="Datasheet">https://toshiba.semicon-storage.com/info/docget.jsp?did=13914&amp;prodName=CVJ10F30</field>
+        <field name="Description">Dual independent Schottky: 1 A1, 2 NC, 3 A2, 4 K2, 5 K1; UFV</field>
+      </fields>
+      <libsource lib="RykerConnect" part="CVJ10F30" description="Dual schottky barrier diode, common cathode, SOT-223"/>
+      <property name="MPN" value="CVJ10F30,LF"/>
+      <property name="Manufacturer" value="Toshiba"/>
+      <property name="LCSC" value="C5609371"/>
+      <property name="PROD_ID" value="CVJ10F30,LF"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="dual schottky diode"/>
+      <property name="ki_fp_filters" value="SOT?223*"/>
+      <sheetpath names="/Power/" tstamps="/7ccc27f4-8fef-4bc1-a353-bb84be16a765/"/>
+      <tstamps>98c438fb-39b2-4647-9679-8bd8241cb1dd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>4.7uH</value>
+      <footprint>RykerConnect:L1_INDPM5653X430N</footprint>
+      <description>Inductor</description>
+      <fields>
+        <field name="PROD_ID">744316470</field>
+        <field name="MPN">744316470</field>
+        <field name="Manufacturer">Wurth Elektronik</field>
+        <field name="LCSC">C2651181</field>
+        <field name="Footprint">RykerConnect:L1_INDPM5653X430N</field>
+        <field name="Datasheet"/>
+        <field name="Description">Inductor</field>
+      </fields>
+      <libsource lib="RykerConnect" part="Device_L" description="Inductor"/>
+      <property name="PROD_ID" value="744316470"/>
+      <property name="MPN" value="744316470"/>
+      <property name="Manufacturer" value="Wurth Elektronik"/>
+      <property name="LCSC" value="C2651181"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/Power/" tstamps="/7ccc27f4-8fef-4bc1-a353-bb84be16a765/"/>
+      <tstamps>184dac4f-276f-47b9-9621-e9ee4064926b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>LMR50410Y3FQDBVRQ1</value>
+      <footprint>RykerConnect:U5_DBV0006A-IPC_A</footprint>
+      <datasheet>LMR50410Y3FQDBVRQ1</datasheet>
+      <fields>
+        <field name="MPN">LMR50410Y3FQDBVRQ1</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC">C5219374</field>
+        <field name="PROD_ID">LMR50410Y3FQDBVRQ1</field>
+        <field name="Footprint">RykerConnect:U5_DBV0006A-IPC_A</field>
+        <field name="Datasheet">LMR50410Y3FQDBVRQ1</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="Ti LMR50410Y3FQDBVRQ1_LMR50410Y3FQDBVRQ1" description=""/>
+      <property name="MPN" value="LMR50410Y3FQDBVRQ1"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC" value="C5219374"/>
+      <property name="PROD_ID" value="LMR50410Y3FQDBVRQ1"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="LMR50410Y3FQDBVRQ1"/>
+      <property name="ki_fp_filters" value="DBV0006A-IPC_A DBV0006A-IPC_B DBV0006A-IPC_C DBV0006A-MFG"/>
+      <sheetpath names="/Power/" tstamps="/7ccc27f4-8fef-4bc1-a353-bb84be16a765/"/>
+      <tstamps>9eb82515-028d-4213-9f20-48d9535eed7c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>1uF 100V</value>
+      <footprint>RykerConnect:C14_C_1206_3216Metric</footprint>
+      <fields>
+        <field name="MPN">CL31B105KCHNNNE</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="LCSC">C13832</field>
+        <field name="Footprint">RykerConnect:C14_C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="Protection_C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL31B105KCHNNNE"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="LCSC" value="C13832"/>
+      <property name="Sheetname" value="Accessory input protection"/>
+      <property name="Sheetfile" value="protection.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Accessory input protection/" tstamps="/556f6e13-eacd-4d85-92c1-c1de2c1c3013/"/>
+      <tstamps>6d6f0eca-0566-5ca4-919a-c55324b2ec23</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>1uF 50V</value>
+      <footprint>RykerConnect:C15_C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">CL21B105KBFNNNE</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="LCSC">C28323</field>
+        <field name="Footprint">RykerConnect:C15_C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="Protection_C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL21B105KBFNNNE"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="LCSC" value="C28323"/>
+      <property name="Sheetname" value="Accessory input protection"/>
+      <property name="Sheetfile" value="protection.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Accessory input protection/" tstamps="/556f6e13-eacd-4d85-92c1-c1de2c1c3013/"/>
+      <tstamps>fb038c2d-62fd-5148-a88c-f0ceba6f6967</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>10nF 50V</value>
+      <footprint>RykerConnect:C16_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10B103KB8NNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="LCSC">C1589</field>
+        <field name="Footprint">RykerConnect:C16_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="Protection_C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL10B103KB8NNNC"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="LCSC" value="C1589"/>
+      <property name="Sheetname" value="Accessory input protection"/>
+      <property name="Sheetfile" value="protection.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Accessory input protection/" tstamps="/556f6e13-eacd-4d85-92c1-c1de2c1c3013/"/>
+      <tstamps>e20d7436-3b02-5eb2-8816-b3a90c4806f3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>1uF 100V</value>
+      <footprint>RykerConnect:C17_C_1206_3216Metric</footprint>
+      <fields>
+        <field name="MPN">CL31B105KCHNNNE</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="LCSC">C13832</field>
+        <field name="Footprint">RykerConnect:C17_C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="Protection_C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL31B105KCHNNNE"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="LCSC" value="C13832"/>
+      <property name="Sheetname" value="Accessory input protection"/>
+      <property name="Sheetfile" value="protection.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Accessory input protection/" tstamps="/556f6e13-eacd-4d85-92c1-c1de2c1c3013/"/>
+      <tstamps>045fdd23-4241-5896-bb36-ab893048555c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>SMBJ33A</value>
+      <footprint>RykerConnect:D2_D_SMB</footprint>
+      <fields>
+        <field name="MPN">SMBJ33A</field>
+        <field name="Manufacturer">Littelfuse</field>
+        <field name="LCSC">C224019</field>
+        <field name="Footprint">RykerConnect:D2_D_SMB</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="Protection_D_Zener" description="Zener diode"/>
+      <property name="MPN" value="SMBJ33A"/>
+      <property name="Manufacturer" value="Littelfuse"/>
+      <property name="LCSC" value="C224019"/>
+      <property name="Sheetname" value="Accessory input protection"/>
+      <property name="Sheetfile" value="protection.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/Accessory input protection/" tstamps="/556f6e13-eacd-4d85-92c1-c1de2c1c3013/"/>
+      <tstamps>fc91648c-762b-5d8a-8a42-43ac5d8e4f22</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D3">
+      <value>B140-13-F</value>
+      <footprint>RykerConnect:D3_D_SMA</footprint>
+      <fields>
+        <field name="MPN">B140-13-F</field>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="LCSC">C15759</field>
+        <field name="Footprint">RykerConnect:D3_D_SMA</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="Protection_D_Schottky" description="Schottky diode"/>
+      <property name="MPN" value="B140-13-F"/>
+      <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="LCSC" value="C15759"/>
+      <property name="Sheetname" value="Accessory input protection"/>
+      <property name="Sheetfile" value="protection.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/Accessory input protection/" tstamps="/556f6e13-eacd-4d85-92c1-c1de2c1c3013/"/>
+      <tstamps>0cb0b953-3dd9-5db2-b0a0-fbd73d54f7dd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D4">
+      <value>SMBJ18A</value>
+      <footprint>RykerConnect:D4_D_SMB</footprint>
+      <fields>
+        <field name="MPN">SMBJ18A</field>
+        <field name="Manufacturer">Littelfuse</field>
+        <field name="LCSC">C151256</field>
+        <field name="Footprint">RykerConnect:D4_D_SMB</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="Protection_D_Zener" description="Zener diode"/>
+      <property name="MPN" value="SMBJ18A"/>
+      <property name="Manufacturer" value="Littelfuse"/>
+      <property name="LCSC" value="C151256"/>
+      <property name="Sheetname" value="Accessory input protection"/>
+      <property name="Sheetfile" value="protection.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/Accessory input protection/" tstamps="/556f6e13-eacd-4d85-92c1-c1de2c1c3013/"/>
+      <tstamps>24bdb7fe-b34d-5ea8-b175-5ba2d3d15186</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>120k 1%</value>
+      <footprint>RykerConnect:R7_R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RC0603FR-07120KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="LCSC">C114607</field>
+        <field name="Footprint">RykerConnect:R7_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="Protection_R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-07120KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="LCSC" value="C114607"/>
+      <property name="Sheetname" value="Accessory input protection"/>
+      <property name="Sheetfile" value="protection.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Accessory input protection/" tstamps="/556f6e13-eacd-4d85-92c1-c1de2c1c3013/"/>
+      <tstamps>25ec8b59-3b29-50f3-889d-e59b2e46628c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>20k 1%</value>
+      <footprint>RykerConnect:R8_R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RC0603FR-0720KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="LCSC">C105575</field>
+        <field name="Footprint">RykerConnect:R8_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="Protection_R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-0720KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="LCSC" value="C105575"/>
+      <property name="Sheetname" value="Accessory input protection"/>
+      <property name="Sheetfile" value="protection.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Accessory input protection/" tstamps="/556f6e13-eacd-4d85-92c1-c1de2c1c3013/"/>
+      <tstamps>d1d13a63-93af-5926-98f5-d7a6023c075a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>RykerConnect:R9_R_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">CRGP0805F10K</field>
+        <field name="Manufacturer">TE Connectivity</field>
+        <field name="LCSC">C2074940</field>
+        <field name="Footprint">RykerConnect:R9_R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="Protection_R" description="Resistor"/>
+      <property name="MPN" value="CRGP0805F10K"/>
+      <property name="Manufacturer" value="TE Connectivity"/>
+      <property name="LCSC" value="C2074940"/>
+      <property name="Sheetname" value="Accessory input protection"/>
+      <property name="Sheetfile" value="protection.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Accessory input protection/" tstamps="/556f6e13-eacd-4d85-92c1-c1de2c1c3013/"/>
+      <tstamps>7491eb7c-8728-5a1c-9169-d4aff5ae234a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>12k 1%</value>
+      <footprint>RykerConnect:R10_R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RC0603FR-0712KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="LCSC">C114659</field>
+        <field name="Footprint">RykerConnect:R10_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="Protection_R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-0712KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="LCSC" value="C114659"/>
+      <property name="Sheetname" value="Accessory input protection"/>
+      <property name="Sheetfile" value="protection.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Accessory input protection/" tstamps="/556f6e13-eacd-4d85-92c1-c1de2c1c3013/"/>
+      <tstamps>d1cdec8c-e541-5fb0-9eed-54df6168b649</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>TPS26600PWPR</value>
+      <footprint>RykerConnect:U6_Protection_HTSSOP16_PWP0016A</footprint>
+      <fields>
+        <field name="MPN">TPS26600PWPR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC">C544399</field>
+        <field name="Footprint">RykerConnect:U6_Protection_HTSSOP16_PWP0016A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="TPS26600PWPR" description=""/>
+      <property name="MPN" value="TPS26600PWPR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC" value="C544399"/>
+      <property name="Sheetname" value="Accessory input protection"/>
+      <property name="Sheetfile" value="protection.kicad_sch"/>
+      <sheetpath names="/Accessory input protection/" tstamps="/556f6e13-eacd-4d85-92c1-c1de2c1c3013/"/>
+      <tstamps>050d5165-955e-5183-a210-8f5488b82be6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="17"/>
+            <pin num="16"/>
+            <pin num="15"/>
+            <pin num="14"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="11"/>
+            <pin num="10"/>
+            <pin num="9"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="RykerConnect" part="CVJ10F30">
+      <description>Dual schottky barrier diode, common cathode, SOT-223</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/BAT160_SERIES.pdf</docs>
+      <footprints>
+        <fp>SOT?223*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D1</field>
+        <field name="Value">BAT120C</field>
+        <field name="Footprint">SamacSys_Parts:SOTFL65P210X75-5N</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BAT160_SERIES.pdf</field>
+        <field name="Description">Dual schottky barrier diode, common cathode, SOT-223</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="NC" type="no_connect"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+        <pin num="5" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Connector_Conn_01x02_Socket">
+      <description>Generic connector, single row, 01x02, script generated</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Socket</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Connector_Conn_01x08_Socket">
+      <description>Generic connector, single row, 01x08, script generated</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x08_Socket</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x08, script generated</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Connector_TestPoint_Probe">
+      <description>test point (alternative probe-style design)</description>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint_Probe</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">test point (alternative probe-style design)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Connector_USB_C_Receptacle_USB2.0_16P">
+      <description>USB 2.0-only 16P Type-C Receptacle connector</description>
+      <docs>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</docs>
+      <footprints>
+        <fp>USB*C*Receptacle*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_C_Receptacle_USB2.0_16P</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+        <field name="Description">USB 2.0-only 16P Type-C Receptacle connector</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="passive"/>
+        <pin num="A4" name="VBUS" type="passive"/>
+        <pin num="A5" name="CC1" type="bidirectional"/>
+        <pin num="A6" name="D+" type="bidirectional"/>
+        <pin num="A7" name="D-" type="bidirectional"/>
+        <pin num="A8" name="SBU1" type="bidirectional"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="CC2" type="bidirectional"/>
+        <pin num="B6" name="D+" type="bidirectional"/>
+        <pin num="B7" name="D-" type="bidirectional"/>
+        <pin num="B8" name="SBU2" type="bidirectional"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Device_Battery_Cell">
+      <description>Single-cell battery</description>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Single-cell battery</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Device_L">
+      <description>Inductor</description>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Inductor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Device_R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="ESP32_S3_WROOM_1_Unbonded_EPAD">
+      <description>RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD</description>
+      <docs>https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf</docs>
+      <footprints>
+        <fp>ESP32?S3?WROOM?1*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP32-S3-WROOM-1</field>
+        <field name="Footprint">RF_Module:ESP32-S3-WROOM-1</field>
+        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf</field>
+        <field name="Description">RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="3V3" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="IO4" type="bidirectional"/>
+        <pin num="5" name="IO5" type="bidirectional"/>
+        <pin num="6" name="IO6" type="bidirectional"/>
+        <pin num="7" name="IO7" type="bidirectional"/>
+        <pin num="8" name="IO15" type="bidirectional"/>
+        <pin num="9" name="IO16" type="bidirectional"/>
+        <pin num="10" name="IO17" type="bidirectional"/>
+        <pin num="11" name="IO18" type="bidirectional"/>
+        <pin num="12" name="IO8" type="bidirectional"/>
+        <pin num="13" name="IO19" type="bidirectional"/>
+        <pin num="14" name="IO20" type="bidirectional"/>
+        <pin num="15" name="IO3" type="bidirectional"/>
+        <pin num="16" name="IO46" type="bidirectional"/>
+        <pin num="17" name="IO9" type="bidirectional"/>
+        <pin num="18" name="IO10" type="bidirectional"/>
+        <pin num="19" name="IO11" type="bidirectional"/>
+        <pin num="20" name="IO12" type="bidirectional"/>
+        <pin num="21" name="IO13" type="bidirectional"/>
+        <pin num="22" name="IO14" type="bidirectional"/>
+        <pin num="23" name="IO21" type="bidirectional"/>
+        <pin num="24" name="IO47" type="bidirectional"/>
+        <pin num="25" name="IO48" type="bidirectional"/>
+        <pin num="26" name="IO45" type="bidirectional"/>
+        <pin num="27" name="IO0" type="bidirectional"/>
+        <pin num="28" name="IO35" type="bidirectional"/>
+        <pin num="29" name="IO36" type="bidirectional"/>
+        <pin num="30" name="IO37" type="bidirectional"/>
+        <pin num="31" name="IO38" type="bidirectional"/>
+        <pin num="32" name="IO39" type="bidirectional"/>
+        <pin num="33" name="IO40" type="bidirectional"/>
+        <pin num="34" name="IO41" type="bidirectional"/>
+        <pin num="35" name="IO42" type="bidirectional"/>
+        <pin num="36" name="RXD0" type="bidirectional"/>
+        <pin num="37" name="TXD0" type="bidirectional"/>
+        <pin num="38" name="IO2" type="bidirectional"/>
+        <pin num="39" name="IO1" type="bidirectional"/>
+        <pin num="40" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="JST_SH_04_Grounded_Anchors">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="MP" name="Mounting_anchors" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Jumper_SolderJumper_2_Open">
+      <description>Solder Jumper, 2-pole, open</description>
+      <footprints>
+        <fp>SolderJumper*Open*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">SolderJumper_2_Open</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Solder Jumper, 2-pole, open</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Mechanical_MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Mounting Hole with connection</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Power_Protection_USBLC6-2SC6">
+      <description>Very low capacitance ESD protection diode, 2 data-line, SOT-23-6</description>
+      <docs>https://www.st.com/resource/en/datasheet/usblc6-2.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">USBLC6-2SC6</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">https://www.st.com/resource/en/datasheet/usblc6-2.pdf</field>
+        <field name="Description">Very low capacitance ESD protection diode, 2 data-line, SOT-23-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="I/O1" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="I/O2" type="passive"/>
+        <pin num="4" name="I/O2" type="passive"/>
+        <pin num="5" name="VBUS" type="passive"/>
+        <pin num="6" name="I/O1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Protection_C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Protection_D_Schottky">
+      <description>Schottky diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Schottky diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Protection_D_Zener">
+      <description>Zener diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Zener diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Protection_R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="SamacSys_Parts_435451019820">
+      <description>Tactile Switch SPST-NO Top Actuated Surface Mount</description>
+      <docs>https://www.we-online.com/components/products/datasheet/435451019820.pdf</docs>
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">435451019820</field>
+        <field name="Footprint">435451019820</field>
+        <field name="Datasheet">https://www.we-online.com/components/products/datasheet/435451019820.pdf</field>
+        <field name="Description">Tactile Switch SPST-NO Top Actuated Surface Mount</field>
+        <field name="Height">1.97</field>
+        <field name="Mouser Part Number">710-435451019820</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/435451019820?qs=ufv2HEpFn%252BSBtTHyYvulMg%3D%3D</field>
+        <field name="Manufacturer_Name">Wurth Elektronik</field>
+        <field name="Manufacturer_Part_Number">435451019820</field>
+      </fields>
+      <pins>
+        <pin num="1" name="NO_1" type="passive"/>
+        <pin num="2" name="COM_1" type="passive"/>
+        <pin num="3" name="COM_2" type="passive"/>
+        <pin num="4" name="NO_2" type="passive"/>
+        <pin num="5" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="SamacSys_Parts_Analog Devices RTC DS3231MZ_V+T">
+      <description>Real Time Clock Entremely Accurate RTC/TCMO MEMS 8L</description>
+      <docs>https://pdfserv.maximintegrated.com/package_dwgs/21-0041.PDF</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">Analog Devices RTC DS3231MZ_V+T</field>
+        <field name="Footprint">SOIC127P600X175-8N</field>
+        <field name="Datasheet">https://pdfserv.maximintegrated.com/package_dwgs/21-0041.PDF</field>
+        <field name="Description">Real Time Clock Entremely Accurate RTC/TCMO MEMS 8L</field>
+        <field name="Height">1.75</field>
+        <field name="Mouser Part Number">700-DS3231MZ/V+T</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices-Maxim-Integrated/DS3231MZ-V%2bT?qs=Qom7kyPojXazsolgqpY%252BsQ%3D%3D</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">DS3231MZ/V+T</field>
+      </fields>
+      <pins>
+        <pin num="1" name="32KHZ" type="passive"/>
+        <pin num="2" name="VCC" type="passive"/>
+        <pin num="3" name="~{INT}/SQW" type="passive"/>
+        <pin num="4" name="~{RST}" type="passive"/>
+        <pin num="5" name="GND" type="passive"/>
+        <pin num="6" name="VBAT" type="passive"/>
+        <pin num="7" name="SDA" type="passive"/>
+        <pin num="8" name="SCL" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Sensor_Optical_TEPT4400">
+      <description>Ambient Light Sensor, NPN Epitaxial Planar Phototransistor, T-1</description>
+      <docs>https://www.vishay.com/docs/81341/tept4400.pdf</docs>
+      <footprints>
+        <fp>LED*3.0mm*Clear*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">TEPT4400</field>
+        <field name="Footprint">LED_THT:LED_D3.0mm_Clear</field>
+        <field name="Datasheet">https://www.vishay.com/docs/81341/tept4400.pdf</field>
+        <field name="Description">Ambient Light Sensor, NPN Epitaxial Planar Phototransistor, T-1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="C" type="passive"/>
+        <pin num="2" name="E" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Sensor_Temperature_MCP9808_MSOP">
+      <description>+/-0.25C (+/-0.5C) Typical (Maximum), Digital Temperature Sensor, MSOP-8</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/22203b.pdf</docs>
+      <footprints>
+        <fp>MSOP*3x3mm*P0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP9808_MSOP</field>
+        <field name="Footprint">Package_SO:MSOP-8_3x3mm_P0.65mm</field>
+        <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/22203b.pdf</field>
+        <field name="Description">+/-0.25C (+/-0.5C) Typical (Maximum), Digital Temperature Sensor, MSOP-8</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDA" type="bidirectional"/>
+        <pin num="2" name="SCL" type="input"/>
+        <pin num="3" name="Alert" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="A2" type="input"/>
+        <pin num="6" name="A1" type="input"/>
+        <pin num="7" name="A0" type="input"/>
+        <pin num="8" name="V_{DD}" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="SparkFun-Capacitor_C">
+      <description>Unpolarized capacitor</description>
+      <docs>https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint">SparkFun-Capacitor:C_0603_1608Metric</field>
+        <field name="Datasheet">https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf</field>
+        <field name="Description">Unpolarized capacitor</field>
+        <field name="PROD_ID">CAP-00000</field>
+        <field name="Voltage">1kV</field>
+        <field name="Tolerance">100%</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="TPS26600PWPR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS26600PWPR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="IN" type="passive"/>
+        <pin num="3" name="UVLO" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="OVP" type="input"/>
+        <pin num="6" name="MODE" type="input"/>
+        <pin num="7" name="SHDN" type="input"/>
+        <pin num="8" name="RTN" type="power_out"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="IMON" type="output"/>
+        <pin num="11" name="ILIM" type="passive"/>
+        <pin num="12" name="dVdT" type="passive"/>
+        <pin num="13" name="NC" type="no_connect"/>
+        <pin num="14" name="FLT" type="open_collector"/>
+        <pin num="15" name="OUT" type="power_out"/>
+        <pin num="16" name="OUT" type="passive"/>
+        <pin num="17" name="EP_RTN" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="Ti LMR50410Y3FQDBVRQ1_LMR50410Y3FQDBVRQ1">
+      <docs>LMR50410Y3FQDBVRQ1</docs>
+      <footprints>
+        <fp>DBV0006A-IPC_A</fp>
+        <fp>DBV0006A-IPC_B</fp>
+        <fp>DBV0006A-IPC_C</fp>
+        <fp>DBV0006A-MFG</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LMR50410Y3FQDBVRQ1</field>
+        <field name="Footprint">DBV0006A-IPC_A</field>
+        <field name="Datasheet">LMR50410Y3FQDBVRQ1</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="CB" type="passive"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="FB" type="input"/>
+        <pin num="4" name="EN" type="input"/>
+        <pin num="5" name="VIN" type="power_in"/>
+        <pin num="6" name="SW" type="power_out"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="RykerConnect">
+      <uri>${KIPRJMOD}/RykerConnect.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3.3V" class="Default">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="C_1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="TP13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="V_{DD}_8" pintype="power_in"/>
+      <node ref="U3" pin="2" pinfunction="VCC_2" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="3V3_2" pintype="power_in"/>
+      <node ref="U5" pin="3" pinfunction="FB_3" pintype="input"/>
+    </net>
+    <net code="2" name="+12V" class="Default">
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U6" pin="1" pinfunction="IN_1" pintype="power_in"/>
+      <node ref="U6" pin="2" pinfunction="IN_2" pintype="passive"/>
+    </net>
+    <net code="3" name="+12V_PROTECTED" class="Default">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="U6" pin="15" pinfunction="OUT_15" pintype="power_out"/>
+      <node ref="U6" pin="16" pinfunction="OUT_16" pintype="passive"/>
+    </net>
+    <net code="4" name="/D+ Con" class="Default">
+      <node ref="J2" pin="A6" pinfunction="D+_A6" pintype="bidirectional"/>
+      <node ref="J2" pin="B6" pinfunction="D+_B6" pintype="bidirectional"/>
+      <node ref="TP6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="I/O2_3" pintype="passive"/>
+    </net>
+    <net code="5" name="/D- Con" class="Default">
+      <node ref="J2" pin="A7" pinfunction="D-_A7" pintype="bidirectional"/>
+      <node ref="J2" pin="B7" pinfunction="D-_B7" pintype="bidirectional"/>
+      <node ref="TP7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="I/O1_1" pintype="passive"/>
+    </net>
+    <net code="6" name="/Power/5V USB IN" class="Default">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="D1" pin="3" pintype="passive"/>
+      <node ref="J2" pin="A4" pinfunction="VBUS_A4" pintype="passive"/>
+      <node ref="J2" pin="A9" pinfunction="VBUS_A9" pintype="passive"/>
+      <node ref="J2" pin="B4" pinfunction="VBUS_B4" pintype="passive"/>
+      <node ref="J2" pin="B9" pinfunction="VBUS_B9" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="VBUS_5" pintype="passive"/>
+    </net>
+    <net code="7" name="/Power/PWR IN" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="D1" pin="4" pintype="passive"/>
+      <node ref="D1" pin="5" pintype="passive"/>
+      <node ref="U5" pin="4" pinfunction="EN_4" pintype="input"/>
+      <node ref="U5" pin="5" pinfunction="VIN_5" pintype="power_in"/>
+    </net>
+    <net code="8" name="CHIP_PU" class="Default">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="S2" pin="2" pinfunction="COM_1_2" pintype="passive"/>
+      <node ref="TP17" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="~{RST}_4" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="EN_3" pintype="input"/>
+    </net>
+    <net code="9" name="CS1" class="Default">
+      <node ref="J3" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
+      <node ref="U4" pin="18" pinfunction="IO10_18" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="CS2" class="Default">
+      <node ref="J3" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
+      <node ref="U4" pin="22" pinfunction="IO14_22" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="D+" class="Default">
+      <node ref="U1" pin="4" pinfunction="I/O2_4" pintype="passive"/>
+      <node ref="U4" pin="14" pinfunction="IO20_14" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="D-" class="Default">
+      <node ref="U1" pin="6" pinfunction="I/O1_6" pintype="passive"/>
+      <node ref="U4" pin="13" pinfunction="IO19_13" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="DC/MISO" class="Default">
+      <node ref="J3" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="U4" pin="21" pinfunction="IO13_21" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="DSP_RES" class="Default">
+      <node ref="J3" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="U4" pin="8" pinfunction="IO15_8" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="GND" class="Default">
+      <node ref="BT1" pin="2" pinfunction="-_2" pintype="passive"/>
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="H1" pin="1" pinfunction="1_1" pintype="input"/>
+      <node ref="H2" pin="1" pinfunction="1_1" pintype="input"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J2" pin="A1" pinfunction="GND_A1" pintype="passive"/>
+      <node ref="J2" pin="A12" pinfunction="GND_A12" pintype="passive"/>
+      <node ref="J2" pin="B1" pinfunction="GND_B1" pintype="passive"/>
+      <node ref="J2" pin="B12" pinfunction="GND_B12" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J5" pin="MP" pinfunction="Mounting_anchors_MP" pintype="passive"/>
+      <node ref="JP1" pin="1" pinfunction="A_1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="S1" pin="4" pinfunction="NO_2_4" pintype="passive"/>
+      <node ref="S1" pin="5" pinfunction="GND_5" pintype="passive"/>
+      <node ref="S2" pin="4" pinfunction="NO_2_4" pintype="passive"/>
+      <node ref="S2" pin="5" pinfunction="GND_5" pintype="passive"/>
+      <node ref="TP10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U2" pin="5" pinfunction="A2_5" pintype="input"/>
+      <node ref="U2" pin="6" pinfunction="A1_6" pintype="input"/>
+      <node ref="U2" pin="7" pinfunction="A0_7" pintype="input"/>
+      <node ref="U3" pin="5" pinfunction="GND_5" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="U4" pin="40" pinfunction="GND_40" pintype="passive"/>
+      <node ref="U5" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U6" pin="9" pinfunction="GND_9" pintype="power_in"/>
+    </net>
+    <net code="16" name="GPIO0" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="S1" pin="2" pinfunction="COM_1_2" pintype="passive"/>
+      <node ref="TP18" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="27" pinfunction="IO0_27" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="GPIO5" class="Default">
+      <node ref="TP11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="5" pinfunction="IO5_5" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="GPIO6" class="Default">
+      <node ref="TP12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="6" pinfunction="IO6_6" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="GPIO7" class="Default">
+      <node ref="J4" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="E_2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U4" pin="7" pinfunction="IO7_7" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="Net-(BT1-+)" class="Default">
+      <node ref="BT1" pin="1" pinfunction="+_1" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="VBAT_6" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(J2-CC1)" class="Default">
+      <node ref="J2" pin="A5" pinfunction="CC1_A5" pintype="bidirectional"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(J2-CC2)" class="Default">
+      <node ref="J2" pin="B5" pinfunction="CC2_B5" pintype="bidirectional"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(J2-SHIELD)" class="Default">
+      <node ref="J2" pin="S1" pinfunction="SHIELD_S1" pintype="passive"/>
+      <node ref="JP1" pin="2" pinfunction="B_2" pintype="passive"/>
+    </net>
+    <net code="24" name="Net-(U5-CB)" class="Default">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="CB_1" pintype="passive"/>
+    </net>
+    <net code="25" name="Net-(U5-SW)" class="Default">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="6" pinfunction="SW_6" pintype="power_out"/>
+    </net>
+    <net code="26" name="PROT_DVDT" class="Default">
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="U6" pin="12" pinfunction="dVdT_12" pintype="passive"/>
+    </net>
+    <net code="27" name="PROT_ILIM" class="Default">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U6" pin="11" pinfunction="ILIM_11" pintype="passive"/>
+    </net>
+    <net code="28" name="PROT_OV" class="Default">
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U6" pin="5" pinfunction="OVP_5" pintype="input"/>
+    </net>
+    <net code="29" name="PROT_RTN" class="Default">
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U6" pin="17" pinfunction="EP_RTN_17" pintype="passive"/>
+      <node ref="U6" pin="8" pinfunction="RTN_8" pintype="power_out"/>
+    </net>
+    <net code="30" name="PROT_UV" class="Default">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U6" pin="3" pinfunction="UVLO_3" pintype="input"/>
+    </net>
+    <net code="31" name="RX" class="Default">
+      <node ref="TP16" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="36" pinfunction="RXD0_36" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="SCL" class="Default">
+      <node ref="J5" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="SCL_2" pintype="input"/>
+      <node ref="U3" pin="8" pinfunction="SCL_8" pintype="passive"/>
+      <node ref="U4" pin="11" pinfunction="IO18_11" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="SCL/SCLK/SCK" class="Default">
+      <node ref="J3" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="U4" pin="20" pinfunction="IO12_20" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="SDA" class="Default">
+      <node ref="J5" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="SDA_1" pintype="bidirectional"/>
+      <node ref="U3" pin="7" pinfunction="SDA_7" pintype="passive"/>
+      <node ref="U4" pin="12" pinfunction="IO8_12" pintype="bidirectional"/>
+    </net>
+    <net code="35" name="SDA/SDIN/MOSI" class="Default">
+      <node ref="J3" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="U4" pin="19" pinfunction="IO11_19" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="TVS_MID" class="Default">
+      <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A_2" pintype="passive"/>
+    </net>
+    <net code="37" name="TX" class="Default">
+      <node ref="TP15" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="37" pinfunction="TXD0_37" pintype="bidirectional"/>
+    </net>
+    <net code="38" name="unconnected-(D1-NC-Pad2)" class="Default">
+      <node ref="D1" pin="2" pinfunction="NC_2" pintype="no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(J2-SBU1-PadA8)" class="Default">
+      <node ref="J2" pin="A8" pinfunction="SBU1_A8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(J2-SBU2-PadB8)" class="Default">
+      <node ref="J2" pin="B8" pinfunction="SBU2_B8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(S1-COM_2-Pad3)" class="Default">
+      <node ref="S1" pin="3" pinfunction="COM_2_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(S1-NO_1-Pad1)" class="Default">
+      <node ref="S1" pin="1" pinfunction="NO_1_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="43" name="unconnected-(S2-COM_2-Pad3)" class="Default">
+      <node ref="S2" pin="3" pinfunction="COM_2_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(S2-NO_1-Pad1)" class="Default">
+      <node ref="S2" pin="1" pinfunction="NO_1_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(U2-Alert-Pad3)" class="Default">
+      <node ref="U2" pin="3" pinfunction="Alert_3" pintype="output+no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(U3-32KHZ-Pad1)" class="Default">
+      <node ref="U3" pin="1" pinfunction="32KHZ_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(U3-~{INT}/SQW-Pad3)" class="Default">
+      <node ref="U3" pin="3" pinfunction="~{INT}/SQW_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(U4-IO1-Pad39)" class="Default">
+      <node ref="U4" pin="39" pinfunction="IO1_39" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(U4-IO2-Pad38)" class="Default">
+      <node ref="U4" pin="38" pinfunction="IO2_38" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(U4-IO3-Pad15)" class="Default">
+      <node ref="U4" pin="15" pinfunction="IO3_15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(U4-IO4-Pad4)" class="Default">
+      <node ref="U4" pin="4" pinfunction="IO4_4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(U4-IO9-Pad17)" class="Default">
+      <node ref="U4" pin="17" pinfunction="IO9_17" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U4-IO16-Pad9)" class="Default">
+      <node ref="U4" pin="9" pinfunction="IO16_9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(U4-IO17-Pad10)" class="Default">
+      <node ref="U4" pin="10" pinfunction="IO17_10" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U4-IO21-Pad23)" class="Default">
+      <node ref="U4" pin="23" pinfunction="IO21_23" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(U4-IO35-Pad28)" class="Default">
+      <node ref="U4" pin="28" pinfunction="IO35_28" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(U4-IO36-Pad29)" class="Default">
+      <node ref="U4" pin="29" pinfunction="IO36_29" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(U4-IO37-Pad30)" class="Default">
+      <node ref="U4" pin="30" pinfunction="IO37_30" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(U4-IO38-Pad31)" class="Default">
+      <node ref="U4" pin="31" pinfunction="IO38_31" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(U4-IO39-Pad32)" class="Default">
+      <node ref="U4" pin="32" pinfunction="IO39_32" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(U4-IO40-Pad33)" class="Default">
+      <node ref="U4" pin="33" pinfunction="IO40_33" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(U4-IO41-Pad34)" class="Default">
+      <node ref="U4" pin="34" pinfunction="IO41_34" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(U4-IO42-Pad35)" class="Default">
+      <node ref="U4" pin="35" pinfunction="IO42_35" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(U4-IO45-Pad26)" class="Default">
+      <node ref="U4" pin="26" pinfunction="IO45_26" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(U4-IO46-Pad16)" class="Default">
+      <node ref="U4" pin="16" pinfunction="IO46_16" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(U4-IO47-Pad24)" class="Default">
+      <node ref="U4" pin="24" pinfunction="IO47_24" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(U4-IO48-Pad25)" class="Default">
+      <node ref="U4" pin="25" pinfunction="IO48_25" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(U6-FLT-Pad14)" class="Default">
+      <node ref="U6" pin="14" pinfunction="FLT_14" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(U6-IMON-Pad10)" class="Default">
+      <node ref="U6" pin="10" pinfunction="IMON_10" pintype="output+no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(U6-MODE-Pad6)" class="Default">
+      <node ref="U6" pin="6" pinfunction="MODE_6" pintype="input+no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(U6-NC-Pad4)" class="Default">
+      <node ref="U6" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+    <net code="72" name="unconnected-(U6-NC-Pad13)" class="Default">
+      <node ref="U6" pin="13" pinfunction="NC_13" pintype="no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(U6-SHDN-Pad7)" class="Default">
+      <node ref="U6" pin="7" pinfunction="SHDN_7" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>

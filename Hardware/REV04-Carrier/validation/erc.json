@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-13T02:26:12",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/b3e6de9e-c7cd-4419-8e94-64236783f104",
+            "violations": []
+        },
+        {
+            "path": "/Accessory protection/",
+            "uuid_path": "/b3e6de9e-c7cd-4419-8e94-64236783f104/5cbaf2b8-e55b-5fc8-97d6-6c9ca059f63a",
+            "violations": []
+        },
+        {
+            "path": "/5V regulator and USB isolation/",
+            "uuid_path": "/b3e6de9e-c7cd-4419-8e94-64236783f104/7ec76a64-eaeb-5922-9740-c620682875f3",
+            "violations": []
+        },
+        {
+            "path": "/Clock and local sensors/",
+            "uuid_path": "/b3e6de9e-c7cd-4419-8e94-64236783f104/2ca8097e-c236-513e-9ae0-05208a48232c",
+            "violations": []
+        }
+    ],
+    "source": "RykerConnect.kicad_sch"
+}

@@ -1,0 +1,9 @@
+{
+  "production_build": "passed",
+  "bench_build": "passed",
+  "rtc_native_tests": "passed",
+  "physical_boot": "not tested",
+  "flash_mb": 16,
+  "psram_mb": 8,
+  "rtc_address": "0x51"
+}

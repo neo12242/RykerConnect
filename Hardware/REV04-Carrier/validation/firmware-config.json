@@ -1,0 +1,15 @@
+{
+  "environment": "RykerConnect_REV04",
+  "flash_size_MB": 16,
+  "memory_type": "qio_opi",
+  "psram_define": true,
+  "sensor_test_define": false,
+  "flash_offsets": {
+    "bootloader.bin": "0x0000",
+    "partitions.bin": "0x8000",
+    "boot_app0.bin": "0xe000",
+    "firmware.bin": "0x10000"
+  },
+  "evidence": "PlatformIO SCons envdump and successful build; hardware boot pending",
+  "source_basis": "Current REV02 workspace source, not the older REV03 delivery firmware snapshot"
+}

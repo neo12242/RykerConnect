@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "RykerConnect")(type "KiCad")(uri "${KIPRJMOD}/RykerConnect.kicad_sym")(options "")(descr "Embedded source symbols with corrected regulator pin types")))

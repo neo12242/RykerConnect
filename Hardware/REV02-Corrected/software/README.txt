@@ -1,0 +1,1 @@
+Firmware is for the corrected REV02 ESP32-S3-WROOM-1-N8 target only. Use PlatformIO upload for the complete blank-chip flash sequence; firmware.bin is an application image. No device was flashed. APK is a debug build, not installed by this delivery. Read ../README.md for release gates.

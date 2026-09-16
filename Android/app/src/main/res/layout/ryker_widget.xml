@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="12dp" android:background="@drawable/widget_light">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+        <ImageView android:id="@+id/widget_photo" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginEnd="8dp" android:contentDescription="Vehicle photo" android:visibility="gone"/>
+        <TextView android:id="@+id/widget_title" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="RykerConnect" android:textSize="17sp" android:textStyle="bold" android:maxLines="2" android:ellipsize="end"/>
+    </LinearLayout>
+    <TextView android:id="@+id/widget_body" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="6dp" android:text="Your Ryker, at a glance" android:textSize="13sp" android:maxLines="5" android:ellipsize="end"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="48dp">
+        <Button android:id="@+id/widget_action1" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:text="Open" android:layout_margin="3dp" android:textSize="12sp" android:textAllCaps="false" android:padding="2dp" android:background="?android:attr/selectableItemBackground"/>
+        <Button android:id="@+id/widget_action2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:text="Settings" android:layout_margin="3dp" android:textSize="12sp" android:textAllCaps="false" android:padding="2dp" android:background="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/widget_second_row" android:layout_width="match_parent" android:layout_height="48dp" android:visibility="gone">
+        <Button android:id="@+id/widget_action3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:text="Service" android:layout_margin="3dp" android:textSize="12sp" android:textAllCaps="false" android:padding="2dp" android:background="?android:attr/selectableItemBackground"/>
+        <Button android:id="@+id/widget_action4" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:text="Home" android:layout_margin="3dp" android:textSize="12sp" android:textAllCaps="false" android:padding="2dp" android:background="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+    <TextView android:id="@+id/widget_updated" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="10sp" android:maxLines="2"/>
+</LinearLayout>

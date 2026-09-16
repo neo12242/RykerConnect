@@ -1,0 +1,141 @@
+package de.chaostheorybot.rykerconnect.logic
+
+import android.Manifest
+import android.annotation.SuppressLint
+import android.bluetooth.BluetoothDevice
+import android.bluetooth.BluetoothManager
+import android.content.Context
+import android.content.pm.PackageManager
+import android.util.Log
+import androidx.core.app.ActivityCompat
+import de.chaostheorybot.rykerconnect.RykerConnectApplication
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.withTimeoutOrNull
+import kotlin.time.Duration.Companion.milliseconds
+import kotlin.time.Duration.Companion.seconds
+import java.lang.reflect.Method
+
+
+object BluetoothLogic {
+
+    fun getBatteryLevel(pairedDevice: BluetoothDevice?): Int {
+        return try {
+            pairedDevice?.let { bluetoothDevice ->
+                val method: Method = bluetoothDevice.javaClass.getMethod("getBatteryLevel")
+                method.invoke(bluetoothDevice) as Int
+            } ?: -1
+        } catch (e: Exception) {
+            Log.e("BluetoothLogic", "Error getting battery level: ${e.message}")
+            -1
+        }
+    }
+
+
+    // BLUETOOTH_CONNECT wird in Zeile 1 des Rumpfs geprüft; Lint folgt PermissionUtils nicht.
+    @SuppressLint("MissingPermission")
+    fun getDevice(application: Context, deviceAddress: String): BluetoothDevice? {
+        if (!PermissionUtils.hasBluetoothConnect(application)) return null
+        return try {
+            val bMan = application.getSystemService(Context.BLUETOOTH_SERVICE) as BluetoothManager
+            val bAdapter = bMan.adapter
+            val pairedDevices: Set<BluetoothDevice> = bAdapter.bondedDevices
+            pairedDevices.find { it.address.equals(deviceAddress, ignoreCase = true) }
+        } catch (e: Exception) {
+            Log.e("BluetoothLogic", "getDevice error: ${e.message}")
+            null
+        }
+    }
+
+
+    /**
+     * Liefert das erste verbundene Geraet aus [macs]. Die Reihenfolge der Liste ist die
+     * Prioritaet: haengen mehrere Intercoms gleichzeitig, gewinnt das mit dem kleinsten Index.
+     * Gibt null zurueck, wenn keines davon verbunden ist.
+     */
+    fun getActiveIntercom(context: Context, macs: List<String>): BluetoothDevice? {
+        if (!PermissionUtils.hasBluetoothConnect(context)) return null
+        for (mac in macs) {
+            val device = getDevice(context, mac) ?: continue
+            if (getConnectionStatus(device)) return device
+        }
+        return null
+    }
+
+    /**
+     * Fragt den Akkustand mehrfach ab. Direkt nach dem Verbinden liefert die Gegenstelle
+     * noch keinen Wert, deshalb bis zu 40 Versuche a 20 ms.
+     */
+    suspend fun awaitBatteryLevel(device: BluetoothDevice): Int {
+        repeat(40) {
+            val level = try { getBatteryLevel(device) } catch (_: Exception) { -1 }
+            if (level >= 0) return level
+            delay(20.milliseconds)
+        }
+        return -1
+    }
+
+    fun getPairedDeviceList(application: Context): MutableList<BluetoothDevices> {
+        val devicesList = mutableListOf<BluetoothDevices>()
+
+        // minSdk 31 => immer BLUETOOTH_CONNECT; die Legacy-Permission BLUETOOTH entfaellt.
+        val permission = Manifest.permission.BLUETOOTH_CONNECT
+
+        if (ActivityCompat.checkSelfPermission(application, permission) != PackageManager.PERMISSION_GRANTED) {
+            Log.w("BluetoothLogic", "Missing bluetooth permissions")
+            return devicesList
+        }
+
+        try {
+            val bMan = application.getSystemService(Context.BLUETOOTH_SERVICE) as BluetoothManager
+            val bAdapter = bMan.adapter
+            val pairedDevices: Set<BluetoothDevice> = bAdapter.bondedDevices
+            for (device in pairedDevices) {
+                devicesList.add(
+                    BluetoothDevices(
+                        device.name ?: "Unknown",
+                        device.address,
+                        getConnectionStatus(device)
+                    )
+                )
+            }
+        } catch (e: Exception) {
+            Log.e("BluetoothLogic", "getPairedDeviceList error: ${e.message}")
+        }
+        return devicesList
+    }
+
+    fun getConnectionStatus(pairedDevice: BluetoothDevice?): Boolean {
+        return try {
+            pairedDevice?.let {
+                val m: Method = it.javaClass.getMethod("isConnected")
+                m.invoke(it) as Boolean
+            } ?: false
+        } catch (_: Exception) {
+            false
+        }
+    }
+
+    /**
+     * Suspending version of waitForBLEConnection.
+     */
+    suspend fun waitForBLEConnection(): Boolean {
+        val connection = RykerConnectApplication.activeConnection.value ?: return false
+        
+        if (connection.isConnected.value && connection.services.value.isNotEmpty()) {
+            return true
+        }
+
+        if (!connection.isConnected.value) {
+            connection.connect()
+        }
+
+        // Wait up to 4 seconds for connection and services
+        return withTimeoutOrNull(4.seconds) {
+            while (!(connection.isConnected.value && connection.services.value.isNotEmpty())) {
+                delay(200.milliseconds)
+            }
+            true
+        } ?: false
+    }
+
+}

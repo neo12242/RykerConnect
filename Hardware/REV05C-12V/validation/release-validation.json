@@ -1,0 +1,22 @@
+{
+  "revision": "REV05C-12V",
+  "components": 40,
+  "bom_groups": 30,
+  "top": 40,
+  "bottom": 0,
+  "erc": 0,
+  "drc": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "all_drc_rules_enabled": true,
+  "critical_net_assertions": "passed",
+  "stock_for_five_boards_at_observation": true,
+  "component_cost_usd_tier1": 7.9448000000000025,
+  "vendor_placement_and_process_acceptance": "pending",
+  "physical_validation": "pending",
+  "manufacturing_sha256": {
+    "BOM.csv": "04c8b29b487070f85804577277e6942fe19f12bfa790ad7ddb41a7d148679a4c",
+    "CPL.csv": "0c23752f58dfa02d04f362001f24c540ea387f80a5cd6a17fa26bef4fae86d58",
+    "Gerbers.zip": "b039cd5f887eac7cd898567cbe11c8520b15f4e0672179b1cf4b0f8be9778129"
+  }
+}

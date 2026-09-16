@@ -1,0 +1,30 @@
+{
+  "status": "PROTOTYPE FILES - sourcing, assembly model preview and installation validation pending",
+  "fitted_components": 32,
+  "bom_groups": 21,
+  "mapped_components": 32,
+  "original_sources_unchanged": true,
+  "source_inputs_sha256": {
+    "Hardware\\KiCad\\RykerConnect-REV02\\RykerConnect.kicad_pcb": "29f3975616166034ff9756531b07a958acd275559e035d52270b83c0eedc82cd",
+    "Hardware\\KiCad\\RykerConnect-REV02\\RykerConnect.kicad_sch": "446b4702ee8bba7efeb8f3c786190e56f8d82c26db99eb57a722e5431750b4ac",
+    "Hardware\\KiCad\\RykerConnect-REV02\\power.kicad_sch": "2a0eb18fd8c56accb313087de5720aecb982a39b0b444f1b5c46348a110ef83d",
+    "Hardware\\KiCad\\RykerConnect-REV02\\RykerConnect.kicad_pro": "668f70febc4eab856fe1c5a0554f26eaec63789c8625d93b7b278908723159bc",
+    "Hardware\\KiCad\\RykerConnect-REV02\\production.zip": "d1922e2d6baf23ae0d7de8880bc912f9b5b432ecacd130e10ccfd567acceaf0b"
+  },
+  "manufacturing_sha256": {
+    "BOM.csv": "f570b2e0bdd3c86967e7ccbcdce0dd13331a1bb7a96863c9d2439709a2c5955f",
+    "CPL.csv": "72ee2893c8f217b4990842b76541bdc9cebbfcb86dd78fb4f3fe7357b2d6b686",
+    "Gerbers.zip": "45c4d359eb0ce3ddcf31c1c9aec4ed5bc86e7465e54ccb7f5414ed03d55036dd"
+  },
+  "CPL_adjustments": {
+    "J1": "X -1.5 mm, Y -2.53 mm from new footprint origin",
+    "U1": "rotation +180 degrees",
+    "U2": "rotation -90 degrees"
+  },
+  "not_verified": [
+    "JLCPCB stock and exact assembly model alignment",
+    "Physical assembly, OLED variant and sensor operation",
+    "Vehicle supply protection",
+    "Sensor cable length, ESD and EMC"
+  ]
+}

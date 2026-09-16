@@ -1,0 +1,246 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-13T11:12:11",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "RykerConnect.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Items shorting two nets (nets GND and RTC_VDD)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 175.8,
+                        "y": 92.9
+                    },
+                    "uuid": "469eafae-874b-41d8-978b-ade94a2a65f6"
+                },
+                {
+                    "description": "Track [RTC_VDD] on F.Cu, length 4.0049 mm",
+                    "pos": {
+                        "x": 179.9375,
+                        "y": 93.0
+                    },
+                    "uuid": "eb18ab38-0c14-481c-a82c-edcc5c292051"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0273 mm)",
+            "items": [
+                {
+                    "description": "Track [RTC_VDD] on F.Cu, length 1.9146 mm",
+                    "pos": {
+                        "x": 175.5788,
+                        "y": 93.3538
+                    },
+                    "uuid": "29c80c4e-6462-4498-a61c-5a94e7c140ad"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 175.8,
+                        "y": 92.9
+                    },
+                    "uuid": "469eafae-874b-41d8-978b-ade94a2a65f6"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0548 mm)",
+            "items": [
+                {
+                    "description": "Track [RTC_VDD] on F.Cu, length 0.2005 mm",
+                    "pos": {
+                        "x": 175.5788,
+                        "y": 93.5543
+                    },
+                    "uuid": "11788658-5d2b-4666-a196-e5a065d5ef04"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 175.8,
+                        "y": 92.9
+                    },
+                    "uuid": "469eafae-874b-41d8-978b-ade94a2a65f6"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and RTC_VDD)",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.9003 mm",
+                    "pos": {
+                        "x": 175.775,
+                        "y": 92.0
+                    },
+                    "uuid": "16fe4bd6-4704-468f-adc4-ff64ab93c8ba"
+                },
+                {
+                    "description": "Track [RTC_VDD] on F.Cu, length 4.0049 mm",
+                    "pos": {
+                        "x": 179.9375,
+                        "y": 93.0
+                    },
+                    "uuid": "eb18ab38-0c14-481c-a82c-edcc5c292051"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and RTC_VDD)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 175.8,
+                        "y": 92.9
+                    },
+                    "uuid": "469eafae-874b-41d8-978b-ade94a2a65f6"
+                },
+                {
+                    "description": "Track [RTC_VDD] on F.Cu, length 0.5003 mm",
+                    "pos": {
+                        "x": 175.9326,
+                        "y": 93.0
+                    },
+                    "uuid": "a00f6a6b-a2a0-460b-9716-8a35f92bb593"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of J6 on F.Silkscreen",
+                    "pos": {
+                        "x": 183.12,
+                        "y": 76.6
+                    },
+                    "uuid": "970dece7-a391-4872-b34f-914355a41a2f"
+                },
+                {
+                    "description": "Reference field of C19",
+                    "pos": {
+                        "x": 168.0,
+                        "y": 77.0
+                    },
+                    "uuid": "c02ebe74-7fcf-4793-8f51-3a5939d18416"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of D5",
+                    "pos": {
+                        "x": 175.0,
+                        "y": 76.5
+                    },
+                    "uuid": "17bcbdbe-339c-4e8e-bb14-489085a018fc"
+                },
+                {
+                    "description": "Segment of J6 on F.Silkscreen",
+                    "pos": {
+                        "x": 183.12,
+                        "y": 76.6
+                    },
+                    "uuid": "970dece7-a391-4872-b34f-914355a41a2f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of U7 on F.Silkscreen",
+                    "pos": {
+                        "x": 162.85,
+                        "y": 86.41
+                    },
+                    "uuid": "70db6581-0a2f-4b36-9c96-eaa3ec734810"
+                },
+                {
+                    "description": "Reference field of C6",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 86.5
+                    },
+                    "uuid": "e96a6b1d-a2d6-44b3-b822-5c0cab516365"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of C19 on F.Silkscreen",
+                    "pos": {
+                        "x": 167.85942,
+                        "y": 80.01
+                    },
+                    "uuid": "9c0428bf-2c92-4642-bdf1-70ff5a45438d"
+                },
+                {
+                    "description": "Reference field of C18",
+                    "pos": {
+                        "x": 167.0,
+                        "y": 80.0
+                    },
+                    "uuid": "e56dfb5b-0798-4a98-a0f3-670ef733d908"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C18",
+                    "pos": {
+                        "x": 167.0,
+                        "y": 80.0
+                    },
+                    "uuid": "e56dfb5b-0798-4a98-a0f3-670ef733d908"
+                },
+                {
+                    "description": "Pad 1 [+5V_MODULE] of C19 on F.Cu",
+                    "pos": {
+                        "x": 167.225,
+                        "y": 79.5
+                    },
+                    "uuid": "429bd771-d6a6-41f9-9af9-64976172a6b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

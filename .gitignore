@@ -1,34 +1,38 @@
-# Prerequisites
-*.d
+# Local development and private runtime data
+**/.gradle/
+**/.idea/
+**/.kotlin/
+**/build/
+**/.pio/
+**/.tools/
+**/.venv/
+**/__pycache__/
+**/node_modules/
+**/.wrangler/
+**/local.properties
+**/.env
+**/.env.*
+!**/.env.example
+**/.dev.vars
+**/owner-local.txt
+**/bonds.json
+**/state.json
+*.log
+*.pid
+*.pyc
+*.jks
+*.keystore
+*.p12
+*.pem
+*.apk
+*.aab
+*.kicad_prl
+*-backups/
+Software-checkpoints/
+Publication-*/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
-*.out
-*.app
-
-Software/Android/Keystore/
+*.pdb
+Android/app/release/
+Firmware/*/pathlib

@@ -1,0 +1,11 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/v2_root" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/widget_light" android:clipToOutline="true">
+<ImageView android:id="@+id/v2_map" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:contentDescription="Map of last parked location"/>
+<LinearLayout android:id="@+id/v2_placeholder" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical" android:padding="8dp">
+<ImageView android:id="@+id/v2_pin" android:layout_width="32dp" android:layout_height="32dp" android:importantForAccessibility="no" android:src="@drawable/widget_icon_pin"/>
+<TextView android:id="@+id/v2_placeholder_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:maxLines="2" android:ellipsize="end" android:gravity="center" android:layout_marginTop="4dp"/>
+</LinearLayout>
+<TextView android:id="@+id/v2_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="top|start" android:layout_margin="6dp" android:padding="5dp" android:textSize="11sp" android:maxLines="1" android:ellipsize="end" android:background="@drawable/widget_button_light"/>
+<LinearLayout android:id="@+id/v2_map_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="bottom" android:padding="6dp" android:orientation="vertical" android:background="@drawable/widget_light">
+<TextView android:id="@+id/v2_map_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone"/>
+<TextView android:id="@+id/v2_map_attribution" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="8sp" android:maxLines="2" android:ellipsize="end" />
+</LinearLayout></FrameLayout>

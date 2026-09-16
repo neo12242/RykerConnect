@@ -1,0 +1,20 @@
+{
+  "status": "Protected prototype - assembly model, sourcing, enclosure and physical electrical validation pending",
+  "components": 44,
+  "top": 32,
+  "bottom": 12,
+  "bom_groups": 31,
+  "all_catalog_codes_populated": true,
+  "original_source_hashes_unchanged": true,
+  "critical_net_assertions": "passed",
+  "drc": 0,
+  "erc": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "manufacturing_sha256": {
+    "BOM.csv": "5ae0542d401ce3f7d0a20f1bd6f28501d3c6cc59caca095de8403d68114795d1",
+    "CPL.csv": "6f05b8d14ad33f5cad980f1c21f6a265b1bbd98c443dd1595d279e4aa0c585eb",
+    "Gerbers.zip": "02d5e5a05e28258ffc7af4d512b2521d83d30231d173d480982a7ea0219c6837"
+  },
+  "software": "Existing REV02/N8 build remains compatible; no firmware or app source changed for this power-only revision."
+}

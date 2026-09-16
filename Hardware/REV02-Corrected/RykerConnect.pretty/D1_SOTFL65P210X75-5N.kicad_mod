@@ -1,0 +1,353 @@
+(footprint "D1_SOTFL65P210X75-5N"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "UFV SOT-353F")
+	(tags "Schottky Diode")
+	(property "Reference" "D1"
+		(at -0.025 0.025 90)
+		(layer "F.SilkS")
+		(uuid "49715cd2-7116-4f12-b8aa-d79e0a1e8e02")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.12)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "CVJ10F30,LF"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "be758dc2-293a-4bf4-9694-0c79e2b4cc90")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=13914&prodName=CVJ10F30"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6125468e-8758-4a37-a530-3952e107cd9d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Dual independent Schottky: 1 A1, 2 NC, 3 A2, 4 K2, 5 K1; UFV"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c64deb5b-3585-437c-8c14-50030372236c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "CVJ10F30,LF"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "71c5fd77-b29f-4d4f-9ba9-9676792f9ceb")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Manufacturer" "Toshiba"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "be275b32-3750-4b29-8a35-fbc6bce518be")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC" "C5609371"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ed56c921-ca5c-4532-a814-8045734a8a52")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "PROD_ID" "CVJ10F30,LF"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ff07804f-e8d6-404b-96aa-55226cce7c0b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property ki_fp_filters "SOT?223*")
+	(sheetname "/Power/")
+	(sheetfile "power.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.325 -1.125)
+		(end -0.85 -1.125)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "69f9b6a2-4dbe-40e3-b234-1d5137346c26")
+	)
+	(fp_line
+		(start -0.5 -1)
+		(end 0.5 -1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9ff0d366-5fe8-4950-89f5-7214b45932b5")
+	)
+	(fp_line
+		(start -0.5 1)
+		(end -0.5 -1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b893420f-320e-4357-91fc-f5829f8aed09")
+	)
+	(fp_line
+		(start 0.5 -1)
+		(end 0.5 1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aef36e8a-91c3-4e6f-a323-aef535273503")
+	)
+	(fp_line
+		(start 0.5 1)
+		(end -0.5 1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e2e12764-3759-45f8-8d35-22aa359ae2a8")
+	)
+	(fp_line
+		(start -1.475 -1.2)
+		(end 1.475 -1.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "92cb378e-ead2-4b00-ac63-7bbd93e8b8ea")
+	)
+	(fp_line
+		(start -1.475 1.2)
+		(end -1.475 -1.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d1ef0263-67bb-45ab-a6da-1922cef77373")
+	)
+	(fp_line
+		(start 1.475 -1.2)
+		(end 1.475 1.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5cc73cef-f411-428a-a584-6a19b4766143")
+	)
+	(fp_line
+		(start 1.475 1.2)
+		(end -1.475 1.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f0a02267-46d5-4bca-b38d-e44cea26ba17")
+	)
+	(fp_line
+		(start -0.85 -1)
+		(end 0.85 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fbf51883-d988-4774-9735-2e5c92b055dc")
+	)
+	(fp_line
+		(start -0.85 -0.35)
+		(end -0.2 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "540467ed-f7d8-44ba-a458-2d736e335c13")
+	)
+	(fp_line
+		(start -0.85 1)
+		(end -0.85 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7851f27b-dbbf-48dc-b76e-9afb435323a0")
+	)
+	(fp_line
+		(start 0.85 -1)
+		(end 0.85 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2052d17c-5b68-4e13-bb26-e8b3c6d247a8")
+	)
+	(fp_line
+		(start 0.85 1)
+		(end -0.85 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11f3d659-3ac7-4c3e-99c1-9afd2c6993ef")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "fe3ea3cb-ef55-46c2-aec9-f8ac1799b9b2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.088 -0.65 90)
+		(size 0.45 0.475)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "d20fdea6-ea37-42f7-a476-88557e944062")
+	)
+	(pad "2" smd rect
+		(at -1.088 0 90)
+		(size 0.45 0.475)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "a0e3f9a2-32f2-4a1e-945d-0940be572f1f")
+	)
+	(pad "3" smd rect
+		(at -1.088 0.65 90)
+		(size 0.45 0.475)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "9dd380af-adbe-461e-9087-b575d8a12bb4")
+	)
+	(pad "4" smd rect
+		(at 1.088 0.65 90)
+		(size 0.45 0.475)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "e4677522-63ed-4359-b7dc-3e9adcbc44cc")
+	)
+	(pad "5" smd rect
+		(at 1.088 -0.65 90)
+		(size 0.45 0.475)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "45b8d8e7-4f64-4816-b073-0e128ebc894c")
+	)
+	(embedded_fonts no)
+	(model "H:\\Kicad\\LIB\\SamacSys_Parts.3dshapes\\CVJ10F30,LF.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

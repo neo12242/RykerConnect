@@ -1,0 +1,2102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>.\Hardware\REV05-12V\RykerConnect.kicad_sch</source>
+    <date>2026-09-13T11:24:27</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>RykerConnect - Controller and connectors</title>
+        <company/>
+        <rev>REV05-12V</rev>
+        <date>2026-09-13</date>
+        <source>RykerConnect.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Accessory protection/" tstamps="/5cbaf2b8-e55b-5fc8-97d6-6c9ca059f63a/">
+      <title_block>
+        <title>RykerConnect - Accessory protection</title>
+        <company/>
+        <rev>REV05-12V</rev>
+        <date>2026-09-13</date>
+        <source>sheet2.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/5V regulator and USB isolation/" tstamps="/7ec76a64-eaeb-5922-9740-c620682875f3/">
+      <title_block>
+        <title>RykerConnect - 5V regulator and USB isolation</title>
+        <company/>
+        <rev>REV05-12V</rev>
+        <date>2026-09-13</date>
+        <source>sheet3.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Battery-backed clock and light sensor/" tstamps="/2ca8097e-c236-513e-9ae0-05208a48232c/">
+      <title_block>
+        <title>RykerConnect - Battery-backed clock and light sensor</title>
+        <company/>
+        <rev>REV05-12V</rev>
+        <date>2026-09-13</date>
+        <source>sheet4.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>436500200</value>
+      <footprint>RykerConnect:J1_J1_43650-02_00,01,02_</footprint>
+      <fields>
+        <field name="MPN">436500200</field>
+        <field name="LCSC">C192562</field>
+        <field name="Footprint">RykerConnect:J1_J1_43650-02_00,01,02_</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="J1" description=""/>
+      <property name="MPN" value="436500200"/>
+      <property name="LCSC" value="C192562"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5cd56587-ab71-5ec8-98dc-2784e23a8908</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>SM08B-SRSS-TB(LF)(SN)</value>
+      <footprint>RykerConnect:J3_J3_JST_SH_SM08B-SRSS-TB_1x08-1MP_P1.00mm_Horizontal</footprint>
+      <fields>
+        <field name="MPN">SM08B-SRSS-TB(LF)(SN)</field>
+        <field name="LCSC">C160407</field>
+        <field name="Footprint">RykerConnect:J3_J3_JST_SH_SM08B-SRSS-TB_1x08-1MP_P1.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="J3" description=""/>
+      <property name="MPN" value="SM08B-SRSS-TB(LF)(SN)"/>
+      <property name="LCSC" value="C160407"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>000dc1ca-78d2-5cd7-b66b-572590c8e52d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="MP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J5">
+      <value>SM04B-SRSS-TB(LF)(SN)</value>
+      <footprint>RykerConnect:J5_J5_JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal</footprint>
+      <fields>
+        <field name="MPN">SM04B-SRSS-TB(LF)(SN)</field>
+        <field name="LCSC">C160404</field>
+        <field name="Footprint">RykerConnect:J5_J5_JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="J5" description=""/>
+      <property name="MPN" value="SM04B-SRSS-TB(LF)(SN)"/>
+      <property name="LCSC" value="C160404"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d34ceab-d2b0-571a-80f6-9d458e9091c0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="MP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J6">
+      <value>ESP32 socket P1</value>
+      <footprint>RykerConnect:J6_PinSocket_1x22_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="MPN">FH2.54-09-22PZD</field>
+        <field name="LCSC">C7500786</field>
+        <field name="Footprint">RykerConnect:J6_PinSocket_1x22_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="J6" description=""/>
+      <property name="MPN" value="FH2.54-09-22PZD"/>
+      <property name="LCSC" value="C7500786"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>96c701e2-6ccb-5886-922c-3608efd1e4c6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J7">
+      <value>ESP32 socket P2</value>
+      <footprint>RykerConnect:J7_PinSocket_1x22_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="MPN">FH2.54-09-22PZD</field>
+        <field name="LCSC">C7500786</field>
+        <field name="Footprint">RykerConnect:J7_PinSocket_1x22_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="J7" description=""/>
+      <property name="MPN" value="FH2.54-09-22PZD"/>
+      <property name="LCSC" value="C7500786"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d800356c-db5b-5470-961f-b0b24f0751b4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>4.7k 1%</value>
+      <footprint>RykerConnect:R3_R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF4701T5E</field>
+        <field name="LCSC">C23162</field>
+        <field name="Footprint">RykerConnect:R3_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="R3" description=""/>
+      <property name="MPN" value="0603WAF4701T5E"/>
+      <property name="LCSC" value="C23162"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d8d3d192-8b81-527e-9a64-d30ca8fd0a16</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>4.7k 1%</value>
+      <footprint>RykerConnect:R4_R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF4701T5E</field>
+        <field name="LCSC">C23162</field>
+        <field name="Footprint">RykerConnect:R4_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="R4" description=""/>
+      <property name="MPN" value="0603WAF4701T5E"/>
+      <property name="LCSC" value="C23162"/>
+      <property name="Sheetname" value="RykerConnect"/>
+      <property name="Sheetfile" value="RykerConnect.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>170859bc-65c0-554f-810d-d8cba72e3054</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>1uF 100V</value>
+      <footprint>RykerConnect:C14_C_1206_3216Metric</footprint>
+      <fields>
+        <field name="MPN">CL31B105KCHNNNE</field>
+        <field name="LCSC">C13832</field>
+        <field name="Footprint">RykerConnect:C14_C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="C14" description=""/>
+      <property name="MPN" value="CL31B105KCHNNNE"/>
+      <property name="LCSC" value="C13832"/>
+      <property name="Sheetname" value="Accessory protection"/>
+      <property name="Sheetfile" value="sheet2.kicad_sch"/>
+      <sheetpath names="/Accessory protection/" tstamps="/5cbaf2b8-e55b-5fc8-97d6-6c9ca059f63a/"/>
+      <tstamps>9a0dd732-a271-5f05-9be4-dcf554c7a759</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>1uF 50V</value>
+      <footprint>RykerConnect:C15_C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">CL21B105KBFNNNE</field>
+        <field name="LCSC">C28323</field>
+        <field name="Footprint">RykerConnect:C15_C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="C15" description=""/>
+      <property name="MPN" value="CL21B105KBFNNNE"/>
+      <property name="LCSC" value="C28323"/>
+      <property name="Sheetname" value="Accessory protection"/>
+      <property name="Sheetfile" value="sheet2.kicad_sch"/>
+      <sheetpath names="/Accessory protection/" tstamps="/5cbaf2b8-e55b-5fc8-97d6-6c9ca059f63a/"/>
+      <tstamps>bf88b706-4daf-5b85-b02c-bd8845bcbc9e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>10nF 50V</value>
+      <footprint>RykerConnect:C16_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10B103KB8NNNC</field>
+        <field name="LCSC">C1589</field>
+        <field name="Footprint">RykerConnect:C16_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="C16" description=""/>
+      <property name="MPN" value="CL10B103KB8NNNC"/>
+      <property name="LCSC" value="C1589"/>
+      <property name="Sheetname" value="Accessory protection"/>
+      <property name="Sheetfile" value="sheet2.kicad_sch"/>
+      <sheetpath names="/Accessory protection/" tstamps="/5cbaf2b8-e55b-5fc8-97d6-6c9ca059f63a/"/>
+      <tstamps>1bdc988b-30ed-5362-8faf-b8cdce24b9a3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>1uF 100V</value>
+      <footprint>RykerConnect:C17_C_1206_3216Metric</footprint>
+      <fields>
+        <field name="MPN">CL31B105KCHNNNE</field>
+        <field name="LCSC">C13832</field>
+        <field name="Footprint">RykerConnect:C17_C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="C17" description=""/>
+      <property name="MPN" value="CL31B105KCHNNNE"/>
+      <property name="LCSC" value="C13832"/>
+      <property name="Sheetname" value="Accessory protection"/>
+      <property name="Sheetfile" value="sheet2.kicad_sch"/>
+      <sheetpath names="/Accessory protection/" tstamps="/5cbaf2b8-e55b-5fc8-97d6-6c9ca059f63a/"/>
+      <tstamps>1e2ca2c6-7cab-56fc-a364-737a3389c299</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>SMBJ33A</value>
+      <footprint>RykerConnect:D2_D_SMB</footprint>
+      <fields>
+        <field name="MPN">SMBJ33A</field>
+        <field name="LCSC">C224019</field>
+        <field name="Footprint">RykerConnect:D2_D_SMB</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="D2" description=""/>
+      <property name="MPN" value="SMBJ33A"/>
+      <property name="LCSC" value="C224019"/>
+      <property name="Sheetname" value="Accessory protection"/>
+      <property name="Sheetfile" value="sheet2.kicad_sch"/>
+      <sheetpath names="/Accessory protection/" tstamps="/5cbaf2b8-e55b-5fc8-97d6-6c9ca059f63a/"/>
+      <tstamps>3b6100ef-cd19-578a-809f-7065b5f735ed</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D3">
+      <value>B140-13-F</value>
+      <footprint>RykerConnect:D3_D_SMA</footprint>
+      <fields>
+        <field name="MPN">B140-13-F</field>
+        <field name="LCSC">C15759</field>
+        <field name="Footprint">RykerConnect:D3_D_SMA</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="D3" description=""/>
+      <property name="MPN" value="B140-13-F"/>
+      <property name="LCSC" value="C15759"/>
+      <property name="Sheetname" value="Accessory protection"/>
+      <property name="Sheetfile" value="sheet2.kicad_sch"/>
+      <sheetpath names="/Accessory protection/" tstamps="/5cbaf2b8-e55b-5fc8-97d6-6c9ca059f63a/"/>
+      <tstamps>a6a95c31-a0c2-5e23-ba96-99f4119f87e2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D4">
+      <value>SMBJ18A</value>
+      <footprint>RykerConnect:D4_D_SMB</footprint>
+      <fields>
+        <field name="MPN">SMBJ18A</field>
+        <field name="LCSC">C151256</field>
+        <field name="Footprint">RykerConnect:D4_D_SMB</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="D4" description=""/>
+      <property name="MPN" value="SMBJ18A"/>
+      <property name="LCSC" value="C151256"/>
+      <property name="Sheetname" value="Accessory protection"/>
+      <property name="Sheetfile" value="sheet2.kicad_sch"/>
+      <sheetpath names="/Accessory protection/" tstamps="/5cbaf2b8-e55b-5fc8-97d6-6c9ca059f63a/"/>
+      <tstamps>8d28a0c8-c7c1-59ad-a2b3-50006a70b8cb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>120k 1%</value>
+      <footprint>RykerConnect:R7_R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RC0603FR-07120KL</field>
+        <field name="LCSC">C114607</field>
+        <field name="Footprint">RykerConnect:R7_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="R7" description=""/>
+      <property name="MPN" value="RC0603FR-07120KL"/>
+      <property name="LCSC" value="C114607"/>
+      <property name="Sheetname" value="Accessory protection"/>
+      <property name="Sheetfile" value="sheet2.kicad_sch"/>
+      <sheetpath names="/Accessory protection/" tstamps="/5cbaf2b8-e55b-5fc8-97d6-6c9ca059f63a/"/>
+      <tstamps>f7f8d4a0-a59d-5b90-a1a7-43e984cf3658</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>20k 1%</value>
+      <footprint>RykerConnect:R8_R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RC0603FR-0720KL</field>
+        <field name="LCSC">C105575</field>
+        <field name="Footprint">RykerConnect:R8_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="R8" description=""/>
+      <property name="MPN" value="RC0603FR-0720KL"/>
+      <property name="LCSC" value="C105575"/>
+      <property name="Sheetname" value="Accessory protection"/>
+      <property name="Sheetfile" value="sheet2.kicad_sch"/>
+      <sheetpath names="/Accessory protection/" tstamps="/5cbaf2b8-e55b-5fc8-97d6-6c9ca059f63a/"/>
+      <tstamps>1394b88e-96b9-5aa1-93a9-831ad0580178</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>RykerConnect:R9_R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
+        <field name="Footprint">RykerConnect:R9_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="R9" description=""/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Sheetname" value="Accessory protection"/>
+      <property name="Sheetfile" value="sheet2.kicad_sch"/>
+      <sheetpath names="/Accessory protection/" tstamps="/5cbaf2b8-e55b-5fc8-97d6-6c9ca059f63a/"/>
+      <tstamps>f7584725-9835-5b8f-ada2-085eb0806477</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>12k 1%</value>
+      <footprint>RykerConnect:R10_R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RC0603FR-0712KL</field>
+        <field name="LCSC">C114659</field>
+        <field name="Footprint">RykerConnect:R10_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="R10" description=""/>
+      <property name="MPN" value="RC0603FR-0712KL"/>
+      <property name="LCSC" value="C114659"/>
+      <property name="Sheetname" value="Accessory protection"/>
+      <property name="Sheetfile" value="sheet2.kicad_sch"/>
+      <sheetpath names="/Accessory protection/" tstamps="/5cbaf2b8-e55b-5fc8-97d6-6c9ca059f63a/"/>
+      <tstamps>2d901212-d33a-5c60-976a-5e4f8b183ed4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>TPS26600PWPR</value>
+      <footprint>RykerConnect:U6_U6_Protection_HTSSOP16_PWP0016A</footprint>
+      <fields>
+        <field name="MPN">TPS26600PWPR</field>
+        <field name="LCSC">C544399</field>
+        <field name="Footprint">RykerConnect:U6_U6_Protection_HTSSOP16_PWP0016A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="U6" description=""/>
+      <property name="MPN" value="TPS26600PWPR"/>
+      <property name="LCSC" value="C544399"/>
+      <property name="Sheetname" value="Accessory protection"/>
+      <property name="Sheetfile" value="sheet2.kicad_sch"/>
+      <sheetpath names="/Accessory protection/" tstamps="/5cbaf2b8-e55b-5fc8-97d6-6c9ca059f63a/"/>
+      <tstamps>96d2e840-0661-5552-b77d-e80e2c89e9c3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>10uF 50V</value>
+      <footprint>RykerConnect:C9_C_1206_3216Metric</footprint>
+      <fields>
+        <field name="MPN">CL31A106KBHNNNE</field>
+        <field name="LCSC">C13585</field>
+        <field name="Footprint">RykerConnect:C9_C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="C9" description=""/>
+      <property name="MPN" value="CL31A106KBHNNNE"/>
+      <property name="LCSC" value="C13585"/>
+      <property name="Sheetname" value="5V regulator and USB isolation"/>
+      <property name="Sheetfile" value="sheet3.kicad_sch"/>
+      <sheetpath names="/5V regulator and USB isolation/" tstamps="/7ec76a64-eaeb-5922-9740-c620682875f3/"/>
+      <tstamps>0bf452dd-e1cb-578b-8e50-b0a6f8136640</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>100nF 50V</value>
+      <footprint>RykerConnect:C10_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
+        <field name="Footprint">RykerConnect:C10_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="C10" description=""/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
+      <property name="Sheetname" value="5V regulator and USB isolation"/>
+      <property name="Sheetfile" value="sheet3.kicad_sch"/>
+      <sheetpath names="/5V regulator and USB isolation/" tstamps="/7ec76a64-eaeb-5922-9740-c620682875f3/"/>
+      <tstamps>c8955b03-efa8-5a98-af6f-ac1d0602a826</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>100nF 50V</value>
+      <footprint>RykerConnect:C11_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
+        <field name="Footprint">RykerConnect:C11_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="C11" description=""/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
+      <property name="Sheetname" value="5V regulator and USB isolation"/>
+      <property name="Sheetfile" value="sheet3.kicad_sch"/>
+      <sheetpath names="/5V regulator and USB isolation/" tstamps="/7ec76a64-eaeb-5922-9740-c620682875f3/"/>
+      <tstamps>c6f77db2-4499-5d94-80a2-5002dfa49516</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>22uF 25V</value>
+      <footprint>RykerConnect:C12_C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">CL21A226MAQNNNE</field>
+        <field name="LCSC">C45783</field>
+        <field name="Footprint">RykerConnect:C12_C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="C12" description=""/>
+      <property name="MPN" value="CL21A226MAQNNNE"/>
+      <property name="LCSC" value="C45783"/>
+      <property name="Sheetname" value="5V regulator and USB isolation"/>
+      <property name="Sheetfile" value="sheet3.kicad_sch"/>
+      <sheetpath names="/5V regulator and USB isolation/" tstamps="/7ec76a64-eaeb-5922-9740-c620682875f3/"/>
+      <tstamps>86cda33b-8743-50ca-978c-cde5052f4e09</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>22uF 25V</value>
+      <footprint>RykerConnect:C13_C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">CL21A226MAQNNNE</field>
+        <field name="LCSC">C45783</field>
+        <field name="Footprint">RykerConnect:C13_C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="C13" description=""/>
+      <property name="MPN" value="CL21A226MAQNNNE"/>
+      <property name="LCSC" value="C45783"/>
+      <property name="Sheetname" value="5V regulator and USB isolation"/>
+      <property name="Sheetfile" value="sheet3.kicad_sch"/>
+      <sheetpath names="/5V regulator and USB isolation/" tstamps="/7ec76a64-eaeb-5922-9740-c620682875f3/"/>
+      <tstamps>ffc7fd13-15b5-5782-940e-452e3b964d37</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>10uF 25V</value>
+      <footprint>RykerConnect:C19_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A106MA8NRNC</field>
+        <field name="LCSC">C96446</field>
+        <field name="Footprint">RykerConnect:C19_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="C19" description=""/>
+      <property name="MPN" value="CL10A106MA8NRNC"/>
+      <property name="LCSC" value="C96446"/>
+      <property name="Sheetname" value="5V regulator and USB isolation"/>
+      <property name="Sheetfile" value="sheet3.kicad_sch"/>
+      <sheetpath names="/5V regulator and USB isolation/" tstamps="/7ec76a64-eaeb-5922-9740-c620682875f3/"/>
+      <tstamps>ed965e40-7866-5bcc-9911-209902b40fa4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J8">
+      <value>REMOVE LINK FOR USB</value>
+      <footprint>RykerConnect:J8_PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="MPN">5AML4-11560-102-W0</field>
+        <field name="LCSC">C29780898</field>
+        <field name="Footprint">RykerConnect:J8_PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="J8" description=""/>
+      <property name="MPN" value="5AML4-11560-102-W0"/>
+      <property name="LCSC" value="C29780898"/>
+      <property name="Sheetname" value="5V regulator and USB isolation"/>
+      <property name="Sheetfile" value="sheet3.kicad_sch"/>
+      <sheetpath names="/5V regulator and USB isolation/" tstamps="/7ec76a64-eaeb-5922-9740-c620682875f3/"/>
+      <tstamps>4543c54c-c03f-5f3b-9354-34b4d43c40ef</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>4.7uH</value>
+      <footprint>RykerConnect:L1_L1_MWSA0603S</footprint>
+      <fields>
+        <field name="MPN">MWSA0603S-4R7MT</field>
+        <field name="LCSC">C408447</field>
+        <field name="Footprint">RykerConnect:L1_L1_MWSA0603S</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="L1" description=""/>
+      <property name="MPN" value="MWSA0603S-4R7MT"/>
+      <property name="LCSC" value="C408447"/>
+      <property name="Sheetname" value="5V regulator and USB isolation"/>
+      <property name="Sheetfile" value="sheet3.kicad_sch"/>
+      <sheetpath names="/5V regulator and USB isolation/" tstamps="/7ec76a64-eaeb-5922-9740-c620682875f3/"/>
+      <tstamps>41f935f8-7bdc-55a0-85d5-35a132177cdf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>AP63205WU-7</value>
+      <footprint>RykerConnect:U5_TSOT-23-6</footprint>
+      <fields>
+        <field name="MPN">AP63205WU-7</field>
+        <field name="LCSC">C2071056</field>
+        <field name="Footprint">RykerConnect:U5_TSOT-23-6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="U5" description=""/>
+      <property name="MPN" value="AP63205WU-7"/>
+      <property name="LCSC" value="C2071056"/>
+      <property name="Sheetname" value="5V regulator and USB isolation"/>
+      <property name="Sheetfile" value="sheet3.kicad_sch"/>
+      <sheetpath names="/5V regulator and USB isolation/" tstamps="/7ec76a64-eaeb-5922-9740-c620682875f3/"/>
+      <tstamps>ea8c5376-efb8-5979-8c3f-9e96b978e013</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U7">
+      <value>3.3V peripherals</value>
+      <footprint>RykerConnect:U7_SOT-223-3_TabPin2</footprint>
+      <fields>
+        <field name="MPN">TLV1117LV33DCYR</field>
+        <field name="LCSC">C15578</field>
+        <field name="Footprint">RykerConnect:U7_SOT-223-3_TabPin2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="U7" description=""/>
+      <property name="MPN" value="TLV1117LV33DCYR"/>
+      <property name="LCSC" value="C15578"/>
+      <property name="Sheetname" value="5V regulator and USB isolation"/>
+      <property name="Sheetfile" value="sheet3.kicad_sch"/>
+      <sheetpath names="/5V regulator and USB isolation/" tstamps="/7ec76a64-eaeb-5922-9740-c620682875f3/"/>
+      <tstamps>aef98db1-d731-5aaf-893a-b8066b47eace</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="BT1">
+      <value>BAT-HLD-001</value>
+      <footprint>RykerConnect:BT1_BT1_BATHLD001</footprint>
+      <fields>
+        <field name="MPN">BAT-HLD-001</field>
+        <field name="LCSC">C7501066</field>
+        <field name="Footprint">RykerConnect:BT1_BT1_BATHLD001</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="BT1" description=""/>
+      <property name="MPN" value="BAT-HLD-001"/>
+      <property name="LCSC" value="C7501066"/>
+      <property name="Sheetname" value="Battery-backed clock and light sensor"/>
+      <property name="Sheetfile" value="sheet4.kicad_sch"/>
+      <sheetpath names="/Battery-backed clock and light sensor/" tstamps="/2ca8097e-c236-513e-9ae0-05208a48232c/"/>
+      <tstamps>de3289fa-5903-582e-a5cd-22729bf0fd4b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>100nF 50V</value>
+      <footprint>RykerConnect:C3_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
+        <field name="Footprint">RykerConnect:C3_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="C3" description=""/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
+      <property name="Sheetname" value="Battery-backed clock and light sensor"/>
+      <property name="Sheetfile" value="sheet4.kicad_sch"/>
+      <sheetpath names="/Battery-backed clock and light sensor/" tstamps="/2ca8097e-c236-513e-9ae0-05208a48232c/"/>
+      <tstamps>ace9ac2d-2ebf-51d5-bc41-6e3daebe3ae4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>10uF 25V</value>
+      <footprint>RykerConnect:C5_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A106MA8NRNC</field>
+        <field name="LCSC">C96446</field>
+        <field name="Footprint">RykerConnect:C5_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="C5" description=""/>
+      <property name="MPN" value="CL10A106MA8NRNC"/>
+      <property name="LCSC" value="C96446"/>
+      <property name="Sheetname" value="Battery-backed clock and light sensor"/>
+      <property name="Sheetfile" value="sheet4.kicad_sch"/>
+      <sheetpath names="/Battery-backed clock and light sensor/" tstamps="/2ca8097e-c236-513e-9ae0-05208a48232c/"/>
+      <tstamps>835caf57-c82b-5907-b11d-e8e78f5a2ae0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>100nF 50V</value>
+      <footprint>RykerConnect:C6_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="LCSC">C1591</field>
+        <field name="Footprint">RykerConnect:C6_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="C6" description=""/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="LCSC" value="C1591"/>
+      <property name="Sheetname" value="Battery-backed clock and light sensor"/>
+      <property name="Sheetfile" value="sheet4.kicad_sch"/>
+      <sheetpath names="/Battery-backed clock and light sensor/" tstamps="/2ca8097e-c236-513e-9ae0-05208a48232c/"/>
+      <tstamps>bc90ab73-4a88-5b6f-87dc-0cf1c919ee90</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C18">
+      <value>22pF C0G</value>
+      <footprint>RykerConnect:C18_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10C220JB8NNNC</field>
+        <field name="LCSC">C1653</field>
+        <field name="Footprint">RykerConnect:C18_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="C18" description=""/>
+      <property name="MPN" value="CL10C220JB8NNNC"/>
+      <property name="LCSC" value="C1653"/>
+      <property name="Sheetname" value="Battery-backed clock and light sensor"/>
+      <property name="Sheetfile" value="sheet4.kicad_sch"/>
+      <sheetpath names="/Battery-backed clock and light sensor/" tstamps="/2ca8097e-c236-513e-9ae0-05208a48232c/"/>
+      <tstamps>4d9a9283-eab6-59dc-9ac5-6a78ff07005c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D5">
+      <value>BAV199 backup isolation</value>
+      <footprint>RykerConnect:D5_SOT-23</footprint>
+      <fields>
+        <field name="MPN">BAV199</field>
+        <field name="LCSC">C3019921</field>
+        <field name="Footprint">RykerConnect:D5_SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="D5" description=""/>
+      <property name="MPN" value="BAV199"/>
+      <property name="LCSC" value="C3019921"/>
+      <property name="Sheetname" value="Battery-backed clock and light sensor"/>
+      <property name="Sheetfile" value="sheet4.kicad_sch"/>
+      <sheetpath names="/Battery-backed clock and light sensor/" tstamps="/2ca8097e-c236-513e-9ae0-05208a48232c/"/>
+      <tstamps>fac349c1-1bc5-5b48-99fc-f8ec7c1519fa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D6">
+      <value>BAV199 backup isolation</value>
+      <footprint>RykerConnect:D6_SOT-23</footprint>
+      <fields>
+        <field name="MPN">BAV199</field>
+        <field name="LCSC">C3019921</field>
+        <field name="Footprint">RykerConnect:D6_SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="D6" description=""/>
+      <property name="MPN" value="BAV199"/>
+      <property name="LCSC" value="C3019921"/>
+      <property name="Sheetname" value="Battery-backed clock and light sensor"/>
+      <property name="Sheetfile" value="sheet4.kicad_sch"/>
+      <sheetpath names="/Battery-backed clock and light sensor/" tstamps="/2ca8097e-c236-513e-9ae0-05208a48232c/"/>
+      <tstamps>2aa0bbd8-d46e-5446-a6d3-0abbdbc27d45</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>SM02B-SRSS-TB(LF)(SN)</value>
+      <footprint>RykerConnect:J4_J4_JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal</footprint>
+      <fields>
+        <field name="MPN">SM02B-SRSS-TB(LF)(SN)</field>
+        <field name="LCSC">C160402</field>
+        <field name="Footprint">RykerConnect:J4_J4_JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="J4" description=""/>
+      <property name="MPN" value="SM02B-SRSS-TB(LF)(SN)"/>
+      <property name="LCSC" value="C160402"/>
+      <property name="Sheetname" value="Battery-backed clock and light sensor"/>
+      <property name="Sheetfile" value="sheet4.kicad_sch"/>
+      <sheetpath names="/Battery-backed clock and light sensor/" tstamps="/2ca8097e-c236-513e-9ae0-05208a48232c/"/>
+      <tstamps>fa5f359f-5338-54c3-81d3-018c6a341ded</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="MP"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>10k 1%</value>
+      <footprint>RykerConnect:R6_R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
+        <field name="Footprint">RykerConnect:R6_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="R6" description=""/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Sheetname" value="Battery-backed clock and light sensor"/>
+      <property name="Sheetfile" value="sheet4.kicad_sch"/>
+      <sheetpath names="/Battery-backed clock and light sensor/" tstamps="/2ca8097e-c236-513e-9ae0-05208a48232c/"/>
+      <tstamps>1fa7a0c7-1cdb-5662-bab6-e5c7b9efb66c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>PCF8563T/5,518</value>
+      <footprint>RykerConnect:U3_SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <fields>
+        <field name="MPN">PCF8563T/5,518</field>
+        <field name="LCSC">C7440</field>
+        <field name="Footprint">RykerConnect:U3_SOIC-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="U3" description=""/>
+      <property name="MPN" value="PCF8563T/5,518"/>
+      <property name="LCSC" value="C7440"/>
+      <property name="Sheetname" value="Battery-backed clock and light sensor"/>
+      <property name="Sheetfile" value="sheet4.kicad_sch"/>
+      <sheetpath names="/Battery-backed clock and light sensor/" tstamps="/2ca8097e-c236-513e-9ae0-05208a48232c/"/>
+      <tstamps>1619d02d-ef36-51e7-ba89-5f9d4ad7f92c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="X1">
+      <value>32.768kHz 12.5pF</value>
+      <footprint>RykerConnect:X1_Crystal_SMD_3215-2Pin_3.2x1.5mm</footprint>
+      <fields>
+        <field name="MPN">ABS07-32.768KHZ-T</field>
+        <field name="LCSC">C130253</field>
+        <field name="Footprint">RykerConnect:X1_Crystal_SMD_3215-2Pin_3.2x1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RykerConnect" part="X1" description=""/>
+      <property name="MPN" value="ABS07-32.768KHZ-T"/>
+      <property name="LCSC" value="C130253"/>
+      <property name="Sheetname" value="Battery-backed clock and light sensor"/>
+      <property name="Sheetfile" value="sheet4.kicad_sch"/>
+      <sheetpath names="/Battery-backed clock and light sensor/" tstamps="/2ca8097e-c236-513e-9ae0-05208a48232c/"/>
+      <tstamps>7880ef74-0d16-5865-a0c7-a57d6cc89cb7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="RykerConnect" part="BT1">
+      <fields>
+        <field name="Reference">BT1</field>
+        <field name="Value">BAT-HLD-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="C10">
+      <fields>
+        <field name="Reference">C10</field>
+        <field name="Value">100nF 50V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="C11">
+      <fields>
+        <field name="Reference">C11</field>
+        <field name="Value">100nF 50V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="C12">
+      <fields>
+        <field name="Reference">C12</field>
+        <field name="Value">22uF 25V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="C13">
+      <fields>
+        <field name="Reference">C13</field>
+        <field name="Value">22uF 25V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="C14">
+      <fields>
+        <field name="Reference">C14</field>
+        <field name="Value">1uF 100V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="C15">
+      <fields>
+        <field name="Reference">C15</field>
+        <field name="Value">1uF 50V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="C16">
+      <fields>
+        <field name="Reference">C16</field>
+        <field name="Value">10nF 50V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="C17">
+      <fields>
+        <field name="Reference">C17</field>
+        <field name="Value">1uF 100V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="C18">
+      <fields>
+        <field name="Reference">C18</field>
+        <field name="Value">22pF C0G</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="C19">
+      <fields>
+        <field name="Reference">C19</field>
+        <field name="Value">10uF 25V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="C3">
+      <fields>
+        <field name="Reference">C3</field>
+        <field name="Value">100nF 50V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="C5">
+      <fields>
+        <field name="Reference">C5</field>
+        <field name="Value">10uF 25V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="C6">
+      <fields>
+        <field name="Reference">C6</field>
+        <field name="Value">100nF 50V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="C9">
+      <fields>
+        <field name="Reference">C9</field>
+        <field name="Value">10uF 50V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="D2">
+      <fields>
+        <field name="Reference">D2</field>
+        <field name="Value">SMBJ33A</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="D3">
+      <fields>
+        <field name="Reference">D3</field>
+        <field name="Value">B140-13-F</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="D4">
+      <fields>
+        <field name="Reference">D4</field>
+        <field name="Value">SMBJ18A</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="D5">
+      <fields>
+        <field name="Reference">D5</field>
+        <field name="Value">BAV199 backup isolation</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="K2_UNUSED" type="passive"/>
+        <pin num="3" name="K1_A2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="D6">
+      <fields>
+        <field name="Reference">D6</field>
+        <field name="Value">BAV199 backup isolation</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="K2_UNUSED" type="passive"/>
+        <pin num="3" name="K1_A2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="J1">
+      <fields>
+        <field name="Reference">J1</field>
+        <field name="Value">436500200</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="J3">
+      <fields>
+        <field name="Reference">J3</field>
+        <field name="Value">SM08B-SRSS-TB(LF)(SN)</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="MP" name="MP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="J4">
+      <fields>
+        <field name="Reference">J4</field>
+        <field name="Value">SM02B-SRSS-TB(LF)(SN)</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="MP" name="MP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="J5">
+      <fields>
+        <field name="Reference">J5</field>
+        <field name="Value">SM04B-SRSS-TB(LF)(SN)</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="MP" name="Mounting_anchors" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="J6">
+      <fields>
+        <field name="Reference">J6</field>
+        <field name="Value">ESP32 socket P1</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="NC_1" type="passive"/>
+        <pin num="2" name="NC_2" type="passive"/>
+        <pin num="3" name="NC_3" type="passive"/>
+        <pin num="4" name="NC_4" type="passive"/>
+        <pin num="5" name="NC_5" type="passive"/>
+        <pin num="6" name="NC_6" type="passive"/>
+        <pin num="7" name="GPIO7" type="passive"/>
+        <pin num="8" name="DSP_RES" type="passive"/>
+        <pin num="9" name="NC_9" type="passive"/>
+        <pin num="10" name="NC_10" type="passive"/>
+        <pin num="11" name="SCL" type="passive"/>
+        <pin num="12" name="SDA" type="passive"/>
+        <pin num="13" name="NC_13" type="passive"/>
+        <pin num="14" name="NC_14" type="passive"/>
+        <pin num="15" name="NC_15" type="passive"/>
+        <pin num="16" name="CS2" type="passive"/>
+        <pin num="17" name="SPI_MOSI" type="passive"/>
+        <pin num="18" name="SPI_SCK" type="passive"/>
+        <pin num="19" name="DSP_DC" type="passive"/>
+        <pin num="20" name="CS1" type="passive"/>
+        <pin num="21" name="+5V_MODULE" type="passive"/>
+        <pin num="22" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="J7">
+      <fields>
+        <field name="Reference">J7</field>
+        <field name="Value">ESP32 socket P2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="NC_2" type="passive"/>
+        <pin num="3" name="NC_3" type="passive"/>
+        <pin num="4" name="NC_4" type="passive"/>
+        <pin num="5" name="NC_5" type="passive"/>
+        <pin num="6" name="NC_6" type="passive"/>
+        <pin num="7" name="NC_7" type="passive"/>
+        <pin num="8" name="NC_8" type="passive"/>
+        <pin num="9" name="NC_9" type="passive"/>
+        <pin num="10" name="NC_10" type="passive"/>
+        <pin num="11" name="NC_11" type="passive"/>
+        <pin num="12" name="NC_12" type="passive"/>
+        <pin num="13" name="NC_13" type="passive"/>
+        <pin num="14" name="NC_14" type="passive"/>
+        <pin num="15" name="NC_15" type="passive"/>
+        <pin num="16" name="NC_16" type="passive"/>
+        <pin num="17" name="NC_17" type="passive"/>
+        <pin num="18" name="NC_18" type="passive"/>
+        <pin num="19" name="NC_19" type="passive"/>
+        <pin num="20" name="NC_20" type="passive"/>
+        <pin num="21" name="GND" type="passive"/>
+        <pin num="22" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="J8">
+      <fields>
+        <field name="Reference">J8</field>
+        <field name="Value">REMOVE LINK FOR USB</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="+5V_BUCK" type="passive"/>
+        <pin num="2" name="+5V_MODULE" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="L1">
+      <fields>
+        <field name="Reference">L1</field>
+        <field name="Value">4.7uH</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="R10">
+      <fields>
+        <field name="Reference">R10</field>
+        <field name="Value">12k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="R3">
+      <fields>
+        <field name="Reference">R3</field>
+        <field name="Value">4.7k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="R4">
+      <fields>
+        <field name="Reference">R4</field>
+        <field name="Value">4.7k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="R6">
+      <fields>
+        <field name="Reference">R6</field>
+        <field name="Value">10k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="R7">
+      <fields>
+        <field name="Reference">R7</field>
+        <field name="Value">120k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="R8">
+      <fields>
+        <field name="Reference">R8</field>
+        <field name="Value">20k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="R9">
+      <fields>
+        <field name="Reference">R9</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="U3">
+      <fields>
+        <field name="Reference">U3</field>
+        <field name="Value">PCF8563T/5,518</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OSCI" type="input"/>
+        <pin num="2" name="OSCO" type="output"/>
+        <pin num="3" name="INT" type="open_collector"/>
+        <pin num="4" name="VSS" type="power_in"/>
+        <pin num="5" name="SDA" type="bidirectional"/>
+        <pin num="6" name="SCL" type="input"/>
+        <pin num="7" name="CLKOUT" type="open_collector"/>
+        <pin num="8" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="U5">
+      <fields>
+        <field name="Reference">U5</field>
+        <field name="Value">AP63205WU-7</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="FB" type="input"/>
+        <pin num="2" name="EN" type="input"/>
+        <pin num="3" name="VIN" type="power_in"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="SW" type="output"/>
+        <pin num="6" name="BST" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="U6">
+      <fields>
+        <field name="Reference">U6</field>
+        <field name="Value">TPS26600PWPR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="IN" type="passive"/>
+        <pin num="3" name="UVLO" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="OVP" type="input"/>
+        <pin num="6" name="MODE" type="input"/>
+        <pin num="7" name="SHDN" type="input"/>
+        <pin num="8" name="RTN" type="power_out"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="IMON" type="output"/>
+        <pin num="11" name="ILIM" type="passive"/>
+        <pin num="12" name="dVdT" type="passive"/>
+        <pin num="13" name="NC" type="no_connect"/>
+        <pin num="14" name="FLT" type="open_collector"/>
+        <pin num="15" name="OUT" type="power_out"/>
+        <pin num="16" name="OUT" type="passive"/>
+        <pin num="17" name="EP_RTN" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="U7">
+      <fields>
+        <field name="Reference">U7</field>
+        <field name="Value">3.3V peripherals</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="OUT" type="power_out"/>
+        <pin num="3" name="IN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="RykerConnect" part="X1">
+      <fields>
+        <field name="Reference">X1</field>
+        <field name="Value">32.768kHz 12.5pF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="RykerConnect">
+      <uri>${KIPRJMOD}/RykerConnect.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3.3V" class="Default">
+      <node ref="C5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="D5" pin="1" pinfunction="A1_1" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="R3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U7" pin="2" pinfunction="OUT_2" pintype="power_out"/>
+    </net>
+    <net code="2" name="+5V_BUCK" class="Default">
+      <node ref="C12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J8" pin="1" pinfunction="+5V_BUCK_1" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="FB_1" pintype="input"/>
+    </net>
+    <net code="3" name="+5V_MODULE" class="Default">
+      <node ref="C19" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J6" pin="21" pinfunction="+5V_MODULE_21" pintype="passive"/>
+      <node ref="J8" pin="2" pinfunction="+5V_MODULE_2" pintype="passive"/>
+      <node ref="U7" pin="3" pinfunction="IN_3" pintype="power_in"/>
+    </net>
+    <net code="4" name="+12V" class="Default">
+      <node ref="C14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C17" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="R7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="1" pinfunction="IN_1" pintype="power_in"/>
+      <node ref="U6" pin="2" pinfunction="IN_2" pintype="passive"/>
+    </net>
+    <net code="5" name="+12V_PROTECTED" class="Default">
+      <node ref="C10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C15" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="2" pinfunction="EN_2" pintype="input"/>
+      <node ref="U5" pin="3" pinfunction="VIN_3" pintype="power_in"/>
+      <node ref="U6" pin="15" pinfunction="OUT_15" pintype="power_out"/>
+      <node ref="U6" pin="16" pinfunction="OUT_16" pintype="passive"/>
+    </net>
+    <net code="6" name="BUCK_BST" class="Default">
+      <node ref="C11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="6" pinfunction="BST_6" pintype="passive"/>
+    </net>
+    <net code="7" name="BUCK_SW" class="Default">
+      <node ref="C11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="5" pinfunction="SW_5" pintype="output"/>
+    </net>
+    <net code="8" name="CS1" class="Default">
+      <node ref="J3" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
+      <node ref="J6" pin="20" pinfunction="CS1_20" pintype="passive"/>
+    </net>
+    <net code="9" name="CS2" class="Default">
+      <node ref="J3" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
+      <node ref="J6" pin="16" pinfunction="CS2_16" pintype="passive"/>
+    </net>
+    <net code="10" name="DSP_DC" class="Default">
+      <node ref="J3" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="J6" pin="19" pinfunction="DSP_DC_19" pintype="passive"/>
+    </net>
+    <net code="11" name="DSP_RES" class="Default">
+      <node ref="J3" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="J6" pin="8" pinfunction="DSP_RES_8" pintype="passive"/>
+    </net>
+    <net code="12" name="GND" class="Default">
+      <node ref="BT1" pin="2" pinfunction="-_2" pintype="passive"/>
+      <node ref="C10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C15" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C17" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C18" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C19" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J3" pin="MP" pinfunction="MP_MP" pintype="passive"/>
+      <node ref="J4" pin="MP" pinfunction="MP_MP" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J5" pin="MP" pinfunction="Mounting_anchors_MP" pintype="passive"/>
+      <node ref="J6" pin="22" pinfunction="GND_22" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="GND_1" pintype="passive"/>
+      <node ref="J7" pin="21" pinfunction="GND_21" pintype="passive"/>
+      <node ref="J7" pin="22" pinfunction="GND_22" pintype="passive"/>
+      <node ref="R6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="VSS_4" pintype="power_in"/>
+      <node ref="U5" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U6" pin="9" pinfunction="GND_9" pintype="power_in"/>
+      <node ref="U7" pin="1" pinfunction="GND_1" pintype="power_in"/>
+    </net>
+    <net code="13" name="GPIO7" class="Default">
+      <node ref="J4" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J6" pin="7" pinfunction="GPIO7_7" pintype="passive"/>
+      <node ref="R6" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="14" name="PROT_DVDT" class="Default">
+      <node ref="C16" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="12" pinfunction="dVdT_12" pintype="passive"/>
+    </net>
+    <net code="15" name="PROT_ILIM" class="Default">
+      <node ref="R10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="11" pinfunction="ILIM_11" pintype="passive"/>
+    </net>
+    <net code="16" name="PROT_OV" class="Default">
+      <node ref="R8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="5" pinfunction="OVP_5" pintype="input"/>
+    </net>
+    <net code="17" name="PROT_RTN" class="Default">
+      <node ref="C16" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U6" pin="17" pinfunction="EP_RTN_17" pintype="passive"/>
+      <node ref="U6" pin="8" pinfunction="RTN_8" pintype="power_out"/>
+    </net>
+    <net code="18" name="PROT_UV" class="Default">
+      <node ref="R7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="3" pinfunction="UVLO_3" pintype="input"/>
+    </net>
+    <net code="19" name="RTC_OSCI" class="Default">
+      <node ref="C18" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="OSCI_1" pintype="input"/>
+      <node ref="X1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="20" name="RTC_OSCO" class="Default">
+      <node ref="U3" pin="2" pinfunction="OSCO_2" pintype="output"/>
+      <node ref="X1" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="21" name="RTC_VDD" class="Default">
+      <node ref="C3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="D5" pin="3" pinfunction="K1_A2_3" pintype="passive"/>
+      <node ref="D6" pin="3" pinfunction="K1_A2_3" pintype="passive"/>
+      <node ref="U3" pin="8" pinfunction="VDD_8" pintype="power_in"/>
+    </net>
+    <net code="22" name="SCL" class="Default">
+      <node ref="J5" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="J6" pin="11" pinfunction="SCL_11" pintype="passive"/>
+      <node ref="R3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="SCL_6" pintype="input"/>
+    </net>
+    <net code="23" name="SDA" class="Default">
+      <node ref="J5" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="J6" pin="12" pinfunction="SDA_12" pintype="passive"/>
+      <node ref="R4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="SDA_5" pintype="bidirectional"/>
+    </net>
+    <net code="24" name="SPI_MOSI" class="Default">
+      <node ref="J3" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="J6" pin="17" pinfunction="SPI_MOSI_17" pintype="passive"/>
+    </net>
+    <net code="25" name="SPI_SCK" class="Default">
+      <node ref="J3" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="J6" pin="18" pinfunction="SPI_SCK_18" pintype="passive"/>
+    </net>
+    <net code="26" name="TVS_MID" class="Default">
+      <node ref="D2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="27" name="VBAT" class="Default">
+      <node ref="BT1" pin="1" pinfunction="+_1" pintype="passive"/>
+      <node ref="D6" pin="1" pinfunction="A1_1" pintype="passive"/>
+    </net>
+    <net code="28" name="unconnected-(D5-K2_UNUSED-Pad2)" class="Default">
+      <node ref="D5" pin="2" pinfunction="K2_UNUSED_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(D6-K2_UNUSED-Pad2)" class="Default">
+      <node ref="D6" pin="2" pinfunction="K2_UNUSED_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(J6-NC_1-Pad1)" class="Default">
+      <node ref="J6" pin="1" pinfunction="NC_1_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(J6-NC_2-Pad2)" class="Default">
+      <node ref="J6" pin="2" pinfunction="NC_2_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(J6-NC_3-Pad3)" class="Default">
+      <node ref="J6" pin="3" pinfunction="NC_3_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(J6-NC_4-Pad4)" class="Default">
+      <node ref="J6" pin="4" pinfunction="NC_4_4" pintype="passive+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(J6-NC_5-Pad5)" class="Default">
+      <node ref="J6" pin="5" pinfunction="NC_5_5" pintype="passive+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(J6-NC_6-Pad6)" class="Default">
+      <node ref="J6" pin="6" pinfunction="NC_6_6" pintype="passive+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(J6-NC_9-Pad9)" class="Default">
+      <node ref="J6" pin="9" pinfunction="NC_9_9" pintype="passive+no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(J6-NC_10-Pad10)" class="Default">
+      <node ref="J6" pin="10" pinfunction="NC_10_10" pintype="passive+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(J6-NC_13-Pad13)" class="Default">
+      <node ref="J6" pin="13" pinfunction="NC_13_13" pintype="passive+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(J6-NC_14-Pad14)" class="Default">
+      <node ref="J6" pin="14" pinfunction="NC_14_14" pintype="passive+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(J6-NC_15-Pad15)" class="Default">
+      <node ref="J6" pin="15" pinfunction="NC_15_15" pintype="passive+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(J7-NC_2-Pad2)" class="Default">
+      <node ref="J7" pin="2" pinfunction="NC_2_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(J7-NC_3-Pad3)" class="Default">
+      <node ref="J7" pin="3" pinfunction="NC_3_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="43" name="unconnected-(J7-NC_4-Pad4)" class="Default">
+      <node ref="J7" pin="4" pinfunction="NC_4_4" pintype="passive+no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(J7-NC_5-Pad5)" class="Default">
+      <node ref="J7" pin="5" pinfunction="NC_5_5" pintype="passive+no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(J7-NC_6-Pad6)" class="Default">
+      <node ref="J7" pin="6" pinfunction="NC_6_6" pintype="passive+no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(J7-NC_7-Pad7)" class="Default">
+      <node ref="J7" pin="7" pinfunction="NC_7_7" pintype="passive+no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(J7-NC_8-Pad8)" class="Default">
+      <node ref="J7" pin="8" pinfunction="NC_8_8" pintype="passive+no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(J7-NC_9-Pad9)" class="Default">
+      <node ref="J7" pin="9" pinfunction="NC_9_9" pintype="passive+no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(J7-NC_10-Pad10)" class="Default">
+      <node ref="J7" pin="10" pinfunction="NC_10_10" pintype="passive+no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(J7-NC_11-Pad11)" class="Default">
+      <node ref="J7" pin="11" pinfunction="NC_11_11" pintype="passive+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(J7-NC_12-Pad12)" class="Default">
+      <node ref="J7" pin="12" pinfunction="NC_12_12" pintype="passive+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(J7-NC_13-Pad13)" class="Default">
+      <node ref="J7" pin="13" pinfunction="NC_13_13" pintype="passive+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(J7-NC_14-Pad14)" class="Default">
+      <node ref="J7" pin="14" pinfunction="NC_14_14" pintype="passive+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(J7-NC_15-Pad15)" class="Default">
+      <node ref="J7" pin="15" pinfunction="NC_15_15" pintype="passive+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(J7-NC_16-Pad16)" class="Default">
+      <node ref="J7" pin="16" pinfunction="NC_16_16" pintype="passive+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(J7-NC_17-Pad17)" class="Default">
+      <node ref="J7" pin="17" pinfunction="NC_17_17" pintype="passive+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(J7-NC_18-Pad18)" class="Default">
+      <node ref="J7" pin="18" pinfunction="NC_18_18" pintype="passive+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(J7-NC_19-Pad19)" class="Default">
+      <node ref="J7" pin="19" pinfunction="NC_19_19" pintype="passive+no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(J7-NC_20-Pad20)" class="Default">
+      <node ref="J7" pin="20" pinfunction="NC_20_20" pintype="passive+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(U3-CLKOUT-Pad7)" class="Default">
+      <node ref="U3" pin="7" pinfunction="CLKOUT_7" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(U3-INT-Pad3)" class="Default">
+      <node ref="U3" pin="3" pinfunction="INT_3" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(U6-FLT-Pad14)" class="Default">
+      <node ref="U6" pin="14" pinfunction="FLT_14" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(U6-IMON-Pad10)" class="Default">
+      <node ref="U6" pin="10" pinfunction="IMON_10" pintype="output+no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(U6-MODE-Pad6)" class="Default">
+      <node ref="U6" pin="6" pinfunction="MODE_6" pintype="input+no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(U6-NC-Pad4)" class="Default">
+      <node ref="U6" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(U6-NC-Pad13)" class="Default">
+      <node ref="U6" pin="13" pinfunction="NC_13" pintype="no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(U6-SHDN-Pad7)" class="Default">
+      <node ref="U6" pin="7" pinfunction="SHDN_7" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>

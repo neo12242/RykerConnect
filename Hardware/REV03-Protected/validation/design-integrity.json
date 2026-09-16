@@ -1,0 +1,11 @@
+{
+  "outline_unchanged": true,
+  "retained_nonartwork_footprints_unchanged": 51,
+  "preserved_signal_track_and_via_items": 453,
+  "REV02_source_matches_preserved_archive": true,
+  "intentional_exceptions": [
+    "Accessory +12V path replaced by new protected path",
+    "Conflicting ground stitches replaced by planes/local return vias",
+    "Back-side decorative artwork relocated; old REV02 artwork removed"
+  ]
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE resources [
+    <!ENTITY appname "RykerConnect">
+    <!ENTITY service_name "RykerConnectMediaService">
+    ]>
+
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="service_name">&service_name;</string>
+    <string name="companion_service_name">CompanionDeviceService</string>
+    <string name="str_test">Set up &appname;</string>
+    <string name="str_main_device">Ryker - Main unit</string>
+    <string name="str_sel_device">Select Device</string>
+
+    <!-- Onboarding Steps -->
+    <string name="setup_step1_title">Step 1: Bluetooth</string>
+    <string name="setup_step1_desc">RykerConnect connects to your display over Bluetooth. To do this, the app needs permission to find and connect to Bluetooth devices.</string>
+    <string name="setup_step1_button">Allow Bluetooth</string>
+
+    <string name="setup_step2_title">Step 2: Location</string>
+    <string name="setup_step2_desc">Location permission supports device discovery and ride recording. Automatic trips need precise location; starting while the phone is locked also needs Allow all the time. Recorded routes stay on your phone unless you export them.</string>
+    <string name="setup_step2_button">Allow location</string>
+
+    <string name="setup_step3_title">Step 3: Phone status</string>
+    <string name="setup_step3_desc">The app needs access to phone status to show your network connection (4G/5G) and signal strength on your helmet display.</string>
+    <string name="setup_step3_button">Allow phone status access</string>
+
+    <string name="setup_step4_title">Step 4: Notifications</string>
+    <string name="setup_step4_desc">RykerConnect needs notification permission to run reliably in the background and keep you informed about the connection status.</string>
+    <string name="setup_step4_button">Allow notifications</string>
+
+    <string name="setup_step5_title">Step 5: App settings</string>
+    <string name="setup_step5_desc">Check Bluetooth and notification permissions. For automatic trips when the Ryker connects while your phone is locked, choose Permissions, Location, Allow all the time, and enable precise location. Recording keeps a visible notification.</string>
+    <string name="setup_step5_button">Open settings</string>
+
+    <string name="setup_step6_title">Step 6: Notification access</string>
+    <string name="setup_step6_desc">Enable notification access to show notifications from other apps, such as WhatsApp and incoming calls, on your helmet display.</string>
+    <string name="setup_step6_button">Enable access</string>
+
+    <string name="setup_complete">Finish setup</string>
+
+</resources>

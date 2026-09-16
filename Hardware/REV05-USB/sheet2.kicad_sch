@@ -1,0 +1,245 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(uuid "4c7ef2be-c824-5997-9303-874c61e5c857")
+	(paper "A3")
+	(title_block
+		(title "RykerConnect - Accessory protection")
+		(date "2026-09-13")
+		(rev "REV05-USB")
+	)
+	(lib_symbols
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 1.27)
+						(xy -1.016 1.905)
+						(xy 0 2.54)
+						(xy 1.016 1.905)
+						(xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "Accessory protection"
+		(at 20 15 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "86c5da33-eb6f-5e26-83ec-b28d3de82c28")
+	)
+	(text "12V variant only: fused accessory input. RTN is isolated from GND.\nUSB variant: vehicle protection is external to this board."
+		(at 20 235 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left)
+		)
+		(uuid "1aeb8d9a-ee78-5281-b0c8-8f7f2dbd22fa")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 359.41 234.95 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "7f9d5d6f-a9c6-5777-8693-3fda89ce5750")
+		(property "Reference" "#FLG2359.41"
+			(at 359.41 234.95 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 359.41 234.95 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RykerConnect"
+				(path "/b3e6de9e-c7cd-4419-8e94-64236783f104/5cbaf2b8-e55b-5fc8-97d6-6c9ca059f63a"
+					(reference "#FLG2359.41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 359.41 234.95 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "d2a71235-5176-564a-a09c-20dc5016540c")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 330.2 234.95 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "0ca9f1d7-792b-51a3-ae75-c7c07a8fdc34")
+		(property "Reference" "#FLG2330.2"
+			(at 330.2 234.95 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 330.2 234.95 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RykerConnect"
+				(path "/b3e6de9e-c7cd-4419-8e94-64236783f104/5cbaf2b8-e55b-5fc8-97d6-6c9ca059f63a"
+					(reference "#FLG2330.2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "+5V_EXTERNAL"
+		(shape bidirectional)
+		(at 330.2 234.95 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "acc56ddf-6dd0-511b-a787-54cf6f9faf50")
+	)
+)

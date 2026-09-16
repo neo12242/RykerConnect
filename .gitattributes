@@ -1,0 +1,7 @@
+# Preserve reviewed manufacturing uploads byte-for-byte across platforms.
+Hardware/**/manufacturing/** -text
+*.zip binary
+*.jar binary
+*.png binary
+*.jpg binary
+*.pdf binary

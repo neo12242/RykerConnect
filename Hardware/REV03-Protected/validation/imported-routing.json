@@ -1,0 +1,10 @@
+{
+  "+12V": 20,
+  "+12V_PROTECTED": 18,
+  "TVS_MID": 3,
+  "PROT_ILIM": 3,
+  "PROT_RTN": 12,
+  "PROT_UV": 4,
+  "PROT_OV": 5,
+  "PROT_DVDT": 3
+}

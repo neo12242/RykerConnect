@@ -1,0 +1,8 @@
+{
+  "electrical_net_membership_identical": true,
+  "placement_csv_identical": true,
+  "crystal_body_unrelated_tracks": "none",
+  "crystal_body_zone_fills": "excluded both layers",
+  "estimated_order_usd": 105.3,
+  "refreshed_vendor_quote": false
+}

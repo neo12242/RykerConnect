@@ -1,0 +1,22 @@
+{
+  "revision": "REV05-USB",
+  "components": 21,
+  "bom_groups": 16,
+  "top": 21,
+  "bottom": 0,
+  "erc": 0,
+  "drc": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "all_drc_rules_enabled": true,
+  "critical_net_assertions": "passed",
+  "stock_for_five_boards_at_observation": true,
+  "component_cost_usd_tier1": 4.9903,
+  "vendor_placement_and_process_acceptance": "pending",
+  "physical_validation": "pending",
+  "manufacturing_sha256": {
+    "BOM.csv": "a283b6cb28d6279c2a8a0b675106932e53a38cd2a55df3417bfe46c8bf626046",
+    "CPL.csv": "672e8dfbbdf83e5d2d45bc6b9332111da1b197b263c9916e3a991b192fb9a6a3",
+    "Gerbers.zip": "315714e74c123ad97b2913e8748602f89e505e22ba4e0bb493bc6fe9ff9a6649"
+  }
+}

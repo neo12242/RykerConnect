@@ -1,0 +1,157 @@
+{
+  "J1": {
+    "1": "+12V",
+    "2": "GND"
+  },
+  "J3": {
+    "2": "+3.3V",
+    "7": "CS1",
+    "8": "CS2",
+    "6": "DC/MISO",
+    "5": "DSP_RES",
+    "1": "GND",
+    "3": "SCL/SCLK/SCK",
+    "4": "SDA/SDIN/MOSI"
+  },
+  "J4": {
+    "1": "+3.3V",
+    "2": "GPIO7"
+  },
+  "J5": {
+    "2": "+3.3V",
+    "1": "GND",
+    "MP": "GND",
+    "4": "SCL",
+    "3": "SDA"
+  },
+  "U2": {
+    "8": "+3.3V",
+    "4": "GND",
+    "5": "GND",
+    "6": "GND",
+    "7": "GND",
+    "2": "SCL",
+    "1": "SDA",
+    "3": "unconnected-(U2-Alert-Pad3)"
+  },
+  "U3": {
+    "2": "+3.3V",
+    "4": "CHIP_PU",
+    "5": "GND",
+    "6": "Net-(BT1-+)",
+    "8": "SCL",
+    "7": "SDA",
+    "1": "unconnected-(U3-32KHZ-Pad1)",
+    "3": "unconnected-(U3-~{INT}/SQW-Pad3)"
+  },
+  "U4": {
+    "2": "+3.3V",
+    "3": "CHIP_PU",
+    "18": "CS1",
+    "22": "CS2",
+    "14": "D+",
+    "13": "D-",
+    "21": "DC/MISO",
+    "8": "DSP_RES",
+    "1": "GND",
+    "40": "GND",
+    "27": "GPIO0",
+    "5": "GPIO5",
+    "6": "GPIO6",
+    "7": "GPIO7",
+    "36": "RX",
+    "11": "SCL",
+    "20": "SCL/SCLK/SCK",
+    "12": "SDA",
+    "19": "SDA/SDIN/MOSI",
+    "37": "TX",
+    "39": "unconnected-(U4-IO1-Pad39)",
+    "38": "unconnected-(U4-IO2-Pad38)",
+    "15": "unconnected-(U4-IO3-Pad15)",
+    "4": "unconnected-(U4-IO4-Pad4)",
+    "17": "unconnected-(U4-IO9-Pad17)",
+    "9": "unconnected-(U4-IO16-Pad9)",
+    "10": "unconnected-(U4-IO17-Pad10)",
+    "23": "unconnected-(U4-IO21-Pad23)",
+    "28": "unconnected-(U4-IO35-Pad28)",
+    "29": "unconnected-(U4-IO36-Pad29)",
+    "30": "unconnected-(U4-IO37-Pad30)",
+    "31": "unconnected-(U4-IO38-Pad31)",
+    "32": "unconnected-(U4-IO39-Pad32)",
+    "33": "unconnected-(U4-IO40-Pad33)",
+    "34": "unconnected-(U4-IO41-Pad34)",
+    "35": "unconnected-(U4-IO42-Pad35)",
+    "26": "unconnected-(U4-IO45-Pad26)",
+    "16": "unconnected-(U4-IO46-Pad16)",
+    "24": "unconnected-(U4-IO47-Pad24)",
+    "25": "unconnected-(U4-IO48-Pad25)"
+  },
+  "U5": {
+    "3": "+3.3V",
+    "4": "/Power/PWR IN",
+    "5": "/Power/PWR IN",
+    "2": "GND",
+    "1": "Net-(U5-CB)",
+    "6": "Net-(U5-SW)"
+  },
+  "C3": {
+    "1": "+3.3V",
+    "2": "GND"
+  },
+  "C4": {
+    "1": "+3.3V",
+    "2": "GND"
+  },
+  "C5": {
+    "1": "+3.3V",
+    "2": "GND"
+  },
+  "C6": {
+    "1": "+3.3V",
+    "2": "GND"
+  },
+  "C7": {
+    "1": "CHIP_PU",
+    "2": "GND"
+  },
+  "C8": {
+    "1": "/Power/5V USB IN",
+    "2": "GND"
+  },
+  "C9": {
+    "1": "/Power/PWR IN",
+    "2": "GND"
+  },
+  "C10": {
+    "1": "/Power/PWR IN",
+    "2": "GND"
+  },
+  "C11": {
+    "2": "Net-(U5-CB)",
+    "1": "Net-(U5-SW)"
+  },
+  "C12": {
+    "1": "+3.3V",
+    "2": "GND"
+  },
+  "C13": {
+    "1": "+3.3V",
+    "2": "GND"
+  },
+  "L1": {
+    "2": "+3.3V",
+    "1": "Net-(U5-SW)"
+  },
+  "R5": {
+    "1": "+3.3V",
+    "2": "CHIP_PU"
+  },
+  "R6": {
+    "2": "GND",
+    "1": "GPIO7"
+  },
+  "BT1": {
+    "2": "GND",
+    "1": "Net-(BT1-+)"
+  }
+}

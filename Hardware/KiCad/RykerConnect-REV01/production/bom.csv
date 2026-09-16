@@ -1,4 +1,4 @@
-﻿Designator,Footprint,Quantity,Value,LCSC Part #
+Designator,Footprint,Quantity,Value,LCSC Part #
 BT1,BATHLD001,1,Battery_Cell,
 "C10, C11, C6, C8",0603,4,100nF,
 "C12, C13",0805,2,10uF,

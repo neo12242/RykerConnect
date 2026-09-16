@@ -1,0 +1,343 @@
+[
+  {
+    "refs": "BT1",
+    "mpn": "BAT-HLD-001",
+    "manufacturer": "TE Connectivity / Linx",
+    "code": "C7501066",
+    "status": "Exact MPN catalog match",
+    "source": "https://jlcpcb.com/partdetail/8581451-BAT_HLD001/C7501066",
+    "note": "SMD holder only; not the CR2032 battery. Do not select the THM version. Stock not confirmed."
+  },
+  {
+    "refs": "C3,C4,C7",
+    "mpn": "CL10B105KO8NNNC",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "code": "C59782",
+    "status": "Selected under hardware implementation approval; sourcing/model validation pending",
+    "source": "https://www.lcsc.com/product-detail/C59782.html",
+    "candidate": "CL10B105KO8NNNC",
+    "candidate_code": "C59782",
+    "candidate_source": "https://www.lcsc.com/product-detail/C59782.html",
+    "note": "1uF 16V X7R 10% 0603. Selected C packaging suffix instead of original D; same Samsung electrical family.",
+    "original_mpn": "CL10B105KO8NNND"
+  },
+  {
+    "refs": "C5,C9",
+    "mpn": "C1608X5R1E106M080AC",
+    "manufacturer": "TDK",
+    "code": "C2168289",
+    "status": "Exact MPN catalog match; sourcing needed",
+    "source": "https://jlcpcb.com/partdetail/TDK-C1608X5R1E106M080AC/C2168289",
+    "note": "10uF 25V X5R 20% 0603. Indexed JLCPCB page showed zero stock; this is not a live stock reservation. Confirm preorder/Global Sourcing. Preserve 25V rating and assess DC bias if substituting."
+  },
+  {
+    "refs": "C6,C10",
+    "mpn": "C0603C104K5RAC7082",
+    "manufacturer": "KEMET",
+    "code": "C1882722",
+    "status": "Exact MPN LCSC catalog match",
+    "source": "https://item.szlcsc.com/1973542.html",
+    "note": "100nF 50V X7R 10% 0603. JLCPCB assembly availability not confirmed."
+  },
+  {
+    "refs": "C8,C11",
+    "mpn": "C0603C104K3RACTU",
+    "manufacturer": "KEMET",
+    "code": "C2167527",
+    "status": "Exact MPN LCSC catalog match",
+    "source": "https://www.lcsc.com/product-detail/C2167527.html",
+    "note": "100nF 25V X7R 10% 0603. Kept separate from C6/C10. JLCPCB assembly availability not confirmed."
+  },
+  {
+    "refs": "C12,C13",
+    "mpn": "C0805C106K8PACTU",
+    "manufacturer": "KEMET",
+    "code": "C2167673",
+    "status": "Exact MPN catalog match",
+    "source": "https://jlcpcb.com/partdetail/KEMET-C0805C106K8PACTU/C2167673",
+    "note": "10uF 10V X5R 10% 0805. Stock not confirmed."
+  },
+  {
+    "refs": "D1",
+    "mpn": "CVJ10F30,LF",
+    "manufacturer": "Toshiba",
+    "code": "C5609371",
+    "status": "Device catalog match; sourcing needed",
+    "source": "https://jlcpcb.com/partdetail/TOSHIBA-CVJ10F30LF/C5609371",
+    "note": "UFV 5-pin dual independent Schottky. Board pins 1/3 are inputs and 4/5 share output; agrees with Toshiba pinout. Disregard stale BAT160/SOT-223 metadata. Indexed JLCPCB page showed zero stock and an inconsistent Wave Soldering label; confirm sourcing and SMT process."
+  },
+  {
+    "refs": "J1",
+    "mpn": "436500200",
+    "manufacturer": "Molex",
+    "code": "C192562",
+    "status": "Selected under hardware implementation approval; sourcing/model validation pending",
+    "source": "https://jlcpcb.com/partdetail/MOLEX-436500200/C192562",
+    "candidate": "436500200",
+    "candidate_code": "C192562",
+    "candidate_source": "https://jlcpcb.com/partdetail/MOLEX-436500200/C192562",
+    "note": "Tin-plated right-angle Micro-Fit 3.0, 2 pins. Drawing confirms 3mm retention holes. Connector moved 0.5mm toward board edge, giving 9.88mm peg-to-edge distance against 10.16mm maximum. Through-hole assembly required; centroid/model preview pending.",
+    "original_mpn": "43650-02xx (finish unspecified)"
+  },
+  {
+    "refs": "J2",
+    "mpn": "USB4105-GF-A",
+    "manufacturer": "GCT",
+    "code": "C3020560",
+    "status": "Selected under hardware implementation approval; sourcing/model validation pending",
+    "source": "https://jlcpcb.com/partdetail/3542626-USB4105_GFA/C3020560",
+    "candidate": "USB4105-GF-A",
+    "candidate_code": "C3020560",
+    "candidate_source": "https://jlcpcb.com/partdetail/3542626-USB4105_GFA/C3020560",
+    "note": "Selected GCT USB4105-GF-A within original footprint family. Copper clearance and all four shell-tab connections corrected. Exact assembly model/mechanical preview remains required; catalog identifies assembly difficulty High.",
+    "original_mpn": "USB4105-xx-A (finish unspecified)"
+  },
+  {
+    "refs": "J3",
+    "mpn": "SM08B-SRSS-TB(LF)(SN)",
+    "manufacturer": "JST",
+    "code": "C160407",
+    "status": "Named footprint family catalog match",
+    "source": "https://jlcpcb.com/partdetail/JST-SM08B_SRSS_TB_LF_SN/C160407",
+    "note": "8-pin SH, 1mm pitch, side entry SMD. Board pitch and signal-pad span agree with SH drawing. Stock not confirmed; mating cable is outside the board assembly."
+  },
+  {
+    "refs": "J4",
+    "mpn": "SM02B-SRSS-TB(LF)(SN)",
+    "manufacturer": "JST",
+    "code": "C160402",
+    "status": "Named footprint family catalog match",
+    "source": "https://jlcpcb.com/partdetail/JST-SM02B_SRSS_TB_LF_SN/C160402",
+    "note": "2-pin SH, 1mm pitch, side entry SMD. Stock not confirmed; external light sensor and cable are not on this PCB."
+  },
+  {
+    "refs": "L1",
+    "mpn": "744316470",
+    "manufacturer": "Wurth Elektronik",
+    "code": "C2651181",
+    "status": "Exact MPN catalog match",
+    "source": "https://jlcpcb.com/partdetail/WurthElektronik-744316470/C2651181",
+    "note": "4.7uH 20%, catalog ratings 4.6A and 4.7A saturation. Exact original part retained. Live stock not confirmed."
+  },
+  {
+    "refs": "R1,R2,R3,R4",
+    "mpn": "RS73F2ARTTD5101D",
+    "manufacturer": "KOA Speer",
+    "code": "C5890991",
+    "status": "Selected under hardware implementation approval; sourcing/model validation pending",
+    "source": "https://jlcpcb.com/partdetail/KOA_SpeerElec-RS73F2ARTTD5101D/C5890991",
+    "candidate": "RS73F2ARTTD5101D",
+    "candidate_code": "C5890991",
+    "candidate_source": "https://jlcpcb.com/partdetail/KOA_SpeerElec-RS73F2ARTTD5101D/C5890991",
+    "note": "Selected KOA RS73 5.1k 0.5% 250mW 0805, 150V maximum working voltage and -55 to +155C operating range. Replaces original RK73 5.1k 1% 250mW. Actual circuit dissipation remains low; stock/sourcing confirmation required.",
+    "original_mpn": "RK73H2ATTD5101F"
+  },
+  {
+    "refs": "R5,R6",
+    "mpn": "CRGP0805F10K",
+    "manufacturer": "TE Connectivity",
+    "code": "C2074940",
+    "status": "Exact MPN LCSC catalog match",
+    "source": "https://www.lcsc.com/product-detail/C2074940.html",
+    "note": "10k 1% 0805, 0.33W. JLCPCB assembly availability not confirmed."
+  },
+  {
+    "refs": "S1,S2",
+    "mpn": "435451019820",
+    "manufacturer": "Wurth Elektronik",
+    "code": "C7464054",
+    "status": "Exact MPN catalog match",
+    "source": "https://jlcpcb.com/partdetail/WurthElektronik-435451019820/C7464054",
+    "note": "BOOT and RST use the same original switch. Catalog explicitly supports SMT assembly. Stock not confirmed."
+  },
+  {
+    "refs": "U1",
+    "mpn": "USBLC6-2SC6",
+    "manufacturer": "STMicroelectronics",
+    "code": "C7519",
+    "status": "Exact device/manufacturer LCSC match",
+    "source": "https://lcsc.com/product-detail/ESD-Protection-Devices_STMicroelectronics_C7519.html",
+    "note": "SOT-23-6. Preserve ST manufacturer; same device text appears under other brands. Original exported rotation 270 differs from board rotation 90; validate JLCPCB model before release."
+  },
+  {
+    "refs": "U2",
+    "mpn": "MCP9808T-E/MS",
+    "manufacturer": "Microchip",
+    "code": "C129490",
+    "status": "MSOP device catalog match",
+    "source": "https://jlcpcb.com/partdetail/MicrochipTech-MCP9808T_EMS/C129490",
+    "note": "MSOP-8 3x3mm, 0.65mm pitch matches board; do not select DFN /MC variant. Original exported rotation 180 differs from board rotation 270; validate JLCPCB model before release."
+  },
+  {
+    "refs": "U3",
+    "mpn": "DS3231MZ/V+T",
+    "manufacturer": "Analog Devices / Maxim",
+    "code": "C3304429",
+    "status": "Exact MPN LCSC catalog match",
+    "source": "https://www.lcsc.com/it/product-detail/C3304429.html",
+    "note": "SOIC-8. Preserve exact DS3231MZ/V+T; a generic 16-pin DS3231 is not footprint-compatible. JLCPCB assembly sourcing not confirmed."
+  },
+  {
+    "refs": "U4",
+    "mpn": "ESP32-S3-WROOM-1-N8",
+    "manufacturer": "Espressif Systems",
+    "code": "C2913198",
+    "status": "Selected under hardware implementation approval; sourcing/model validation pending",
+    "source": "https://jlcpcb.com/partdetail/Espressif-ESP32_S3_WROOM_1/C2913198",
+    "candidate": "ESP32-S3-WROOM-1-N8",
+    "candidate_code": "C2913198",
+    "candidate_source": "https://jlcpcb.com/partdetail/Espressif-ESP32_S3_WROOM_1/C2913198",
+    "note": "Selected N8 variant: 8MB flash, no PSRAM; matching REV02 firmware built successfully. Optional EPAD 41 is unsoldered as permitted by manufacturer; ground pins 1 and 40 remain connected. Thermal and RF operation need physical validation.",
+    "original_mpn": "ESP32-S3-WROOM-1 (memory unspecified)"
+  },
+  {
+    "refs": "U5",
+    "mpn": "LMR50410Y3FQDBVRQ1",
+    "manufacturer": "Texas Instruments",
+    "code": "C5219374",
+    "status": "Exact MPN LCSC catalog match",
+    "source": "https://www.lcsc.com/es/product-detail/DC-DC-Converters_Texas-Instruments-LMR50410Y3FQDBVRQ1_C5219374.html",
+    "note": "Fixed 3.3V 1A regulator, SOT-23-6. Board CB/GND/FB/EN/VIN/SW numbering matches TI. Never select 5V or adjustable variant merely for availability. JLCPCB assembly sourcing not confirmed."
+  },
+  {
+    "refs": "J5",
+    "mpn": "SM04B-SRSS-TB(LF)(SN)",
+    "manufacturer": "JST",
+    "code": "C160404",
+    "status": "External 3.3V I2C connector",
+    "source": "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-SM04B-SRSS-TB-LF-SN_C160404.html",
+    "note": "STEMMA QT/Qwiic order: 1 GND, 2 +3.3V, 3 SDA, 4 SCL. Sensor is an external purchased module."
+  },
+  {
+    "refs": "U6",
+    "mpn": "TPS26600PWPR",
+    "manufacturer": "Texas Instruments",
+    "code": "C544399",
+    "value": "TPS26600PWPR",
+    "fp": "Protection_HTSSOP16_PWP0016A",
+    "note": "Adjustable OV cutoff variant; do not substitute TPS26602 fixed 38V clamp. RTN/EP isolated from system ground.",
+    "source": "https://www.lcsc.com/product-detail/C544399.html",
+    "status": "Selected for REV03 prototype; JLCPCB stock and model acceptance pending"
+  },
+  {
+    "refs": "D2",
+    "mpn": "SMBJ33A",
+    "manufacturer": "Littelfuse",
+    "code": "C224019",
+    "value": "SMBJ33A",
+    "fp": "Diode_SMD:D_SMB",
+    "note": "Positive TVS: 33V standoff, 53.3V clamp at specified 11.3A pulse; anode joins D4 anode. Not an unsuppressed-load-dump energy rating.",
+    "source": "https://www.lcsc.com/product-detail/C224019.html",
+    "status": "Selected for REV03 prototype; JLCPCB stock and model acceptance pending"
+  },
+  {
+    "refs": "D3",
+    "mpn": "B140-13-F",
+    "manufacturer": "Diodes Incorporated",
+    "code": "C15759",
+    "value": "B140-13-F",
+    "fp": "Diode_SMD:D_SMA",
+    "note": "1A 40V negative-output transient clamp; cathode to protected rail.",
+    "source": "https://www.lcsc.com/product-detail/C15759.html",
+    "status": "Selected for REV03 prototype; JLCPCB stock and model acceptance pending"
+  },
+  {
+    "refs": "C14",
+    "mpn": "CL31B105KCHNNNE",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "code": "C13832",
+    "value": "1uF 100V",
+    "fp": "Capacitor_SMD:C_1206_3216Metric",
+    "note": "Input X7R 100V ceramic; effective capacitance under DC bias must be validated for fast negative transients.",
+    "source": "https://www.lcsc.com/product-detail/C13832.html",
+    "status": "Selected for REV03 prototype; JLCPCB stock and model acceptance pending"
+  },
+  {
+    "refs": "C15",
+    "mpn": "CL21B105KBFNNNE",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "code": "C28323",
+    "value": "1uF 50V",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "note": "Local output decoupling, X7R 10%.",
+    "source": "https://www.lcsc.com/product-detail/C28323.html",
+    "status": "Selected for REV03 prototype; JLCPCB stock and model acceptance pending"
+  },
+  {
+    "refs": "C16",
+    "mpn": "CL10B103KB8NNNC",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "code": "C1589",
+    "value": "10nF 50V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "note": "Output ramp control capacitor to isolated RTN, about 1ms ramp at 12V.",
+    "source": "https://www.lcsc.com/product-detail/C1589.html",
+    "status": "Selected for REV03 prototype; JLCPCB stock and model acceptance pending"
+  },
+  {
+    "refs": "R7",
+    "mpn": "RC0603FR-07120KL",
+    "manufacturer": "Yageo",
+    "code": "C114607",
+    "value": "120k 1%",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "note": "Upper leg of 120k/20k/10k divider; 75V, 100mW.",
+    "source": "https://www.lcsc.com/product-detail/C114607.html",
+    "status": "Selected for REV03 prototype; JLCPCB stock and model acceptance pending"
+  },
+  {
+    "refs": "R8",
+    "mpn": "RC0603FR-0720KL",
+    "manufacturer": "Yageo",
+    "code": "C105575",
+    "value": "20k 1%",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "note": "Middle divider leg.",
+    "source": "https://www.lcsc.com/product-detail/C105575.html",
+    "status": "Selected for REV03 prototype; JLCPCB stock and model acceptance pending"
+  },
+  {
+    "refs": "R9",
+    "mpn": "CRGP0805F10K",
+    "manufacturer": "TE Connectivity",
+    "code": "C2074940",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0805_2012Metric",
+    "note": "Bottom divider leg, matching original R5/R6 purchasing identity.",
+    "source": "https://www.lcsc.com/product-detail/C2074940.html",
+    "status": "Selected for REV03 prototype; JLCPCB stock and model acceptance pending"
+  },
+  {
+    "refs": "R10",
+    "mpn": "RC0603FR-0712KL",
+    "manufacturer": "Yageo",
+    "code": "C114659",
+    "value": "12k 1%",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "note": "Nominal 1A current limit; returns only to PROT_RTN.",
+    "source": "https://www.lcsc.com/product-detail/C114659.html",
+    "status": "Selected for REV03 prototype; JLCPCB stock and model acceptance pending"
+  },
+  {
+    "refs": "D4",
+    "mpn": "SMBJ18A",
+    "manufacturer": "Littelfuse",
+    "code": "C151256",
+    "value": "SMBJ18A",
+    "fp": "Diode_SMD:D_SMB",
+    "note": "Negative TVS: cathode GND, anode joins D2 anode. 18V standoff, 29.2V clamp at 20.6A. Asymmetric pair protects input-output differential during negative pulses.",
+    "source": "https://www.lcsc.com/product-detail/C151256.html",
+    "status": "Selected for REV03 prototype; JLCPCB stock and model acceptance pending"
+  },
+  {
+    "refs": "C17",
+    "mpn": "CL31B105KCHNNNE",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "code": "C13832",
+    "value": "1uF 100V",
+    "fp": "Capacitor_SMD:C_1206_3216Metric",
+    "note": "Second parallel input capacitor; 2uF nominal total before DC-bias derating.",
+    "source": "https://www.lcsc.com/product-detail/C13832.html",
+    "status": "Selected for REV03 prototype; JLCPCB stock and model acceptance pending"
+  }
+]

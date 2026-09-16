@@ -1,0 +1,554 @@
+[
+  {
+    "ref": "BT1",
+    "value": "BAT-HLD-001",
+    "mpn": "BAT-HLD-001",
+    "code": "C7501066",
+    "fp": "RykerConnect:BT1_BATHLD001",
+    "nets": {
+      "2": "GND",
+      "1": "VBAT"
+    },
+    "pos": [
+      105,
+      85,
+      0
+    ],
+    "page": 4,
+    "manufacturer": "TE Connectivity / Linx",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C7501066"
+  },
+  {
+    "ref": "J1",
+    "value": "5V ONLY regulated input",
+    "mpn": "436500200",
+    "code": "C192562",
+    "fp": "RykerConnect:J1_43650-02_00,01,02_",
+    "nets": {
+      "1": "+5V_EXTERNAL",
+      "2": "GND"
+    },
+    "pos": [
+      120,
+      100,
+      0
+    ],
+    "page": 1,
+    "manufacturer": "Molex",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C192562"
+  },
+  {
+    "ref": "J3",
+    "value": "SM08B-SRSS-TB(LF)(SN)",
+    "mpn": "SM08B-SRSS-TB(LF)(SN)",
+    "code": "C160407",
+    "fp": "RykerConnect:J3_JST_SH_SM08B-SRSS-TB_1x08-1MP_P1.00mm_Horizontal",
+    "nets": {
+      "2": "+3.3V",
+      "7": "CS1",
+      "8": "CS2",
+      "6": "DSP_DC",
+      "5": "DSP_RES",
+      "1": "GND",
+      "3": "SPI_SCK",
+      "4": "SPI_MOSI",
+      "MP": "GND"
+    },
+    "pos": [
+      104,
+      113,
+      0
+    ],
+    "page": 1,
+    "manufacturer": "JST",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C160407"
+  },
+  {
+    "ref": "J4",
+    "value": "SM02B-SRSS-TB(LF)(SN)",
+    "mpn": "SM02B-SRSS-TB(LF)(SN)",
+    "code": "C160402",
+    "fp": "RykerConnect:J4_JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal",
+    "nets": {
+      "1": "+3.3V",
+      "2": "GPIO7",
+      "MP": "GND"
+    },
+    "pos": [
+      130,
+      113,
+      0
+    ],
+    "page": 4,
+    "manufacturer": "JST",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C160402"
+  },
+  {
+    "ref": "J5",
+    "value": "SM04B-SRSS-TB(LF)(SN)",
+    "mpn": "SM04B-SRSS-TB(LF)(SN)",
+    "code": "C160404",
+    "fp": "RykerConnect:J5_JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",
+    "nets": {
+      "2": "+3.3V",
+      "1": "GND",
+      "MP": "GND",
+      "4": "SCL",
+      "3": "SDA"
+    },
+    "pos": [
+      138,
+      113,
+      0
+    ],
+    "page": 1,
+    "manufacturer": "JST",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C160404"
+  },
+  {
+    "ref": "C3",
+    "value": "100nF 50V",
+    "mpn": "CL10B104KB8NNNC",
+    "code": "C1591",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "RTC_VDD",
+      "2": "GND"
+    },
+    "pos": [
+      175,
+      92,
+      0
+    ],
+    "page": 4,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C1591"
+  },
+  {
+    "ref": "C6",
+    "value": "100nF 50V",
+    "mpn": "CL10B104KB8NNNC",
+    "code": "C1591",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "pos": [
+      163,
+      89,
+      0
+    ],
+    "page": 4,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C1591"
+  },
+  {
+    "ref": "C5",
+    "value": "10uF 25V",
+    "mpn": "CL10A106MA8NRNC",
+    "code": "C96446",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "pos": [
+      155,
+      86,
+      270
+    ],
+    "page": 4,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C96446"
+  },
+  {
+    "ref": "R3",
+    "value": "4.7k 1%",
+    "mpn": "0603WAF4701T5E",
+    "code": "C23162",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3.3V",
+      "2": "SCL"
+    },
+    "pos": [
+      158,
+      93,
+      0
+    ],
+    "page": 1,
+    "manufacturer": "UNI-ROYAL",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C23162"
+  },
+  {
+    "ref": "R4",
+    "value": "4.7k 1%",
+    "mpn": "0603WAF4701T5E",
+    "code": "C23162",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3.3V",
+      "2": "SDA"
+    },
+    "pos": [
+      156,
+      91,
+      0
+    ],
+    "page": 1,
+    "manufacturer": "UNI-ROYAL",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C23162"
+  },
+  {
+    "ref": "R6",
+    "value": "10k 1%",
+    "mpn": "0603WAF1002T5E",
+    "code": "C25804",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "GPIO7",
+      "2": "GND"
+    },
+    "pos": [
+      168,
+      93,
+      90
+    ],
+    "page": 4,
+    "manufacturer": "UNI-ROYAL",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C25804"
+  },
+  {
+    "ref": "U3",
+    "value": "PCF8563T/5,518",
+    "mpn": "PCF8563T/5,518",
+    "code": "C7440",
+    "fp": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+    "nets": {
+      "1": "RTC_OSCI",
+      "2": "RTC_OSCO",
+      "3": null,
+      "4": "GND",
+      "5": "SDA",
+      "6": "SCL",
+      "7": null,
+      "8": "RTC_VDD"
+    },
+    "pos": [
+      174,
+      86,
+      0
+    ],
+    "page": 4,
+    "manufacturer": "NXP",
+    "pins": {
+      "1": [
+        "OSCI",
+        "input"
+      ],
+      "2": [
+        "OSCO",
+        "output"
+      ],
+      "3": [
+        "INT",
+        "open_collector"
+      ],
+      "4": [
+        "VSS",
+        "power_in"
+      ],
+      "5": [
+        "SDA",
+        "bidirectional"
+      ],
+      "6": [
+        "SCL",
+        "input"
+      ],
+      "7": [
+        "CLKOUT",
+        "open_collector"
+      ],
+      "8": [
+        "VDD",
+        "power_in"
+      ]
+    },
+    "source": "https://jlcpcb.com/partdetail/C7440"
+  },
+  {
+    "ref": "J6",
+    "value": "ESP32 socket P1",
+    "mpn": "FH2.54-09-22PZD",
+    "code": "C7500786",
+    "fp": "Connector_PinSocket_2.54mm:PinSocket_1x22_P2.54mm_Vertical",
+    "nets": {
+      "1": null,
+      "2": null,
+      "3": null,
+      "4": null,
+      "5": null,
+      "6": null,
+      "7": "GPIO7",
+      "8": "DSP_RES",
+      "9": null,
+      "10": null,
+      "11": "SCL",
+      "12": "SDA",
+      "13": null,
+      "14": null,
+      "15": null,
+      "16": "CS2",
+      "17": "SPI_MOSI",
+      "18": "SPI_SCK",
+      "19": "DSP_DC",
+      "20": "CS1",
+      "21": "+5V_MODULE",
+      "22": "GND"
+    },
+    "pos": [
+      184.39,
+      75.27,
+      -90
+    ],
+    "page": 1,
+    "manufacturer": "XUNPU",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C7500786"
+  },
+  {
+    "ref": "J7",
+    "value": "ESP32 socket P2",
+    "mpn": "FH2.54-09-22PZD",
+    "code": "C7500786",
+    "fp": "Connector_PinSocket_2.54mm:PinSocket_1x22_P2.54mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": null,
+      "3": null,
+      "4": null,
+      "5": null,
+      "6": null,
+      "7": null,
+      "8": null,
+      "9": null,
+      "10": null,
+      "11": null,
+      "12": null,
+      "13": null,
+      "14": null,
+      "15": null,
+      "16": null,
+      "17": null,
+      "18": null,
+      "19": null,
+      "20": null,
+      "21": "GND",
+      "22": "GND"
+    },
+    "pos": [
+      184.39,
+      98.13,
+      -90
+    ],
+    "page": 1,
+    "manufacturer": "XUNPU",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C7500786"
+  },
+  {
+    "ref": "J8",
+    "value": "REMOVE LINK FOR USB",
+    "mpn": "5AML4-11560-102-W0",
+    "code": "C29780898",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "nets": {
+      "1": "+5V_EXTERNAL",
+      "2": "+5V_MODULE"
+    },
+    "pos": [
+      173,
+      109,
+      90
+    ],
+    "page": 3,
+    "manufacturer": "SAMZO",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C29780898"
+  },
+  {
+    "ref": "U7",
+    "value": "3.3V peripherals",
+    "mpn": "TLV1117LV33DCYR",
+    "code": "C15578",
+    "fp": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+    "nets": {
+      "1": "GND",
+      "2": "+3.3V",
+      "3": "+5V_MODULE"
+    },
+    "pos": [
+      161,
+      83,
+      180
+    ],
+    "page": 3,
+    "manufacturer": "Texas Instruments",
+    "pins": {
+      "1": [
+        "GND",
+        "power_in"
+      ],
+      "2": [
+        "OUT",
+        "power_out"
+      ],
+      "3": [
+        "IN",
+        "power_in"
+      ]
+    },
+    "source": "https://jlcpcb.com/partdetail/C15578"
+  },
+  {
+    "ref": "C19",
+    "value": "10uF 25V",
+    "mpn": "CL10A106MA8NRNC",
+    "code": "C96446",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+5V_MODULE",
+      "2": "GND"
+    },
+    "pos": [
+      168,
+      79.5,
+      0
+    ],
+    "page": 3,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C96446"
+  },
+  {
+    "ref": "X1",
+    "value": "32.768kHz 12.5pF",
+    "mpn": "ABS07-32.768KHZ-T",
+    "code": "C130253",
+    "fp": "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm",
+    "nets": {
+      "1": "RTC_OSCI",
+      "2": "RTC_OSCO"
+    },
+    "pos": [
+      167,
+      86,
+      90
+    ],
+    "page": 4,
+    "manufacturer": "Abracon",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C130253"
+  },
+  {
+    "ref": "C18",
+    "value": "22pF C0G",
+    "mpn": "CL10C220JB8NNNC",
+    "code": "C1653",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "RTC_OSCI",
+      "2": "GND"
+    },
+    "pos": [
+      167,
+      82.5,
+      0
+    ],
+    "page": 4,
+    "manufacturer": "Samsung Electro-Mechanics",
+    "pins": {},
+    "source": "https://jlcpcb.com/partdetail/C1653"
+  },
+  {
+    "ref": "D5",
+    "value": "BAV199 backup isolation",
+    "mpn": "BAV199",
+    "code": "C3019921",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "+3.3V",
+      "2": null,
+      "3": "RTC_VDD"
+    },
+    "pos": [
+      175,
+      79,
+      0
+    ],
+    "page": 4,
+    "manufacturer": "Slkor",
+    "pins": {
+      "1": [
+        "A1",
+        "passive"
+      ],
+      "2": [
+        "K2_UNUSED",
+        "passive"
+      ],
+      "3": [
+        "K1_A2",
+        "passive"
+      ]
+    },
+    "source": "https://jlcpcb.com/partdetail/C3019921"
+  },
+  {
+    "ref": "D6",
+    "value": "BAV199 backup isolation",
+    "mpn": "BAV199",
+    "code": "C3019921",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "VBAT",
+      "2": null,
+      "3": "RTC_VDD"
+    },
+    "pos": [
+      179,
+      93,
+      0
+    ],
+    "page": 4,
+    "manufacturer": "Slkor",
+    "pins": {
+      "1": [
+        "A1",
+        "passive"
+      ],
+      "2": [
+        "K2_UNUSED",
+        "passive"
+      ],
+      "3": [
+        "K1_A2",
+        "passive"
+      ]
+    },
+    "source": "https://jlcpcb.com/partdetail/C3019921"
+  }
+]

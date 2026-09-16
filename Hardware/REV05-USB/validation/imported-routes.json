@@ -1,0 +1,16 @@
+{
+  "SDA": 22,
+  "SCL": 17,
+  "RTC_VDD": 9,
+  "GPIO7": 8,
+  "DSP_RES": 8,
+  "CS2": 5,
+  "SPI_MOSI": 12,
+  "SPI_SCK": 8,
+  "DSP_DC": 13,
+  "CS1": 5,
+  "+5V_MODULE": 7,
+  "VBAT": 6,
+  "+5V_EXTERNAL": 3,
+  "+3.3V": 24
+}

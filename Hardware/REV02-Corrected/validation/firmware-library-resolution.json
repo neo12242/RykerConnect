@@ -1,0 +1,98 @@
+[
+  {
+    "type": "library",
+    "name": "Adafruit BME280 Library",
+    "version": "2.3.0",
+    "spec": {
+      "owner": "adafruit",
+      "id": 166,
+      "name": "Adafruit BME280 Library",
+      "requirements": null,
+      "uri": null
+    }
+  },
+  {
+    "type": "library",
+    "name": "Adafruit BusIO",
+    "version": "1.17.4",
+    "spec": {
+      "owner": "adafruit",
+      "id": 6214,
+      "name": "Adafruit BusIO",
+      "requirements": null,
+      "uri": null
+    }
+  },
+  {
+    "type": "library",
+    "name": "Adafruit Unified Sensor",
+    "version": "1.1.15",
+    "spec": {
+      "owner": "adafruit",
+      "id": 31,
+      "name": "Adafruit Unified Sensor",
+      "requirements": null,
+      "uri": null
+    }
+  },
+  {
+    "type": "library",
+    "name": "CRC32",
+    "version": "2.0.1",
+    "spec": {
+      "owner": "bakercp",
+      "id": 1202,
+      "name": "CRC32",
+      "requirements": null,
+      "uri": null
+    }
+  },
+  {
+    "type": "library",
+    "name": "DS3231",
+    "version": "1.2.0",
+    "spec": {
+      "owner": "northernwidget",
+      "id": 1379,
+      "name": "DS3231",
+      "requirements": null,
+      "uri": null
+    }
+  },
+  {
+    "type": "library",
+    "name": "MCP9808",
+    "version": "0.4.2",
+    "spec": {
+      "owner": "robtillaart",
+      "id": 6810,
+      "name": "MCP9808",
+      "requirements": null,
+      "uri": null
+    }
+  },
+  {
+    "type": "library",
+    "name": "NimBLE-Arduino",
+    "version": "2.5.1",
+    "spec": {
+      "owner": "h2zero",
+      "id": 11070,
+      "name": "NimBLE-Arduino",
+      "requirements": null,
+      "uri": null
+    }
+  },
+  {
+    "type": "library",
+    "name": "U8g2",
+    "version": "2.36.18",
+    "spec": {
+      "owner": "olikraus",
+      "id": 942,
+      "name": "U8g2",
+      "requirements": null,
+      "uri": null
+    }
+  }
+]

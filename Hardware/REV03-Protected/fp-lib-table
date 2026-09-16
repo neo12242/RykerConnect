@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "RykerConnect")(type "KiCad")(uri "${KIPRJMOD}/RykerConnect.pretty")(options "")(descr "Verified embedded REV02 footprints")))

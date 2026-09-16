@@ -1,0 +1,353 @@
+(footprint "S1_435451019820"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "435451019820-2")
+	(tags "Switch")
+	(property "Reference" "S1"
+		(at 0 -0.175 0)
+		(layer "F.SilkS")
+		(uuid "ce48a487-48a7-47fe-9403-c154cfb40543")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "BOOT"
+		(at 0 -0.175 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f162ae23-a105-485b-821e-3f1c49da0ccb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/435451019820.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d8b3b16e-9479-4f64-990c-d1fe4353f144")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Tactile Switch SPST-NO Top Actuated Surface Mount"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f4b8bab0-1a5e-4b1e-84d8-648e0e951c4f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Height" "1.97"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "510965f4-a215-42bc-9a14-dc45be97b68c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" "710-435451019820"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2c519e01-e290-43b7-abee-b0c0b1f6c94f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/435451019820?qs=ufv2HEpFn%252BSBtTHyYvulMg%3D%3D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fc7e5031-a4ea-4790-8e35-829e1466b389")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" "Wurth Elektronik"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fb0e7837-a89d-4ba3-8156-ab92afa4de4d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "435451019820"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f5006e5d-495b-46f1-b920-ea1388da7b48")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "435451019820"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "024ee429-3749-4761-a4d6-82cac01341eb")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Manufacturer" "Wurth Elektronik"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "3c0b17c1-e5ee-4e56-a045-14091c6bcb33")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC" "C7464054"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ac703a19-04e5-45a5-b0d1-7b79b17add7a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "PROD_ID" "435451019820"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c6b5350f-9766-470c-b171-b536da7e1e72")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(sheetname "/")
+	(sheetfile "RykerConnect.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.23 1.4)
+		(end 1.23 1.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e2fc0a57-0e97-408d-9888-abad1411c2ce")
+	)
+	(fp_line
+		(start 2 -1.5)
+		(end 2 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4318c02f-3db8-41fc-9900-9c10468c70a7")
+	)
+	(fp_line
+		(start 2.1 -1.5)
+		(end 2.1 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e02a568a-3f16-4cde-bac4-6a4cd8cc83ec")
+	)
+	(fp_arc
+		(start 2 -1.5)
+		(mid 2.05 -1.55)
+		(end 2.1 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fab19dd7-f60d-46fa-be39-9190e2c9bee2")
+	)
+	(fp_arc
+		(start 2.1 -1.5)
+		(mid 2.05 -1.45)
+		(end 2 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b7061f76-dc42-46a7-a33c-1c64108cb49f")
+	)
+	(fp_line
+		(start -3.5 -2.75)
+		(end 3.5 -2.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8d8f2a50-2ab6-47d8-a37f-73dc105456c5")
+	)
+	(fp_line
+		(start -3.5 2.4)
+		(end -3.5 -2.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3de2b2e7-ba61-402c-b954-48bc935e9b71")
+	)
+	(fp_line
+		(start 3.5 -2.75)
+		(end 3.5 2.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2c881df0-9a16-411b-86c8-954fd850b7d2")
+	)
+	(fp_line
+		(start 3.5 2.4)
+		(end -3.5 2.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1f662441-88ba-493e-8a7e-1da406c34f12")
+	)
+	(fp_line
+		(start -2.05 -1.4)
+		(end 2.05 -1.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bedc54db-fcf2-46d3-b1a6-28beb2295051")
+	)
+	(fp_line
+		(start -2.05 1.4)
+		(end -2.05 -1.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5a72f9ba-079a-4609-b74a-ba7970c07e28")
+	)
+	(fp_line
+		(start 2.05 -1.4)
+		(end 2.05 1.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5dddb82f-1b34-48cf-b72a-4de0cbc24c14")
+	)
+	(fp_line
+		(start 2.05 1.4)
+		(end -2.05 1.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5d60705f-4655-4082-9fb6-87ee56824b64")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -0.175 0)
+		(layer "F.Fab")
+		(uuid "b0d24079-d925-40ae-94ed-ac116af95b21")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 2.05 -0.8)
+		(size 0.9 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "bff1d361-1bd7-4f3b-9bbd-8e2585ab05d5")
+	)
+	(pad "2" smd rect
+		(at 2.05 0.8)
+		(size 0.9 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "085ca249-e8b8-4b39-aa3f-e6c0e3ceb6aa")
+	)
+	(pad "3" smd rect
+		(at -2.05 0.8)
+		(size 0.9 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6416f294-e786-41ff-bc0e-c469ab6dbc09")
+	)
+	(pad "4" smd rect
+		(at -2.05 -0.8)
+		(size 0.9 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8906ea9c-cf80-4957-85b0-598a09d4a7b9")
+	)
+	(pad "5" smd rect
+		(at 0 -1.475 90)
+		(size 0.55 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e8715a3f-39d5-4d42-ba03-73dba24c3c0a")
+	)
+	(embedded_fonts no)
+	(model "H:\\Kicad\\LIB\\SamacSys_Parts.3dshapes\\435451019820.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

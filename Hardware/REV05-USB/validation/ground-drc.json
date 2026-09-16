@@ -1,0 +1,177 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-13T11:10:02",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "key": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "key": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "key": "silk_edge_clearance"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        },
+        {
+            "description": "Footprint doesn't match copy in library",
+            "key": "lib_footprint_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "RykerConnect.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 71.5
+                    },
+                    "uuid": "8aaaab98-cba5-4e87-abd7-d6524e0e083c"
+                },
+                {
+                    "description": "Zone [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 71.5
+                    },
+                    "uuid": "9823420c-e2ea-4438-9c18-cbed2f1cc56f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1359 mm)",
+            "items": [
+                {
+                    "description": "Track [SCL] on F.Cu, length 6.7322 mm",
+                    "pos": {
+                        "x": 162.0363,
+                        "y": 93.2923
+                    },
+                    "uuid": "3edce27b-94f8-4525-857a-7cf1281600f4"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 165.0,
+                        "y": 89.5
+                    },
+                    "uuid": "c730e1b2-7b32-44b6-92f5-99adf3ea1e15"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and RTC_OSCI)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 165.8,
+                        "y": 85.3
+                    },
+                    "uuid": "0255da10-657a-4228-923d-8c3e27d7e7da"
+                },
+                {
+                    "description": "Pad 1 [RTC_OSCI] of X1 on F.Cu",
+                    "pos": {
+                        "x": 167.0,
+                        "y": 84.75
+                    },
+                    "uuid": "9f2ece48-a7a7-4c0b-9ddb-faf4a645c64e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 165.8,
+                        "y": 85.3
+                    },
+                    "uuid": "0255da10-657a-4228-923d-8c3e27d7e7da"
+                },
+                {
+                    "description": "Pad 1 [RTC_OSCI] of X1 on F.Cu",
+                    "pos": {
+                        "x": 167.0,
+                        "y": 84.75
+                    },
+                    "uuid": "9f2ece48-a7a7-4c0b-9ddb-faf4a645c64e"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.1900 mm; actual 0.1541 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [RTC_OSCI] of X1 on F.Cu",
+                    "pos": {
+                        "x": 167.0,
+                        "y": 84.75
+                    },
+                    "uuid": "9f2ece48-a7a7-4c0b-9ddb-faf4a645c64e"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 165.8,
+                        "y": 85.3
+                    },
+                    "uuid": "0255da10-657a-4228-923d-8c3e27d7e7da"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_clearance"
+        }
+    ]
+}

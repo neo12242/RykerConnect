@@ -1,0 +1,2102 @@
+{
+  "C8": {
+    "value": "100nF",
+    "side": "top",
+    "position_mm": [
+      164.0561,
+      93.2794
+    ],
+    "rotation": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "/Power/5V USB IN",
+        "position_mm": [
+          164.0561,
+          92.4169
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          164.0561,
+          94.1419
+        ]
+      }
+    ]
+  },
+  "S1": {
+    "value": "BOOT",
+    "side": "top",
+    "position_mm": [
+      174.2561,
+      101.0544
+    ],
+    "rotation": 90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "unconnected-(S1-NO_1-Pad1)",
+        "position_mm": [
+          173.4561,
+          99.0044
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GPIO0",
+        "position_mm": [
+          175.0561,
+          99.0044
+        ]
+      },
+      {
+        "number": "3",
+        "net": "unconnected-(S1-COM_2-Pad3)",
+        "position_mm": [
+          175.0561,
+          103.1044
+        ]
+      },
+      {
+        "number": "4",
+        "net": "GND",
+        "position_mm": [
+          173.4561,
+          103.1044
+        ]
+      },
+      {
+        "number": "5",
+        "net": "GND",
+        "position_mm": [
+          172.7811,
+          101.0544
+        ]
+      }
+    ]
+  },
+  "C3": {
+    "value": "1uF",
+    "side": "top",
+    "position_mm": [
+      92.2961,
+      78.9394
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+3.3V",
+        "position_mm": [
+          93.1586,
+          78.9394
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          91.4336,
+          78.9394
+        ]
+      }
+    ]
+  },
+  "C7": {
+    "value": "1uF",
+    "side": "top",
+    "position_mm": [
+      186.4561,
+      75.5419
+    ],
+    "rotation": 90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "CHIP_PU",
+        "position_mm": [
+          186.4561,
+          76.4044
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          186.4561,
+          74.6794
+        ]
+      }
+    ]
+  },
+  "J1": {
+    "value": "436500200",
+    "side": "top",
+    "position_mm": [
+      145.1561,
+      90.5794
+    ],
+    "rotation": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+12V",
+        "position_mm": [
+          145.1561,
+          90.5794
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          142.1561,
+          90.5794
+        ]
+      }
+    ]
+  },
+  "BT1": {
+    "value": "Holders Linx CR2032",
+    "side": "top",
+    "position_mm": [
+      111.8811,
+      87.8544
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "Net-(BT1-+)",
+        "position_mm": [
+          123.3311,
+          87.8544
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          111.8811,
+          87.8544
+        ]
+      }
+    ]
+  },
+  "U5": {
+    "value": "LMR50410Y3FQDBVRQ1",
+    "side": "top",
+    "position_mm": [
+      152.5561,
+      87.5794
+    ],
+    "rotation": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "Net-(U5-CB)",
+        "position_mm": [
+          151.27955,
+          86.629399
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          151.27955,
+          87.5794
+        ]
+      },
+      {
+        "number": "3",
+        "net": "+3.3V",
+        "position_mm": [
+          151.27955,
+          88.529401
+        ]
+      },
+      {
+        "number": "4",
+        "net": "/Power/PWR IN",
+        "position_mm": [
+          153.83265,
+          88.529401
+        ]
+      },
+      {
+        "number": "5",
+        "net": "/Power/PWR IN",
+        "position_mm": [
+          153.83265,
+          87.5794
+        ]
+      },
+      {
+        "number": "6",
+        "net": "Net-(U5-SW)",
+        "position_mm": [
+          153.83265,
+          86.629399
+        ]
+      }
+    ]
+  },
+  "S2": {
+    "value": "RST",
+    "side": "top",
+    "position_mm": [
+      182.2561,
+      101.0544
+    ],
+    "rotation": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "unconnected-(S2-NO_1-Pad1)",
+        "position_mm": [
+          183.0561,
+          103.1044
+        ]
+      },
+      {
+        "number": "2",
+        "net": "CHIP_PU",
+        "position_mm": [
+          181.4561,
+          103.1044
+        ]
+      },
+      {
+        "number": "3",
+        "net": "unconnected-(S2-COM_2-Pad3)",
+        "position_mm": [
+          181.4561,
+          99.0044
+        ]
+      },
+      {
+        "number": "4",
+        "net": "GND",
+        "position_mm": [
+          183.0561,
+          99.0044
+        ]
+      },
+      {
+        "number": "5",
+        "net": "GND",
+        "position_mm": [
+          183.7311,
+          101.0544
+        ]
+      }
+    ]
+  },
+  "C6": {
+    "value": "100nF",
+    "side": "top",
+    "position_mm": [
+      189.6061,
+      75.5419
+    ],
+    "rotation": 90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+3.3V",
+        "position_mm": [
+          189.6061,
+          76.4044
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          189.6061,
+          74.6794
+        ]
+      }
+    ]
+  },
+  "R6": {
+    "value": "10K",
+    "side": "top",
+    "position_mm": [
+      132.4311,
+      92.2794
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "GPIO7",
+        "position_mm": [
+          133.4311,
+          92.2794
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          131.4311,
+          92.2794
+        ]
+      }
+    ]
+  },
+  "C9": {
+    "value": "10uF",
+    "side": "top",
+    "position_mm": [
+      152.5561,
+      92.2794
+    ],
+    "rotation": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "/Power/PWR IN",
+        "position_mm": [
+          151.6936,
+          92.2794
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          153.4186,
+          92.2794
+        ]
+      }
+    ]
+  },
+  "J2": {
+    "value": "USB4105-GF-A",
+    "side": "top",
+    "position_mm": [
+      161.5661,
+      100.9844
+    ],
+    "rotation": 0.0,
+    "pads": [
+      {
+        "number": "A1",
+        "net": "GND",
+        "position_mm": [
+          158.3661,
+          97.1469
+        ]
+      },
+      {
+        "number": "A4",
+        "net": "/Power/5V USB IN",
+        "position_mm": [
+          159.1661,
+          97.1844
+        ]
+      },
+      {
+        "number": "A5",
+        "net": "Net-(J2-CC1)",
+        "position_mm": [
+          160.3161,
+          97.1819
+        ]
+      },
+      {
+        "number": "A6",
+        "net": "/D+ Con",
+        "position_mm": [
+          161.3161,
+          97.1819
+        ]
+      },
+      {
+        "number": "A7",
+        "net": "/D- Con",
+        "position_mm": [
+          161.8161,
+          97.1819
+        ]
+      },
+      {
+        "number": "A8",
+        "net": "unconnected-(J2-SBU1-PadA8)",
+        "position_mm": [
+          162.8161,
+          97.1819
+        ]
+      },
+      {
+        "number": "A9",
+        "net": "/Power/5V USB IN",
+        "position_mm": [
+          163.9661,
+          97.1844
+        ]
+      },
+      {
+        "number": "A12",
+        "net": "GND",
+        "position_mm": [
+          164.7661,
+          97.1469
+        ]
+      },
+      {
+        "number": "B1",
+        "net": "GND",
+        "position_mm": [
+          164.7661,
+          97.1469
+        ]
+      },
+      {
+        "number": "B4",
+        "net": "/Power/5V USB IN",
+        "position_mm": [
+          163.9661,
+          97.1844
+        ]
+      },
+      {
+        "number": "B5",
+        "net": "Net-(J2-CC2)",
+        "position_mm": [
+          163.3161,
+          97.1819
+        ]
+      },
+      {
+        "number": "B6",
+        "net": "/D+ Con",
+        "position_mm": [
+          162.3161,
+          97.1819
+        ]
+      },
+      {
+        "number": "B7",
+        "net": "/D- Con",
+        "position_mm": [
+          160.8161,
+          97.1819
+        ]
+      },
+      {
+        "number": "B8",
+        "net": "unconnected-(J2-SBU2-PadB8)",
+        "position_mm": [
+          159.8161,
+          97.1819
+        ]
+      },
+      {
+        "number": "B9",
+        "net": "/Power/5V USB IN",
+        "position_mm": [
+          159.1661,
+          97.1844
+        ]
+      },
+      {
+        "number": "B12",
+        "net": "GND",
+        "position_mm": [
+          158.3661,
+          97.1469
+        ]
+      },
+      {
+        "number": "S1",
+        "net": "Net-(J2-SHIELD)",
+        "position_mm": [
+          157.2461,
+          97.8794
+        ]
+      },
+      {
+        "number": "S1",
+        "net": "Net-(J2-SHIELD)",
+        "position_mm": [
+          157.2461,
+          102.0594
+        ]
+      },
+      {
+        "number": "S1",
+        "net": "Net-(J2-SHIELD)",
+        "position_mm": [
+          165.8861,
+          97.8794
+        ]
+      },
+      {
+        "number": "S1",
+        "net": "Net-(J2-SHIELD)",
+        "position_mm": [
+          165.8861,
+          102.0594
+        ]
+      }
+    ]
+  },
+  "C13": {
+    "value": "10uF",
+    "side": "top",
+    "position_mm": [
+      143.9561,
+      85.5794
+    ],
+    "rotation": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+3.3V",
+        "position_mm": [
+          143.9561,
+          84.5419
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          143.9561,
+          86.6169
+        ]
+      }
+    ]
+  },
+  "C10": {
+    "value": "100nF",
+    "side": "top",
+    "position_mm": [
+      152.5561,
+      90.7544
+    ],
+    "rotation": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "/Power/PWR IN",
+        "position_mm": [
+          151.6936,
+          90.7544
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          153.4186,
+          90.7544
+        ]
+      }
+    ]
+  },
+  "C11": {
+    "value": "100nF",
+    "side": "top",
+    "position_mm": [
+      147.7561,
+      85.5794
+    ],
+    "rotation": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "Net-(U5-SW)",
+        "position_mm": [
+          147.7561,
+          84.7169
+        ]
+      },
+      {
+        "number": "2",
+        "net": "Net-(U5-CB)",
+        "position_mm": [
+          147.7561,
+          86.4419
+        ]
+      }
+    ]
+  },
+  "L1": {
+    "value": "4.7uH",
+    "side": "top",
+    "position_mm": [
+      152.4561,
+      82.5794
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "Net-(U5-SW)",
+        "position_mm": [
+          154.7561,
+          82.5794
+        ]
+      },
+      {
+        "number": "2",
+        "net": "+3.3V",
+        "position_mm": [
+          150.1561,
+          82.5794
+        ]
+      }
+    ]
+  },
+  "J4": {
+    "value": "Ambient Light Connector",
+    "side": "top",
+    "position_mm": [
+      132.4561,
+      96.7794
+    ],
+    "rotation": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+3.3V",
+        "position_mm": [
+          131.9561,
+          94.7794
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GPIO7",
+        "position_mm": [
+          132.9561,
+          94.7794
+        ]
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "position_mm": [
+          130.6561,
+          98.6544
+        ]
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "position_mm": [
+          134.2561,
+          98.6544
+        ]
+      }
+    ]
+  },
+  "U2": {
+    "value": "MCP9808_MSOP",
+    "side": "top",
+    "position_mm": [
+      92.2561,
+      74.9794
+    ],
+    "rotation": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "SDA",
+        "position_mm": [
+          93.2311,
+          72.8669
+        ]
+      },
+      {
+        "number": "2",
+        "net": "SCL",
+        "position_mm": [
+          92.5811,
+          72.8669
+        ]
+      },
+      {
+        "number": "3",
+        "net": "unconnected-(U2-Alert-Pad3)",
+        "position_mm": [
+          91.9311,
+          72.8669
+        ]
+      },
+      {
+        "number": "4",
+        "net": "GND",
+        "position_mm": [
+          91.2811,
+          72.8669
+        ]
+      },
+      {
+        "number": "5",
+        "net": "GND",
+        "position_mm": [
+          91.2811,
+          77.0919
+        ]
+      },
+      {
+        "number": "6",
+        "net": "GND",
+        "position_mm": [
+          91.9311,
+          77.0919
+        ]
+      },
+      {
+        "number": "7",
+        "net": "GND",
+        "position_mm": [
+          92.5811,
+          77.0919
+        ]
+      },
+      {
+        "number": "8",
+        "net": "+3.3V",
+        "position_mm": [
+          93.2311,
+          77.0919
+        ]
+      }
+    ]
+  },
+  "R3": {
+    "value": "5.1K",
+    "side": "top",
+    "position_mm": [
+      176.8686,
+      74.0294
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+3.3V",
+        "position_mm": [
+          177.8686,
+          74.0294
+        ]
+      },
+      {
+        "number": "2",
+        "net": "SCL",
+        "position_mm": [
+          175.8686,
+          74.0294
+        ]
+      }
+    ]
+  },
+  "C12": {
+    "value": "10uF",
+    "side": "top",
+    "position_mm": [
+      145.9561,
+      85.5794
+    ],
+    "rotation": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+3.3V",
+        "position_mm": [
+          145.9561,
+          84.5419
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          145.9561,
+          86.6169
+        ]
+      }
+    ]
+  },
+  "R4": {
+    "value": "5.1K",
+    "side": "top",
+    "position_mm": [
+      176.8686,
+      75.9794
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+3.3V",
+        "position_mm": [
+          177.8686,
+          75.9794
+        ]
+      },
+      {
+        "number": "2",
+        "net": "SDA",
+        "position_mm": [
+          175.8686,
+          75.9794
+        ]
+      }
+    ]
+  },
+  "U3": {
+    "value": "Analog Devices RTC DS3231MZ_V+T",
+    "side": "top",
+    "position_mm": [
+      130.0811,
+      82.7794
+    ],
+    "rotation": 90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "unconnected-(U3-32KHZ-Pad1)",
+        "position_mm": [
+          128.1761,
+          85.4914
+        ]
+      },
+      {
+        "number": "2",
+        "net": "+3.3V",
+        "position_mm": [
+          129.4461,
+          85.4914
+        ]
+      },
+      {
+        "number": "3",
+        "net": "unconnected-(U3-~{INT}{slash}SQW-Pad3)",
+        "position_mm": [
+          130.7161,
+          85.4914
+        ]
+      },
+      {
+        "number": "4",
+        "net": "CHIP_PU",
+        "position_mm": [
+          131.9861,
+          85.4914
+        ]
+      },
+      {
+        "number": "5",
+        "net": "GND",
+        "position_mm": [
+          131.9861,
+          80.0674
+        ]
+      },
+      {
+        "number": "6",
+        "net": "Net-(BT1-+)",
+        "position_mm": [
+          130.7161,
+          80.0674
+        ]
+      },
+      {
+        "number": "7",
+        "net": "SDA",
+        "position_mm": [
+          129.4461,
+          80.0674
+        ]
+      },
+      {
+        "number": "8",
+        "net": "SCL",
+        "position_mm": [
+          128.1761,
+          80.0674
+        ]
+      }
+    ]
+  },
+  "R2": {
+    "value": "5.1K",
+    "side": "top",
+    "position_mm": [
+      169.9061,
+      100.0669
+    ],
+    "rotation": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "Net-(J2-CC1)",
+        "position_mm": [
+          169.9061,
+          99.0669
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          169.9061,
+          101.0669
+        ]
+      }
+    ]
+  },
+  "U4": {
+    "value": "ESP32-S3-WROOM-1-N8",
+    "side": "top",
+    "position_mm": [
+      184.6561,
+      87.4044
+    ],
+    "rotation": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "GND",
+        "position_mm": [
+          189.9161,
+          78.6544
+        ]
+      },
+      {
+        "number": "2",
+        "net": "+3.3V",
+        "position_mm": [
+          188.6461,
+          78.6544
+        ]
+      },
+      {
+        "number": "3",
+        "net": "CHIP_PU",
+        "position_mm": [
+          187.3761,
+          78.6544
+        ]
+      },
+      {
+        "number": "4",
+        "net": "unconnected-(U4-IO4-Pad4)",
+        "position_mm": [
+          186.1061,
+          78.6544
+        ]
+      },
+      {
+        "number": "5",
+        "net": "GPIO5",
+        "position_mm": [
+          184.8361,
+          78.6544
+        ]
+      },
+      {
+        "number": "6",
+        "net": "GPIO6",
+        "position_mm": [
+          183.5661,
+          78.6544
+        ]
+      },
+      {
+        "number": "7",
+        "net": "GPIO7",
+        "position_mm": [
+          182.2961,
+          78.6544
+        ]
+      },
+      {
+        "number": "8",
+        "net": "DSP_RES",
+        "position_mm": [
+          181.0261,
+          78.6544
+        ]
+      },
+      {
+        "number": "9",
+        "net": "unconnected-(U4-IO16-Pad9)",
+        "position_mm": [
+          179.7561,
+          78.6544
+        ]
+      },
+      {
+        "number": "10",
+        "net": "unconnected-(U4-IO17-Pad10)",
+        "position_mm": [
+          178.4861,
+          78.6544
+        ]
+      },
+      {
+        "number": "11",
+        "net": "SCL",
+        "position_mm": [
+          177.2161,
+          78.6544
+        ]
+      },
+      {
+        "number": "12",
+        "net": "SDA",
+        "position_mm": [
+          175.9461,
+          78.6544
+        ]
+      },
+      {
+        "number": "13",
+        "net": "D-",
+        "position_mm": [
+          174.6761,
+          78.6544
+        ]
+      },
+      {
+        "number": "14",
+        "net": "D+",
+        "position_mm": [
+          173.4061,
+          78.6544
+        ]
+      },
+      {
+        "number": "15",
+        "net": "unconnected-(U4-IO3-Pad15)",
+        "position_mm": [
+          172.1561,
+          80.4194
+        ]
+      },
+      {
+        "number": "16",
+        "net": "unconnected-(U4-IO46-Pad16)",
+        "position_mm": [
+          172.1561,
+          81.6894
+        ]
+      },
+      {
+        "number": "17",
+        "net": "unconnected-(U4-IO9-Pad17)",
+        "position_mm": [
+          172.1561,
+          82.9594
+        ]
+      },
+      {
+        "number": "18",
+        "net": "CS1",
+        "position_mm": [
+          172.1561,
+          84.2294
+        ]
+      },
+      {
+        "number": "19",
+        "net": "SDA{slash}SDIN{slash}MOSI",
+        "position_mm": [
+          172.1561,
+          85.4994
+        ]
+      },
+      {
+        "number": "20",
+        "net": "SCL{slash}SCLK{slash}SCK",
+        "position_mm": [
+          172.1561,
+          86.7694
+        ]
+      },
+      {
+        "number": "21",
+        "net": "DC{slash}MISO",
+        "position_mm": [
+          172.1561,
+          88.0394
+        ]
+      },
+      {
+        "number": "22",
+        "net": "CS2",
+        "position_mm": [
+          172.1561,
+          89.3094
+        ]
+      },
+      {
+        "number": "23",
+        "net": "unconnected-(U4-IO21-Pad23)",
+        "position_mm": [
+          172.1561,
+          90.5794
+        ]
+      },
+      {
+        "number": "24",
+        "net": "unconnected-(U4-IO47-Pad24)",
+        "position_mm": [
+          172.1561,
+          91.8494
+        ]
+      },
+      {
+        "number": "25",
+        "net": "unconnected-(U4-IO48-Pad25)",
+        "position_mm": [
+          172.1561,
+          93.1194
+        ]
+      },
+      {
+        "number": "26",
+        "net": "unconnected-(U4-IO45-Pad26)",
+        "position_mm": [
+          172.1561,
+          94.3894
+        ]
+      },
+      {
+        "number": "27",
+        "net": "GPIO0",
+        "position_mm": [
+          173.4061,
+          96.1544
+        ]
+      },
+      {
+        "number": "28",
+        "net": "unconnected-(U4-IO35-Pad28)",
+        "position_mm": [
+          174.6761,
+          96.1544
+        ]
+      },
+      {
+        "number": "29",
+        "net": "unconnected-(U4-IO36-Pad29)",
+        "position_mm": [
+          175.9461,
+          96.1544
+        ]
+      },
+      {
+        "number": "30",
+        "net": "unconnected-(U4-IO37-Pad30)",
+        "position_mm": [
+          177.2161,
+          96.1544
+        ]
+      },
+      {
+        "number": "31",
+        "net": "unconnected-(U4-IO38-Pad31)",
+        "position_mm": [
+          178.4861,
+          96.1544
+        ]
+      },
+      {
+        "number": "32",
+        "net": "unconnected-(U4-IO39-Pad32)",
+        "position_mm": [
+          179.7561,
+          96.1544
+        ]
+      },
+      {
+        "number": "33",
+        "net": "unconnected-(U4-IO40-Pad33)",
+        "position_mm": [
+          181.0261,
+          96.1544
+        ]
+      },
+      {
+        "number": "34",
+        "net": "unconnected-(U4-IO41-Pad34)",
+        "position_mm": [
+          182.2961,
+          96.1544
+        ]
+      },
+      {
+        "number": "35",
+        "net": "unconnected-(U4-IO42-Pad35)",
+        "position_mm": [
+          183.5661,
+          96.1544
+        ]
+      },
+      {
+        "number": "36",
+        "net": "RX",
+        "position_mm": [
+          184.8361,
+          96.1544
+        ]
+      },
+      {
+        "number": "37",
+        "net": "TX",
+        "position_mm": [
+          186.1061,
+          96.1544
+        ]
+      },
+      {
+        "number": "38",
+        "net": "unconnected-(U4-IO2-Pad38)",
+        "position_mm": [
+          187.3761,
+          96.1544
+        ]
+      },
+      {
+        "number": "39",
+        "net": "unconnected-(U4-IO1-Pad39)",
+        "position_mm": [
+          188.6461,
+          96.1544
+        ]
+      },
+      {
+        "number": "40",
+        "net": "GND",
+        "position_mm": [
+          189.9161,
+          96.1544
+        ]
+      }
+    ]
+  },
+  "D1": {
+    "value": "CVJ10F30,LF",
+    "side": "top",
+    "position_mm": [
+      152.5561,
+      95.2294
+    ],
+    "rotation": 90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+12V_PROTECTED",
+        "position_mm": [
+          151.9061,
+          96.3174
+        ]
+      },
+      {
+        "number": "2",
+        "net": "unconnected-(D1-NC-Pad2)",
+        "position_mm": [
+          152.5561,
+          96.3174
+        ]
+      },
+      {
+        "number": "3",
+        "net": "/Power/5V USB IN",
+        "position_mm": [
+          153.2061,
+          96.3174
+        ]
+      },
+      {
+        "number": "4",
+        "net": "/Power/PWR IN",
+        "position_mm": [
+          153.2061,
+          94.1414
+        ]
+      },
+      {
+        "number": "5",
+        "net": "/Power/PWR IN",
+        "position_mm": [
+          151.9061,
+          94.1414
+        ]
+      }
+    ]
+  },
+  "U1": {
+    "value": "USBLC6-2SC6",
+    "side": "top",
+    "position_mm": [
+      161.5561,
+      93.2794
+    ],
+    "rotation": 90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "/D- Con",
+        "position_mm": [
+          160.6061,
+          94.4169
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          161.5561,
+          94.4169
+        ]
+      },
+      {
+        "number": "3",
+        "net": "/D+ Con",
+        "position_mm": [
+          162.5061,
+          94.4169
+        ]
+      },
+      {
+        "number": "4",
+        "net": "D+",
+        "position_mm": [
+          162.5061,
+          92.1419
+        ]
+      },
+      {
+        "number": "5",
+        "net": "/Power/5V USB IN",
+        "position_mm": [
+          161.5561,
+          92.1419
+        ]
+      },
+      {
+        "number": "6",
+        "net": "D-",
+        "position_mm": [
+          160.6061,
+          92.1419
+        ]
+      }
+    ]
+  },
+  "J5": {
+    "value": "SM04B-SRSS-TB(LF)(SN)",
+    "side": "top",
+    "position_mm": [
+      92.8,
+      89.0
+    ],
+    "rotation": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "GND",
+        "position_mm": [
+          94.8,
+          87.5
+        ]
+      },
+      {
+        "number": "2",
+        "net": "+3.3V",
+        "position_mm": [
+          94.8,
+          88.5
+        ]
+      },
+      {
+        "number": "3",
+        "net": "SDA",
+        "position_mm": [
+          94.8,
+          89.5
+        ]
+      },
+      {
+        "number": "4",
+        "net": "SCL",
+        "position_mm": [
+          94.8,
+          90.5
+        ]
+      },
+      {
+        "number": "MP",
+        "net": "GND",
+        "position_mm": [
+          90.925,
+          86.2
+        ]
+      },
+      {
+        "number": "MP",
+        "net": "GND",
+        "position_mm": [
+          90.925,
+          91.8
+        ]
+      }
+    ]
+  },
+  "C4": {
+    "value": "1uF",
+    "side": "top",
+    "position_mm": [
+      130.4561,
+      87.4794
+    ],
+    "rotation": 0.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+3.3V",
+        "position_mm": [
+          129.5936,
+          87.4794
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          131.3186,
+          87.4794
+        ]
+      }
+    ]
+  },
+  "C5": {
+    "value": "10uF",
+    "side": "top",
+    "position_mm": [
+      188.0061,
+      75.5419
+    ],
+    "rotation": 90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+3.3V",
+        "position_mm": [
+          188.0061,
+          76.4044
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          188.0061,
+          74.6794
+        ]
+      }
+    ]
+  },
+  "J3": {
+    "value": "Display Connector",
+    "side": "top",
+    "position_mm": [
+      164.0561,
+      85.5794
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "GND",
+        "position_mm": [
+          167.5561,
+          87.5794
+        ]
+      },
+      {
+        "number": "2",
+        "net": "+3.3V",
+        "position_mm": [
+          166.5561,
+          87.5794
+        ]
+      },
+      {
+        "number": "3",
+        "net": "SCL{slash}SCLK{slash}SCK",
+        "position_mm": [
+          165.5561,
+          87.5794
+        ]
+      },
+      {
+        "number": "4",
+        "net": "SDA{slash}SDIN{slash}MOSI",
+        "position_mm": [
+          164.5561,
+          87.5794
+        ]
+      },
+      {
+        "number": "5",
+        "net": "DSP_RES",
+        "position_mm": [
+          163.5561,
+          87.5794
+        ]
+      },
+      {
+        "number": "6",
+        "net": "DC{slash}MISO",
+        "position_mm": [
+          162.5561,
+          87.5794
+        ]
+      },
+      {
+        "number": "7",
+        "net": "CS1",
+        "position_mm": [
+          161.5561,
+          87.5794
+        ]
+      },
+      {
+        "number": "8",
+        "net": "CS2",
+        "position_mm": [
+          160.5561,
+          87.5794
+        ]
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "position_mm": [
+          168.8561,
+          83.7044
+        ]
+      },
+      {
+        "number": "MP",
+        "net": "",
+        "position_mm": [
+          159.2561,
+          83.7044
+        ]
+      }
+    ]
+  },
+  "R1": {
+    "value": "5.1K",
+    "side": "top",
+    "position_mm": [
+      167.9561,
+      100.0669
+    ],
+    "rotation": 90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "GND",
+        "position_mm": [
+          167.9561,
+          101.0669
+        ]
+      },
+      {
+        "number": "2",
+        "net": "Net-(J2-CC2)",
+        "position_mm": [
+          167.9561,
+          99.0669
+        ]
+      }
+    ]
+  },
+  "R5": {
+    "value": "10K",
+    "side": "top",
+    "position_mm": [
+      184.7061,
+      75.5794
+    ],
+    "rotation": -90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+3.3V",
+        "position_mm": [
+          184.7061,
+          74.5794
+        ]
+      },
+      {
+        "number": "2",
+        "net": "CHIP_PU",
+        "position_mm": [
+          184.7061,
+          76.5794
+        ]
+      }
+    ]
+  },
+  "R7": {
+    "value": "120k 1%",
+    "side": "bottom",
+    "position_mm": [
+      147.0,
+      80.5
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+12V",
+        "position_mm": [
+          147.825,
+          80.5
+        ]
+      },
+      {
+        "number": "2",
+        "net": "PROT_UV",
+        "position_mm": [
+          146.175,
+          80.5
+        ]
+      }
+    ]
+  },
+  "C14": {
+    "value": "1uF 100V",
+    "side": "bottom",
+    "position_mm": [
+      149.0,
+      76.5
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+12V",
+        "position_mm": [
+          150.475,
+          76.5
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          147.525,
+          76.5
+        ]
+      }
+    ]
+  },
+  "D3": {
+    "value": "B140-13-F",
+    "side": "bottom",
+    "position_mm": [
+      132.0,
+      81.0
+    ],
+    "rotation": 90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+12V_PROTECTED",
+        "position_mm": [
+          132.0,
+          83.0
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          132.0,
+          79.0
+        ]
+      }
+    ]
+  },
+  "D4": {
+    "value": "SMBJ18A",
+    "side": "bottom",
+    "position_mm": [
+      151.0,
+      94.0
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "GND",
+        "position_mm": [
+          153.15,
+          94.0
+        ]
+      },
+      {
+        "number": "2",
+        "net": "TVS_MID",
+        "position_mm": [
+          148.85,
+          94.0
+        ]
+      }
+    ]
+  },
+  "R10": {
+    "value": "12k 1%",
+    "side": "bottom",
+    "position_mm": [
+      135.5,
+      85.0
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "PROT_ILIM",
+        "position_mm": [
+          136.325,
+          85.0
+        ]
+      },
+      {
+        "number": "2",
+        "net": "PROT_RTN",
+        "position_mm": [
+          134.675,
+          85.0
+        ]
+      }
+    ]
+  },
+  "D2": {
+    "value": "SMBJ33A",
+    "side": "bottom",
+    "position_mm": [
+      151.0,
+      88.5
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+12V",
+        "position_mm": [
+          153.15,
+          88.5
+        ]
+      },
+      {
+        "number": "2",
+        "net": "TVS_MID",
+        "position_mm": [
+          148.85,
+          88.5
+        ]
+      }
+    ]
+  },
+  "R8": {
+    "value": "20k 1%",
+    "side": "bottom",
+    "position_mm": [
+      146.5,
+      83.0
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "PROT_UV",
+        "position_mm": [
+          147.325,
+          83.0
+        ]
+      },
+      {
+        "number": "2",
+        "net": "PROT_OV",
+        "position_mm": [
+          145.675,
+          83.0
+        ]
+      }
+    ]
+  },
+  "R9": {
+    "value": "10k",
+    "side": "bottom",
+    "position_mm": [
+      144.5,
+      86.0
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "PROT_OV",
+        "position_mm": [
+          145.4125,
+          86.0
+        ]
+      },
+      {
+        "number": "2",
+        "net": "PROT_RTN",
+        "position_mm": [
+          143.5875,
+          86.0
+        ]
+      }
+    ]
+  },
+  "C15": {
+    "value": "1uF 50V",
+    "side": "bottom",
+    "position_mm": [
+      135.0,
+      77.0
+    ],
+    "rotation": 90.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+12V_PROTECTED",
+        "position_mm": [
+          135.0,
+          77.95
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          135.0,
+          76.05
+        ]
+      }
+    ]
+  },
+  "U6": {
+    "value": "TPS26600PWPR",
+    "side": "bottom",
+    "position_mm": [
+      141.0,
+      81.0
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+12V",
+        "position_mm": [
+          143.9,
+          78.725
+        ]
+      },
+      {
+        "number": "2",
+        "net": "+12V",
+        "position_mm": [
+          143.9,
+          79.375
+        ]
+      },
+      {
+        "number": "3",
+        "net": "PROT_UV",
+        "position_mm": [
+          143.9,
+          80.025001
+        ]
+      },
+      {
+        "number": "4",
+        "net": "unconnected-(U6-NC-Pad4)",
+        "position_mm": [
+          143.9,
+          80.675001
+        ]
+      },
+      {
+        "number": "5",
+        "net": "PROT_OV",
+        "position_mm": [
+          143.9,
+          81.325
+        ]
+      },
+      {
+        "number": "6",
+        "net": "unconnected-(U6-MODE-Pad6)",
+        "position_mm": [
+          143.9,
+          81.975
+        ]
+      },
+      {
+        "number": "7",
+        "net": "unconnected-(U6-SHDN-Pad7)",
+        "position_mm": [
+          143.9,
+          82.625
+        ]
+      },
+      {
+        "number": "8",
+        "net": "PROT_RTN",
+        "position_mm": [
+          143.9,
+          83.275
+        ]
+      },
+      {
+        "number": "9",
+        "net": "GND",
+        "position_mm": [
+          138.1,
+          83.275
+        ]
+      },
+      {
+        "number": "10",
+        "net": "unconnected-(U6-IMON-Pad10)",
+        "position_mm": [
+          138.1,
+          82.625
+        ]
+      },
+      {
+        "number": "11",
+        "net": "PROT_ILIM",
+        "position_mm": [
+          138.1,
+          81.975
+        ]
+      },
+      {
+        "number": "12",
+        "net": "PROT_DVDT",
+        "position_mm": [
+          138.1,
+          81.325
+        ]
+      },
+      {
+        "number": "13",
+        "net": "unconnected-(U6-NC-Pad13)",
+        "position_mm": [
+          138.1,
+          80.675001
+        ]
+      },
+      {
+        "number": "14",
+        "net": "unconnected-(U6-FLT-Pad14)",
+        "position_mm": [
+          138.1,
+          80.025001
+        ]
+      },
+      {
+        "number": "15",
+        "net": "+12V_PROTECTED",
+        "position_mm": [
+          138.1,
+          79.375
+        ]
+      },
+      {
+        "number": "16",
+        "net": "+12V_PROTECTED",
+        "position_mm": [
+          138.1,
+          78.725
+        ]
+      },
+      {
+        "number": "17",
+        "net": "PROT_RTN",
+        "position_mm": [
+          141.0,
+          81.0
+        ]
+      }
+    ]
+  },
+  "C17": {
+    "value": "1uF 100V",
+    "side": "bottom",
+    "position_mm": [
+      153.8,
+      76.5
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "+12V",
+        "position_mm": [
+          155.275,
+          76.5
+        ]
+      },
+      {
+        "number": "2",
+        "net": "GND",
+        "position_mm": [
+          152.325,
+          76.5
+        ]
+      }
+    ]
+  },
+  "C16": {
+    "value": "10nF 50V",
+    "side": "bottom",
+    "position_mm": [
+      135.5,
+      82.5
+    ],
+    "rotation": 180.0,
+    "pads": [
+      {
+        "number": "1",
+        "net": "PROT_DVDT",
+        "position_mm": [
+          136.275,
+          82.5
+        ]
+      },
+      {
+        "number": "2",
+        "net": "PROT_RTN",
+        "position_mm": [
+          134.725,
+          82.5
+        ]
+      }
+    ]
+  }
+}

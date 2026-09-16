@@ -1,0 +1,26 @@
+{
+  "status": "Prototype files - vendor placement/process acceptance and physical validation pending",
+  "components": 36,
+  "bom_groups": 27,
+  "catalog_parts": 27,
+  "top": 36,
+  "bottom": 0,
+  "drc": 0,
+  "erc": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "independent_critical_nets": "passed",
+  "stock_check": "All catalog identities available for 5 boards at observation time; no reservation",
+  "firmware": "RykerConnect_REV04 build passed; no hardware boot test",
+  "original_downloads_hashes_unchanged": true,
+  "board_size_mm": [
+    102,
+    46
+  ],
+  "manufacturing_sha256": {
+    "BOM.csv": "80cf9b9be69a01c389f12a74b253ce3e3d6ccd68239add9ddaff53e6eaae5977",
+    "CPL.csv": "23582862b6d30ff6cf351e4700948c2d2dae5a1a814d1b73d63446da87b1db0a",
+    "Gerbers.zip": "0d4b2b7620ec80f6089f63bd0a93773bd36c08bd0587fe50087388260c0e9933"
+  },
+  "all_drc_rules_enabled": true
+}

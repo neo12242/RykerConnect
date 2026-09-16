@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RykerConnect · ESP Display</title><link rel="stylesheet" href="/display.css"><script src="/display.js" defer></script></head>
+<body><main>
+<header><div><div class="eyebrow">RYKERCONNECT / VIRTUAL MAIN UNIT</div><h1>Your app. One live display.</h1><p>Change a setting on the Android phone and watch the ESP display respond.</p></div><div id="connection" class="status">Connecting to simulator…</div></header>
+<section class="instrument" aria-label="Virtual ESP display">
+<div class="instrument-top"><span>ESP32-S3 <b>DISPLAY PREVIEW</b></span><span id="layout">—</span></div>
+<div class="screen"><figure><canvas id="display" width="320" height="132" aria-label="ESP display"></canvas><figcaption>DISPLAY PREVIEW <span>320 × 132</span></figcaption></figure></div>
+<div class="instrument-bottom"><span id="brightness">Brightness —</span><span id="feed">Waiting for Bluetooth data</span></div>
+</section>
+<div class="readout"><span id="last-write">No commands received yet</span><span id="source">Temperature: simulated sensor · Media: Bluetooth</span></div>
+<div id="error" role="alert" hidden></div>
+<section aria-label="Simulator scenarios"><h2>Test scenarios</h2><p>Display-only samples. These do not change phone trips or the real Bluetooth connection.</p><div id="scenarios" class="buttons"><button data-scenario="live">Live phone data</button><button data-scenario="guided">Start / restart guided ride (3 min)</button><button data-scenario="touring">Touring</button><button data-scenario="rain">Rain</button><button data-scenario="gps_loss">GPS loss</button><button data-scenario="stale">Stale data</button><button data-scenario="disconnected">Disconnected preview</button><button data-scenario="low_battery">Low battery</button><button data-scenario="long_text">Long text</button><button data-scenario="trip_only">Trip only</button></div><p id="scenario-status" role="status">Live phone data</p></section>
+<section aria-label="Simulated I2C devices" class="i2c-controls"><h2>I2C test bench</h2><p>These virtual devices feed the Android app over Bluetooth. No physical sensors are connected.</p>
+<label><input id="bme-connected" type="checkbox" checked> BME280 connected · temperature / humidity / pressure</label>
+<label><input id="rtc-connected" type="checkbox" checked> DS3231 clock connected</label>
+<label><input id="sensor-stale" type="checkbox"> Freeze BME280 / stale data</label>
+<label for="humidity">Humidity (%)</label><input id="humidity" type="number" required min="0" max="100" step="1" value="48">
+<label for="pressure">Pressure (hPa)</label><input id="pressure" type="number" required min="300" max="1100" step="0.1" value="1013.2">
+<button id="apply-i2c">Apply sensor values</button><p id="i2c-status" role="status"></p><p id="rtc-status"></p>
+<p>Temperature uses the slider below. Device switches apply immediately. Unplug or freeze the BME280 to test the app's unavailable state; reconnect to recover.</p></section>
+<section class="controls" aria-label="Sample inputs">
+<article><div class="eyebrow">01 / LOCAL SENSORS</div><h2>Set the environment</h2><p>Sample values for the ESP’s temperature and light sensors.</p>
+<label for="temperature">Temperature <output id="temperature-value">22 °C</output></label><input id="temperature" type="range" min="-20" max="60" value="22" step="1">
+<label for="ambient">Ambient light <output id="ambient-value">2000 ADC</output></label><input id="ambient" type="range" min="0" max="4095" value="2000" step="1"><small>Light affects brightness when Adaptive Brightness is enabled in the app.</small></article>
+<article><div class="eyebrow">02 / MEDIA PREVIEW</div><h2>Put something on</h2><p>Preview a track, or use music data from the Android app.</p>
+<label for="title">Track</label><input id="title" maxlength="100" value="Northern Lights">
+<label for="artist">Artist</label><input id="artist" maxlength="100" value="Demo artist">
+<div class="buttons"><button id="sample-media">Load sample</button><button id="pause" class="secondary" disabled>Pause / play</button><button id="live" class="text-button">Use live data</button></div></article>
+<article><div class="eyebrow">03 / POPUP PREVIEW</div><h2>Try an incoming event</h2><p>Sample events affect this display only. They do not send phone messages.</p>
+<div class="buttons"><button id="notification" class="secondary">Notification</button><button id="battery" class="secondary">Low battery</button></div>
+<label for="volume">Sample volume <output id="volume-value">50%</output></label><input id="volume" type="range" min="0" max="100" value="50"><small>Real volume and notification commands also appear here when forwarded by the app.</small></article>
+</section>
+<footer><span id="description">Layouts and icons follow the firmware. Fonts, scrolling, and OLED contrast are approximations.</span><span>LOCAL SIMULATOR · NO PHYSICAL ESP</span></footer>
+</main></body></html>

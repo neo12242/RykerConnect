@@ -1,0 +1,36 @@
+{
+  "tests": 32,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "suites": [
+    {
+      "name": "de.chaostheorybot.rykerconnect.data.IntercomMacsTest",
+      "tests": 7
+    },
+    {
+      "name": "de.chaostheorybot.rykerconnect.ExampleUnitTest",
+      "tests": 1
+    },
+    {
+      "name": "de.chaostheorybot.rykerconnect.ride.EnvironmentStateTest",
+      "tests": 3
+    },
+    {
+      "name": "de.chaostheorybot.rykerconnect.ride.RideModelsTest",
+      "tests": 6
+    },
+    {
+      "name": "de.chaostheorybot.rykerconnect.ride.TripPolicyTest",
+      "tests": 5
+    },
+    {
+      "name": "de.chaostheorybot.rykerconnect.ride.TripStoreTest",
+      "tests": 4
+    },
+    {
+      "name": "de.chaostheorybot.rykerconnect.ride.WeatherTest",
+      "tests": 6
+    }
+  ]
+}

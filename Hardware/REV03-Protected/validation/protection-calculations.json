@@ -1,0 +1,43 @@
+{
+  "method": "DC worst-case corner enumeration, independent OVP/UVLO leakage; datasheet reference thresholds. No physical simulation or certification.",
+  "nominal": {
+    "ov_cutoff_V": 17.849999999999998,
+    "uv_start_V": 5.949999999999999,
+    "ov_recovery_V": 16.5,
+    "current_limit_A": 1.0,
+    "12V_ramp_ms": 1.0378827192527245
+  },
+  "1pct_resistors": {
+    "ov_min": 17.199903564356433,
+    "ov_max": 18.747724646464647,
+    "uv_min": 5.741486732673268,
+    "uv_max": 6.2401498989899
+  },
+  "2_5pct_resistor_envelope": {
+    "ov_min": 16.725625609756097,
+    "ov_max": 19.281137179487178,
+    "uv_min": 5.60610731707317,
+    "uv_max": 6.392682051282051
+  },
+  "current_limit_conservative_A": [
+    0.9108910891089109,
+    1.090909090909091
+  ],
+  "max_capacitive_inrush_A_13uF": 0.2025833333333333,
+  "TVS_25C_table_checks": {
+    "positive_clamp_with_3_5V_forward_allowance": 56.8,
+    "negative_clamp_with_3_5V_forward_allowance": 32.7,
+    "worst_negative_IN_OUT_difference": 51.98113717948718,
+    "absolute_IN_OUT_limit_V": 60,
+    "caveat": "At specified pulse currents only. Clamp voltage/energy at actual temperature, source impedance, pulse shape and layout overshoot must be measured; no unsuppressed load-dump claim."
+  },
+  "supply_envelope": {
+    "normal_V": [
+      9,
+      16
+    ],
+    "suppressed_load_dump_target_V": 35,
+    "reverse_connection_target_V": -16
+  },
+  "thermal_notes": "Isolated bottom RTN copper has no through-board thermal vias to avoid disturbing top routing. Validate temperature at intended load; controller is an industrial part, not automotive-qualified. Use the existing fused accessory branch; onboard eFuse does not protect a shorted input TVS or upstream wiring."
+}

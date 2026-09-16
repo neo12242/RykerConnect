@@ -1,0 +1,248 @@
+{
+  "observed_date": "2026-09-13",
+  "source": "Live public JLCPCB part-detail pages, browser rendered available-order quantity and tier-1 prices",
+  "not_reserved": true,
+  "parts": [
+    {
+      "code": "C105575",
+      "mpn": "RC0603FR-0720KL",
+      "available_order_quantity": 3931993,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.0055,
+      "source": "https://jlcpcb.com/partdetail/C105575"
+    },
+    {
+      "code": "C114607",
+      "mpn": "RC0603FR-07120KL",
+      "available_order_quantity": 1258,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.0061,
+      "source": "https://jlcpcb.com/partdetail/C114607"
+    },
+    {
+      "code": "C114659",
+      "mpn": "RC0603FR-0712KL",
+      "available_order_quantity": 1135903,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.006,
+      "source": "https://jlcpcb.com/partdetail/C114659"
+    },
+    {
+      "code": "C130253",
+      "mpn": "ABS07-32.768KHZ-T",
+      "available_order_quantity": 13120,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.7357,
+      "source": "https://jlcpcb.com/partdetail/C130253"
+    },
+    {
+      "code": "C13585",
+      "mpn": "CL31A106KBHNNNE",
+      "available_order_quantity": 2763665,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.2658,
+      "source": "https://jlcpcb.com/partdetail/C13585"
+    },
+    {
+      "code": "C13832",
+      "mpn": "CL31B105KCHNNNE",
+      "available_order_quantity": 1317397,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.0692,
+      "source": "https://jlcpcb.com/partdetail/C13832"
+    },
+    {
+      "code": "C151256",
+      "mpn": "SMBJ18A",
+      "available_order_quantity": 7768,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.148,
+      "source": "https://jlcpcb.com/partdetail/C151256"
+    },
+    {
+      "code": "C15578",
+      "mpn": "TLV1117LV33DCYR",
+      "available_order_quantity": 1808,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.3744,
+      "source": "https://jlcpcb.com/partdetail/C15578"
+    },
+    {
+      "code": "C15759",
+      "mpn": "B140-13-F",
+      "available_order_quantity": 52247,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.0831,
+      "source": "https://jlcpcb.com/partdetail/C15759"
+    },
+    {
+      "code": "C1589",
+      "mpn": "CL10B103KB8NNNC",
+      "available_order_quantity": 2563451,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.0101,
+      "source": "https://jlcpcb.com/partdetail/C1589"
+    },
+    {
+      "code": "C1591",
+      "mpn": "CL10B104KB8NNNC",
+      "available_order_quantity": 1757736,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.0104,
+      "source": "https://jlcpcb.com/partdetail/C1591"
+    },
+    {
+      "code": "C160402",
+      "mpn": "SM02B-SRSS-TB(LF)(SN)",
+      "available_order_quantity": 59842,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.132,
+      "source": "https://jlcpcb.com/partdetail/C160402"
+    },
+    {
+      "code": "C160404",
+      "mpn": "SM04B-SRSS-TB(LF)(SN)",
+      "available_order_quantity": 49327,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.2136,
+      "source": "https://jlcpcb.com/partdetail/C160404"
+    },
+    {
+      "code": "C160407",
+      "mpn": "SM08B-SRSS-TB(LF)(SN)",
+      "available_order_quantity": 126467,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.332,
+      "source": "https://jlcpcb.com/partdetail/C160407"
+    },
+    {
+      "code": "C1653",
+      "mpn": "CL10C220JB8NNNC",
+      "available_order_quantity": 2274360,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.0067,
+      "source": "https://jlcpcb.com/partdetail/C1653"
+    },
+    {
+      "code": "C192562",
+      "mpn": "436500200",
+      "available_order_quantity": 4584,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.5778,
+      "source": "https://jlcpcb.com/partdetail/C192562"
+    },
+    {
+      "code": "C2071056",
+      "mpn": "AP63205WU-7",
+      "available_order_quantity": 21849,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.4265,
+      "source": "https://jlcpcb.com/partdetail/C2071056"
+    },
+    {
+      "code": "C224019",
+      "mpn": "SMBJ33A",
+      "available_order_quantity": 10812,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.1202,
+      "source": "https://jlcpcb.com/partdetail/C224019"
+    },
+    {
+      "code": "C23162",
+      "mpn": "0603WAF4701T5E",
+      "available_order_quantity": 24092243,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.003,
+      "source": "https://jlcpcb.com/partdetail/C23162"
+    },
+    {
+      "code": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "available_order_quantity": 20655586,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.0027,
+      "source": "https://jlcpcb.com/partdetail/C25804"
+    },
+    {
+      "code": "C28323",
+      "mpn": "CL21B105KBFNNNE",
+      "available_order_quantity": 2894122,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.0399,
+      "source": "https://jlcpcb.com/partdetail/C28323"
+    },
+    {
+      "code": "C29780898",
+      "mpn": "5AML4-11560-102-W0",
+      "available_order_quantity": 1927,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.0173,
+      "source": "https://jlcpcb.com/partdetail/C29780898"
+    },
+    {
+      "code": "C3019921",
+      "mpn": "BAV199",
+      "available_order_quantity": 5194,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.0258,
+      "source": "https://jlcpcb.com/partdetail/C3019921"
+    },
+    {
+      "code": "C408447",
+      "mpn": "MWSA0603S-4R7MT",
+      "available_order_quantity": 39717,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.1317,
+      "source": "https://jlcpcb.com/partdetail/C408447"
+    },
+    {
+      "code": "C45783",
+      "mpn": "CL21A226MAQNNNE",
+      "available_order_quantity": 4240524,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.2458,
+      "source": "https://jlcpcb.com/partdetail/C45783"
+    },
+    {
+      "code": "C544399",
+      "mpn": "TPS26600PWPR",
+      "available_order_quantity": 4850,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 1.6227,
+      "source": "https://jlcpcb.com/partdetail/C544399"
+    },
+    {
+      "code": "C7440",
+      "mpn": "PCF8563T/5,518",
+      "available_order_quantity": 48054,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.6201,
+      "source": "https://jlcpcb.com/partdetail/C7440"
+    },
+    {
+      "code": "C7500786",
+      "mpn": "FH2.54-09-22PZD",
+      "available_order_quantity": 52,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.3274,
+      "source": "https://jlcpcb.com/partdetail/C7500786"
+    },
+    {
+      "code": "C7501066",
+      "mpn": "BAT-HLD-001",
+      "available_order_quantity": 374,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 1.1344,
+      "source": "https://jlcpcb.com/partdetail/C7501066"
+    },
+    {
+      "code": "C96446",
+      "mpn": "CL10A106MA8NRNC",
+      "available_order_quantity": 4042429,
+      "minimum_purchase": 1,
+      "unit_price_usd_tier1": 0.0552,
+      "source": "https://jlcpcb.com/partdetail/C96446"
+    }
+  ],
+  "per_board_components_usd_tier1": 8.5094
+}

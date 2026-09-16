@@ -1,0 +1,4288 @@
+(kicad_symbol_lib
+	(version 20241209)
+	(generator "kicad_symbol_editor")
+	(symbol "BT1"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "BT1"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "BAT-HLD-001"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "BT1_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "BT1_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "-"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "J1"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J1"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "436500200"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "J1_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "J1_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "J3"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J3"
+			(at 0 13.89 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "SM08B-SRSS-TB(LF)(SN)"
+			(at 0 10.89 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "J3_0_1"
+			(rectangle
+				(start -10.16 8.89)
+				(end 10.16 -8.89)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "J3_1_1"
+			(pin passive line
+				(at -12.7 5.08 0)
+				(length 2.54)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 2.54 0)
+				(length 2.54)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -2.54 0)
+				(length 2.54)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -5.08 0)
+				(length 2.54)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 5.08 180)
+				(length 2.54)
+				(name "Pin_6"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 2.54 180)
+				(length 2.54)
+				(name "Pin_7"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "Pin_8"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "MP"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "MP"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "J4"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J4"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "SM02B-SRSS-TB(LF)(SN)"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "J4_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "J4_1_1"
+			(pin passive line
+				(at -12.7 1.27 0)
+				(length 2.54)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -1.27 0)
+				(length 2.54)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 1.27 180)
+				(length 2.54)
+				(name "MP"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "MP"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "J5"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J5"
+			(at 0 11.35 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "SM04B-SRSS-TB(LF)(SN)"
+			(at 0 8.35 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "J5_0_1"
+			(rectangle
+				(start -10.16 6.35)
+				(end 10.16 -6.35)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "J5_1_1"
+			(pin passive line
+				(at -12.7 2.54 0)
+				(length 2.54)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -2.54 0)
+				(length 2.54)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 2.54 180)
+				(length 2.54)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "Mounting_anchors"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "MP"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "U2"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U2"
+			(at 0 12.62 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "MCP9808T-E/MS"
+			(at 0 9.62 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "U2_0_1"
+			(rectangle
+				(start -10.16 7.62)
+				(end 10.16 -7.62)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "U2_1_1"
+			(pin bidirectional line
+				(at -12.7 3.81 0)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 1.27 0)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -1.27 0)
+				(length 2.54)
+				(name "Alert"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -12.7 -3.81 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 3.81 180)
+				(length 2.54)
+				(name "A2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 1.27 180)
+				(length 2.54)
+				(name "A1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -1.27 180)
+				(length 2.54)
+				(name "A0"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 12.7 -3.81 180)
+				(length 2.54)
+				(name "V_{DD}"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "U6"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U6"
+			(at 0 18.97 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "TPS26600PWPR"
+			(at 0 15.97 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "U6_0_1"
+			(rectangle
+				(start -10.16 13.97)
+				(end 10.16 -13.97)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "U6_1_1"
+			(pin power_in line
+				(at -12.7 10.16 0)
+				(length 2.54)
+				(name "IN"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 7.62 0)
+				(length 2.54)
+				(name "IN"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 5.08 0)
+				(length 2.54)
+				(name "UVLO"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -12.7 2.54 0)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "OVP"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -2.54 0)
+				(length 2.54)
+				(name "MODE"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -5.08 0)
+				(length 2.54)
+				(name "SHDN"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at -12.7 -7.62 0)
+				(length 2.54)
+				(name "RTN"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -12.7 -10.16 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 12.7 10.16 180)
+				(length 2.54)
+				(name "IMON"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "ILIM"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 5.08 180)
+				(length 2.54)
+				(name "dVdT"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 12.7 2.54 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "FLT"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -5.08 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -7.62 180)
+				(length 2.54)
+				(name "EP_RTN"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "D2"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D2"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "SMBJ33A"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "D2_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "D2_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "D3"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D3"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "B140-13-F"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "D3_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "D3_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C14"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C14"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "1uF 100V"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "C14_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C14_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C15"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C15"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "1uF 50V"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "C15_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C15_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C16"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C16"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "10nF 50V"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "C16_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C16_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R7"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R7"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "120k 1%"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "R7_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R7_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R8"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R8"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "20k 1%"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "R8_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R8_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R9"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R9"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "R9_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R9_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R10"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R10"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "12k 1%"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "R10_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R10_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "D4"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D4"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "SMBJ18A"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "D4_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "D4_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C17"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C17"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "1uF 100V"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "C17_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C17_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C3"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C3"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "100nF 50V"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "C3_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C3_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C4"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C4"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "100nF 50V"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "C4_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C4_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C6"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C6"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "100nF 50V"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "C6_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C6_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C10"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C10"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "100nF 50V"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "C10_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C10_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C11"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C11"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "100nF 50V"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "C11_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C11_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C5"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C5"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "10uF 25V"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "C5_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C5_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C9"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C9"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "10uF 50V"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "C9_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C9_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C12"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C12"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "22uF 25V"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "C12_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C12_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C13"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C13"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "22uF 25V"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "C13_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C13_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R3"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R3"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "4.7k 1%"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "R3_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R3_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R4"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R4"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "4.7k 1%"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "R4_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R4_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R6"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R6"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "10k 1%"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "R6_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R6_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "U3"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U3"
+			(at 0 17.7 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "DS3231SN#T&R"
+			(at 0 14.7 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "U3_0_1"
+			(rectangle
+				(start -10.16 12.7)
+				(end 10.16 -12.7)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "U3_1_1"
+			(pin open_collector line
+				(at -12.7 8.89 0)
+				(length 2.54)
+				(name "32KHZ"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -12.7 6.35 0)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at -12.7 3.81 0)
+				(length 2.54)
+				(name "INT_SQW"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at -12.7 1.27 0)
+				(length 2.54)
+				(name "RST"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -1.27 0)
+				(length 2.54)
+				(name "NC_GND"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -3.81 0)
+				(length 2.54)
+				(name "NC_GND"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -6.35 0)
+				(length 2.54)
+				(name "NC_GND"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -8.89 0)
+				(length 2.54)
+				(name "NC_GND"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 8.89 180)
+				(length 2.54)
+				(name "NC_GND"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 6.35 180)
+				(length 2.54)
+				(name "NC_GND"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 3.81 180)
+				(length 2.54)
+				(name "NC_GND"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 1.27 180)
+				(length 2.54)
+				(name "NC_GND"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 12.7 -1.27 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 12.7 -3.81 180)
+				(length 2.54)
+				(name "VBAT"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -6.35 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -8.89 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "U5"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U5"
+			(at 0 11.35 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "AP63205WU-7"
+			(at 0 8.35 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "U5_0_1"
+			(rectangle
+				(start -10.16 6.35)
+				(end 10.16 -6.35)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "U5_1_1"
+			(pin input line
+				(at -12.7 2.54 0)
+				(length 2.54)
+				(name "FB"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -12.7 -2.54 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 12.7 2.54 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "SW"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "BST"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "L1"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "L1"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "4.7uH"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "L1_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "L1_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "J6"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J6"
+			(at 0 21.51 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "ESP32 socket P1"
+			(at 0 18.51 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "J6_0_1"
+			(rectangle
+				(start -10.16 16.51)
+				(end 10.16 -16.51)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "J6_1_1"
+			(pin passive line
+				(at -12.7 12.7 0)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 10.16 0)
+				(length 2.54)
+				(name "+3.3V"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 7.62 0)
+				(length 2.54)
+				(name "NC_3"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 5.08 0)
+				(length 2.54)
+				(name "NC_4"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 2.54 0)
+				(length 2.54)
+				(name "NC_5"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "NC_6"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -2.54 0)
+				(length 2.54)
+				(name "GPIO7"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -5.08 0)
+				(length 2.54)
+				(name "DSP_RES"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -7.62 0)
+				(length 2.54)
+				(name "NC_9"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -10.16 0)
+				(length 2.54)
+				(name "NC_10"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -12.7 0)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 12.7 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 10.16 180)
+				(length 2.54)
+				(name "NC_13"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "NC_14"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 5.08 180)
+				(length 2.54)
+				(name "NC_15"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 2.54 180)
+				(length 2.54)
+				(name "CS2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "SPI_MOSI"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "SPI_SCK"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -5.08 180)
+				(length 2.54)
+				(name "DSP_DC"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -7.62 180)
+				(length 2.54)
+				(name "CS1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -10.16 180)
+				(length 2.54)
+				(name "+5V_MODULE"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -12.7 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "J7"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J7"
+			(at 0 21.51 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "ESP32 socket P2"
+			(at 0 18.51 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "J7_0_1"
+			(rectangle
+				(start -10.16 16.51)
+				(end 10.16 -16.51)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "J7_1_1"
+			(pin passive line
+				(at -12.7 12.7 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 10.16 0)
+				(length 2.54)
+				(name "NC_2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 7.62 0)
+				(length 2.54)
+				(name "NC_3"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 5.08 0)
+				(length 2.54)
+				(name "NC_4"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 2.54 0)
+				(length 2.54)
+				(name "NC_5"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "NC_6"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -2.54 0)
+				(length 2.54)
+				(name "NC_7"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -5.08 0)
+				(length 2.54)
+				(name "NC_8"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -7.62 0)
+				(length 2.54)
+				(name "NC_9"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -10.16 0)
+				(length 2.54)
+				(name "NC_10"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -12.7 -12.7 0)
+				(length 2.54)
+				(name "NC_11"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 12.7 180)
+				(length 2.54)
+				(name "NC_12"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 10.16 180)
+				(length 2.54)
+				(name "NC_13"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "NC_14"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 5.08 180)
+				(length 2.54)
+				(name "NC_15"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 2.54 180)
+				(length 2.54)
+				(name "NC_16"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "NC_17"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "NC_18"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -5.08 180)
+				(length 2.54)
+				(name "NC_19"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -7.62 180)
+				(length 2.54)
+				(name "NC_20"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -10.16 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 -12.7 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "J8"
+		(pin_names
+			(offset 0.5)
+		)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J8"
+			(at 0 10.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "REMOVE LINK FOR USB"
+			(at 0 7.08 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(symbol "J8_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "J8_1_1"
+			(pin passive line
+				(at -12.7 0.0 0)
+				(length 2.54)
+				(name "+5V_BUCK"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0.0 180)
+				(length 2.54)
+				(name "+5V_MODULE"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+	)
+)

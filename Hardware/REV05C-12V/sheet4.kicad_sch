@@ -1,0 +1,2491 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(uuid "c3ea63d9-9ba7-5ae1-96d3-4e85bc6ffad0")
+	(paper "A3")
+	(title_block
+		(title "RykerConnect - Battery-backed clock and light sensor")
+		(date "2026-09-13")
+		(rev "REV05C-12V")
+	)
+	(lib_symbols
+		(symbol "RykerConnect:BT1"
+			(pin_names
+				(offset 0.5)
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BT1"
+				(at 0 10.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "BAT-HLD-001"
+				(at 0 7.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(symbol "BT1_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "BT1_1_1"
+				(pin passive line
+					(at -12.7 0.0 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0.0 180)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "RykerConnect:J4"
+			(pin_names
+				(offset 0.5)
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J4"
+				(at 0 10.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "SM02B-SRSS-TB(LF)(SN)"
+				(at 0 7.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(symbol "J4_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "J4_1_1"
+				(pin passive line
+					(at -12.7 1.27 0)
+					(length 2.54)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -1.27 0)
+					(length 2.54)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 1.27 180)
+					(length 2.54)
+					(name "MP"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "MP"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "RykerConnect:C3"
+			(pin_names
+				(offset 0.5)
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C3"
+				(at 0 10.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "100nF 50V"
+				(at 0 7.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(symbol "C3_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "C3_1_1"
+				(pin passive line
+					(at -12.7 0.0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0.0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "RykerConnect:C6"
+			(pin_names
+				(offset 0.5)
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C6"
+				(at 0 10.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "100nF 50V"
+				(at 0 7.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(symbol "C6_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "C6_1_1"
+				(pin passive line
+					(at -12.7 0.0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0.0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "RykerConnect:C5"
+			(pin_names
+				(offset 0.5)
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C5"
+				(at 0 10.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "10uF 25V"
+				(at 0 7.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(symbol "C5_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "C5_1_1"
+				(pin passive line
+					(at -12.7 0.0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0.0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "RykerConnect:R6"
+			(pin_names
+				(offset 0.5)
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R6"
+				(at 0 10.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "10k 1%"
+				(at 0 7.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(symbol "R6_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "R6_1_1"
+				(pin passive line
+					(at -12.7 0.0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0.0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "RykerConnect:U3"
+			(pin_names
+				(offset 0.5)
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U3"
+				(at 0 12.62 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "PCF8563T/5,518"
+				(at 0 9.62 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(symbol "U3_0_1"
+				(rectangle
+					(start -10.16 7.62)
+					(end 10.16 -7.62)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "U3_1_1"
+				(pin input line
+					(at -12.7 3.81 0)
+					(length 2.54)
+					(name "OSCI"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -12.7 1.27 0)
+					(length 2.54)
+					(name "OSCO"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at -12.7 -1.27 0)
+					(length 2.54)
+					(name "INT"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 -3.81 0)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 3.81 180)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 1.27 180)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 12.7 -1.27 180)
+					(length 2.54)
+					(name "CLKOUT"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 12.7 -3.81 180)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "RykerConnect:X1"
+			(pin_names
+				(offset 0.5)
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "X1"
+				(at 0 10.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "32.768kHz 12.5pF"
+				(at 0 7.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(symbol "X1_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "X1_1_1"
+				(pin passive line
+					(at -12.7 0.0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0.0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "RykerConnect:C18"
+			(pin_names
+				(offset 0.5)
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C18"
+				(at 0 10.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "22pF C0G"
+				(at 0 7.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(symbol "C18_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "C18_1_1"
+				(pin passive line
+					(at -12.7 0.0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0.0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "RykerConnect:D5"
+			(pin_names
+				(offset 0.5)
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D5"
+				(at 0 10.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "BAV199 backup isolation"
+				(at 0 7.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(symbol "D5_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "D5_1_1"
+				(pin passive line
+					(at -12.7 1.27 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -1.27 0)
+					(length 2.54)
+					(name "K2_UNUSED"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 1.27 180)
+					(length 2.54)
+					(name "K1_A2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "RykerConnect:D6"
+			(pin_names
+				(offset 0.5)
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D6"
+				(at 0 10.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(property "Value" "BAV199 backup isolation"
+				(at 0 7.08 0)
+				(effects
+					(font
+						(size 0.9 0.9)
+					)
+				)
+			)
+			(symbol "D6_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "D6_1_1"
+				(pin passive line
+					(at -12.7 1.27 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -1.27 0)
+					(length 2.54)
+					(name "K2_UNUSED"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 1.27 180)
+					(length 2.54)
+					(name "K1_A2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 1.27)
+						(xy -1.016 1.905)
+						(xy 0 2.54)
+						(xy 1.016 1.905)
+						(xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "Battery-backed clock and light sensor"
+		(at 20 15 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "1e1409c7-7dd5-5769-858e-f323c7e75512")
+	)
+	(wire
+		(pts
+			(xy 36.83 49.53)
+			(xy 29.21 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d54ceea9-2c5e-5231-a89a-3db64991f5c1")
+	)
+	(global_label "VBAT"
+		(shape bidirectional)
+		(at 29.21 49.53 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "cfcfbce2-5925-5dc4-aa40-7999226d91c2")
+	)
+	(wire
+		(pts
+			(xy 62.23 49.53)
+			(xy 69.85 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59720853-29d0-53a5-8447-ea9bd586314d")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 69.85 49.53 0)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify left)
+		)
+		(uuid "71eb6011-e275-56e4-adc1-21d70f378781")
+	)
+	(symbol
+		(lib_id "RykerConnect:BT1")
+		(at 49.53 49.53 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "de3289fa-5903-582e-a5cd-22729bf0fd4b")
+		(property "Reference" "BT1"
+			(at 49.53 39.45 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "BAT-HLD-001"
+			(at 49.53 42.45 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Footprint" "RykerConnect:BT1_BT1_BATHLD001"
+			(at 49.53 49.53 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BAT-HLD-001"
+			(at 49.53 49.53 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7501066"
+			(at 49.53 49.53 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RykerConnect"
+				(path "/b3e6de9e-c7cd-4419-8e94-64236783f104/2ca8097e-c236-513e-9ae0-05208a48232c"
+					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 132.08 48.26)
+			(xy 124.46 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40ba4911-723c-5b82-a0b4-6ff930cf0fdf")
+	)
+	(global_label "+3.3V"
+		(shape bidirectional)
+		(at 124.46 48.26 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "8803e418-f243-5728-918a-73930a929148")
+	)
+	(wire
+		(pts
+			(xy 132.08 50.8)
+			(xy 124.46 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c192cda9-2ec6-5fd5-8d94-c0781c66e179")
+	)
+	(global_label "GPIO7"
+		(shape bidirectional)
+		(at 124.46 50.8 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "439ae69a-eacc-5936-aee6-6e92cf93b6bc")
+	)
+	(wire
+		(pts
+			(xy 157.48 48.26)
+			(xy 165.1 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e80d263f-a7c5-5dc4-94dc-e6278c1c6d3b")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 165.1 48.26 0)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify left)
+		)
+		(uuid "d243e991-ff2b-5546-bf6c-2315c7e7fd68")
+	)
+	(symbol
+		(lib_id "RykerConnect:J4")
+		(at 144.78 49.53 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa5f359f-5338-54c3-81d3-018c6a341ded")
+		(property "Reference" "J4"
+			(at 144.78 39.45 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "SM02B-SRSS-TB(LF)(SN)"
+			(at 144.78 42.45 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Footprint" "RykerConnect:J4_J4_JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal"
+			(at 144.78 49.53 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SM02B-SRSS-TB(LF)(SN)"
+			(at 144.78 49.53 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C160402"
+			(at 144.78 49.53 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RykerConnect"
+				(path "/b3e6de9e-c7cd-4419-8e94-64236783f104/2ca8097e-c236-513e-9ae0-05208a48232c"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 227.33 49.53)
+			(xy 219.71 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d27d9e44-38d8-5c73-ac2e-023cc67f997c")
+	)
+	(global_label "RTC_VDD"
+		(shape bidirectional)
+		(at 219.71 49.53 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "0a5ba668-60ee-578d-9635-5212c3e954d5")
+	)
+	(wire
+		(pts
+			(xy 252.73 49.53)
+			(xy 260.35 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1e420ab-bf17-52e3-af39-2c97c632cb20")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 260.35 49.53 0)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify left)
+		)
+		(uuid "cd064b96-7f2f-590c-930e-71baefeefdfa")
+	)
+	(symbol
+		(lib_id "RykerConnect:C3")
+		(at 240.03 49.53 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ace9ac2d-2ebf-51d5-bc41-6e3daebe3ae4")
+		(property "Reference" "C3"
+			(at 240.03 39.45 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "100nF 50V"
+			(at 240.03 42.45 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Footprint" "RykerConnect:C3_C_0603_1608Metric"
+			(at 240.03 49.53 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 240.03 49.53 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 240.03 49.53 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RykerConnect"
+				(path "/b3e6de9e-c7cd-4419-8e94-64236783f104/2ca8097e-c236-513e-9ae0-05208a48232c"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 322.58 49.53)
+			(xy 314.96 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00869312-f9b9-5818-800d-a4f89d1fb85f")
+	)
+	(global_label "+3.3V"
+		(shape bidirectional)
+		(at 314.96 49.53 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "9b8dac03-10f8-5e74-87b3-856a28757af7")
+	)
+	(wire
+		(pts
+			(xy 347.98 49.53)
+			(xy 355.6 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29397504-8988-5dfc-9dee-827a56185ed5")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 355.6 49.53 0)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify left)
+		)
+		(uuid "9260855b-c9a1-5126-8e4d-ffaeb06f0de3")
+	)
+	(symbol
+		(lib_id "RykerConnect:C6")
+		(at 335.28 49.53 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bc90ab73-4a88-5b6f-87dc-0cf1c919ee90")
+		(property "Reference" "C6"
+			(at 335.28 39.45 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "100nF 50V"
+			(at 335.28 42.45 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Footprint" "RykerConnect:C6_C_0603_1608Metric"
+			(at 335.28 49.53 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 335.28 49.53 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 335.28 49.53 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RykerConnect"
+				(path "/b3e6de9e-c7cd-4419-8e94-64236783f104/2ca8097e-c236-513e-9ae0-05208a48232c"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 36.83 110.49)
+			(xy 29.21 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51c9e029-0c12-598e-8e27-02c1e1d33f24")
+	)
+	(global_label "+3.3V"
+		(shape bidirectional)
+		(at 29.21 110.49 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "394a4ae3-0933-5293-9118-799912409ddd")
+	)
+	(wire
+		(pts
+			(xy 62.23 110.49)
+			(xy 69.85 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77f79306-54e9-5a58-a636-cee1bf8bc841")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 69.85 110.49 0)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify left)
+		)
+		(uuid "f0e4a291-8567-520e-9215-f10b9d2beced")
+	)
+	(symbol
+		(lib_id "RykerConnect:C5")
+		(at 49.53 110.49 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "835caf57-c82b-5907-b11d-e8e78f5a2ae0")
+		(property "Reference" "C5"
+			(at 49.53 100.41 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "10uF 25V"
+			(at 49.53 103.41 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Footprint" "RykerConnect:C5_C_0603_1608Metric"
+			(at 49.53 110.49 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10A106MA8NRNC"
+			(at 49.53 110.49 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C96446"
+			(at 49.53 110.49 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RykerConnect"
+				(path "/b3e6de9e-c7cd-4419-8e94-64236783f104/2ca8097e-c236-513e-9ae0-05208a48232c"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 132.08 110.49)
+			(xy 124.46 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1cff218-ce30-528a-8e17-efdcc6364c32")
+	)
+	(global_label "GPIO7"
+		(shape bidirectional)
+		(at 124.46 110.49 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "764d45b8-c0b1-5d7d-9794-9681338fb8c7")
+	)
+	(wire
+		(pts
+			(xy 157.48 110.49)
+			(xy 165.1 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9819ee6a-86b9-508d-8bbd-be984b5c8238")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 165.1 110.49 0)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify left)
+		)
+		(uuid "e15a668c-f764-5acf-9f54-9624cf06f400")
+	)
+	(symbol
+		(lib_id "RykerConnect:R6")
+		(at 144.78 110.49 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1fa7a0c7-1cdb-5662-bab6-e5c7b9efb66c")
+		(property "Reference" "R6"
+			(at 144.78 100.41 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "10k 1%"
+			(at 144.78 103.41 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Footprint" "RykerConnect:R6_R_0603_1608Metric"
+			(at 144.78 110.49 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 144.78 110.49 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 144.78 110.49 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RykerConnect"
+				(path "/b3e6de9e-c7cd-4419-8e94-64236783f104/2ca8097e-c236-513e-9ae0-05208a48232c"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 227.33 106.68)
+			(xy 219.71 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edb60bd3-d5b8-5133-86f7-2e8b92a71ad3")
+	)
+	(global_label "RTC_OSCI"
+		(shape bidirectional)
+		(at 219.71 106.68 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "3face6aa-ef4e-5562-9113-5cb7561e99d2")
+	)
+	(wire
+		(pts
+			(xy 227.33 109.22)
+			(xy 219.71 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1028c80-a379-5ab8-8112-1470aeb0ab5e")
+	)
+	(global_label "RTC_OSCO"
+		(shape bidirectional)
+		(at 219.71 109.22 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "5d373d88-e297-5584-b2cf-7ddaa6e84b3f")
+	)
+	(no_connect
+		(at 227.33 111.76)
+		(uuid "982a7ec0-4df1-5bb6-ae21-492f210d23b6")
+	)
+	(wire
+		(pts
+			(xy 227.33 114.3)
+			(xy 219.71 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18d60632-f36f-57ff-8d12-0f024c0cef2e")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 219.71 114.3 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "333e0f84-b233-5d16-83e8-59093e6d2d6e")
+	)
+	(wire
+		(pts
+			(xy 252.73 106.68)
+			(xy 260.35 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "643d81d4-a558-5a05-8c74-ae8885fc6bc9")
+	)
+	(global_label "SDA"
+		(shape bidirectional)
+		(at 260.35 106.68 0)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify left)
+		)
+		(uuid "f76b6b65-d33c-5487-a740-f6b17f1c5a67")
+	)
+	(wire
+		(pts
+			(xy 252.73 109.22)
+			(xy 260.35 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7ee7f71-13e0-5bd5-a99a-a1534d5cb795")
+	)
+	(global_label "SCL"
+		(shape bidirectional)
+		(at 260.35 109.22 0)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify left)
+		)
+		(uuid "5f543604-0334-5449-9815-12b89085a53c")
+	)
+	(no_connect
+		(at 252.73 111.76)
+		(uuid "8bfb0ec4-2e50-5f77-86f5-828734b062bd")
+	)
+	(wire
+		(pts
+			(xy 252.73 114.3)
+			(xy 260.35 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4598aaea-3f41-56b6-a7e8-54523a6b341d")
+	)
+	(global_label "RTC_VDD"
+		(shape bidirectional)
+		(at 260.35 114.3 0)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify left)
+		)
+		(uuid "1261f82b-8274-5d2b-a259-ff0330aac340")
+	)
+	(symbol
+		(lib_id "RykerConnect:U3")
+		(at 240.03 110.49 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1619d02d-ef36-51e7-ba89-5f9d4ad7f92c")
+		(property "Reference" "U3"
+			(at 240.03 97.87 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "PCF8563T/5,518"
+			(at 240.03 100.87 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Footprint" "RykerConnect:U3_SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 240.03 110.49 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PCF8563T/5,518"
+			(at 240.03 110.49 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7440"
+			(at 240.03 110.49 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RykerConnect"
+				(path "/b3e6de9e-c7cd-4419-8e94-64236783f104/2ca8097e-c236-513e-9ae0-05208a48232c"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 322.58 110.49)
+			(xy 314.96 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eaf10b84-50d5-51e6-b90e-bf1073bbf2c4")
+	)
+	(global_label "RTC_OSCI"
+		(shape bidirectional)
+		(at 314.96 110.49 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "23ee29a0-a5ec-5aec-a206-2f129cbe4c43")
+	)
+	(wire
+		(pts
+			(xy 347.98 110.49)
+			(xy 355.6 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83084484-3c4b-52c1-a595-16fe891d8a2b")
+	)
+	(global_label "RTC_OSCO"
+		(shape bidirectional)
+		(at 355.6 110.49 0)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify left)
+		)
+		(uuid "d4ebc62e-8511-568e-9ff4-611e8a4b3150")
+	)
+	(symbol
+		(lib_id "RykerConnect:X1")
+		(at 335.28 110.49 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7880ef74-0d16-5865-a0c7-a57d6cc89cb7")
+		(property "Reference" "X1"
+			(at 335.28 100.41 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "32.768kHz 12.5pF"
+			(at 335.28 103.41 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Footprint" "RykerConnect:X1_Crystal_SMD_3215-2Pin_3.2x1.5mm"
+			(at 335.28 110.49 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "Q13FC13500004"
+			(at 335.28 110.49 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C32346"
+			(at 335.28 110.49 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RykerConnect"
+				(path "/b3e6de9e-c7cd-4419-8e94-64236783f104/2ca8097e-c236-513e-9ae0-05208a48232c"
+					(reference "X1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 36.83 170.18)
+			(xy 29.21 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04720489-960a-5d2e-9865-04e134d8f73f")
+	)
+	(global_label "RTC_OSCI"
+		(shape bidirectional)
+		(at 29.21 170.18 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "3d7fba11-1b1f-597b-8084-33c077cf26ad")
+	)
+	(wire
+		(pts
+			(xy 62.23 170.18)
+			(xy 69.85 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86b5b81b-cf22-566c-9229-f40e2b1ff1cc")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 69.85 170.18 0)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify left)
+		)
+		(uuid "51aa7308-6bd0-520c-ad56-69a159564ce3")
+	)
+	(symbol
+		(lib_id "RykerConnect:C18")
+		(at 49.53 170.18 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4d9a9283-eab6-59dc-9ac5-6a78ff07005c")
+		(property "Reference" "C18"
+			(at 49.53 160.1 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "22pF C0G"
+			(at 49.53 163.1 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Footprint" "RykerConnect:C18_C_0603_1608Metric"
+			(at 49.53 170.18 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10C220JB8NNNC"
+			(at 49.53 170.18 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1653"
+			(at 49.53 170.18 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RykerConnect"
+				(path "/b3e6de9e-c7cd-4419-8e94-64236783f104/2ca8097e-c236-513e-9ae0-05208a48232c"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 132.08 168.91)
+			(xy 124.46 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16a7f20a-6444-59f9-afc6-543ee8ffbcb6")
+	)
+	(global_label "+3.3V"
+		(shape bidirectional)
+		(at 124.46 168.91 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "af0349bf-00af-5e0e-9bd3-c007a707ff12")
+	)
+	(no_connect
+		(at 132.08 171.45)
+		(uuid "6299ae67-71af-57ef-8394-b020d288ec09")
+	)
+	(wire
+		(pts
+			(xy 157.48 168.91)
+			(xy 165.1 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d886e0d-28c6-53e0-961d-5e5952e33106")
+	)
+	(global_label "RTC_VDD"
+		(shape bidirectional)
+		(at 165.1 168.91 0)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify left)
+		)
+		(uuid "887c3704-9c83-59ac-80df-6e4761baac4e")
+	)
+	(symbol
+		(lib_id "RykerConnect:D5")
+		(at 144.78 170.18 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fac349c1-1bc5-5b48-99fc-f8ec7c1519fa")
+		(property "Reference" "D5"
+			(at 144.78 160.1 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "BAV199 backup isolation"
+			(at 144.78 163.1 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Footprint" "RykerConnect:D5_SOT-23"
+			(at 144.78 170.18 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BAV199"
+			(at 144.78 170.18 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3019921"
+			(at 144.78 170.18 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RykerConnect"
+				(path "/b3e6de9e-c7cd-4419-8e94-64236783f104/2ca8097e-c236-513e-9ae0-05208a48232c"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 227.33 168.91)
+			(xy 219.71 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "539b457d-4186-5d0a-8eaa-10e03eb80f71")
+	)
+	(global_label "VBAT"
+		(shape bidirectional)
+		(at 219.71 168.91 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "73e3694c-d4f3-542b-977b-9daea71e4863")
+	)
+	(no_connect
+		(at 227.33 171.45)
+		(uuid "59cc4718-34eb-5121-b7e6-ab19040ce03b")
+	)
+	(wire
+		(pts
+			(xy 252.73 168.91)
+			(xy 260.35 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52344e54-45bb-5134-b0bc-154629b69ec5")
+	)
+	(global_label "RTC_VDD"
+		(shape bidirectional)
+		(at 260.35 168.91 0)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify left)
+		)
+		(uuid "8b935b73-48f7-5b00-89ab-d59edd3fee30")
+	)
+	(symbol
+		(lib_id "RykerConnect:D6")
+		(at 240.03 170.18 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2aa0bbd8-d46e-5446-a6d3-0abbdbc27d45")
+		(property "Reference" "D6"
+			(at 240.03 160.1 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Value" "BAV199 backup isolation"
+			(at 240.03 163.1 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+			)
+		)
+		(property "Footprint" "RykerConnect:D6_SOT-23"
+			(at 240.03 170.18 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BAV199"
+			(at 240.03 170.18 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3019921"
+			(at 240.03 170.18 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RykerConnect"
+				(path "/b3e6de9e-c7cd-4419-8e94-64236783f104/2ca8097e-c236-513e-9ae0-05208a48232c"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "PCF8563 at I2C 0x51. D5/D6 isolate the non-rechargeable CR2032.\nX1 plus C18 form the 32.768kHz oscillator; verify drift on prototype.\nRemote BME280 provides temperature/humidity/pressure; no local MCP9808."
+		(at 20 235 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left)
+		)
+		(uuid "32fa5fbc-60dd-55ee-895b-29605361e2f9")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 330.2 234.95 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "4d1845f4-9af7-504b-a811-50b5d2bf71c2")
+		(property "Reference" "#FLG4330.2"
+			(at 330.2 234.95 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 330.2 234.95 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RykerConnect"
+				(path "/b3e6de9e-c7cd-4419-8e94-64236783f104/2ca8097e-c236-513e-9ae0-05208a48232c"
+					(reference "#FLG4330.2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(shape bidirectional)
+		(at 330.2 234.95 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "58dc075d-cbad-5012-9fbe-9c505c3ec505")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 364.49 234.95 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "1bb8cc6d-7456-5d87-96d5-847a97a6e845")
+		(property "Reference" "#FLG4364.49"
+			(at 364.49 234.95 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 364.49 234.95 0)
+			(effects
+				(font
+					(size 0.9 0.9)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RykerConnect"
+				(path "/b3e6de9e-c7cd-4419-8e94-64236783f104/2ca8097e-c236-513e-9ae0-05208a48232c"
+					(reference "#FLG4364.49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "RTC_VDD"
+		(shape bidirectional)
+		(at 364.49 234.95 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "ef7b6a1c-8de6-576a-90c9-05b218383936")
+	)
+)
