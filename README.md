@@ -24,6 +24,32 @@ A motorcycle companion app, ESP32-S3 display system, and hardware-free simulator
 | Understand this fork's changes and limitations | [Changes](docs/CHANGES.md) |
 | Configure the optional public ride site | [DadRides](https://github.com/neo12242/DadRides) |
 
+## Visual tour
+
+These development screenshots illustrate the app and simulator. Some show earlier navigation layouts. Demo routes and guided rides are synthetic. Click an image to view it at full size.
+
+| Android dashboard | Trip maps and replay | Simulator sensor controls |
+|---|---|---|
+| [<img src="docs/images/dashboard.png" alt="RykerConnect dashboard showing ride, music and navigation cards in the Android emulator" width="260">](docs/images/dashboard.png) | [<img src="docs/images/demo-trip.png" alt="Synthetic Southbound day ride with start and finish markers and trip replay controls" width="260">](docs/images/demo-trip.png) | [<img src="docs/images/sensor-test-bench.png" alt="Simulator I2C test bench with virtual sensor presence and stale-reading controls" width="260">](docs/images/sensor-test-bench.png) |
+| Ride information, music, and navigation in one dashboard, with tabs for connection tools, trips, garage, and settings. | Explore a synthetic demonstration ride. The map marks its start and finish, while replay follows the recorded timeline. Gaps remain visible instead of implying continuous GPS coverage. | Toggle virtual sensors and test missing or stale readings. This screen models the earlier DS3231 clock; REV05 hardware uses PCF8563 and requires separate physical testing. |
+| [App user guide](docs/USER-GUIDE.md) | [Ride features](docs/USER-GUIDE.md#rides) | [Simulator setup and controls](Simulator/README.md) |
+
+### Try it without hardware
+
+The guided demo previews music, navigation, sensor readings, and ride progress. Playback controls let you start, reset, and change speed without recording a real trip.
+
+[<img src="docs/images/guided-demo.png" alt="Guided synthetic ride on a foldable Android emulator with playback, music, navigation and simulated sensor cards" width="640">](docs/images/guided-demo.png)
+
+See [foldable presentation setup](Simulator/README.md#optional-foldable-presentation).
+
+### REV05C-12V carrier board
+
+KiCad top-layer artwork for the cost-reduced carrier prototype, showing module sockets, battery holder, power circuitry, and peripheral connections. **This is design artwork—not a photograph of assembled or tested hardware.**
+
+[![REV05C-12V carrier board top-layer design artwork](Hardware/REV05C-12V/validation/board-F.png)](Hardware/REV05C-12V/validation/board-F.png)
+
+See the [hardware guide](Hardware/README.md) for revision selection, matched JLCPCB upload files, separate purchases, and power precautions.
+
 ## Quick start: Windows simulator
 
 The first run requires Android Studio/SDK, a Google APIs x86_64 emulator named `RykerConnect_Pixel_7`, Python 3.13, a built debug APK, and the simulator's Python environment. See the [full guide](Simulator/README.md) before running these commands from the repository root:
