@@ -22,6 +22,7 @@ A motorcycle companion app, ESP32-S3 display system, and hardware-free simulator
 | Select a PCB and find the JLCPCB upload files | [Hardware guide](Hardware/README.md) |
 | Build firmware | [Firmware guide](Firmware/README.md) |
 | Understand this fork's changes and limitations | [Changes](docs/CHANGES.md) |
+| Develop from the maintained checkout and run baseline checks | [Development and validation](docs/DEVELOPMENT.md) |
 | Configure the optional public ride site | [DadRides](https://github.com/neo12242/DadRides) |
 
 ## Visual tour

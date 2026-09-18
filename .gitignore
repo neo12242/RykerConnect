@@ -36,3 +36,4 @@ Publication-*/
 *.pdb
 Android/app/release/
 Firmware/*/pathlib
+.validation/
