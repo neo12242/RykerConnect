@@ -36,3 +36,23 @@ Publication-*/
 *.pdb
 Android/app/release/
 Firmware/*/pathlib
+.validation/
+
+# Local deployment receipts and private review notes
+docs/DEMO-FREE-APK-VALIDATION.md
+docs/MODS-SERVICES-DEPLOYMENT-20260925.md
+docs/MODS-SERVICES-RELEASE.md
+docs/NEW-BIKE-SERVICE-BASELINE-RELEASE.md
+docs/OWNERSHIP-DASHBOARD-LOCAL-REVIEW.md
+docs/PHONE-BUILD-VALIDATION.md
+docs/PHOTO-UPLOAD-FIX-VALIDATION.md
+docs/RIDE-RECOVERY-RELEASE.md
+docs/SHARED-RIDE-LIBRARY-RELEASE.md
+docs/TRIP-DELETE-MAP-FILTERS-RELEASE.md
+docs/WATCH-RIDE-CONTROL-RELEASE.md
+docs/WATCH-STATUS-REFRESH-RELEASE.md
+**/owner-key.txt
+**/.dev.vars.*
+*.sqlite*
+*.db
+*.tar

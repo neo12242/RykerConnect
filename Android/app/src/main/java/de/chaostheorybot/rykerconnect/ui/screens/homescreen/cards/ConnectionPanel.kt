@@ -2,7 +2,7 @@ package de.chaostheorybot.rykerconnect.ui.screens.homescreen.cards
 
 import android.Manifest
 import android.bluetooth.BluetoothManager
-import android.content.pm.ApplicationInfo
+import de.chaostheorybot.rykerconnect.BuildConfig
 import android.content.pm.PackageManager
 import android.os.SystemClock
 import android.webkit.WebView
@@ -52,7 +52,7 @@ fun ConnectionPanel(isAssociated: Boolean, select: () -> Unit, forget: () -> Uni
         }
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             if (showDiagnostics) TextButton(onClick = { diagnostics = !diagnostics }) { Text(if (diagnostics) "Hide diagnostics" else "Diagnostics") }
-            if (context.applicationInfo.flags and ApplicationInfo.FLAG_DEBUGGABLE != 0) {
+            if (BuildConfig.DEMO_FEATURES) {
                 TextButton(onClick = { preview = true }) { Text("OLED preview") }
             }
         }
@@ -69,7 +69,7 @@ fun ConnectionPanel(isAssociated: Boolean, select: () -> Unit, forget: () -> Uni
                 testing = true
                 testResult = null
                 scope.launch {
-                    try { testResult = if (connection?.testDisplay() == true) "Test sent and acknowledged. Check the OLED preview." else "Display test failed." }
+                    try { testResult = if (connection?.testDisplay() == true) "Test sent and acknowledged. Check the connected display." else "Display test failed." }
                     finally { testing = false }
                 }
             }) { Text(if (testing) "Testing…" else "Test display") }
@@ -82,7 +82,7 @@ fun ConnectionPanel(isAssociated: Boolean, select: () -> Unit, forget: () -> Uni
         text = { Text("Remove this main unit from the app and request removal of its Bluetooth pairing. You will need to select and pair it again. Use Disconnect to keep pairing.") },
         confirmButton = { TextButton(onClick = { confirmForget = false; forget() }) { Text("Forget Device") } },
         dismissButton = { TextButton(onClick = { confirmForget = false }) { Text("Cancel") } })
-    if (preview) SimulatorPreview { preview = false }
+    if (BuildConfig.DEMO_FEATURES && preview) SimulatorPreview { preview = false }
 }
 
 @Composable

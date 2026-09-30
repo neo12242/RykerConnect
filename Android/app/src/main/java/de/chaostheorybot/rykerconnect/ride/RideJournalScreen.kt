@@ -23,14 +23,22 @@ import org.json.JSONObject
 import org.json.JSONArray
 
 @Composable fun JournalPhoto(id:String){
-    val image=remember(id){runCatching{BitmapFactory.decodeFile(RidePhotos.file("$id.thumb.jpg").path)?.asImageBitmap()}.getOrNull()}
+    val syncRevision by SharedLibrary.revision.collectAsState()
+    val image=remember(id,syncRevision){runCatching{BitmapFactory.decodeFile(RidePhotos.file("$id.thumb.jpg").path)?.asImageBitmap()}.getOrNull()}
     if(image!=null)Image(image,"Ride photo",Modifier.fillMaxWidth().height(200.dp),contentScale=ContentScale.Fit)else Text("Photo unavailable")
 }
 @Composable fun RideJournalScreen(id:String){
+    val libraryRevision by SharedLibrary.revision.collectAsState()
+    var restored by remember(id){mutableStateOf<Boolean?>(null)}
+    LaunchedEffect(id,libraryRevision){restored=withContext(Dispatchers.IO){runCatching{TripStore.originalDetail(id).summary.websiteCopy}.getOrDefault(false)}}
+    if(restored==null){Text("Loading ride…");return}
+    if(restored==true){WebsiteRidePhotos(id);return}
     val units by RideState.preferences.collectAsState()
     val c=LocalContext.current;val scope=rememberCoroutineScope();val rev by SoftwareStore.revision.collectAsState();val publishing by DadRides.revision.collectAsState()
     val j=remember(rev){RidePhotos.journal(id)};var message by remember{mutableStateOf("")};var busy by remember{mutableStateOf(false)}
     var tags by rememberSaveable(id){mutableStateOf(j.optString("tags"))};var remove by remember{mutableStateOf<String?>(null)}
+    var tagsDirty by rememberSaveable(id){mutableStateOf(false)}
+    LaunchedEffect(j.optString("tags")){if(!tagsDirty)tags=j.optString("tags")}
     var preview by remember{mutableStateOf<JSONObject?>(null)}
     fun save(next:JSONObject){runCatching{RidePhotos.save(next)}.onFailure{message=it.message?:"Could not save photo details"}}
     val picker=rememberLauncherForActivityResult(ActivityResultContracts.OpenMultipleDocuments()){uris->if(uris.isNotEmpty())scope.launch{
@@ -40,15 +48,17 @@ import org.json.JSONArray
     Text("Ride photos & story",style=MaterialTheme.typography.headlineSmall)
     Text("Photos stay on this phone until you prepare an upload. Your gallery originals are unchanged.")
     Button(enabled=!busy,onClick={picker.launch(arrayOf("image/*"))}){Text(if(busy)"Adding photos…" else "Add photos")}
-    OutlinedTextField(tags,{tags=it.take(300)},label={Text("Tags, separated by commas")},modifier=Modifier.fillMaxWidth())
-    TextButton(onClick={save(j.put("tags",tags))}){Text("Save tags")}
+    OutlinedTextField(tags,{tags=it.take(464);tagsDirty=true},label={Text("Tags, separated by commas")},modifier=Modifier.fillMaxWidth())
+    TextButton(onClick={save(j.put("tags",tags));tagsDirty=false}){Text("Save tags")}
     if(RidePhotos.photos(j).isEmpty())Text("Add moments from this ride. Up to 30 photos, each under 15 MB.")
     for((index,p) in RidePhotos.photos(j).withIndex())key(p.getString("id")){
         val photoId=p.getString("id");var caption by rememberSaveable(photoId){mutableStateOf(p.optString("caption"))}
+        var captionDirty by rememberSaveable(photoId){mutableStateOf(false)}
+        LaunchedEffect(p.optString("caption")){if(!captionDirty)caption=p.optString("caption")}
         ToolCard{
             JournalPhoto(photoId)
-            OutlinedTextField(caption,{caption=it.take(500)},label={Text("Caption")},modifier=Modifier.fillMaxWidth())
-            TextButton(onClick={p.put("caption",caption);save(j)}){Text("Save caption")}
+            OutlinedTextField(caption,{caption=it.take(500);captionDirty=true},label={Text("Caption")},modifier=Modifier.fillMaxWidth())
+            TextButton(onClick={p.put("caption",caption);save(j);captionDirty=false}){Text("Save caption")}
             FlowRow(horizontalArrangement=Arrangement.spacedBy(6.dp)){
                 FilterChip(j.optString("cover")==photoId,{save(j.put("cover",photoId))},{Text("Cover photo")})
                 if(remember(publishing){DadRides.enabled()})FilterChip(p.optBoolean("publish",true),{p.put("publish",!p.optBoolean("publish",true));save(j)},{Text("Include on website")})
@@ -72,7 +82,8 @@ import org.json.JSONArray
                 Text(manifest.getString("title"),style=MaterialTheme.typography.titleLarge);Text(manifest.getString("story"))
                 val route=manifest.getJSONArray("route");val points=mutableListOf<TrackPoint>();var index=0L
                 for(i in 0 until route.length()){val line=route.getJSONArray(i);for(k in 0 until line.length()){val p=line.getJSONArray(k);points.add(TrackPoint(p.getDouble(1),p.getDouble(0),++index*5000,5f,segmentStart=k==0))}}
-                if(points.isNotEmpty())key(manifest.toString()){TripMap(points)}else Text("No route will be uploaded")
+        if(points.isNotEmpty())key(manifest.toString()){TripMap(points,breakPoints=RidePauses.published(manifest).map{it.point})}else Text("No route will be uploaded")
+        RidePauses.published(manifest).forEachIndexed{i,s->Text("Public break ${i+1} · ${TripSummary.duration(s.durationMs)}")}
                 val stats=manifest.getJSONObject("stats");Text(if(stats.has("meters"))"Whole ride: ${RideUnits.distance(stats.getDouble("meters"),units.imperial)} · ${TripSummary.duration(stats.getLong("elapsedMs"))}" else "Statistics excluded")
                 Text("${manifest.getJSONArray("photos").length()} selected photos · ${manifest.getJSONObject("privacy").getDouble("trimMeters").toInt()} m endpoint privacy radius")
                 val photos=manifest.getJSONArray("photos");for(i in 0 until photos.length()){val p=photos.getJSONObject(i);JournalPhoto(p.getString("id"));Text(p.getString("caption"))}
@@ -93,6 +104,7 @@ import org.json.JSONArray
     // The key deliberately does not participate in saved state or backups.
     var token by remember{mutableStateOf("")};var message by remember{mutableStateOf("")};var busy by remember{mutableStateOf(false)}
     Text("Add-ons",style=MaterialTheme.typography.headlineSmall)
+    SharedLibrarySettings()
     ToolCard{
         Text("DadRides publishing",style=MaterialTheme.typography.titleLarge)
         Text("Optional personal ride website. Local rides, photos and maintenance work without it.")

@@ -16,7 +16,7 @@ import kotlinx.coroutines.*
 import java.util.Locale
 
 object RideCompletion {
-    fun eligible(t:TripSummary)=!t.recording && !t.derived && !t.stationarySession && t.ended>=t.started && t.id.isNotBlank()
+    fun eligible(t:TripSummary)=!t.recording && !t.websiteCopy && !t.derived && !t.stationarySession && t.ended>=t.started && t.id.isNotBlank()
     fun movingAverage(points:List<TrackPoint>):Double? {
         var weighted=0.0;var time=0L
         for((a,b) in points.zipWithNext())if(!b.segmentStart && b.time-a.time in 1..29999 && (b.speed?:0.0)>=1.0){val dt=b.time-a.time;weighted+=b.speed!!*dt;time+=dt}
@@ -71,20 +71,25 @@ object RideCompletion {
     var d by remember(id){mutableStateOf<TripDetail?>(null)};var error by remember{mutableStateOf("")}
     val rev by SoftwareStore.revision.collectAsState();val units by RideState.preferences.collectAsState()
     val scope=rememberCoroutineScope()
-    LaunchedEffect(id){runCatching{withContext(Dispatchers.IO){TripStore.detail(id)}}.onSuccess{d=it}.onFailure{error="Ride unavailable; original files retained"}}
+    var original by rememberSaveable(id){mutableStateOf(false)}
+    val syncRevision by SharedLibrary.revision.collectAsState()
+    LaunchedEffect(id,rev,syncRevision,original){runCatching{withContext(Dispatchers.IO){if(original)TripStore.originalDetail(id) else TripStore.detail(id)}}.onSuccess{d=it}.onFailure{error="Ride unavailable; original files retained"}}
     val detail=d
     if(detail==null){Text(error.ifBlank{"Loading ride…"});return}
     val t=detail.summary
     Text("Ride summary",style=MaterialTheme.typography.headlineSmall)
-    Text(toolDate(t.started)+" → "+toolDate(t.ended))
-    if(detail.track.isNotEmpty())key(id){TripMap(detail.track)}else Text("No usable GPS route recorded")
-    ToolCard{
+    EditedRideNotice(id,original,t.websiteCopy){original=it}
+    if(t.websiteCopy)Text("Ride date · ${detail.editedDate}") else Text(toolDate(t.started)+" → "+toolDate(t.ended))
+    val mapPoints=detail.editedRoute?:detail.track
+    if(mapPoints.isNotEmpty())key(id,original,rev){TripMap(mapPoints,breakPoints=if(detail.editedRoute==null)detail.pauses.mapNotNull{it.point}else detail.publishedStops.orEmpty().map{it.point})}else Text("No route included in this version")
+    if(t.websiteCopy)WebsiteRideStatistics(detail) else ToolCard{
         Text(RideUnits.distance(detail.stats.meters,units.imperial),style=MaterialTheme.typography.headlineMedium)
         Text("Elapsed · ${t.durationText()}")
-        Text("Moving · ${if(t.modern && detail.stats.maxMps!=null)TripSummary.duration(detail.stats.movingMs) else "Unavailable"}")
-        Text("Stopped · ${if(t.modern && detail.stats.maxMps!=null)TripSummary.duration(detail.stats.stoppedMs) else "Unavailable"}")
+        Text("Paused · ${TripSummary.duration(detail.stats.pausedMs)}")
+        Text("Moving · ${if(detail.editedRoute!=null || t.modern && detail.stats.maxMps!=null)TripSummary.duration(detail.stats.movingMs) else "Unavailable"}")
+        Text("Stopped · ${if(detail.editedRoute!=null || t.modern && detail.stats.maxMps!=null)TripSummary.duration(detail.stats.stoppedMs) else "Unavailable"}")
         Text("Unknown / GPS gaps · ${TripSummary.duration(detail.stats.unknownMs)}")
-        val avg=RideCompletion.movingAverage(detail.track)
+        val avg=if(detail.editedRoute!=null)detail.stats.averageMps else RideCompletion.movingAverage(detail.track)
         Text("Average moving speed · "+(avg?.let{String.format(Locale.US,"%.1f %s",it*(if(units.imperial)2.236936 else 3.6),if(units.imperial)"mph" else "km/h")}?:"Unavailable"))
         Text("${TripInsights.stops(detail.track).size} detected stops · ${detail.stats.gaps} route gaps")
         Text("GPS estimates. Missing intervals are not counted as stops.",style=MaterialTheme.typography.bodySmall)
@@ -95,11 +100,13 @@ object RideCompletion {
     Text("Parking · "+if(!associated)"No location associated with this ride" else if(parking!!.optBoolean("confirmed"))"Confirmed" else "Candidate · not yet confirmed")
     if(associated)TextButton(onClick={open("Last Parked")}){Text("View parking")}
     var name by rememberSaveable(id){mutableStateOf(t.title)};var notes by rememberSaveable(id){mutableStateOf(t.notes)}
-    OutlinedTextField(name,{name=it.take(100)},label={Text("Ride name")},modifier=Modifier.fillMaxWidth())
-    OutlinedTextField(notes,{notes=it.take(2000)},label={Text("Story / notes")},modifier=Modifier.fillMaxWidth())
-    Button(onClick={scope.launch{runCatching{withContext(Dispatchers.IO){TripStore.saveMetadata(id,name,notes)}}.onSuccess{error="Ride saved"}.onFailure{error="Could not save ride"}}}){Text("Save ride details")}
+    var editing by rememberSaveable(id){mutableStateOf(false)}
+    LaunchedEffect(t.title,t.notes){if(!editing){name=t.title;notes=t.notes}}
+    OutlinedTextField(name,{name=it.take(100);editing=true},label={Text("Ride name")},modifier=Modifier.fillMaxWidth())
+    OutlinedTextField(notes,{notes=it.take(2000);editing=true},label={Text("Story / notes")},modifier=Modifier.fillMaxWidth())
+    Button(onClick={scope.launch{runCatching{withContext(Dispatchers.IO){TripStore.saveMetadata(id,name,notes)}}.onSuccess{editing=false;error="Ride saved"}.onFailure{error="Could not save ride"}}}){Text("Save ride details")}
     TextButton(onClick={runCatching{SoftwareStore.favorite(id,!SoftwareStore.favorite(id))}.onFailure{error="Could not update favorite"}}){Text(if(remember(rev){SoftwareStore.favorite(id)})"★ Favorite" else "☆ Favorite ride")}
     Button(onClick={open("Journal/$id")}){Text("Photos & publishing")}
-    TripCharts(detail)
+    if(!t.websiteCopy){if(detail.editedRoute==null)TripCharts(detail) else Text("View the original recording for GPS charts.")}
     if(error.isNotBlank())Text(error)
 }

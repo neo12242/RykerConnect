@@ -103,8 +103,9 @@ class YouTubeMusicManager(private val context: Context) {
     }
 
     fun setupYoutubeController() {
+        if (de.chaostheorybot.rykerconnect.BuildConfig.PHONE_EDITION) return
         try {
-            val componentName = ComponentName(context, NotificationListener::class.java)
+            val componentName = ComponentName(context, "de.chaostheorybot.rykerconnect.services.NotificationListener")
             mediaSessionManager.removeOnActiveSessionsChangedListener(sessionListener)
             mediaSessionManager.addOnActiveSessionsChangedListener(sessionListener, componentName)
 

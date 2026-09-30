@@ -13,12 +13,30 @@ android {
         applicationId "de.chaostheorybot.rykerconnect"
         minSdk 31
         targetSdk 37
-        versionCode 10
-        versionName '1.4.0'
+        versionCode 19
+        versionName '1.8.0'
+        // Development demonstrations require a deliberate opt-in, even in debug builds.
+        buildConfigField 'boolean', 'DEMO_FEATURES', providers.gradleProperty('enableDemos').map { it.toBoolean().toString() }.getOrElse('false')
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary true
+        }
+    }
+
+    flavorDimensions 'edition'
+    productFlavors {
+        companion {
+            dimension 'edition'
+            buildConfigField 'boolean', 'PHONE_EDITION', 'false'
+            manifestPlaceholders = [appLabel: 'RykerConnect']
+        }
+        phone {
+            dimension 'edition'
+            applicationIdSuffix '.phone'
+            versionNameSuffix '-phone'
+            buildConfigField 'boolean', 'PHONE_EDITION', 'true'
+            manifestPlaceholders = [appLabel: 'RykerConnect Phone']
         }
     }
 
@@ -35,6 +53,7 @@ android {
     }
     buildFeatures {
         compose true
+        buildConfig true
     }
     packaging {
         resources {
@@ -56,6 +75,7 @@ kotlin {
 }
 
 dependencies {
+    implementation 'com.google.android.gms:play-services-wearable:20.0.1'
     implementation 'org.maplibre.gl:android-sdk:13.6.1'
 
     implementation libs.androidx.core.ktx

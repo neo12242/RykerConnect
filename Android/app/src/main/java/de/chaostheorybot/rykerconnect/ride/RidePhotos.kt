@@ -13,16 +13,17 @@ object RidePhotos {
     private lateinit var folder:File
     fun init(c:Context){folder=File(c.noBackupFilesDir,"journal-photos").apply{mkdirs()}}
     fun file(name:String):File{require(name.matches(Regex("[a-f0-9-]{36}\\.(original|jpg|thumb.jpg)")));return File(folder,name)}
-    fun journal(id:String)=SoftwareStore.records("journals").firstOrNull{it.getString("id")==id}?:JSONObject().put("id",id).put("tags","").put("cover","").put("photos",JSONArray())
+    fun uploadBytes(name:String)=UploadPhoto.prepare(file(name).readBytes(),name.endsWith(".thumb.jpg"))
+    fun journal(id:String)=RideEdits.journal(SoftwareStore.records("journals").firstOrNull{it.getString("id")==id}?:JSONObject().put("id",id).put("tags","").put("cover","").put("photos",JSONArray()))
     fun photos(j:JSONObject)=j.getJSONArray("photos").let{a->(0 until a.length()).map{a.getJSONObject(it)}}
-    fun save(j:JSONObject){validate(j);SoftwareStore.mutate{next->val list=SoftwareStore.records("journals").filter{it.getString("id")!=j.getString("id")};next.put("journals",JSONArray(list+j))}}
+    fun save(j:JSONObject){validate(j);SoftwareStore.mutate{next->val list=SoftwareStore.records("journals").filter{it.getString("id")!=j.getString("id")};next.put("journals",JSONArray(list+j))};RideEdits.localJournal(j)}
     fun validate(j:JSONObject){
-        require(j.getString("id").matches(Regex("[a-f0-9-]{36}")) && j.optString("tags").length<=300)
+        require(j.getString("id").matches(Regex("[a-f0-9-]{36}")) && j.optString("tags").length<=464)
         val p=photos(j);require(p.size<=30 && p.map{it.getString("id")}.distinct().size==p.size)
         for(x in p){require(x.getString("id").matches(Regex("[a-f0-9-]{36}")) && x.optString("caption").length<=500)}
         require(j.optString("cover").isBlank() || p.any{it.getString("id")==j.optString("cover")})
     }
-    fun add(c:Context,trip:String,uri:Uri){
+    @Synchronized fun add(c:Context,trip:String,uri:Uri){
         val j=journal(trip);require(photos(j).size<30){"Limit: 30 photos per ride"}
         val id=UUID.randomUUID().toString();val original=file("$id.original")
         try{
@@ -42,7 +43,7 @@ object RidePhotos {
         }catch(e:Exception){listOf("original","jpg","thumb.jpg").forEach{file("$id.$it").delete()};throw e}
     }
     private inline fun Bitmap.useImage(block:(Bitmap)->Unit){try{block(this)}finally{recycle()}}
-    fun remove(trip:String,id:String){val j=journal(trip);j.put("photos",JSONArray(photos(j).filter{it.getString("id")!=id}));if(j.optString("cover")==id)j.put("cover",photos(j).firstOrNull()?.getString("id")?:"");save(j)
+    @Synchronized fun remove(trip:String,id:String){val j=journal(trip);j.put("photos",JSONArray(photos(j).filter{it.getString("id")!=id}));if(j.optString("cover")==id)j.put("cover",photos(j).firstOrNull()?.getString("id")?:"");save(j)
         // Prepared uploads own independent copies, so local journal removal cannot corrupt their payload.
         listOf("original","jpg","thumb.jpg").forEach{file("$id.$it").delete()}
     }
@@ -53,5 +54,10 @@ object RidePhotos {
             bytes+=f.length();require(bytes<90_000_000){"Photo backup exceeds 90 MB. Export fewer local photos before backing up; none were omitted."};result[name]=f.readBytes()
         };return result
     }
-    fun restoreAssets(assets:Map<String,ByteArray>){for((name,bytes) in assets){val f=file(name);if(!f.exists()){val temp=File(folder,"$name.tmp");temp.writeBytes(bytes);java.nio.file.Files.move(temp.toPath(),f.toPath(),java.nio.file.StandardCopyOption.ATOMIC_MOVE)}}}
+    @Synchronized fun restoreAssets(assets:Map<String,ByteArray>){for((name,bytes) in assets){val f=file(name);if(!f.exists()){val temp=File(folder,"$name.tmp");temp.writeBytes(bytes);java.nio.file.Files.move(temp.toPath(),f.toPath(),java.nio.file.StandardCopyOption.ATOMIC_MOVE)}};SharedLibrary.changed()}
+    @Synchronized internal fun syncFiles()=folder.listFiles().orEmpty().filter{it.name.matches(Regex("[a-f0-9-]{36}\\.(original|jpg|thumb.jpg)"))}
+    @Synchronized internal fun syncReplace(name:String,expected:String,source:File?):Boolean {
+        val target=file(name);if(SyncJson.fingerprint(LibraryData.fileValue(target,false))!=expected)return false
+        if(source==null){check(!target.exists() || target.delete()){ "Could not remove local file; retry sync" }} else SharedLibrary.copyAtomic(source,target);return true
+    }
 }

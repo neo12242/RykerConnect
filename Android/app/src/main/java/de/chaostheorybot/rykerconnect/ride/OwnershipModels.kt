@@ -78,14 +78,15 @@ object ServiceAlerts {
     fun calculate(data: JSONObject, now: Long, leadKm: Double, leadDays: Int): List<ServiceAlert> {
         val history = data.optJSONArray("maintenance")?.let { a -> (0 until a.length()).map { a.getJSONObject(it) } }.orEmpty()
         val fuel = data.optJSONArray("fuel")?.let { a -> (0 until a.length()).map { a.getJSONObject(it) } }.orEmpty()
-        val odo = (history+fuel).maxOfOrNull { it.optDouble("odometerKm",0.0) } ?: 0.0
+        val baselines = ServiceBaselines.records(data)
+        val odo = ServiceBaselines.odometer(history + fuel, baselines)
         return ServiceCatalog.items(data).filter { it.optBoolean("enabled") && it.getString("id") != ServiceCatalog.MILEAGE }.mapNotNull { type ->
-            val last = ServiceCatalog.latest(type,history) ?: return@mapNotNull null
-            val left = ServiceCatalog.remainingKm(type,history,odo)
-            val date = type.optInt("intervalDays").takeIf { it > 0 }?.let { last.getLong("time")+it*DAY }
+            val last = ServiceBaselines.startingPoint(type,history,baselines) ?: return@mapNotNull null
+            val left = ServiceCatalog.remainingKm(type,history,odo,baselines)
+            val date = ServiceBaselines.dueTime(last,type.optInt("intervalDays"))
             if(left == null && date == null) return@mapNotNull null
             val due = (left != null && left <= 0) || (date != null && date <= now)
-            ServiceAlert(type.getString("id"),type.getString("name"),last.getString("id")+":"+last.optLong("time")+":"+last.optDouble("odometerKm"),
+            ServiceAlert(type.getString("id"),type.getString("name"),(if(last.has("date"))"new-bike:" else "")+last.getString("id")+":"+last.optLong("time")+":"+last.optDouble("odometerKm"),
                 left,date,due,due || (left != null && left <= leadKm) || (date != null && date-now <= leadDays*DAY))
         }.sortedWith(compareByDescending<ServiceAlert> { it.overdue }.thenByDescending { it.approaching }.thenBy { it.dueTime ?: Long.MAX_VALUE }.thenBy { it.remainingKm ?: Double.MAX_VALUE })
     }

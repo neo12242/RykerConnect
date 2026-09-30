@@ -11,6 +11,10 @@ import java.util.Locale
 
 /** Presentation-only scenario: never writes RideState, TripStore, parking or Bluetooth. */
 @Composable internal fun GuidedDemo() {
+    if (!de.chaostheorybot.rykerconnect.BuildConfig.DEMO_FEATURES) {
+        Text("Demo features are unavailable in this build.")
+        return
+    }
     var running by rememberSaveable { mutableStateOf(false) }
     var fraction by rememberSaveable { mutableFloatStateOf(0f) }
     var rate by rememberSaveable { mutableIntStateOf(1) }

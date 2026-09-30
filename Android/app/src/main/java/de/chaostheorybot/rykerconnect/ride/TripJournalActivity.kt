@@ -61,6 +61,10 @@ class TripJournalActivity : ComponentActivity() {
 private fun date(ms: Long) = DateTimeFormatter.ofPattern("MMM d, yyyy · h:mm a").withZone(ZoneId.systemDefault()).format(Instant.ofEpochMilli(ms))
 
 @Composable fun AutoRecordingControls() {
+    if (de.chaostheorybot.rykerconnect.BuildConfig.PHONE_EDITION) {
+        PhoneRecordingCard()
+        return
+    }
     val context = LocalContext.current
     val enabled by AutoRide.enabled.collectAsState()
     val status by AutoRide.status.collectAsState()
@@ -95,7 +99,8 @@ private fun date(ms: Long) = DateTimeFormatter.ofPattern("MMM d, yyyy · h:mm a"
     val history by TripStore.history.collectAsState();val current by TripStore.summary.collectAsState()
     val error by TripStore.storageError.collectAsState();val units by RideState.preferences.collectAsState()
     val revision by SoftwareStore.revision.collectAsState()
-    var demos by rememberSaveable { mutableStateOf(false) }
+    var showDemos by rememberSaveable { mutableStateOf(false) }
+    val demos = de.chaostheorybot.rykerconnect.BuildConfig.DEMO_FEATURES && showDemos
     var selected by rememberSaveable { mutableStateOf<String?>(null) }
     var query by rememberSaveable { mutableStateOf("") };var favoriteOnly by rememberSaveable{mutableStateOf(false)}
     var sessions by rememberSaveable { mutableStateOf(false) }
@@ -104,9 +109,17 @@ private fun date(ms: Long) = DateTimeFormatter.ofPattern("MMM d, yyyy · h:mm a"
     var message by remember{mutableStateOf("")};var merging by remember{mutableStateOf(false)}
     val filtered=remember(history,query,favoriteOnly,recentOnly,revision,demos,sessions){(if(demos)DemoTrips.details.map{it.summary} else history).filter{
         (demos || sessions || !it.stationarySession) &&
-        (query.isBlank() || (it.title+" "+it.notes+" "+date(it.started)).contains(query,true)) &&
+        (query.isBlank() || (it.title+" "+it.notes+" "+(it.displayDate?:date(it.started))).contains(query,true)) &&
         (demos || !favoriteOnly || SoftwareStore.favorite(it.id)) && (demos || !recentOnly || it.started>=System.currentTimeMillis()-30L*86400000)
     }}
+    LaunchedEffect(history,selected) {
+        val id=selected
+        if(id!=null && !id.startsWith("demo-") && history.none{it.id==id} &&
+            withContext(Dispatchers.IO){SharedLibrary.isTripDeleted(id)}) {
+            selected=null;picked=picked.filter{it!=id}
+            message="Trip deleted from the app. Synced copies will be removed from the other edition."
+        }
+    }
     BackHandler(selected != null) { selected = null }
     Column {
         Row(Modifier.fillMaxWidth().padding(20.dp), horizontalArrangement=Arrangement.SpaceBetween, verticalAlignment=androidx.compose.ui.Alignment.CenterVertically) {
@@ -123,9 +136,9 @@ private fun date(ms: Long) = DateTimeFormatter.ofPattern("MMM d, yyyy · h:mm a"
                 Spacer(Modifier.width(8.dp))
                 Text("Last Parked · ${if(spot==null)"No location yet" else "View saved location"}")
             }
-            if(selected==null) Row(horizontalArrangement=Arrangement.spacedBy(8.dp)) {
-                FilterChip(!demos,{demos=false;query=""},{Text("My rides")})
-                FilterChip(demos,{demos=true;query="";manage=false;picked=emptyList()},{Text("Demo rides")})
+            if(selected==null && de.chaostheorybot.rykerconnect.BuildConfig.DEMO_FEATURES) Row(horizontalArrangement=Arrangement.spacedBy(8.dp)) {
+                FilterChip(!demos,{showDemos=false;query=""},{Text("My rides")})
+                FilterChip(demos,{showDemos=true;query="";manage=false;picked=emptyList()},{Text("Demo rides")})
             }
         }
         BoxWithConstraints(Modifier.weight(1f)) {
@@ -147,8 +160,8 @@ private fun date(ms: Long) = DateTimeFormatter.ofPattern("MMM d, yyyy · h:mm a"
                         if(current.recording) Text("${RideUnits.distance(current.meters,units.imperial)} · ${current.durationText()}",style=MaterialTheme.typography.bodyMedium)
                         FlowRow(horizontalArrangement=Arrangement.spacedBy(8.dp)) {
                             if(embedded) TextButton(onClick={openTool("Recording")}) { Text("Recording controls") }
-                            if(current.recording) OutlinedButton(onClick={context.startService(Intent(context,TripRecordingService::class.java).setAction("STOP"))}){Text("Stop & save")}
                         }
+                        if(current.recording)RideRecordingControls()
                         if (!embedded) OutlinedButton(onClick={context.startActivity(Intent(context,RideToolsActivity::class.java))}){Text("Ride tools and backup")}
                     } }
                     item {
@@ -166,9 +179,9 @@ private fun date(ms: Long) = DateTimeFormatter.ofPattern("MMM d, yyyy · h:mm a"
                     }
                     items(filtered,key={it.id}){trip -> Card(Modifier.fillMaxWidth().clickable{selected=trip.id}){
                         Column(Modifier.padding(12.dp),verticalArrangement=Arrangement.spacedBy(6.dp)) {
-                            Row(verticalAlignment=androidx.compose.ui.Alignment.CenterVertically){if(manage) Checkbox(trip.id in picked,{checked->picked=if(checked)picked+trip.id else picked-trip.id});Text(trip.title.ifBlank{date(trip.started)},Modifier.weight(1f),style=MaterialTheme.typography.titleMedium)}
-                            if(trip.title.isNotBlank())Text(date(trip.started),style=MaterialTheme.typography.bodySmall)
-                            Row {RouteSketch(trip.preview,Modifier.width(100.dp).height(64.dp));Column{Text(RideUnits.distance(trip.meters,units.imperial));Text(trip.durationText());Text(if(trip.derived)"Edited copy" else "${trip.points} GPS points",style=MaterialTheme.typography.bodySmall)}}
+                            Row(verticalAlignment=androidx.compose.ui.Alignment.CenterVertically){if(manage && !trip.websiteCopy) Checkbox(trip.id in picked,{checked->picked=if(checked)picked+trip.id else picked-trip.id});Text(trip.title.ifBlank{date(trip.started)},Modifier.weight(1f),style=MaterialTheme.typography.titleMedium)}
+                            if(trip.title.isNotBlank())Text(trip.displayDate?:date(trip.started),style=MaterialTheme.typography.bodySmall)
+                            Row {RouteSketch(trip.preview,Modifier.width(100.dp).height(64.dp));Column{Text(if(trip.statisticsAvailable)RideUnits.distance(trip.meters,units.imperial) else "Distance unavailable");Text(if(trip.statisticsAvailable)trip.durationText() else "Duration unavailable");Text(if(trip.websiteCopy)"Restored website copy" else if(trip.derived)"Edited copy" else "${trip.points} GPS points",style=MaterialTheme.typography.bodySmall)}}
                             if(!demos) TextButton(onClick={runCatching{SoftwareStore.favorite(trip.id,!SoftwareStore.favorite(trip.id))}.onFailure{message="Could not update favorite"}}){Text(if(SoftwareStore.favorite(trip.id))"★ Favorite" else "☆ Add favorite")}
                             if(trip.stationarySession) Text("Stationary connection session",style=MaterialTheme.typography.bodySmall)
                             if(trip.interrupted) Text("Interrupted recording · recovered points retained",style=MaterialTheme.typography.bodySmall)
@@ -176,14 +189,14 @@ private fun date(ms: Long) = DateTimeFormatter.ofPattern("MMM d, yyyy · h:mm a"
                         }
                     }}
                 }
-                if(selected!=null) Box(Modifier.weight(if(wide)0.6f else 1f).fillMaxHeight()){key(selected){TripDetails(selected!!)}}
+                if(selected!=null) Box(Modifier.weight(if(wide)0.6f else 1f).fillMaxHeight()){key(selected){TripDetails(selected!!){val removed=selected;selected=null;picked=picked.filter{it!=removed};message="Trip deleted from the app. Synced copies will be removed from the other edition."}}}
                 else if(wide)Box(Modifier.weight(0.6f).padding(24.dp)){Text("Select a trip to view its map and details")}
             }
         }
     }
 }
 
-@Composable private fun TripDetails(id: String) {
+@Composable private fun TripDetails(id: String, onDeleted:()->Unit) {
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
     val units by RideState.preferences.collectAsState()
@@ -192,9 +205,19 @@ private fun date(ms: Long) = DateTimeFormatter.ofPattern("MMM d, yyyy · h:mm a"
     var title by rememberSaveable { mutableStateOf("") }
     var notes by rememberSaveable { mutableStateOf("") }
     var saving by remember { mutableStateOf(false) }
-    var draftLoaded by rememberSaveable { mutableStateOf(false) }
-    LaunchedEffect(id) {
-        runCatching { withContext(Dispatchers.IO) { DemoTrips.find(id) ?: TripStore.detail(id) } }.onSuccess { detail = it; if (!draftLoaded) { title = it.summary.title; notes = it.summary.notes; draftLoaded = true } }.onFailure { feedback = "Could not read this trip; its file has been retained." }
+    var deleting by remember { mutableStateOf(false) }
+    var deletionError by remember { mutableStateOf("") }
+    var confirmDelete by rememberSaveable(id) { mutableStateOf(false) }
+    val recording by TripStore.summary.collectAsState()
+    var draftLoaded by rememberSaveable(id) { mutableStateOf(false) }
+    var editingText by rememberSaveable(id) { mutableStateOf(false) }
+    var original by rememberSaveable(id) { mutableStateOf(false) }
+    val libraryRevision by SoftwareStore.revision.collectAsState()
+    val syncRevision by SharedLibrary.revision.collectAsState()
+    LaunchedEffect(id, libraryRevision, syncRevision, original) {
+        runCatching { withContext(Dispatchers.IO) {
+            (if (de.chaostheorybot.rykerconnect.BuildConfig.DEMO_FEATURES) DemoTrips.find(id) else null) ?: if(original)TripStore.originalDetail(id) else TripStore.detail(id)
+        } }.onSuccess { detail = it; if (!draftLoaded || !editingText) { title = it.summary.title; notes = it.summary.notes; draftLoaded = true } }.onFailure { if(it is CancellationException)throw it; if(withContext(Dispatchers.IO){SharedLibrary.isTripDeleted(id)}){detail=null;onDeleted()}else feedback = "Could not read this trip; its file has been retained." }
     }
     val export = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("application/gpx+xml")) { uri ->
         if (uri != null) scope.launch {
@@ -208,17 +231,39 @@ private fun date(ms: Long) = DateTimeFormatter.ofPattern("MMM d, yyyy · h:mm a"
     val demo=id.startsWith("demo-")
     val d = detail
     if (d == null) { Text(feedback.ifBlank { "Loading trip…" }, Modifier.padding(16.dp)); return }
+    if(confirmDelete) AlertDialog(
+        onDismissRequest={if(!deleting)confirmDelete=false},
+        title={Text("Delete this trip?")},
+        text={Text("${d.summary.title.ifBlank { "Untitled trip" }}\n${date(d.summary.started)}\n${RideUnits.distance(d.stats.meters,units.imperial)} · ${d.summary.durationText()}\n\nThis removes the trip and its journal photos from both apps when they sync. Pending uploads are canceled. Any uploaded DadRides copy stays on the site.\n\nTo keep a recovery copy, cancel and export a backup first.")},
+        dismissButton={TextButton(enabled=!deleting,onClick={confirmDelete=false}){Text("Keep trip")}},
+        confirmButton={TextButton(enabled=!deleting,onClick={scope.launch{
+            deleting=true
+            runCatching{withContext(Dispatchers.IO){SharedLibrary.deleteTrip(id)}}
+                .onSuccess{confirmDelete=false;onDeleted()}
+                .onFailure{if(it is CancellationException)throw it;deletionError=it.message?:"Could not delete trip. Please retry.";confirmDelete=false}
+            deleting=false
+        }},colors=ButtonDefaults.textButtonColors(contentColor=MaterialTheme.colorScheme.error)){Text(if(deleting)"Deleting…" else "Delete trip")}}
+    )
     fun speed(value: Double?) = value?.let { java.lang.String.format(java.util.Locale.US, "%.1f %s", it * if (units.imperial) 2.236936 else 3.6, if (units.imperial) "mph" else "km/h") } ?: "Unavailable"
     Column(Modifier.verticalScroll(rememberScrollState()).padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+        if(!demo)EditedRideNotice(id,original,d.summary.websiteCopy){original=it}
         if(demo) Text("DEMO · Synthetic ride",color=MaterialTheme.colorScheme.primary)
         Text(title.ifBlank { date(d.summary.started) }, style = MaterialTheme.typography.titleLarge)
-        if (d.track.isEmpty()) Text("No usable GPS points were recorded. This connection session has no route to display.") else { TripMap(d.track, replayPoint); TripReplay(d) { replayPoint = it }; if(!demo) TripTrim(d) }
-        Text("Start · ${date(d.summary.started)}\nEnd · ${date(d.summary.ended)}")
-        Card(Modifier.fillMaxWidth()) { Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        if(!demo) {
+            OutlinedButton(enabled=!saving && !deleting && !recording.recording,onClick={deletionError="";confirmDelete=true},
+                colors=ButtonDefaults.outlinedButtonColors(contentColor=MaterialTheme.colorScheme.error)){Text("Delete trip")}
+            if(deletionError.isNotBlank())Text(deletionError,color=MaterialTheme.colorScheme.error)
+            if(recording.recording)Text("Stop recording before deleting trips.",style=MaterialTheme.typography.bodySmall)
+        }
+        val mapPoints=d.editedRoute?:d.track
+        if (mapPoints.isEmpty()) Text(if(d.summary.websiteCopy)"No route was included in this website copy." else if(d.editedRoute==null)"No GPS points were recorded for this trip." else "No route in this version. View the original recording for the saved GPS track.") else { TripMap(mapPoints, if(d.editedRoute==null)replayPoint else null,if(d.editedRoute==null)d.pauses.mapNotNull{it.point}else d.publishedStops.orEmpty().map{it.point}); if(d.editedRoute==null){TripReplay(d) { replayPoint = it }; if(!demo) TripTrim(d)} }
+        if(d.summary.websiteCopy)Text("Ride date · ${d.editedDate}") else Text("Start · ${date(d.summary.started)}\nEnd · ${date(d.summary.ended)}")
+        if(d.summary.websiteCopy)WebsiteRideStatistics(d) else Card(Modifier.fillMaxWidth()) { Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Text("Distance · ${RideUnits.distance(d.stats.meters, units.imperial)}", style = MaterialTheme.typography.titleMedium)
             Text("Elapsed time · ${d.summary.durationText()}")
-            Text("Moving time · ${if (d.summary.modern && d.stats.maxMps != null) TripSummary.duration(d.stats.movingMs) else "Unavailable"}")
-            Text("Stopped time · ${if (d.summary.modern && d.stats.maxMps != null) TripSummary.duration(d.stats.stoppedMs) else "Unavailable"}")
+            Text("Paused time · ${TripSummary.duration(d.stats.pausedMs)}")
+            Text("Moving time · ${if (d.editedRoute!=null || d.summary.modern && d.stats.maxMps != null) TripSummary.duration(d.stats.movingMs) else "Unavailable"}")
+            Text("Stopped time · ${if (d.editedRoute!=null || d.summary.modern && d.stats.maxMps != null) TripSummary.duration(d.stats.stoppedMs) else "Unavailable"}")
             Text("Average speed (whole trip) · ${speed(if (d.summary.ended > d.summary.started && d.track.size > 1) d.stats.meters / ((d.summary.ended - d.summary.started) / 1000.0) else null)}")
             Text("Maximum GPS speed · ${speed(d.stats.maxMps)}")
             Text("${d.track.size} GPS points · ${d.stats.gaps} route gaps")
@@ -227,13 +272,14 @@ private fun date(ms: Long) = DateTimeFormatter.ofPattern("MMM d, yyyy · h:mm a"
             Text("GPS estimates: movement requires at least 1 m/s. Missing or inaccurate fixes are not treated as stops; route gaps are not joined.", style = MaterialTheme.typography.bodySmall)
             if (d.summary.interrupted) Text("Recording was interrupted; only recovered points are shown.")
         } }
-        TripCharts(d)
+        if(!d.summary.websiteCopy){if(d.editedRoute==null)TripCharts(d) else Text("View the original recording for GPS charts, replay and trimming.")}
+        if(d.editedRoute!=null)d.publishedStops.orEmpty().forEachIndexed{i,s->Text("Reviewed break ${i+1} · ${TripSummary.duration(s.durationMs)}")}
         if(demo) { Text(d.summary.notes); return@Column }
         Button(onClick={context.startActivity(Intent(context,RideActionActivity::class.java).putExtra("page","Summary/$id"))}){Text("Ride summary & photos")}
-        OutlinedTextField(title, { title = it.take(100) }, label = { Text("Trip name") }, modifier = Modifier.fillMaxWidth())
-        OutlinedTextField(notes, { notes = it.take(2000) }, label = { Text("Notes") }, minLines = 2, modifier = Modifier.fillMaxWidth())
-        Button(enabled = !saving, onClick = { scope.launch { saving = true; feedback = withContext(Dispatchers.IO) { runCatching { TripStore.saveMetadata(id, title, notes); "Name and notes saved" }.getOrElse { "Could not save changes" } }; saving = false } }) { Text("Save name and notes") }
-        OutlinedButton(enabled = d.track.isNotEmpty(), onClick = { export.launch("RykerConnect-${d.summary.started}.gpx") }) { Text("Export GPX") }
+        OutlinedTextField(title, { title = it.take(100); editingText=true }, label = { Text("Trip name") }, modifier = Modifier.fillMaxWidth())
+        OutlinedTextField(notes, { notes = it.take(2000); editingText=true }, label = { Text("Notes") }, minLines = 2, modifier = Modifier.fillMaxWidth())
+        Button(enabled = !saving && !deleting, onClick = { scope.launch { saving = true; feedback = withContext(Dispatchers.IO) { runCatching { TripStore.saveMetadata(id, title, notes); editingText=false; "Name and notes saved" }.getOrElse { "Could not save changes" } }; saving = false } }) { Text("Save name and notes") }
+        OutlinedButton(enabled = d.track.isNotEmpty(), onClick = { export.launch("RykerConnect-${d.summary.started}.gpx") }) { Text("Export original GPX") }
         if (feedback.isNotBlank()) Text(feedback)
     }
 }
@@ -257,7 +303,7 @@ private fun date(ms: Long) = DateTimeFormatter.ofPattern("MMM d, yyyy · h:mm a"
     }
 }
 
-@Composable internal fun TripMap(points: List<TrackPoint>, replay: TrackPoint? = null) {
+@Composable internal fun TripMap(points: List<TrackPoint>, replay: TrackPoint? = null,breakPoints:List<TrackPoint> = emptyList()) {
     val context = LocalContext.current
     val lifecycle = LocalLifecycleOwner.current.lifecycle
     var failed by remember { mutableStateOf(false) }
@@ -290,7 +336,7 @@ private fun date(ms: Long) = DateTimeFormatter.ofPattern("MMM d, yyyy · h:mm a"
                         style.addSource(GeoJsonSource(name, JSONObject().put("type", "Point").put("coordinates", JSONArray().put(point.lon).put(point.lat)).toString()))
                         style.addLayer(CircleLayer("$name-marker", name).withProperties(circleColor(color), circleRadius(7f), circleStrokeColor("#ffffff"), circleStrokeWidth(2f)))
                     }
-                    val stops=TripInsights.stops(points)
+                    val stops=TripInsights.stops(points)+breakPoints.map{RideStop(it,it.time)}
                     if(stops.isNotEmpty()) {
                         val coordinates=JSONArray().apply{stops.forEach{put(JSONArray().put(it.point.lon).put(it.point.lat))}}
                         style.addSource(GeoJsonSource("stops",JSONObject().put("type","MultiPoint").put("coordinates",coordinates).toString()))

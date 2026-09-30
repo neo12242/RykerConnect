@@ -53,6 +53,15 @@ object RideBackup {
                 require(ids.add(item.getString("id"))) { "Duplicate service type" }
             }
         }
+        if (software.has("serviceBaselines")) {
+            val baselines = software.getJSONArray("serviceBaselines")
+            require(baselines.length() <= 10_000)
+            val ids = mutableSetOf<String>()
+            for (i in 0 until baselines.length()) {
+                val item = baselines.getJSONObject(i); ServiceBaselines.validate(item)
+                require(ids.add(item.getString("id"))) { "Duplicate service baseline" }
+            }
+        }
         for (key in listOf("fuel", "maintenance", "profiles")) {
             val list = software.optJSONArray(key) ?: continue; require(list.length() <= 10_000)
             val ids = mutableSetOf<String>()
@@ -86,9 +95,24 @@ object RideBackup {
             } else {
                 val rows = content.lineSequence().filter { it.isNotBlank() }.map { JSONObject(it) }.toList()
                 require(rows.isNotEmpty() && rows.first().getLong("start") > 0) { "Invalid trip header" }
+                rows.first().optJSONObject("websiteCopy")?.let{record->
+                    RideEditValidation.record(record)
+                    require(record.getString("id")==name.removeSuffix(".jsonl") && rows.none{it.has("lat")}){"Invalid website copy"}
+                }
                 var time = 0L
                 rows.drop(1).forEach { row ->
                     when {
+                        row.has("event") -> {
+                            require(row.getString("event") in setOf("pause", "resume")) { "Unknown trip event" }
+                            val at = row.get("at")
+                            require(at is Number && at.toDouble().isFinite() && at.toDouble() == at.toLong().toDouble() && at.toLong() >= rows.first().getLong("start")) { "Invalid trip event time" }
+                            if (row.has("point")) {
+                                val point = row.getJSONObject("point")
+                                val p = TrackPoint(point.getDouble("lat"), point.getDouble("lon"), point.getLong("time"), point.getDouble("accuracy").toFloat())
+                                require(TrackMath.acceptable(null, p) && at.toLong() - p.time in 0..30_000) { "Invalid pause location" }
+                            }
+                            if (row.has("disconnect")) require(row.getLong("disconnect") >= 0)
+                        }
                         row.has("lat") -> { val p = TrackPoint(row.getDouble("lat"), row.getDouble("lon"), row.getLong("time"), row.getDouble("accuracy").toFloat(), row.optDouble("speed").takeIf { it.isFinite() }); require(TrackMath.acceptable(null, p) && p.time >= time) { "Invalid GPS point" }; time = p.time }
                         row.has("end") -> require(row.getLong("end") >= rows.first().getLong("start"))
                         row.has("disconnect") -> require(row.getLong("disconnect") >= 0)
@@ -98,6 +122,18 @@ object RideBackup {
             }
         }
         for(key in listOf("plans","journals")){val list=software.optJSONArray(key)?:continue;require(list.length()<=10000);val ids=mutableSetOf<String>();for(i in 0 until list.length()){val item=list.getJSONObject(i);require(ids.add(item.getString("id")));if(key=="plans")MaintenancePlans.validate(item) else {RidePhotos.validate(item);require(trips.containsKey(item.getString("id")+".jsonl")){"Orphan journal"};for(photo in RidePhotos.photos(item))for(ext in listOf("original","jpg","thumb.jpg"))require(assets.containsKey(photo.getString("id")+"."+ext)){"Missing journal image"}}}}
+        software.optJSONArray("siteEdits")?.let{edits->
+            require(edits.length()<=10000);val ids=mutableSetOf<String>()
+            for(i in 0 until edits.length()){val edit=edits.getJSONObject(i);require(ids.add(edit.getString("id")));RideEditValidation.record(edit)}
+        }
+        for (key in listOf("modifications", "ownershipSeasons")) {
+            val list=software.optJSONArray(key)?:continue
+            require(list.length()<=1000);val ids=mutableSetOf<String>()
+            for (i in 0 until list.length()) {
+                val record=list.getJSONObject(i);require(ids.add(record.getString("id"))) { "Duplicate ownership record" }
+                if(key=="modifications")ModificationRecords.validate(record) else OwnershipSeasons.validate(record)
+            }
+        }
         return BackupPreview(trips, settings, software, assets)
     }
 }

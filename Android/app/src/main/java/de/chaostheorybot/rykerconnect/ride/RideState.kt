@@ -31,9 +31,11 @@ object RideState {
         TripStore.init(context)
         SoftwareStore.init(context)
         RidePhotos.init(context)
+        RideEdits.init(context)
         RideCompletion.init(context)
         DadRides.init(context)
         WeatherState.init(context)
+        if (de.chaostheorybot.rykerconnect.BuildConfig.PHONE_EDITION) return
         scope.launch {
             while (isActive) {
                 try { sendDisplayState() } catch (e: CancellationException) { throw e } catch (_: Exception) { displaySupport.value = "Riding display update failed" }
@@ -41,7 +43,7 @@ object RideState {
             }
         }
     }
-    fun save(value: RidePreferences) {
+    @Synchronized fun save(value: RidePreferences) {
         preferences.value = value
         context.getSharedPreferences("ride_options", Context.MODE_PRIVATE).edit()
             .putBoolean("imperial", value.imperial).putBoolean("fahrenheit", value.fahrenheit)
@@ -52,6 +54,7 @@ object RideState {
     }
     fun live(frame: NavigationFrame) { liveNavigation = frame; if (!sample) navigation.value = frame }
     fun sampleRoute() {
+        if (!de.chaostheorybot.rykerconnect.BuildConfig.DEMO_FEATURES) return
         sampleJob?.cancel(); sample = true
         sampleJob = scope.launch {
             val steps = listOf("In 0.2 mi, turn right onto Demo Road", "In 300 ft, turn right onto Demo Road", "In 0.5 mi, turn left onto Sample Avenue", "You have arrived")

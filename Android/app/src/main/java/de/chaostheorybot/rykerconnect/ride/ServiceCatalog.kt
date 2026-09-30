@@ -47,7 +47,8 @@ object ServiceCatalog {
         return next.put("serviceTypes", JSONArray(types.values.toList())).put("serviceCatalogVersion", 1)
     }
     fun latest(type: JSONObject, history: List<JSONObject>): JSONObject? =
-        if (type.getString("id") == MILEAGE) null else history.filter { !isMileage(it) && it.optString("serviceId") == type.getString("id") }.maxByOrNull { it.optLong("time") }
-    fun remainingKm(type: JSONObject, history: List<JSONObject>, odometer: Double): Double? =
-        latest(type, history)?.takeIf { type.getDouble("intervalKm") > 0 }?.let { it.getDouble("odometerKm") + type.getDouble("intervalKm") - odometer }
+        if (type.getString("id") == MILEAGE) null else history.filter { !isMileage(it) && it.optString("serviceId") == type.getString("id") }
+            .maxWithOrNull(compareBy<JSONObject> { it.optLong("time") }.thenBy { it.optDouble("odometerKm") }.thenBy { it.optString("id") })
+    fun remainingKm(type: JSONObject, history: List<JSONObject>, odometer: Double, baselines: List<JSONObject> = emptyList()): Double? =
+        ServiceBaselines.startingPoint(type, history, baselines)?.takeIf { type.getDouble("intervalKm") > 0 }?.let { it.getDouble("odometerKm") + type.getDouble("intervalKm") - odometer }
 }

@@ -67,7 +67,7 @@ class SoftwareExpansionTest {
         TripStore.initDirectory(folder)
         assertEquals(id,TripStore.recoverable(now));assertNull(TripStore.recoverable(now+180_000))
         TripStore.resume(id);assertEquals(id,TripStore.summary.value.id);assertTrue(TripStore.summary.value.recording)
-        TripStore.point(TrackPoint(61.0,-149.0,now,5f,0.0))
+        TripStore.point(TrackPoint(61.0,-149.0,System.currentTimeMillis(),5f,0.0))
         TripStore.stop()
         assertTrue(TripStore.detail(id).track.last().segmentStart)
         assertEquals(1,TripStore.history.value.size)

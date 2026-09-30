@@ -43,10 +43,15 @@ object TripInsights {
         Text("Time runs left to right. Gaps stay empty. GPS elevation is approximate and available only for recordings with a usable altitude fix.",style=MaterialTheme.typography.bodySmall)
     }
     ToolCard {
-        Text("Stops · ${stops.size}",style=MaterialTheme.typography.titleMedium)
+        Text("Stationary GPS stops · ${stops.size}",style=MaterialTheme.typography.titleMedium)
         if(stops.isEmpty())Text("No confirmed stops of at least 30 seconds. Missing speed or GPS is not counted as a stop.")
         stops.forEachIndexed { i, stop -> Text("${i+1}. ${toolDate(stop.point.time)} · ${TripSummary.duration(stop.duration)}") }
         if(stops.isNotEmpty())Text("Amber markers on the map show these stops.",style=MaterialTheme.typography.bodySmall)
+    }
+    if(detail.pauses.isNotEmpty())ToolCard {
+        Text("Paused breaks · ${detail.pauses.size}",style=MaterialTheme.typography.titleMedium)
+        detail.pauses.forEachIndexed{i,p->Text("${i+1}. ${toolDate(p.started)} · ${TripSummary.duration(p.duration(detail.summary.ended))}${if(p.point==null)" · Location unavailable" else ""}")}
+        Text("GPS recording was off during these breaks. Resume continues the same ride in a new segment.",style=MaterialTheme.typography.bodySmall)
     }
 }
 

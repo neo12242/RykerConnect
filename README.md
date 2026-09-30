@@ -12,6 +12,8 @@ A motorcycle companion app, ESP32-S3 display system, and hardware-free simulator
 - **Hardware:** Native KiCad designs, local libraries, Gerbers, JLCPCB BOM/placement files, wiring instructions, and prototype acceptance procedures.
 - **Optional DadRides integration:** Publishing stays built into the Android APK and is disabled by default. The [DadRides website/API](https://github.com/neo12242/DadRides) lives in a separate repository. There is no separate plugin APK, and the app works without the website.
 
+Phone and ESP editions now share ownership spending, modification tracking and service tools. Ride recovery, shared libraries and Wear OS controls are also included; see [current application updates](docs/CURRENT-FEATURES.md). Personal deployment notes, backups, credentials and ride data are excluded from source publication.
+
 ## Start here
 
 | Goal | Guide |
@@ -22,6 +24,7 @@ A motorcycle companion app, ESP32-S3 display system, and hardware-free simulator
 | Select a PCB and find the JLCPCB upload files | [Hardware guide](Hardware/README.md) |
 | Build firmware | [Firmware guide](Firmware/README.md) |
 | Understand this fork's changes and limitations | [Changes](docs/CHANGES.md) |
+| Develop from the maintained checkout and run baseline checks | [Development and validation](docs/DEVELOPMENT.md) |
 | Configure the optional public ride site | [DadRides](https://github.com/neo12242/DadRides) |
 
 ## Visual tour
@@ -56,7 +59,7 @@ The first run requires Android Studio/SDK, a Google APIs x86_64 emulator named `
 
 ```powershell
 cd Android
-.\gradlew.bat assembleDebug
+.\gradlew.bat assembleCompanionDebug assemblePhoneDebug
 cd ..
 py -3.13 -m venv Simulator/.venv
 .\Simulator\.venv\Scripts\python.exe -m pip install -r Simulator/requirements.txt

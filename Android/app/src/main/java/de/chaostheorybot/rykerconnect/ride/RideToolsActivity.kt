@@ -63,6 +63,7 @@ internal fun toolDate(time: Long) = DateTimeFormatter.ofPattern("MMM d, yyyy h:m
         busy=false
     } }
     Text("Backup and restore",style=MaterialTheme.typography.titleLarge)
+    SharedLibrarySettings()
     BackupReminderSettings()
     Text("Includes ride photos, maintenance plans, appearance/dashboard settings, receipt photos, completed trips, favorites, profiles, fuel/maintenance records and riding preferences. An active recording is excluded. Pairing, permissions, weather cache and downloaded map tiles are not included.")
     Text("The ZIP contains location history. Save it somewhere you trust; no cloud upload is performed by RykerConnect.",style=MaterialTheme.typography.bodySmall)

@@ -37,9 +37,14 @@ object SoftwareStore {
         check(!readFailure) { "Tools data could not be read; original file retained" }
         val temp = File(file.path + ".tmp"); temp.writeText(next.toString())
         Files.move(temp.toPath(), file.toPath(), StandardCopyOption.ATOMIC_MOVE, StandardCopyOption.REPLACE_EXISTING)
-        data = JSONObject(next.toString()); revision.value++
+        data = JSONObject(next.toString()); revision.value++; SharedLibrary.changed()
     }
     @Synchronized fun mutate(change: (JSONObject)->Unit) { val next=snapshot(); change(next); commit(next) }
+    @Synchronized internal fun syncSet(path:List<String>,expected:String,value:Any?,packed:Boolean=false):Boolean {
+        val next=snapshot();val current=LibraryData.softwareValue(next,path)
+        if(SyncJson.fingerprint(if(packed)LibraryData.pack(current) else current)!=expected)return false
+        LibraryData.setSoftwareValue(next,path,value);commit(next);return true
+    }
     @Synchronized fun set(key: String, value: String) { commit(snapshot().put(key, value)) }
     @Synchronized fun add(key: String, item: JSONObject) {
         val next = snapshot(); val list = next.optJSONArray(key) ?: JSONArray()
@@ -76,7 +81,7 @@ object SoftwareStore {
             if (old == null || (!old.optBoolean("configured") && item.optBoolean("configured"))) catalog[item.getString("id")] = item
         }
         next.put("serviceTypes", JSONArray(catalog.values.toList()))
-        for (key in listOf("fuel", "maintenance", "profiles", "plans", "journals")) {
+        for (key in listOf("fuel", "maintenance", "profiles", "plans", "journals", "siteEdits", "serviceBaselines", "modifications", "ownershipSeasons")) {
             val currentArray = next.optJSONArray(key) ?: JSONArray()
             val current = (0 until currentArray.length()).map { currentArray.getJSONObject(it) }.toMutableList(); val ids = current.map { it.getString("id") }.toSet()
             val incoming = incomingData.optJSONArray(key) ?: continue

@@ -49,6 +49,7 @@ object MainUnitControl {
         context.getSharedPreferences("connection_control", Context.MODE_PRIVATE).edit().putBoolean("paused", value).apply()
     }
     fun request(context: Context, action: String? = null) {
+        if (de.chaostheorybot.rykerconnect.BuildConfig.PHONE_EDITION) return
         if (action == CONNECT) setPaused(context, false)
         if (action == DISCONNECT) setPaused(context, true)
         if (!PermissionUtils.hasBluetoothConnect(context)) {

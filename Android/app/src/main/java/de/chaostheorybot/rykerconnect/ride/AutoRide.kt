@@ -24,6 +24,11 @@ object AutoRide {
     private var wasConnected = false
     fun init(application: Application) {
         app = application
+        if (de.chaostheorybot.rykerconnect.BuildConfig.PHONE_EDITION) {
+            enabled.value = false
+            status.value = "Phone edition uses manual recording"
+            return
+        }
         enabled.value = app.getSharedPreferences("auto_ride", Context.MODE_PRIVATE).getBoolean("enabled", true)
         if (app.getSharedPreferences("auto_ride", Context.MODE_PRIVATE).getBoolean("stopped", false)) policy.manualStop()
         app.registerActivityLifecycleCallbacks(object : Application.ActivityLifecycleCallbacks {
@@ -39,8 +44,8 @@ object AutoRide {
             while (isActive) { try { tick() } catch (e: Exception) { status.value = "Automatic recording error: ${e.javaClass.simpleName}" }; delay(1_000) }
         }
     }
-    fun setEnabled(value: Boolean) { enabled.value = value; app.getSharedPreferences("auto_ride", Context.MODE_PRIVATE).edit().putBoolean("enabled", value).apply() }
-    fun manualStop() { policy.manualStop(); app.getSharedPreferences("auto_ride", Context.MODE_PRIVATE).edit().putBoolean("stopped", policy.isSuppressed).apply(); pendingUntil = 0; status.value = "Stopped by you; automatic recording resumes on the next connection" }
+    fun setEnabled(value: Boolean) { enabled.value = value && !de.chaostheorybot.rykerconnect.BuildConfig.PHONE_EDITION; app.getSharedPreferences("auto_ride", Context.MODE_PRIVATE).edit().putBoolean("enabled", enabled.value).apply() }
+    fun manualStop() { policy.manualStop(); app.getSharedPreferences("auto_ride", Context.MODE_PRIVATE).edit().putBoolean("stopped", policy.isSuppressed).apply(); pendingUntil = 0; status.value = if (de.chaostheorybot.rykerconnect.BuildConfig.PHONE_EDITION) "Ride stopped by you" else "Stopped by you; automatic recording resumes on the next connection" }
     fun failed(message: String) { status.value = message; pendingUntil = SystemClock.elapsedRealtime() + 30_000 }
     fun hasBackgroundLocation(context: Context) = ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_BACKGROUND_LOCATION) == PackageManager.PERMISSION_GRANTED
     private suspend fun tick() {
@@ -51,7 +56,7 @@ object AutoRide {
         WeatherState.connection(connected, visibleActivities > 0)
         val recording = TripStore.summary.value
         val now = SystemClock.elapsedRealtime()
-        val action = policy.tick(connected, enabled.value, recording.recording, recording.automatic, now, System.currentTimeMillis())
+        val action = policy.tick(connected, enabled.value, recording.recording, recording.automatic, now, System.currentTimeMillis(),recording.paused || recording.needsRecovery)
         val lost = policy.disconnectedAt != null
         if (recording.recording && recording.automatic && lost != markedDisconnect && action != TripPolicy.Action.FINISH) {
             withContext(Dispatchers.IO) { TripStore.markDisconnect(if (lost) System.currentTimeMillis() else null) }; markedDisconnect = lost
@@ -72,7 +77,7 @@ object AutoRide {
                 status.value = "Trip saved after disconnect"; markedDisconnect = false
             }
             TripPolicy.Action.NONE -> {
-                if (recording.recording) status.value = if (lost) "Disconnected · saving in ${((120_000 - (now - policy.disconnectedAt!!)) / 1000).coerceAtLeast(0)}s unless reconnected" else if (recording.automatic && recording.meters < 100) "Connected session · waiting for movement" else if (recording.automatic) "Recording automatically" else "Recording manually"
+                if (recording.recording) status.value = if(recording.paused)"Ride paused by you" else if(recording.needsRecovery)"Resume or End your interrupted ride" else if (lost) "Disconnected · saving in ${((120_000 - (now - policy.disconnectedAt!!)) / 1000).coerceAtLeast(0)}s unless reconnected" else if (recording.automatic && recording.meters < 100) "Connected session · waiting for movement" else if (recording.automatic) "Recording automatically" else "Recording manually"
                 else if (!enabled.value) status.value = "Automatic recording is off"
                 else if (!connected) status.value = "Ready · waiting for the Ryker main unit"
                 else if (policy.isSuppressed) status.value = "Stopped by you; automatic recording resumes on the next connection"

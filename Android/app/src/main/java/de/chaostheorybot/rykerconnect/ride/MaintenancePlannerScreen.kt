@@ -38,15 +38,18 @@ import java.util.Locale
                 if(alerts.isEmpty())Text("No approaching reminders. Review your schedules or create a plan below.")
 
                 val odo=(SoftwareStore.records("fuel")+SoftwareStore.records("maintenance")).maxByOrNull{it.optDouble("odometerKm")}
-                Text(odo?.let{"Odometer last recorded: "+toolDate(it.optLong("time"))}?:"No recorded odometer. Mileage forecasts are unavailable.")
+                val baselines=ServiceBaselines.records(SoftwareStore.snapshot())
+                val currentKm=ServiceBaselines.odometer(SoftwareStore.records("fuel")+SoftwareStore.records("maintenance"),baselines)
+                Text(odo?.let{"Odometer last recorded: "+toolDate(it.optLong("time"))}?:if(baselines.any{it.optBoolean("enabled")})"Odometer starts from the new-bike baseline" else "No recorded odometer. Mileage forecasts are unavailable.")
                 for(s in catalog.filter{it.optBoolean("enabled") && it.optString("id")!=ServiceCatalog.MILEAGE}.sortedBy { s -> val a=alerts.firstOrNull{it.id==s.optString("id")};when{a?.overdue==true->0;a?.approaching==true->1;a!=null->2;else->3} })ToolCard{
                     Text(s.getString("name"),style=MaterialTheme.typography.titleMedium)
                     alerts.firstOrNull{it.id==s.optString("id")}?.let{a->Text(if(a.overdue)"Overdue" else if(a.approaching)"Approaching" else "Scheduled",color=if(a.overdue)MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.primary)}
-                    val last=SoftwareStore.records("maintenance").filter{it.optString("serviceId")==s.getString("id")}.maxByOrNull{it.optLong("time")}
+                    val last=ServiceBaselines.startingPoint(s,SoftwareStore.records("maintenance"),baselines)
+                    if(last?.has("date")==true)Text("New-bike baseline: "+last.getString("date")+" at "+RideUnits.distance(last.getDouble("odometerKm")*1000,units.imperial))
                     val km=s.optDouble("intervalKm");val days=s.optInt("intervalDays")
-                    Text(if(km<=0 && days<=0)"Recurring interval not configured" else if(last==null)"Record the last completed service to establish a baseline" else buildString{
-                        if(km>0)append("Distance remaining: "+RideUnits.distance((last.optDouble("odometerKm")+km-(odo?.optDouble("odometerKm")?:last.optDouble("odometerKm")))*1000,units.imperial))
-                        if(days>0)append("\nDue: "+toolDate(last.optLong("time")+days*86400000L))
+                    Text(if(km<=0 && days<=0)"Recurring interval not configured" else if(last==null)"Set a new-bike baseline in service settings, or record actual completed work" else buildString{
+                        if(km>0)append("Distance remaining: "+RideUnits.distance((last.optDouble("odometerKm")+km-currentKm)*1000,units.imperial))
+                        if(days>0)append("\nDue: "+toolDate(ServiceBaselines.dueTime(last,days)!!))
                     })
                     TextButton(onClick={runCatching{selected=MaintenancePlans.create(s.getString("id"))}.onFailure{message=it.message?:"Could not create plan"}}){Text("Plan this service")}
                 }

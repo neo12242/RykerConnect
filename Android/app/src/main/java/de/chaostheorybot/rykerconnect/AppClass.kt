@@ -26,6 +26,7 @@ class RykerConnectApplication: Application() {
         de.chaostheorybot.rykerconnect.ride.RideState.init(this)
         de.chaostheorybot.rykerconnect.ride.AutoRide.init(this)
         de.chaostheorybot.rykerconnect.ride.OwnershipUpdates.init(this)
+        de.chaostheorybot.rykerconnect.ride.SharedLibrary.init(this)
     }
 
     override fun onConfigurationChanged(newConfig: android.content.res.Configuration) {

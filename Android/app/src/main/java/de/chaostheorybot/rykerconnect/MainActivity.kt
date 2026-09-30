@@ -75,7 +75,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         val store = RykerConnectStore(this)
 
-        val demoLaunch=intent.getBooleanExtra("demo",false)
+        val demoLaunch=BuildConfig.DEMO_FEATURES && intent.getBooleanExtra("demo",false)
         setContent {
             val navController = rememberNavController()
             val dynamicColor by store.getDynamicColorToken.collectAsState(initial = false)
@@ -85,7 +85,7 @@ class MainActivity : ComponentActivity() {
                     val tokenValue = store.getFirstLaunchToken.collectAsState(initial = false)
                     NavHost(
                         navController = navController,
-                        startDestination = if (tokenValue.value && !demoLaunch) Screen.SetupScreen.route else Screen.HomeScreen.route,
+                        startDestination = if (tokenValue.value && !demoLaunch && !BuildConfig.PHONE_EDITION) Screen.SetupScreen.route else Screen.HomeScreen.route,
                         enterTransition = { slideInHorizontally(animationSpec = tween(350)) { it } + fadeIn(animationSpec = tween(350)) },
                         exitTransition = { slideOutHorizontally(animationSpec = tween(350)) { -it / 3 } + fadeOut(animationSpec = tween(350)) },
                         popEnterTransition = { slideInHorizontally(animationSpec = tween(350)) { -it / 3 } + fadeIn(animationSpec = tween(350)) },

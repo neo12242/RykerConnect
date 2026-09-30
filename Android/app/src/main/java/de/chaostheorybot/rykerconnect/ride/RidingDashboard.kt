@@ -98,12 +98,12 @@ internal fun Dashboard(page: String = "all", close: () -> Unit) {
                     val intent = context.packageManager.getLaunchIntentForPackage("com.google.android.apps.maps")
                     if (intent != null) context.startActivity(intent) else feedback = "Google Maps is not installed"
                 }) { Text("Open Google Maps") }
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                if (de.chaostheorybot.rykerconnect.BuildConfig.DEMO_FEATURES) Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     OutlinedButton(onClick = { RideState.sampleRoute() }) { Text("Try sample route") }
                     TextButton(onClick = { RideState.useLive() }) { Text("Use live Maps") }
                 }
                 Text(display, style = MaterialTheme.typography.bodySmall)
-                Text("New riding screens currently target our simulator. Original ESP firmware needs the matching extension.", style = MaterialTheme.typography.bodySmall)
+                Text("Riding display features require compatible ESP firmware.", style = MaterialTheme.typography.bodySmall)
             }
             }
             if (page == "all") { WeatherCard(now); EnvironmentCard() }
@@ -136,16 +136,7 @@ internal fun Dashboard(page: String = "all", close: () -> Unit) {
             if (page == "all" || page == "recording") {
             Section("Record a ride") {
                 AutoRecordingControls()
-                Text("Tracks stay on this phone. Recording continues with a visible notification while Google Maps is open. Export only when you choose.")
-                Text(if (trip.recording) "Recording · ${trip.durationText()}" else "Not recording", style = MaterialTheme.typography.titleMedium)
-                Text("${RideUnits.distance(trip.meters, options.imperial)} · ${trip.points} GPS points")
-                Text(trip.gps)
-                Button(onClick = {
-                    if (trip.recording) context.startService(Intent(context, TripRecordingService::class.java).setAction("STOP"))
-                    else if (ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) startRecording()
-                    else permission.launch(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION))
-                }) { Text(if (trip.recording) "Stop and save ride" else "Start recording") }
-                if (feedback.isNotBlank()) Text(feedback, style = MaterialTheme.typography.bodySmall)
+                RideRecordingControls()
             }
             }
             if (page == "all") Section("Ride history") {

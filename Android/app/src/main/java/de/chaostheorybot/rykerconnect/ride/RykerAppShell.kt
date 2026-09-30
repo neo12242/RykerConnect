@@ -1,6 +1,7 @@
 package de.chaostheorybot.rykerconnect.ride
 
 import android.content.Intent
+import de.chaostheorybot.rykerconnect.BuildConfig
 import android.graphics.drawable.AnimationDrawable
 import androidx.compose.foundation.Image
 import com.google.accompanist.drawablepainter.rememberDrawablePainter
@@ -49,6 +50,10 @@ private enum class AppTab(val title: String, val icon: ImageVector) {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun RykerAppShell(store: RykerConnectStore, companion: () -> Unit, reselect: () -> Unit) {
+    if (de.chaostheorybot.rykerconnect.BuildConfig.PHONE_EDITION) {
+        PhoneAppShell(store)
+        return
+    }
     var selected by rememberSaveable { mutableStateOf(AppTab.Dashboard.name) }
     val tab = AppTab.valueOf(selected)
     val stateHolder = rememberSaveableStateHolder()
@@ -90,7 +95,7 @@ fun RykerAppShell(store: RykerConnectStore, companion: () -> Unit, reselect: () 
         Box(Modifier.fillMaxSize().padding(padding).consumeWindowInsets(padding)) {
             stateHolder.SaveableStateProvider(selected) {
                 var page by rememberSaveable { mutableStateOf<String?>(
-                    if(tab==AppTab.Dashboard && (context as? android.app.Activity)?.intent?.getBooleanExtra("demo",false)==true) {
+                    if(BuildConfig.DEMO_FEATURES && tab==AppTab.Dashboard && (context as? android.app.Activity)?.intent?.getBooleanExtra("demo",false)==true) {
                         "Guided demo"
                     } else null) }
                 BackHandler(page != null) { page = null }
@@ -109,7 +114,7 @@ fun RykerAppShell(store: RykerConnectStore, companion: () -> Unit, reselect: () 
                         AppTab.Connect -> ConnectOverview(mac.isNotBlank(), companion, reselect) { page = it }
                         AppTab.Trips -> TripJournal(embedded = true, openTool = { page = it }) { selected = AppTab.Connect.name }
                         AppTab.Garage -> ScrollPage("My Garage", "CARE FOR YOUR RYKER") {
-                            GarageTools(openEntry = { page = it })
+                            SharedGarageOverview { page = it }
                         }
                         AppTab.Settings -> ScrollPage("Settings", "MAKE IT YOURS") {
                             BackupReminder { page="Backup & restore" }
@@ -118,12 +123,13 @@ fun RykerAppShell(store: RykerConnectStore, companion: () -> Unit, reselect: () 
                             DestinationCard("Vehicle profile", "Your Ryker, purchase details and home address", Icons.Default.Garage) { page = "Vehicle profile" }
                             DestinationCard("Service reminders", "Advance warnings, notifications and snooze", Icons.Default.Notifications) { page = "Service reminders" }
                             DestinationCard("Add-ons", "Optional DadRides publishing", Icons.Default.Extension) { page = "Add-ons" }
+                            DestinationCard("Watch controls", "Start, pause, resume and end from Wear OS", Icons.Default.Watch) { context.startActivity(Intent(context,WatchSetupActivity::class.java)) }
                             DestinationCard("Ride summaries", "End-of-ride notification preferences", Icons.Default.Route) { page = "Ride summaries" }
                             DestinationCard("Widgets", "Quick actions, My Ryker and Last Parked", Icons.Default.Widgets) { page = "Widgets" }
                             DestinationCard("Services & intervals", "Service types and distance or date reminders", Icons.Default.Build) { page = "Services & intervals" }
                             DestinationCard("Dashboard layout", "Choose, reorder and collapse your cards", Icons.Default.Dashboard) { page = "Connect dashboard" }
                             DestinationCard("Connection health", "ESP, sensor, GPS, weather and intercom status", Icons.Default.Bluetooth) { page = "Connection health" }
-                            DestinationCard("Guided demo", "Explore a moving sample ride without hardware", Icons.Default.PlayArrow) { page = "Guided demo" }
+                            if (BuildConfig.DEMO_FEATURES) DestinationCard("Guided demo", "Explore a moving sample ride without hardware", Icons.Default.PlayArrow) { page = "Guided demo" }
                             DestinationCard("Display & profiles", "Driving fields and saved display layouts", Icons.Default.Dashboard) { page = "Display & profiles" }
                             DestinationCard("Riding preferences", "Units, music position, navigation and notifications", Icons.Default.Tune) { page = "Riding preferences" }
                             DestinationCard("Recording", "Automatic recording and location access", Icons.Default.MyLocation) { page = "Recording" }
@@ -140,6 +146,7 @@ fun RykerAppShell(store: RykerConnectStore, companion: () -> Unit, reselect: () 
                         ScrollPage(null, null) {
                             when (page) {
                                 "Add fuel", "Add service", "Add mileage" -> GarageEntry(page!!) { val old=page;page=null;old?.let{pages.removeState(it)} }
+                                "Modifications" -> ModificationsScreen { page=it }
                                 "Vehicle profile" -> VehicleProfileScreen()
                                 "Service reminders" -> ServiceReminderSettings { page = it }
                                 "Widgets" -> WidgetSettings()
@@ -158,7 +165,7 @@ fun RykerAppShell(store: RykerConnectStore, companion: () -> Unit, reselect: () 
                                 "Backup & restore" -> BackupTools()
                                 "Weather" -> { val now = rememberClock(); WeatherCard(now) }
                                 "Sensor" -> EnvironmentCard()
-                                else -> if(page!!.startsWith("Summary/")) RideSummaryScreen(page!!.substringAfter("/")) { page=it } else if(page!!.startsWith("Journal/")) RideJournalScreen(page!!.substringAfter("/")) else if(page!!.startsWith("Complete plan/") || page!!.startsWith("Edit ") || page!!.startsWith("Repeat ") || page!!.startsWith("Log service/")) GarageEntry(page!!) { val old=page;page=null;old?.let{pages.removeState(it)} }
+                                else -> if(page!!.startsWith("Modification/")) ModificationEditor(page!!.substringAfter("/")) { val old=page;page="Modifications";old?.let{pages.removeState(it)} } else if(page!!.startsWith("Ownership season/")) OwnershipSeasonEditor(page!!.substringAfter("/")) { val old=page;page=null;old?.let{pages.removeState(it)} } else if(page!!.startsWith("Summary/")) RideSummaryScreen(page!!.substringAfter("/")) { page=it } else if(page!!.startsWith("Journal/")) RideJournalScreen(page!!.substringAfter("/")) else if(page!!.startsWith("Complete plan/") || page!!.startsWith("Edit ") || page!!.startsWith("Repeat ") || page!!.startsWith("Log service/")) GarageEntry(page!!) { val old=page;page=null;old?.let{pages.removeState(it)} }
                             }
                         }
                     }
@@ -240,7 +247,7 @@ fun RykerAppShell(store: RykerConnectStore, companion: () -> Unit, reselect: () 
         }
         FlowRow(horizontalArrangement=Arrangement.spacedBy(8.dp)) {
             TextButton(onClick={open("Connection health")}){Text("Connection health")}
-            TextButton(onClick={open("Guided demo")}){Text("Guided demo")}
+            if (BuildConfig.DEMO_FEATURES) TextButton(onClick={open("Guided demo")}){Text("Guided demo")}
         }
         }
         if(dashboard) {

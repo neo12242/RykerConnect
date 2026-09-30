@@ -36,6 +36,7 @@ import org.json.JSONObject
     var enabled by rememberSaveable(selected) { mutableStateOf(original?.optBoolean("enabled") ?: true) }
     var message by remember { mutableStateOf("") }
     Text("Services & intervals", style = MaterialTheme.typography.headlineSmall)
+    ServiceBaselineSettings()
     Text("Choose a service to edit, or add your own. New intervals are unset until you configure them for your Ryker.")
     ServiceChoice(types, selected) { selected = it; message = "" }
     TextButton(onClick = { selected = java.util.UUID.randomUUID().toString(); message = "" }) { Text("Add service type") }
@@ -48,7 +49,7 @@ import org.json.JSONObject
         OutlinedTextField(days, { days = it.take(4) }, label = { Text("Repeat days (0 = none)") },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number), singleLine = true, modifier = Modifier.fillMaxWidth())
         Row { Text("Available for new entries", Modifier.weight(1f)); Switch(enabled, { enabled = it }) }
-        Text("Reminders use the last completed service and your latest recorded odometer. When both intervals are set, the earlier one applies. Disabling keeps history.")
+        Text("Reminders use the last completed service, or the new-bike baseline when no service is recorded, and your latest recorded odometer. When both intervals are set, the earlier one applies. Disabling keeps history.")
         Button(onClick = { runCatching {
             val item = ServiceCatalog.definition(name, selected).put("intervalKm", (km.replace(',', '.').toDoubleOrNull() ?: error("Enter a distance")) * factor)
                 .put("intervalDays", days.toIntOrNull() ?: error("Enter whole days")).put("enabled", enabled).put("configured", true)
@@ -71,20 +72,22 @@ import org.json.JSONObject
     val fuel = remember(revision) { SoftwareStore.records("fuel") }
     val history = remember(revision) { SoftwareStore.records("maintenance") }
     val types = remember(revision) { ServiceCatalog.items(ServiceCatalog.migrate(SoftwareStore.snapshot())) }
-    val odometer = (fuel + history).maxOfOrNull { it.optDouble("odometerKm", 0.0) } ?: 0.0
+    val baselines = remember(revision) { ServiceBaselines.records(SoftwareStore.snapshot()) }
+    val odometer = ServiceBaselines.odometer(fuel + history, baselines)
     Text("Upcoming service", style = MaterialTheme.typography.titleLarge)
     val recurring = types.filter { it.optBoolean("enabled") && it.getString("id") != ServiceCatalog.MILEAGE && (it.optDouble("intervalKm") > 0 || it.optInt("intervalDays") > 0) }
     if (recurring.isEmpty()) Text("Set your service intervals in Settings → Services & intervals.")
     recurring.forEach { type -> ToolCard {
         Text(type.getString("name"), style = MaterialTheme.typography.titleMedium)
-        val last = ServiceCatalog.latest(type, history)
-        if (last == null) Text("No service recorded yet. Log the last completed service in My Garage to start this reminder.")
+        val last = ServiceBaselines.startingPoint(type, history, baselines)
+        if (last == null) Text("No service baseline. Set a new-bike baseline in Settings, or record actual completed work in My Garage.")
         else {
-            ServiceCatalog.remainingKm(type, history, odometer)?.let { left ->
+            if (last.has("date")) Text("New-bike baseline: ${last.getString("date")} at " + RideUnits.distance(last.getDouble("odometerKm") * 1000, units.imperial))
+            ServiceCatalog.remainingKm(type, history, odometer, baselines)?.let { left ->
                 Text(if (left <= 0) "Mileage service due" else "In " + RideUnits.distance(left * 1000, units.imperial))
             }
             if (type.optInt("intervalDays") > 0) {
-                val due = last.getLong("time") + type.getInt("intervalDays") * 86_400_000L
+                val due = ServiceBaselines.dueTime(last, type.getInt("intervalDays"))!!
                 Text(if (due <= System.currentTimeMillis()) "Date service due" else "Due " + toolDate(due))
             }
         }
