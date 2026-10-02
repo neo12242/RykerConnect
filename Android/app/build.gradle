@@ -13,8 +13,9 @@ android {
         applicationId "de.chaostheorybot.rykerconnect"
         minSdk 31
         targetSdk 37
-        versionCode 19
-        versionName '1.8.0'
+        versionCode 20
+        versionName '1.9.0'
+        buildConfigField 'String', 'WATCH_DOWNLOADS_URL', groovy.json.JsonOutput.toJson(providers.gradleProperty('watchDownloadsUrl').getOrElse('https://github.com/neo12242/RykerConnect/releases'))
         // Development demonstrations require a deliberate opt-in, even in debug builds.
         buildConfigField 'boolean', 'DEMO_FEATURES', providers.gradleProperty('enableDemos').map { it.toBoolean().toString() }.getOrElse('false')
 

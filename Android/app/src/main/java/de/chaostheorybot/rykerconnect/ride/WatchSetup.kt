@@ -41,7 +41,7 @@ class WatchSetupActivity:Activity() {
             try{startActivity(Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS,Uri.parse("package:$packageName")))}
             catch(_:Exception){startActivity(Intent(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS))}
         }
-        button("Watch downloads · GitHub releases") { startActivity(Intent(Intent.ACTION_VIEW,Uri.parse("https://github.com/neo12242/RykerConnect/releases"))) }
+        button("Watch downloads") { startActivity(Intent(Intent.ACTION_VIEW,Uri.parse(de.chaostheorybot.rykerconnect.BuildConfig.WATCH_DOWNLOADS_URL))) }
         button("Done"){finish()}
         setContentView(ScrollView(this).apply{addView(content)})
     }

@@ -1,5 +1,9 @@
 # Current application updates
 
+Application version: **1.9.0**, version code **20**. Phone and ESP packages retain their existing application IDs. Install the matching edition over the existing app; do not uninstall or clear data. Update both editions if both participate in a shared library. This release does not require a watch update.
+
+Deploy DadRides ownership API support and its additive `ownership-dashboard.sql` migration before using modification synchronization. Preserve the existing database and media. Distribution builds may configure their watch-download destination with the `watchDownloadsUrl` Gradle property; the public-source default is the repository's Releases page.
+
 Phone and ESP companion editions share the ownership dashboard and garage editors. The Phone Edition records manually with the phone GPS; ESP-specific device and notification capabilities remain confined to the companion edition.
 
 ## Ownership and service records
